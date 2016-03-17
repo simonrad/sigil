@@ -6,9 +6,6 @@
 #include "internal/circle.h"
 #include "internal/point.h"
 #include "internal/line.h"
-#include "internal/sprite.h"
-
-#include "assets/assetmanager.h"
 
 #include "util/gldebugging.h"
 
@@ -278,20 +275,6 @@ void slLine(double x1, double y1, double x2, double y2)
 	sliLine(slForeColor, modelview1[3][0], modelview1[3][1], modelview2[3][0], modelview2[3][1]);
 }
 
-void slSprite(char *textureFilename, double x, double y, double width, double height)
-{
-	slSprite(textureFilename, x, y, width, height, 1.0, 1.0);
-}
-
-void slSprite(char *textureFilename, double x, double y, double width, double height, double horizontalTiling, double verticalTiling)
-{
-	mat4 modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
-	vec2 tiling = vec2(horizontalTiling, verticalTiling);
-	vec2 scroll = vec2(0.0, 0.0);
-
-	sliSprite(modelview, slForeColor, AssetManager::getTexture(textureFilename), tiling, scroll);
-}
-
 // private functions
 
 void slInitResources()
@@ -302,7 +285,6 @@ void slInitResources()
 	sliCircleInit();
 	sliPointInit();
 	sliLineInit();
-	sliSpriteInit();
 }
 
 void slKillResources()

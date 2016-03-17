@@ -54,9 +54,6 @@ int main(int args, char *argv[])
 			slSetForeColor(0.0, 0.0, 1.0, 1.0);
 			slLine(400, 400, 450, 400);
 
-			slSprite("png/planet-icon.png", 200, 200, 100, 150);
-
-
 		//slPop();
 
 		slRender();

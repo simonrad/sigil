@@ -1639,7 +1639,7 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\point.h
 	<glm/glm.hpp>
 
-1458029416 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
+1458203939 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
 	"internal/rectangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1650,13 +1650,13 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.h
 	<glm/glm.hpp>
 
-1458200517 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
+1458204022 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
 	"internal/shaders.h"
 	"assets/shader.h"
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458199798 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
+1458203898 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1668,7 +1668,7 @@
 	<gl/glew.h>
 	<glm/glm.hpp>
 
-1458029417 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
+1458203981 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
 	"internal/triangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1679,12 +1679,12 @@
 1458029417 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.h
 	<glm/glm.hpp>
 
-1458200340 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
+1458203820 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
 	"sl.h"
 
 1458200243 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.h
 
-1458200444 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
+1458203810 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
 	"sl.h"
 	"internal/shaders.h"
 	"internal/triangle.h"

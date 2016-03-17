@@ -57,8 +57,8 @@ void slPoint(double x, double y);
 
 void slLine(double x1, double y1, double x2, double y2);
 
-void slSprite(char *textureFilename, double x, double y, double width, double height);
-void slSprite(char *textureFilename, double x, double y, double width, double height, double horizontalTiling, double verticalTiling);
+void slSprite(char *textureFilename, double width, double height);
+void slSprite(char *textureFilename, double width, double height, double horizontalTiling, double verticalTiling);
 
 // text commands
 
