@@ -10,10 +10,10 @@ static const char *sliBasicVertexShaderCode =
 "#version 150 \n"
 "uniform mat4 u_Projection;"
 "uniform mat4 u_Modelview;"
-"in vec3 a_Vertex;"
+"in vec2 a_Vertex;"
 "void main()"
 "{"
-"gl_Position = u_Projection * u_Modelview * vec4(a_Vertex, 1.0);"
+"gl_Position = u_Projection * u_Modelview * vec4(a_Vertex, 0.0, 1.0);"
 "}";
 
 static const char *sliBasicFragmentShaderCode =

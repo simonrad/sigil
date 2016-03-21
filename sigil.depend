@@ -1639,7 +1639,7 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\point.h
 	<glm/glm.hpp>
 
-1458029416 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
+1458203939 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
 	"internal/rectangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1650,13 +1650,13 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.h
 	<glm/glm.hpp>
 
-1458200517 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
+1458204022 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
 	"internal/shaders.h"
 	"assets/shader.h"
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458199798 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
+1458203898 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1668,7 +1668,7 @@
 	<gl/glew.h>
 	<glm/glm.hpp>
 
-1458029417 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
+1458203981 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
 	"internal/triangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1679,12 +1679,12 @@
 1458029417 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.h
 	<glm/glm.hpp>
 
-1458200340 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
+1458203820 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
 	"sl.h"
 
 1458200243 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.h
 
-1458200444 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
+1458203810 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
 	"sl.h"
 	"internal/shaders.h"
 	"internal/triangle.h"
@@ -1730,6 +1730,682 @@
 	"matrix_transform.inl"
 
 1457760948 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\assets\assetmanager.cpp
+	"assets/assetmanager.h"
+	"assets/shader.h"
+	<soil/soil.h>
+	<gl/glew.h>
+	<iostream>
+	<vector>
+	<string>
+	<windows.h>
+	<winbase.h>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\assets\assetmanager.h
+	<gl/glew.h>
+	<map>
+	<string>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\assets\shader.h
+	<glm/glm.hpp>
+	<gl/glew.h>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\_fixes.hpp
+	<cmath>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<__config>
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\precision.hpp
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\_swizzle.hpp
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\_swizzle_func.hpp
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\common.hpp
+	"detail/func_common.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1458592067 c:\users\archiact14\desktop\sigil\src\soil\soil.h
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\assets\shader.cpp
+	"assets/shader.h"
+	<glm/glm.hpp>
+	<gl/glew.h>
+	<fstream>
+	<cstdlib>
+	<iostream>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\circle.cpp
+	"internal/circle.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\circle.h
+	<glm/glm.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\shaders.h
+	<glm/glm.hpp>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\line.cpp
+	"internal/line.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<iostream>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\line.h
+	<glm/glm.hpp>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\point.cpp
+	"internal/point.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\point.h
+	<glm/glm.hpp>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\rectangle.cpp
+	"internal/rectangle.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\rectangle.h
+	<glm/glm.hpp>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\shaders.cpp
+	"internal/shaders.h"
+	"assets/shader.h"
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\sprite.cpp
+	"internal/sprite.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\sprite.h
+	<gl/glew.h>
+	<glm/glm.hpp>
+
+1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\triangle.cpp
+	"internal/triangle.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	<gl/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\internal\triangle.h
+	<glm/glm.hpp>
+
+1458596137 source:c:\users\archiact14\desktop\sigil\src\main.cpp
+	"sl.h"
+
+1458596213 c:\users\archiact14\desktop\sigil\src\sl.h
+
+1458596252 source:c:\users\archiact14\desktop\sigil\src\sl.cpp
+	"sl.h"
+	"internal/shaders.h"
+	"internal/triangle.h"
+	"internal/rectangle.h"
+	"internal/circle.h"
+	"internal/point.h"
+	"internal/line.h"
+	"internal/sprite.h"
+	"internal/text.h"
+	"assets/assetmanager.h"
+	"util/gldebugging.h"
+	<gl/glew.h>
+	<glfw/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<cstdlib>
+	<iostream>
+
+1458592067 c:\users\archiact14\desktop\sigil\src\util\gldebugging.h
+
+1458592067 c:\users\archiact14\desktop\sigil\src\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES3/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES3/gl2ext.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1458596300 source:c:\users\archiact14\desktop\sigil\src\util\gldebugging.cpp
+	"util/gldebugging.h"
+	<gl/glew.h>
+	<assert.h>
+	<windows.h>
+	<iostream>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec2.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec3.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec4_sse2.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec4_avx.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec4_avx2.inl
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x2.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x3.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat2x4.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x2.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x3.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat3x4.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x2.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x3.inl
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_mat4x4.inl
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\detail\type_vec1.inl
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_vector_relational.inl
+	<limits>
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1445273395 c:\users\archiact14\desktop\sigil\src\glm\detail\type_half.inl
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1445273394 c:\users\archiact14\desktop\sigil\src\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\constants.inl
+	<limits>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\type_ptr.inl
+	<cstring>
+
+1458596968 source:c:\users\archiact14\desktop\sigil\src\internal\text.cpp
+	"internal/text.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	"libdrawtext/drawtext.h"
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<cstdio>
+
+1458596273 c:\users\archiact14\desktop\sigil\src\internal\text.h
+	<glm/glm.hpp>
+
+1458596526 c:\users\archiact14\desktop\sigil\src\libdrawtext\drawtext.h
+	<stdio.h>
+	<stdlib.h>
+
+1458595776 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\draw.c
+	<stdio.h>
+	<stdarg.h>
+	<malloc.h>
+	<alloca.h>
+	"drawtext.h"
+	"drawtext_impl.h"
+
+1458596526 c:\users\archiact14\desktop\sigil\src\libdrawtext\drawtext_impl.h
+
+1458596526 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\drawgl.c
+	<stdarg.h>
+	<math.h>
+	<ctype.h>
+	<float.h>
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<malloc.h>
+	<OpenGLES/ES2/gl.h>
+	<GL/glew.h>
+	"drawtext.h"
+	"drawtext_impl.h"
+
+1458596525 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\font.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<limits.h>
+	<ctype.h>
+	<float.h>
+	<errno.h>
+	<ft2/ft2build.h>
+	"drawtext.h"
+	"drawtext_impl.h"
+
+1457473229 c:\users\archiact14\desktop\sigil\src\ft2\ft2build.h
+	<config/ftheader.h>
+
+1457473231 c:\users\archiact14\desktop\sigil\src\ft2\config\ftheader.h
+
+1458596526 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\utf8.c
+	"drawtext.h"
+
+1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\matrix_transform.inl
 	"../geometric.hpp"
 	"../trigonometric.hpp"
 	"../matrix.hpp"

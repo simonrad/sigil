@@ -15,14 +15,14 @@ static GLuint sliSpriteVBOs[2] = {0, 0};
 void sliSpriteInit()
 {
 	GLfloat vertices[] = {-0.5, 0.5,
+						  0.5, 0.5,
 						  -0.5, -0.5,
-						  0.5, -0.5,
-						  0.5, 0.5};
+						  0.5, -0.5};
 
 	GLfloat texCoords[] = {0.0, 1.0,
+						   1.0, 1.0,
 						   0.0, 0.0,
-						   1.0, 0.0,
-						   1.0, 1.0};
+						   1.0, 0.0};
 
 	// initialize our state object
 	glGenVertexArrays(1, &sliSpriteVAO);

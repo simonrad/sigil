@@ -32,6 +32,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="src" />
+			<Add directory="src/ft2" />
 		</Compiler>
 		<Linker>
 			<Add library="lib\libfreetype.dll.a" />
@@ -57,8 +58,21 @@
 		<Unit filename="src/internal/shaders.h" />
 		<Unit filename="src/internal/sprite.cpp" />
 		<Unit filename="src/internal/sprite.h" />
+		<Unit filename="src/internal/text.cpp" />
+		<Unit filename="src/internal/text.h" />
 		<Unit filename="src/internal/triangle.cpp" />
 		<Unit filename="src/internal/triangle.h" />
+		<Unit filename="src/libdrawtext/drawgl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libdrawtext/drawtext.h" />
+		<Unit filename="src/libdrawtext/drawtext_impl.h" />
+		<Unit filename="src/libdrawtext/font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libdrawtext/utf8.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/sl.cpp" />
 		<Unit filename="src/sl.h" />

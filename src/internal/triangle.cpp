@@ -14,9 +14,9 @@ static GLuint sliTriangleVBOs[1] = {0};
 
 void sliTriangleInit()
 {
-	GLfloat vertices[] = {0.0, 0.5, 0.0,
-						  -0.5, -0.5, 0.0,
-						  0.5, -0.5, 0.0};
+	GLfloat vertices[] = {0.0, 0.5,
+						  -0.5, -0.5,
+						  0.5, -0.5};
 
 	// initialize our state object
 	glGenVertexArrays(1, &sliTriangleVAO);
@@ -25,8 +25,8 @@ void sliTriangleInit()
 
 	// configure vertex data
 	glBindBuffer(GL_ARRAY_BUFFER, sliTriangleVBOs[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 9, vertices, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6, vertices, GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	glEnableVertexAttribArray(0);
 }
 

@@ -7,6 +7,7 @@
 #include "internal/point.h"
 #include "internal/line.h"
 #include "internal/sprite.h"
+#include "internal/text.h"
 
 #include "assets/assetmanager.h"
 
@@ -145,6 +146,7 @@ void slRender()
 	// render any leftover points or lines
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 
 	// read any input events, show the back buffer, and clear the (previous) front buffer
 	glfwPollEvents();
@@ -211,6 +213,7 @@ void slTriangleFill(double x, double y, double width, double height)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliTriangleFill(modelview, slForeColor);
 }
 
@@ -221,6 +224,7 @@ void slTriangleOutline(double x, double y, double width, double height)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliTriangleOutline(modelview, slForeColor);
 }
 
@@ -231,6 +235,7 @@ void slRectangleFill(double x, double y, double width, double height)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliRectangleFill(modelview, slForeColor);
 }
 
@@ -241,6 +246,7 @@ void slRectangleOutline(double x, double y, double width, double height)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliRectangleOutline(modelview, slForeColor);
 }
 
@@ -250,6 +256,7 @@ void slCircleFill(double x, double y, double radius, int numVertices)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliCircleFill(modelview, slForeColor, radius, numVertices);
 }
 
@@ -259,6 +266,7 @@ void slCircleOutline(double x, double y, double radius, int numVertices)
 
 	sliPointsFlush();
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliCircleOutline(modelview, slForeColor, radius, numVertices);
 }
 
@@ -267,6 +275,7 @@ void slPoint(double x, double y)
 	mat4 modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
 
 	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliPoint(modelview, slForeColor);
 }
 
@@ -275,21 +284,68 @@ void slLine(double x1, double y1, double x2, double y2)
 	mat4 modelview1 = translate(*slCurrentMatrix, vec3(x1, y1, 0.0));
 	mat4 modelview2 = translate(*slCurrentMatrix, vec3(x2, y2, 0.0));
 
+	sliPointsFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
 	sliLine(slForeColor, modelview1[3][0], modelview1[3][1], modelview2[3][0], modelview2[3][1]);
 }
 
 void slSprite(char *textureFilename, double x, double y, double width, double height)
 {
-	slSprite(textureFilename, x, y, width, height, 1.0, 1.0);
+	slSprite(textureFilename, x, y, width, height, 1.0, 1.0, 0.0, 0.0);
 }
 
-void slSprite(char *textureFilename, double x, double y, double width, double height, double horizontalTiling, double verticalTiling)
+void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY)
+{
+	slSprite(textureFilename, x, y, width, height, tilingX, tilingY, 0.0, 0.0);
+}
+
+void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY)
+{
+	mat4 modelview;
+	vec2 tiling = vec2(tilingX, tilingY);
+	vec2 scroll = vec2(scrollX, scrollY);
+
+	modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
+	modelview = scale(modelview, vec3(width, height, 1.0));
+
+	sliPointsFlush();
+	sliLinesFlush();
+	sliTextFlush(*slCurrentMatrix, slForeColor);
+	sliSprite(modelview, slForeColor, AssetManager::getTexture(textureFilename), tiling, scroll);
+}
+
+void slTextAlign(int fontAlign)
+{
+
+}
+
+double slTextWidth(const char *text)
+{
+	return sliTextWidth(text);
+}
+
+double slTextHeight(const char *text)
+{
+	return sliTextHeight(text);
+}
+
+void slText(double x, double y, const char *text)
 {
 	mat4 modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
-	vec2 tiling = vec2(horizontalTiling, verticalTiling);
-	vec2 scroll = vec2(0.0, 0.0);
 
-	sliSprite(modelview, slForeColor, AssetManager::getTexture(textureFilename), tiling, scroll);
+	sliPointsFlush();
+	sliLinesFlush();
+	sliText(modelview, slForeColor, text);
+}
+
+void slFont(const char *fontFilename)
+{
+	sliFont(fontFilename);
+}
+
+void slFontSize(int fontSize)
+{
+	sliFontSize(fontSize);
 }
 
 // private functions
@@ -303,6 +359,7 @@ void slInitResources()
 	sliPointInit();
 	sliLineInit();
 	sliSpriteInit();
+	sliTextInit();
 }
 
 void slKillResources()

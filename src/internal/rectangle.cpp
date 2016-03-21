@@ -14,10 +14,10 @@ static GLuint sliRectangleVBOs[1] = {0};
 
 void sliRectangleInit()
 {
-	GLfloat vertices[] = {-0.5, 0.5, 0.0,
-						  -0.5, -0.5, 0.0,
-						  0.5, -0.5, 0.0,
-						  0.5, 0.5, 0.0};
+	GLfloat vertices[] = {-0.5, 0.5,
+						  0.5, 0.5,
+						  -0.5, -0.5,
+						  0.5, -0.5};
 
 	// initialize our state object
 	glGenVertexArrays(1, &sliRectangleVAO);
@@ -26,8 +26,8 @@ void sliRectangleInit()
 
 	// configure vertex data
 	glBindBuffer(GL_ARRAY_BUFFER, sliRectangleVBOs[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 12, vertices, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 8, vertices, GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	glEnableVertexAttribArray(0);
 }
 
@@ -57,5 +57,5 @@ void sliRectangleFill(mat4 &modelview, vec4 &color)
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliRectangleVAO);
-	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }

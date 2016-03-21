@@ -18,7 +18,7 @@ static void APIENTRY openglCallbackFunction(GLenum source,
                                             const GLchar* message,
                                             const void* userParam){
 
-    cout << "---------------------OPENGL ERROR DETECTED------------" << endl;
+    cout << "---------------------OPENGL MESSAGE DETECTED------------" << endl;
     cout << "message: "<< message << endl;
     cout << "type: ";
     switch (type)
