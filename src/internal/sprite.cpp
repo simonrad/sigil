@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "internal/sprite.h"
 #include "internal/shaders.h"
 
@@ -60,3 +61,5 @@ void sliSprite(mat4 &modelview, vec4 &color, GLuint texture, vec2 &tiling, vec2 
 	glBindVertexArray(sliSpriteVAO);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }
+=======
+>>>>>>> 4a968528c09f6a816265cfb5ba447ffd1ac8dc2a

@@ -54,11 +54,14 @@ int main(int args, char *argv[])
 			slSetForeColor(0.0, 0.0, 1.0, 1.0);
 			slLine(400, 400, 450, 400);
 
+<<<<<<< HEAD
 			slSprite("png/planet-icon.png", 200, 200, 100, 100);
 
 			slText(200, 400, "hello world!");
 
 
+=======
+>>>>>>> 4a968528c09f6a816265cfb5ba447ffd1ac8dc2a
 		//slPop();
 
 		slRender();

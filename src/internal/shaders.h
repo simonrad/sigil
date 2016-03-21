@@ -9,4 +9,3 @@ extern Shader *sliPointShader;
 extern Shader *sliTextureShader;
 
 void sliShadersInit(glm::mat4 &projection);
-void sliShadersDestroy();
