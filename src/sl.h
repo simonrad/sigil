@@ -54,9 +54,9 @@ void slPoint(double x, double y);
 
 void slLine(double x1, double y1, double x2, double y2);
 
-void slSprite(char *textureFilename, double x, double y, double width, double height);
-void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY);
-void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY);
+void slSprite(const char *textureFilename, double x, double y, double width, double height);
+void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY);
+void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY);
 
 // text commands
 
@@ -64,5 +64,4 @@ void slTextAlign(int fontAlign);
 double slTextWidth(const char *text);
 double slTextHeight(const char *text);
 void slText(double x, double y, const char *text);
-void slFont(const char *fontFilename);
-void slFontSize(int fontSize);
+void slFont(const char *fontFilename, int fontSize);

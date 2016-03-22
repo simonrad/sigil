@@ -289,17 +289,17 @@ void slLine(double x1, double y1, double x2, double y2)
 	sliLine(slForeColor, modelview1[3][0], modelview1[3][1], modelview2[3][0], modelview2[3][1]);
 }
 
-void slSprite(char *textureFilename, double x, double y, double width, double height)
+void slSprite(const char *textureFilename, double x, double y, double width, double height)
 {
 	slSprite(textureFilename, x, y, width, height, 1.0, 1.0, 0.0, 0.0);
 }
 
-void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY)
+void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY)
 {
 	slSprite(textureFilename, x, y, width, height, tilingX, tilingY, 0.0, 0.0);
 }
 
-void slSprite(char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY)
+void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY)
 {
 	mat4 modelview;
 	vec2 tiling = vec2(tilingX, tilingY);
@@ -338,14 +338,9 @@ void slText(double x, double y, const char *text)
 	sliText(modelview, slForeColor, text);
 }
 
-void slFont(const char *fontFilename)
+void slFont(const char *fontFilename, int fontSize)
 {
-	sliFont(fontFilename);
-}
-
-void slFontSize(int fontSize)
-{
-	sliFontSize(fontSize);
+	sliFont(fontFilename, fontSize);
 }
 
 // private functions

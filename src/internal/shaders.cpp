@@ -72,9 +72,35 @@ static const char *sliTextureFragmentShaderCode =
 "f_Color = texture(u_Texture, (v_TexCoord * u_Tiling) + u_Scroll) * u_Color;"
 "}";
 
+static const char *sliTextVertexShaderCode =
+"#version 150 \n"
+"uniform mat4 u_Projection;"
+"uniform mat4 u_Modelview;"
+"in vec2 a_Vertex;"
+"in vec2 a_TexCoord;"
+"out vec2 v_TexCoord;"
+"void main()"
+"{"
+"v_TexCoord = a_TexCoord;"
+"gl_Position = u_Projection * u_Modelview * vec4(a_Vertex, 0.0, 1.0);"
+"}";
+
+static const char *sliTextFragmentShaderCode =
+"#version 150 \n"
+"uniform sampler2D u_Texture;"
+"uniform vec4 u_Color;"
+"in vec2 v_TexCoord;"
+"out vec4 f_Color;"
+"void main()"
+"{"
+"float luminance = texture(u_Texture, v_TexCoord).r;"
+"f_Color = u_Color * vec4(luminance);"
+"}";
+
 Shader *sliBasicShader;
 Shader *sliPointShader;
 Shader *sliTextureShader;
+Shader *sliTextShader;
 
 void sliShadersInit(mat4 &projection)
 {
@@ -98,4 +124,12 @@ void sliShadersInit(mat4 &projection)
 	sliTextureShader -> bind();
 	sliTextureShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
 	sliTextureShader -> uniform1i("u_Texture", 0);
+
+	sliTextShader = new Shader(sliTextVertexShaderCode, sliTextFragmentShaderCode);
+	sliTextShader -> bindAttrib("a_Vertex", 0);
+	sliTextShader -> bindAttrib("a_TexCoord", 1);
+	sliTextShader -> link();
+	sliTextShader -> bind();
+	sliTextShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
+	sliTextShader -> uniform1i("u_Texture", 0);
 }

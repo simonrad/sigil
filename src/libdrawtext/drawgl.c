@@ -57,8 +57,6 @@ static void add_glyph(struct glyph *g, float x, float y);
 //512
 static struct quad *qbuf;
 static int num_quads;
-static int vattr = -1;
-static int tattr = -1;
 static unsigned int font_tex;
 static int buf_mode = DTX_NBF;
 static struct dtx_box prepared_box;
@@ -105,12 +103,6 @@ static void cleanup(void)
 	free(qbuf);
 }
 
-void dtx_vertex_attribs(int vert_attr, int tex_attr)
-{
-	vattr = vert_attr;
-	tattr = tex_attr;
-}
-
 void dtx_update_texture_interpolation()
 {
 	if(dtx_interpolation)
@@ -132,12 +124,11 @@ static void set_glyphmap_texture(struct dtx_glyphmap *gmap)
 	{
 		// generate and bind our texture
 		glGenTextures(1, &gmap->tex);
-		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, gmap->tex);
 
 		// specify any mipmapping levels
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 4);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 4);
 
 		// don't tile the texture
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
@@ -380,12 +371,8 @@ void dtx_render()
 	if(num_quads)
 	{
 		// enable texturing and set the texture we want to use that contains our text portions
-		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, font_tex);
 		dtx_update_texture_interpolation();
-
-		// disable depth writes to prevent occlusion
-		glDepthMask(0);
 
 		// activate our vertex array object to bring in attribute states
 		glBindVertexArray(vao);
@@ -396,9 +383,6 @@ void dtx_render()
 
 		// render the text itself
 		glDrawArrays(GL_TRIANGLES, 0, num_quads * 6);
-
-		// depth writes are usually enabled, so turn them on when we're done
-		glDepthMask(1);
 	}
 }
 

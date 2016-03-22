@@ -58,5 +58,6 @@ void sliSprite(mat4 &modelview, vec4 &color, GLuint texture, vec2 &tiling, vec2 
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliSpriteVAO);
+	glBindTexture(GL_TEXTURE_2D, texture);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }

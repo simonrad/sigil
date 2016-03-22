@@ -2083,7 +2083,7 @@
 1458592067 c:\users\archiact14\desktop\sigil\src\internal\circle.h
 	<glm/glm.hpp>
 
-1458592067 c:\users\archiact14\desktop\sigil\src\internal\shaders.h
+1458690594 c:\users\archiact14\desktop\sigil\src\internal\shaders.h
 	<glm/glm.hpp>
 
 1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\type_ptr.hpp
@@ -2149,13 +2149,13 @@
 1458592067 c:\users\archiact14\desktop\sigil\src\internal\rectangle.h
 	<glm/glm.hpp>
 
-1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\shaders.cpp
+1458690611 source:c:\users\archiact14\desktop\sigil\src\internal\shaders.cpp
 	"internal/shaders.h"
 	"assets/shader.h"
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458592067 source:c:\users\archiact14\desktop\sigil\src\internal\sprite.cpp
+1458689356 source:c:\users\archiact14\desktop\sigil\src\internal\sprite.cpp
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -2163,7 +2163,7 @@
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458592067 c:\users\archiact14\desktop\sigil\src\internal\sprite.h
+1458666314 c:\users\archiact14\desktop\sigil\src\internal\sprite.h
 	<gl/glew.h>
 	<glm/glm.hpp>
 
@@ -2178,12 +2178,12 @@
 1458592067 c:\users\archiact14\desktop\sigil\src\internal\triangle.h
 	<glm/glm.hpp>
 
-1458596137 source:c:\users\archiact14\desktop\sigil\src\main.cpp
+1458690723 source:c:\users\archiact14\desktop\sigil\src\main.cpp
 	"sl.h"
 
-1458596213 c:\users\archiact14\desktop\sigil\src\sl.h
+1458690756 c:\users\archiact14\desktop\sigil\src\sl.h
 
-1458596252 source:c:\users\archiact14\desktop\sigil\src\sl.cpp
+1458689807 source:c:\users\archiact14\desktop\sigil\src\sl.cpp
 	"sl.h"
 	"internal/shaders.h"
 	"internal/triangle.h"
@@ -2345,7 +2345,7 @@
 1445273396 c:\users\archiact14\desktop\sigil\src\glm\gtc\type_ptr.inl
 	<cstring>
 
-1458596968 source:c:\users\archiact14\desktop\sigil\src\internal\text.cpp
+1458690683 source:c:\users\archiact14\desktop\sigil\src\internal\text.cpp
 	"internal/text.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -2354,7 +2354,7 @@
 	<glm/gtc/type_ptr.hpp>
 	<cstdio>
 
-1458596273 c:\users\archiact14\desktop\sigil\src\internal\text.h
+1458689678 c:\users\archiact14\desktop\sigil\src\internal\text.h
 	<glm/glm.hpp>
 
 1458596526 c:\users\archiact14\desktop\sigil\src\libdrawtext\drawtext.h
@@ -2371,7 +2371,7 @@
 
 1458596526 c:\users\archiact14\desktop\sigil\src\libdrawtext\drawtext_impl.h
 
-1458596526 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\drawgl.c
+1458690300 source:c:\users\archiact14\desktop\sigil\src\libdrawtext\drawgl.c
 	<stdarg.h>
 	<math.h>
 	<ctype.h>

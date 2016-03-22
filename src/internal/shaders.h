@@ -7,5 +7,6 @@ class Shader;
 extern Shader *sliBasicShader;
 extern Shader *sliPointShader;
 extern Shader *sliTextureShader;
+extern Shader *sliTextShader;
 
 void sliShadersInit(glm::mat4 &projection);
