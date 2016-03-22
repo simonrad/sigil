@@ -43,6 +43,8 @@ void sliText(mat4 &modelview, vec4 &color, const char *text)
 	sliTextureShader -> bind();
 	sliTextureShader -> uniformMatrix4fv("u_Modelview", 1, value_ptr(modelview));
 	sliTextureShader -> uniformVec4("u_Color", color);
+	sliTextureShader -> uniformVec2("u_Tiling", vec2(1.0));
+	sliTextureShader -> uniformVec2("u_Scroll", vec2(0.0));
 
 	// queue the incoming text; this may result in a render if the buffer becomes full (which is why we activate our shader)
 	dtx_string(text);
@@ -54,6 +56,8 @@ void sliTextFlush(mat4 &modelview, vec4 &color)
 	sliTextureShader -> bind();
 	sliTextureShader -> uniformMatrix4fv("u_Modelview", 1, value_ptr(modelview));
 	sliTextureShader -> uniformVec4("u_Color", color);
+	sliTextureShader -> uniformVec2("u_Tiling", vec2(1.0));
+	sliTextureShader -> uniformVec2("u_Scroll", vec2(0.0));
 
 	// render the buffered text
 	dtx_flush();

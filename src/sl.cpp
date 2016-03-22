@@ -6,13 +6,10 @@
 #include "internal/circle.h"
 #include "internal/point.h"
 #include "internal/line.h"
-<<<<<<< HEAD
 #include "internal/sprite.h"
 #include "internal/text.h"
 
 #include "assets/assetmanager.h"
-=======
->>>>>>> 4a968528c09f6a816265cfb5ba447ffd1ac8dc2a
 
 #include "util/gldebugging.h"
 
@@ -292,7 +289,6 @@ void slLine(double x1, double y1, double x2, double y2)
 	sliLine(slForeColor, modelview1[3][0], modelview1[3][1], modelview2[3][0], modelview2[3][1]);
 }
 
-<<<<<<< HEAD
 void slSprite(char *textureFilename, double x, double y, double width, double height)
 {
 	slSprite(textureFilename, x, y, width, height, 1.0, 1.0, 0.0, 0.0);
@@ -352,8 +348,6 @@ void slFontSize(int fontSize)
 	sliFontSize(fontSize);
 }
 
-=======
->>>>>>> 4a968528c09f6a816265cfb5ba447ffd1ac8dc2a
 // private functions
 
 void slInitResources()
@@ -364,11 +358,8 @@ void slInitResources()
 	sliCircleInit();
 	sliPointInit();
 	sliLineInit();
-<<<<<<< HEAD
 	sliSpriteInit();
 	sliTextInit();
-=======
->>>>>>> 4a968528c09f6a816265cfb5ba447ffd1ac8dc2a
 }
 
 void slKillResources()

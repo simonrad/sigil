@@ -1131,7 +1131,7 @@
 	<windows.h>
 	<winbase.h>
 
-1457760952 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\assets\assetmanager.h
+1458633841 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\assets\assetmanager.h
 	<gl/glew.h>
 	<map>
 	<string>
@@ -1552,7 +1552,7 @@
 	<cstdlib>
 	<iostream>
 
-1457831381 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\util\gldebugging.cpp
+1458632472 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\util\gldebugging.cpp
 	"util/gldebugging.h"
 	<gl/glew.h>
 	<assert.h>
@@ -1572,7 +1572,7 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\circle.h
 	<glm/glm.hpp>
 
-1458198585 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.h
+1458632915 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.h
 	<glm/glm.hpp>
 
 1457760947 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\glm\gtc\type_ptr.hpp
@@ -1639,7 +1639,7 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\point.h
 	<glm/glm.hpp>
 
-1458203939 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
+1458632471 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.cpp
 	"internal/rectangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1650,13 +1650,13 @@
 1458029416 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\rectangle.h
 	<glm/glm.hpp>
 
-1458204022 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
+1458633759 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\shaders.cpp
 	"internal/shaders.h"
 	"assets/shader.h"
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458203898 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
+1458632657 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.cpp
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1664,11 +1664,11 @@
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
 
-1458199690 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.h
+1458633209 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\sprite.h
 	<gl/glew.h>
 	<glm/glm.hpp>
 
-1458203981 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
+1458632471 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.cpp
 	"internal/triangle.h"
 	"internal/shaders.h"
 	"assets/shader.h"
@@ -1679,12 +1679,12 @@
 1458029417 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.h
 	<glm/glm.hpp>
 
-1458203820 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
+1458632604 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
 	"sl.h"
 
-1458200243 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.h
+1458632994 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.h
 
-1458203810 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
+1458632595 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.cpp
 	"sl.h"
 	"internal/shaders.h"
 	"internal/triangle.h"
@@ -1693,6 +1693,7 @@
 	"internal/point.h"
 	"internal/line.h"
 	"internal/sprite.h"
+	"internal/text.h"
 	"assets/assetmanager.h"
 	"util/gldebugging.h"
 	<gl/glew.h>
@@ -2409,4 +2410,57 @@
 	"../geometric.hpp"
 	"../trigonometric.hpp"
 	"../matrix.hpp"
+
+1458633886 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\text.cpp
+	"internal/text.h"
+	"internal/shaders.h"
+	"assets/shader.h"
+	"libdrawtext/drawtext.h"
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<cstdio>
+
+1458632471 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\text.h
+	<glm/glm.hpp>
+
+1458632472 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\libdrawtext\drawtext.h
+	<stdio.h>
+	<stdlib.h>
+
+1458632471 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\libdrawtext\drawgl.c
+	<stdarg.h>
+	<math.h>
+	<ctype.h>
+	<float.h>
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	<malloc.h>
+	<OpenGLES/ES2/gl.h>
+	<GL/glew.h>
+	"drawtext.h"
+	"drawtext_impl.h"
+
+1458632472 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\libdrawtext\drawtext_impl.h
+
+1458632472 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\libdrawtext\font.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<limits.h>
+	<ctype.h>
+	<float.h>
+	<errno.h>
+	<ft2/ft2build.h>
+	"drawtext.h"
+	"drawtext_impl.h"
+
+1458632470 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\ft2\ft2build.h
+	<config/ftheader.h>
+
+1458632470 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\ft2\config\ftheader.h
+
+1458632472 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\libdrawtext\utf8.c
+	"drawtext.h"
 
