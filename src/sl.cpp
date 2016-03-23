@@ -22,21 +22,24 @@
 using namespace glm;
 
 #include <cstdlib>
-#include <iostream>
-using namespace std;
+#include <cstdio>
 
 #define SL_MATRIX_STACK_SIZE 32
 
 // private vars
 
 static GLFWwindow *slProgramWindow = NULL;
-
-static vec4 slForeColor = vec4(1.0, 1.0, 1.0, 1.0);
+static int slWindowWidth = 0;
+static int slWindowHeight = 0;
 
 static mat4 slMatrixStack[SL_MATRIX_STACK_SIZE];
 static mat4 *slCurrentMatrix = &slMatrixStack[0];
 
 static mat4 slProjectionMatrix;
+
+static vec4 slForeColor = vec4(1.0, 1.0, 1.0, 1.0);
+
+static int slTextAlign = SL_ALIGN_LEFT;
 
 // private function prototypes
 
@@ -78,7 +81,7 @@ void slWindow(int width, int height, const char *title)
 		error = glewInit();
 		if(error != GLEW_OK)
 		{
-			cerr << "slWindow() could not initialize GLEW: " << glewGetErrorString(error) << endl;
+			fprintf(stderr, "slWindow() could not initialize GLEW: %s\n", glewGetErrorString(error));
 			exit(1);
 		}
 
@@ -97,6 +100,8 @@ void slWindow(int width, int height, const char *title)
 
 		// camera view settings
 		slProjectionMatrix = ortho(0.0f, (float)width, 0.0f, (float)height);
+		slWindowWidth = width;
+		slWindowHeight = height;
 
 		// default colors
 		slSetBackColor(0.0, 0.0, 0.0);
@@ -110,7 +115,7 @@ void slWindow(int width, int height, const char *title)
 	}
 	else
 	{
-		cerr << "slWindow() cannot be called because a window already exists" << endl;
+		fprintf(stderr, "slWindow() cannot be called because a window already exists\n");
 		exit(1);
 	}
 }
@@ -127,7 +132,7 @@ void slClose()
 	}
 	else
 	{
-		cerr << "slClose() cannot be called because no window exists" << endl;
+		fprintf(stderr, "slClose() cannot be called because no window exists\n");
 		exit(1);
 	}
 }
@@ -137,6 +142,19 @@ void slClose()
 bool slGetKey(int key)
 {
 	return glfwGetKey(slProgramWindow, key) == GLFW_PRESS;
+}
+
+bool slGetMouseButton(int button)
+{
+	return glfwGetMouseButton(slProgramWindow, button) == GLFW_PRESS;
+}
+
+void slGetMousePos(int &posX, int &posY)
+{
+	double x, y;
+	glfwGetCursorPos(slProgramWindow, &x, &y);
+	posX = x;
+	posY = slWindowHeight - y;
 }
 
 // rendering/clearing commands
@@ -154,7 +172,7 @@ void slRender()
 	glClear(GL_COLOR_BUFFER_BIT);
 }
 
-// drawing and colour control
+// colour control
 
 void slSetBackColor(double red, double green, double blue)
 {
@@ -314,33 +332,52 @@ void slSprite(const char *textureFilename, double x, double y, double width, dou
 	sliSprite(modelview, slForeColor, AssetManager::getTexture(textureFilename), tiling, scroll);
 }
 
-void slTextAlign(int fontAlign)
-{
+// text commands
 
+void slSetTextAlign(int fontAlign)
+{
+	if(fontAlign >= 0 &&fontAlign <= 2)
+	{
+		slTextAlign = fontAlign;
+	}
+	else
+	{
+		fprintf(stderr, "slSetTextAlign() only accepts SL_ALIGN_CENTER, SL_ALIGN_RIGHT, or SL_ALIGN_LEFT\n");
+		exit(1);
+	}
 }
 
-double slTextWidth(const char *text)
+double slGetTextWidth(const char *text)
 {
 	return sliTextWidth(text);
 }
 
-double slTextHeight(const char *text)
+double slGetTextHeight(const char *text)
 {
 	return sliTextHeight(text);
+}
+
+void slSetFont(const char *fontFilename, int fontSize)
+{
+	sliFont(fontFilename, fontSize);
 }
 
 void slText(double x, double y, const char *text)
 {
 	mat4 modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
 
+	if(slTextAlign == SL_ALIGN_CENTER)
+	{
+		modelview = translate(modelview, vec3(-slGetTextWidth(text) / 2.0, 0.0, 0.0));
+	}
+	else if(slTextAlign == SL_ALIGN_RIGHT)
+	{
+		modelview = translate(modelview, vec3(-slGetTextWidth(text), 0.0, 0.0));
+	}
+
 	sliPointsFlush();
 	sliLinesFlush();
 	sliText(modelview, slForeColor, text);
-}
-
-void slFont(const char *fontFilename, int fontSize)
-{
-	sliFont(fontFilename, fontSize);
 }
 
 // private functions

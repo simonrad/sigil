@@ -47,6 +47,7 @@ GLuint AssetManager::getTexture(std::string name, bool mipmapping, bool wrap, bo
 						memcpy(&data[i * width * 4], &data[(height - i - 1) * width * 4], (width * 4));	// copy other side of array into this row
 						memcpy(&data[(height - i - 1) * width * 4], temp, (width * 4));					// copy temp into other side of array
 					}
+					delete[] temp;
 				}
 
 				// we can generate a texture object since we had a successful load
@@ -82,7 +83,6 @@ GLuint AssetManager::getTexture(std::string name, bool mipmapping, bool wrap, bo
 
 				// release the memory used to perform the loading
 				SOIL_free_image_data(data);
-				delete[] temp;
 
 				// store the resulting texture and stop the load timer
 				textures[name] = result;
