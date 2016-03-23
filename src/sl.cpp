@@ -34,6 +34,7 @@ static int slWindowHeight = 0;
 
 static mat4 slMatrixStack[SL_MATRIX_STACK_SIZE];
 static mat4 *slCurrentMatrix = &slMatrixStack[0];
+static int slStackSize = 0;
 
 static mat4 slProjectionMatrix;
 
@@ -198,13 +199,31 @@ void slSetAdditiveBlend(bool additiveBlend)
 
 void slPush()
 {
-	slCurrentMatrix ++;
-	*slCurrentMatrix = *(slCurrentMatrix - 1);
+	if(slStackSize < SL_MATRIX_STACK_SIZE)
+	{
+		slStackSize ++;
+		slCurrentMatrix ++;
+		*slCurrentMatrix = *(slCurrentMatrix - 1);
+	}
+	else
+	{
+		fprintf(stderr, "slPush() exceeded maximum transform stack size of %d\n", SL_MATRIX_STACK_SIZE);
+		exit(1);
+	}
 }
 
 void slPop()
 {
-	slCurrentMatrix --;
+	if(slStackSize > 0)
+	{
+		slStackSize --;
+		slCurrentMatrix --;
+	}
+	else
+	{
+		fprintf(stderr, "slPop() cannot pop an empty transform stack\n");
+		exit(1);
+	}
 }
 
 void slTranslate(double x, double y)
