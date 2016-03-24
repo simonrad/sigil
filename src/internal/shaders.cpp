@@ -133,3 +133,8 @@ void sliShadersInit(mat4 &projection)
 	sliTextShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
 	sliTextShader -> uniform1i("u_Texture", 0);
 }
+
+void sliShadersDestroy()
+{
+
+}

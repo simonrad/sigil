@@ -19,6 +19,11 @@ void sliTextInit()
 	sliFont("ttf/arial.ttf", 12);
 }
 
+void sliTextDestroy()
+{
+
+}
+
 void sliTextAlign(int fontAlign)
 {
 

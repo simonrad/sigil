@@ -3,6 +3,8 @@
 #include <glm/glm.hpp>
 
 void sliTextInit();
+void sliTextDestroy();
+
 void sliTextAlign(int fontAlign);
 double sliTextWidth(const char *text);
 double sliTextHeight(const char *text);

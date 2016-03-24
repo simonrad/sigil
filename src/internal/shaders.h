@@ -10,3 +10,4 @@ extern Shader *sliTextureShader;
 extern Shader *sliTextShader;
 
 void sliShadersInit(glm::mat4 &projection);
+void sliShadersDestroy();

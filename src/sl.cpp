@@ -415,5 +415,12 @@ void slInitResources()
 
 void slKillResources()
 {
-
+	sliTextDestroy();
+	sliSpriteDestroy();
+	sliLineDestroy();
+	sliPointDestroy();
+	sliCircleDestroy();
+	sliRectangleDestroy();
+	sliTriangleDestroy();
+	sliShadersDestroy();
 }
