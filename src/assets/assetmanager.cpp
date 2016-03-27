@@ -1,5 +1,4 @@
 #include "assets/assetmanager.h"
-#include "assets/shader.h"
 
 #include <soil/soil.h>
 

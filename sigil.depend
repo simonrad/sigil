@@ -1131,7 +1131,7 @@
 	<windows.h>
 	<winbase.h>
 
-1458633841 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\assets\assetmanager.h
+1459124226 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\assets\assetmanager.h
 	<gl/glew.h>
 	<map>
 	<string>
@@ -1679,7 +1679,7 @@
 1458029417 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\internal\triangle.h
 	<glm/glm.hpp>
 
-1459123480 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
+1459124108 source:c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\main.cpp
 	"sl.h"
 
 1459124044 c:\users\geoff\desktop\drive\development\small opengl projects\sigil\src\sl.h
