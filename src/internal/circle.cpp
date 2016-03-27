@@ -50,12 +50,16 @@ void sliCircleInit()
 
 void sliCircleDestroy()
 {
+	glDeleteBuffers(1, sliCircleOutlineVBOs);
+	glDeleteVertexArrays(1, &sliCircleOutlineVAO);
 
+	glDeleteBuffers(1, sliCircleFillVBOs);
+	glDeleteVertexArrays(1, &sliCircleFillVAO);
 }
 
 void sliCircleOutline(mat4 &modelview, vec4 &color, float radius, int numVertices)
 {
-	GLfloat *vertices;
+	GLfloat vertices[MAX_VERTICES * 3];
 	float theta;
 	float transform;
 	float c, s;
@@ -71,9 +75,6 @@ void sliCircleOutline(mat4 &modelview, vec4 &color, float radius, int numVertice
 	{
 		// assign new vertex count
 		sliNumOutlineVertices = numVertices;
-
-		// allocate space for new circle vertices
-		vertices = new GLfloat[sliNumOutlineVertices * 3];
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (float)sliNumOutlineVertices);
@@ -101,9 +102,6 @@ void sliCircleOutline(mat4 &modelview, vec4 &color, float radius, int numVertice
 		glBindVertexArray(sliCircleOutlineVAO);
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliNumOutlineVertices * 3, vertices);
-
-		// done with vertex data
-		delete[] vertices;
 	}
 
 	// prepare our shader object
