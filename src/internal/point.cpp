@@ -54,8 +54,13 @@ void sliPointInit()
 
 void sliPointDestroy()
 {
+	// free up dynamically-allocated vertex and color data
 	delete[] sliPointVertices;
 	delete[] sliPointColors;
+
+	// free OpenGL objects
+	glDeleteBuffers(2, sliPointVBOs);
+	glDeleteVertexArrays(1, &sliPointVAO);
 }
 
 void sliPoint(mat4 &modelview, vec4 &color)

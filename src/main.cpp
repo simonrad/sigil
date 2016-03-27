@@ -43,7 +43,8 @@ int main(int args, char *argv[])
 				slPoint(0, 0);
 			slPop();
 */
-			slPoint(205, 200);
+			slSetForeColor(1.0, 1.0, 1.0, 1.0);
+			slPoint(15, 200);
 
 			slSetForeColor(1.0, 0.0, 0.0, 1.0);
 			slLine(201, 202, 303, 202);
