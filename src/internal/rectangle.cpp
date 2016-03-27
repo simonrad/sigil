@@ -33,7 +33,7 @@ void sliRectangleInit()
 
 void sliRectangleDestroy()
 {
-	glDeleteBuffers(1, &sliRectangleVBOs);
+	glDeleteBuffers(1, sliRectangleVBOs);
 	glDeleteVertexArrays(1, &sliRectangleVAO);
 }
 

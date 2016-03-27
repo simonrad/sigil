@@ -44,7 +44,8 @@ void sliSpriteInit()
 
 void sliSpriteDestroy()
 {
-
+	glDeleteBuffers(2, sliSpriteVBOs);
+	glDeleteVertexArrays(1, &sliSpriteVAO);
 }
 
 void sliSprite(mat4 &modelview, vec4 &color, GLuint texture, vec2 &tiling, vec2 &scroll)
