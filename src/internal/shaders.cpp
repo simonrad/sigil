@@ -109,6 +109,7 @@ void sliShadersInit(mat4 &projection)
 	sliBasicShader -> link();
 	sliBasicShader -> bind();
 	sliBasicShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
+	sliBasicShader -> finalize();
 
 	sliPointShader = new Shader(sliPointVertexShaderCode, sliPointFragmentShaderCode);
 	sliPointShader -> bindAttrib("a_Vertex", 0);
@@ -116,6 +117,7 @@ void sliShadersInit(mat4 &projection)
 	sliPointShader -> link();
 	sliPointShader -> bind();
 	sliPointShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
+	sliPointShader -> finalize();
 
 	sliTextureShader = new Shader(sliTextureVertexShaderCode, sliTextureFragmentShaderCode);
 	sliTextureShader -> bindAttrib("a_Vertex", 0);
@@ -124,6 +126,7 @@ void sliShadersInit(mat4 &projection)
 	sliTextureShader -> bind();
 	sliTextureShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
 	sliTextureShader -> uniform1i("u_Texture", 0);
+	sliTextureShader -> finalize();
 
 	sliTextShader = new Shader(sliTextVertexShaderCode, sliTextFragmentShaderCode);
 	sliTextShader -> bindAttrib("a_Vertex", 0);
@@ -132,9 +135,13 @@ void sliShadersInit(mat4 &projection)
 	sliTextShader -> bind();
 	sliTextShader -> uniformMatrix4fv("u_Projection", 1, value_ptr(projection));
 	sliTextShader -> uniform1i("u_Texture", 0);
+	sliTextShader -> finalize();
 }
 
 void sliShadersDestroy()
 {
-
+	delete sliBasicShader;
+	delete sliPointShader;
+	delete sliTextureShader;
+	delete sliTextShader;
 }

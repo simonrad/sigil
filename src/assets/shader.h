@@ -40,4 +40,6 @@ public:
 	void uniform4f(const char*, float, float, float, float);
 	void uniformVec4(const char*, glm::vec4);
 	void uniformMatrix4fv(const char*, int, GLfloat*, bool = false);
+
+	void finalize();
 };

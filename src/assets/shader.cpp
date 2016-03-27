@@ -48,10 +48,6 @@ Shader::Shader(const char *vertexCode, const char *fragmentCode)
 
 Shader::~Shader()
 {
-	glDetachShader(program, vertexShader);
-	glDetachShader(program, fragmentShader);
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
     glDeleteProgram(program);
 }
 
@@ -196,4 +192,12 @@ void Shader::printShaderLogInfo(GLuint obj)
 		free(infoLog);
 	}
 
+}
+
+void Shader::finalize()
+{
+	glDetachShader(program, vertexShader);
+	glDetachShader(program, fragmentShader);
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
 }
