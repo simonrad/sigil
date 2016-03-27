@@ -61,11 +61,6 @@ void sliTextFlush(mat4 &modelview, vec4 &color)
 	dtx_flush();
 }
 
-void sliFont(int fontID)
-{
-
-}
-
 void sliFont(const char *fontFilename, int fontSize)
 {
 	sliCurrentFont = dtx_open_font(fontFilename, fontSize);
@@ -82,7 +77,7 @@ void sliFont(const char *fontFilename, int fontSize)
 		exit(1);
 	}
 }
-/*
+
 void sliFontSize(int fontSize)
 {
 	if(fontSize != sliCurrentSize)
@@ -96,4 +91,3 @@ void sliFontSize(int fontSize)
 		}
 	}
 }
-*/

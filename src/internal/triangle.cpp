@@ -32,7 +32,8 @@ void sliTriangleInit()
 
 void sliTriangleDestroy()
 {
-
+	glDeleteBuffers(1, sliTriangleVBOs);
+	glDeleteVertexArrays(1, &sliTriangleVAO);
 }
 
 void sliTriangleOutline(mat4 &modelview, vec4 &color)

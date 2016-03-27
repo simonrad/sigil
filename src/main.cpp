@@ -63,6 +63,7 @@ int main(int args, char *argv[])
 
 			slSetForeColor(1.0, 1.0, 0.0, 1.0);
 			slSetTextAlign(SL_ALIGN_LEFT);
+			slSetFontSize(12);
 			slText(200, 100, "hello world!");
 
 			slSetForeColor(0.0, 1.0, 1.0, 1.0);
@@ -72,6 +73,10 @@ int main(int args, char *argv[])
 			slSetForeColor(1.0, 0.0, 1.0, 1.0);
 			slSetTextAlign(SL_ALIGN_RIGHT);
 			slText(200, 200, "hello world!");
+
+			slSetFontSize(40);
+			slSetTextAlign(SL_ALIGN_LEFT);
+			slText(20, 20, "test font size");
 
 			int x, y;
 			if(slGetMouseButton(SL_MOUSE_BUTTON_LEFT))

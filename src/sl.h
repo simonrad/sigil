@@ -162,4 +162,5 @@ void slSetTextAlign(int fontAlign);
 double slGetTextWidth(const char *text);
 double slGetTextHeight(const char *text);
 void slSetFont(const char *fontFilename, int fontSize);
+void slSetFontSize(int fontSize);
 void slText(double x, double y, const char *text);

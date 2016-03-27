@@ -381,6 +381,11 @@ void slSetFont(const char *fontFilename, int fontSize)
 	sliFont(fontFilename, fontSize);
 }
 
+void slSetFontSize(int fontSize)
+{
+	sliFontSize(fontSize);
+}
+
 void slText(double x, double y, const char *text)
 {
 	mat4 modelview = translate(*slCurrentMatrix, vec3(x, y, 0.0));
