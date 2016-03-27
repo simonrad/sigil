@@ -57,8 +57,13 @@ void sliLineInit()
 
 void sliLineDestroy()
 {
+	// free up dynamically-allocated vertex and color data
 	delete[] sliLineVertices;
 	delete[] sliLineColors;
+
+	// free OpenGL objects
+	glDeleteBuffers(2, sliLineVBOs);
+	glDeleteVertexArrays(1, &sliLineVAO);
 }
 
 void sliLine(glm::vec4 &color, double x1, double y1, double x2, double y2)
