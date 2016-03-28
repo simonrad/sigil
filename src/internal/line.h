@@ -1,9 +1,9 @@
 #pragma once
 
-#include <glm/glm.hpp>
+#include "util/transform.h"
 
 void sliLineInit();
 void sliLineDestroy();
 
-void sliLine(glm::vec4 &color, double x1, double y1, double x2, double y2);
+void sliLine(Vec4 *color, double x1, double y1, double x2, double y2);
 void sliLinesFlush();

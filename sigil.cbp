@@ -42,42 +42,65 @@
 			<Add library="opengl32" />
 			<Add library="gdi32" />
 		</Linker>
-		<Unit filename="src/assets/assetmanager.cpp" />
+		<Unit filename="src/assets/assetmanager.c">
+			<Option compilerVar="CPP" />
+		</Unit>
 		<Unit filename="src/assets/assetmanager.h" />
-		<Unit filename="src/assets/shader.cpp" />
-		<Unit filename="src/assets/shader.h" />
-		<Unit filename="src/internal/circle.cpp" />
+		<Unit filename="src/internal/circle.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/circle.h" />
-		<Unit filename="src/internal/line.cpp" />
+		<Unit filename="src/internal/line.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/line.h" />
-		<Unit filename="src/internal/point.cpp" />
+		<Unit filename="src/internal/point.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/point.h" />
-		<Unit filename="src/internal/rectangle.cpp" />
+		<Unit filename="src/internal/rectangle.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/rectangle.h" />
-		<Unit filename="src/internal/shaders.cpp" />
+		<Unit filename="src/internal/shaders.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/shaders.h" />
-		<Unit filename="src/internal/sprite.cpp" />
+		<Unit filename="src/internal/sprite.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/sprite.h" />
-		<Unit filename="src/internal/text.cpp" />
+		<Unit filename="src/internal/text.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/text.h" />
-		<Unit filename="src/internal/triangle.cpp" />
+		<Unit filename="src/internal/triangle.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/triangle.h" />
-		<Unit filename="src/libdrawtext/drawgl.c">
+		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="src/libdrawtext/drawtext.h" />
-		<Unit filename="src/libdrawtext/drawtext_impl.h" />
-		<Unit filename="src/libdrawtext/font.c">
+		<Unit filename="src/sl.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="src/libdrawtext/utf8.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/main.cpp" />
-		<Unit filename="src/sl.cpp" />
 		<Unit filename="src/sl.h" />
-		<Unit filename="src/util/gldebugging.cpp" />
+		<Unit filename="src/util/gldebugging.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/util/gldebugging.h" />
+		<Unit filename="src/util/images.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util/images.h" />
+		<Unit filename="src/util/shader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util/shader.h" />
+		<Unit filename="src/util/transform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util/transform.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

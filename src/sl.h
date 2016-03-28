@@ -7,11 +7,11 @@ Geoff Nagy
 
 /*
 todo:
-- de-initialization
-- font size change
-- flickering/tearing fix
+- de-initialization of text/fonts
+- de-initialization of textures
+- replace cout with printf
+- make assetmanager C-style
 - delta time integration
-- stack size limit error
 */
 
 // text alignment symbolic constants
@@ -110,10 +110,10 @@ void slClose();
 
 // simple input
 
-bool slGetKey(int key);
+int slGetKey(int key);
 
-bool slGetMouseButton(int button);
-void slGetMousePos(int &posX, int &posY);
+int slGetMouseButton(int button);
+void slGetMousePos(int *posX, int *posY);
 
 // rendering commands
 
@@ -121,46 +121,46 @@ void slRender();
 
 // color control
 
-void slSetBackColor(double red, double green, double blue);
-void slSetForeColor(double red, double green, double blue, double alpha);
+void slSetBackColor(float red, float green, float blue);
+void slSetForeColor(float red, float green, float blue, float alpha);
 
 // blending control
 
-void slAdditiveBlend(bool additiveBlend);
+void slAdditiveBlend(int additiveBlend);
 
 // transformations
 
 void slPush();
 void slPop();
 
-void slTranslate(double x, double y);
-void slRotate(double degrees);
-void slScale(double x, double y);
+void slTranslate(float x, float y);
+void slRotate(float degrees);
+void slScale(float x, float y);
 
 // simple shape commands
 
-void slTriangleFill(double x, double y, double width, double height);
-void slTriangleOutline(double x, double y, double width, double height);
+void slTriangleFill(float x, float y, float width, float height);
+void slTriangleOutline(float x, float y, float width, float height);
 
-void slRectangleFill(double x, double y, double width, double height);
-void slRectangleOutline(double x, double y, double width, double height);
+void slRectangleFill(float x, float y, float width, float height);
+void slRectangleOutline(float x, float y, float width, float height);
 
-void slCircleFill(double x, double y, double radius, int numVertices);
-void slCircleOutline(double x, double y, double radius, int numVertices);
+void slCircleFill(float x, float y, float radius, int numVertices);
+void slCircleOutline(float x, float y, float radius, int numVertices);
 
-void slPoint(double x, double y);
+void slPoint(float x, float y);
 
-void slLine(double x1, double y1, double x2, double y2);
+void slLine(float x1, float y1, float x2, float y2);
 
-void slSprite(const char *textureFilename, double x, double y, double width, double height);
-void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY);
-void slSprite(const char *textureFilename, double x, double y, double width, double height, double tilingX, double tilingY, double scrollX, double scrollY);
+void slSprite(const char *textureFilename, float x, float y, float width, float height);
+void slSpriteTiling(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY);
+void slSpriteTilingScroll(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY, float scrollX, float scrollY);
 
 // text commands
 
 void slSetTextAlign(int fontAlign);
-double slGetTextWidth(const char *text);
-double slGetTextHeight(const char *text);
+float slGetTextWidth(const char *text);
+float slGetTextHeight(const char *text);
 void slSetFont(const char *fontFilename, int fontSize);
 void slSetFontSize(int fontSize);
-void slText(double x, double y, const char *text);
+void slText(float x, float y, const char *text);

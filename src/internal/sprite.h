@@ -1,9 +1,9 @@
 #pragma once
 
-#include <gl/glew.h>
+#include "util/transform.h"
 
-#include <glm/glm.hpp>
+#include <gl/glew.h>
 
 void sliSpriteInit();
 void sliSpriteDestroy();
-void sliSprite(glm::mat4 &modelview, glm::vec4 &color, GLuint texture, glm::vec2 &tiling, glm::vec2 &scroll);
+void sliSprite(Mat4 *modelview, Vec4 *color, GLuint texture, Vec2 *tiling, Vec2 *scroll);

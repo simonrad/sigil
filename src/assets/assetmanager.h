@@ -1,5 +1,6 @@
 #pragma once
 
+/*
 #include <gl/glew.h>
 
 #include <map>
@@ -13,3 +14,4 @@ private:
 public:
 	static GLuint getTexture(std::string name, bool mipmapping = true, bool wrap = true, bool flipVertical = true);
 };
+*/

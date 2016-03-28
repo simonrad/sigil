@@ -1,9 +1,9 @@
 #pragma once
 
-#include <glm/glm.hpp>
+#include "util/transform.h"
 
 void sliCircleInit();
 void sliCircleDestroy();
 
-void sliCircleOutline(glm::mat4 &modelview, glm::vec4 &color, float radius, int numVertices);
-void sliCircleFill(glm::mat4 &modelview, glm::vec4 &color, float radius, int numVertices);
+void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertices);
+void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices);

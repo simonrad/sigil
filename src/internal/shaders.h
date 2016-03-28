@@ -1,13 +1,12 @@
 #pragma once
 
-#include <glm/glm.hpp>
-
-class Shader;
+#include "util/transform.h"
+#include "util/shader.h"
 
 extern Shader *sliBasicShader;
 extern Shader *sliPointShader;
 extern Shader *sliTextureShader;
 extern Shader *sliTextShader;
 
-void sliShadersInit(glm::mat4 &projection);
+void sliShadersInit(Mat4 *projection);
 void sliShadersDestroy();

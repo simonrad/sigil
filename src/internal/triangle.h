@@ -1,9 +1,9 @@
 #pragma once
 
-#include <glm/glm.hpp>
+#include "util/transform.h"
 
 void sliTriangleInit();
 void sliTriangleDestroy();
 
-void sliTriangleOutline(glm::mat4 &modelview, glm::vec4 &color);
-void sliTriangleFill(glm::mat4 &modelview, glm::vec4 &color);
+void sliTriangleOutline(Mat4 *modelview, Vec4 *color);
+void sliTriangleFill(Mat4 *modelview, Vec4 *color);
