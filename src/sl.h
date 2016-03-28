@@ -137,6 +137,10 @@ void slTranslate(float x, float y);
 void slRotate(float degrees);
 void slScale(float x, float y);
 
+// texture loading
+
+int slLoadTexture(const char *filename);
+
 // simple shape commands
 
 void slTriangleFill(float x, float y, float width, float height);
@@ -152,9 +156,9 @@ void slPoint(float x, float y);
 
 void slLine(float x1, float y1, float x2, float y2);
 
-void slSprite(const char *textureFilename, float x, float y, float width, float height);
-void slSpriteTiling(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY);
-void slSpriteTilingScroll(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY, float scrollX, float scrollY);
+void slSetSpriteTiling(float x, float y);
+void slSetSpriteScroll(float x, float y);
+void slSprite(int texture, float x, float y, float width, float height);
 
 // text commands
 

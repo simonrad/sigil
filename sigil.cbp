@@ -42,10 +42,6 @@
 			<Add library="opengl32" />
 			<Add library="gdi32" />
 		</Linker>
-		<Unit filename="src/assets/assetmanager.c">
-			<Option compilerVar="CPP" />
-		</Unit>
-		<Unit filename="src/assets/assetmanager.h" />
 		<Unit filename="src/internal/circle.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -78,6 +74,17 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/internal/triangle.h" />
+		<Unit filename="src/libdrawtext/drawgl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libdrawtext/drawtext.h" />
+		<Unit filename="src/libdrawtext/drawtext_impl.h" />
+		<Unit filename="src/libdrawtext/font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libdrawtext/utf8.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>

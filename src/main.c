@@ -2,6 +2,8 @@
 
 int main(int args, char *argv[])
 {
+	int tex = slLoadTexture("png/planet-icon.png");
+
 	slWindow(500, 500, "SL Window");
 	slSetBackColor(0.0, 0.0, 0.0);
 
@@ -56,7 +58,7 @@ int main(int args, char *argv[])
 			slLine(400, 400, 450, 400);
 
 			slSetForeColor(0.0, 1.0, 1.0, 0.5);
-			slSprite("png/planet-icon.png", 200, 200, 100, 100);
+			slSprite(tex, 200, 200, 100, 100);
 
 			slSetForeColor(0.5, 0.5, 0.5, 0.5);
 			slLine(200, 0, 200, 300);

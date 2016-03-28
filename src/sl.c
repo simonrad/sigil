@@ -9,10 +9,9 @@
 #include "internal/sprite.h"
 #include "internal/text.h"
 
-#include "assets/assetmanager.h"
-
 #include "util/gldebugging.h"
 #include "util/transform.h"
+#include "util/images.h"
 
 #include <gl/glew.h>
 
@@ -37,6 +36,11 @@ static int slStackSize = 0;
 static Mat4 slProjectionMatrix;
 
 static Vec4 slForeColor = {.x = 1.0, .y = 1.0, .z = 1.0, .w = 1.0};
+
+static float slSpriteScrollX = 0.0;
+static float slSpriteScrollY = 0.0;
+static float slSpriteTilingX = 1.0;
+static float slSpriteTilingY = 1.0;
 
 static int slTextAlign = SL_ALIGN_LEFT;
 
@@ -251,6 +255,13 @@ void slScale(float x, float y)
 	*slCurrentMatrix = scale(*slCurrentMatrix, x, y);
 }
 
+// texture loading
+
+int slLoadTexture(const char *filename)
+{
+	return (int)loadOpenGLTexture(filename);
+}
+
 // simple shape commands
 
 void slTriangleFill(float x, float y, float width, float height)
@@ -336,21 +347,23 @@ void slLine(float x1, float y1, float x2, float y2)
 	sliLine(&slForeColor, modelview1.cols[3].x, modelview1.cols[3].y, modelview2.cols[3].x, modelview2.cols[3].y);
 }
 
-void slSprite(const char *textureFilename, float x, float y, float width, float height)
+void slSetSpriteTiling(float x, float y)
 {
-	slSpriteTilingScroll(textureFilename, x, y, width, height, 1.0, 1.0, 0.0, 0.0);
+	slSpriteTilingX = x;
+	slSpriteTilingY = y;
 }
 
-void slSpriteTiling(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY)
+void slSetSpriteScroll(float x, float y)
 {
-	slSpriteTilingScroll(textureFilename, x, y, width, height, tilingX, tilingY, 0.0, 0.0);
+	slSpriteScrollX = x;
+	slSpriteScrollY = y;
 }
 
-void slSpriteTilingScroll(const char *textureFilename, float x, float y, float width, float height, float tilingX, float tilingY, float scrollX, float scrollY)
+void slSprite(int texture, float x, float y, float width, float height)
 {
 	Mat4 modelview;
-	Vec2 tiling = {.x = tilingX, .y = tilingY};
-	Vec2 scroll = {.x = scrollX, .y = scrollY};
+	Vec2 tiling = {.x = slSpriteTilingX, .y = slSpriteTilingY};
+	Vec2 scroll = {.x = slSpriteScrollX, .y = slSpriteScrollY};
 
 	modelview = translate(*slCurrentMatrix, x, y);
 	modelview = scale(modelview, width, height);
@@ -358,7 +371,7 @@ void slSpriteTilingScroll(const char *textureFilename, float x, float y, float w
 	sliPointsFlush();
 	sliLinesFlush();
 	sliTextFlush(slCurrentMatrix, &slForeColor);
-	sliSprite(&modelview, &slForeColor, AssetManager::getTexture(textureFilename), &tiling, &scroll);
+	sliSprite(&modelview, &slForeColor, (GLuint)texture, &tiling, &scroll);
 }
 
 // text commands

@@ -2,10 +2,9 @@
 
 #include <gl/glew.h>
 
+#include <stdio.h>
 #include <assert.h>
 #include <windows.h>
-#include <iostream>
-using namespace std;
 
 // thanks to:
 // https://blog.nobel-joergensen.com/2013/02/17/debugging-opengl-part-2-using-gldebugmessagecallback/
@@ -18,47 +17,47 @@ static void APIENTRY openglCallbackFunction(GLenum source,
                                             const GLchar* message,
                                             const void* userParam){
 
-    cout << "---------------------OPENGL MESSAGE DETECTED------------" << endl;
-    cout << "message: "<< message << endl;
-    cout << "type: ";
+    printf("---------------------OPENGL MESSAGE DETECTED------------\n");
+    printf("message: %s\n", message);
+    printf("type: ");
     switch (type)
     {
     case GL_DEBUG_TYPE_ERROR:
-        cout << "ERROR";
+        printf("ERROR");
         break;
     case GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR:
-        cout << "DEPRECATED_BEHAVIOR";
+        printf("DEPRECATED_BEHAVIOR");
         break;
     case GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR:
-        cout << "UNDEFINED_BEHAVIOR";
+        printf("UNDEFINED_BEHAVIOR");
         break;
     case GL_DEBUG_TYPE_PORTABILITY:
-        cout << "PORTABILITY";
+        printf("PORTABILITY");
         break;
     case GL_DEBUG_TYPE_PERFORMANCE:
-        cout << "PERFORMANCE";
+        printf("PERFORMANCE");
         break;
     case GL_DEBUG_TYPE_OTHER:
-        cout << "OTHER";
+        printf("OTHER");
         break;
     }
-    cout << endl;
+    printf("\n");
 
-    cout << "id: " << id << endl;
-    cout << "severity: ";
+    printf("id: %d\n", (int)id);
+    printf("severity: ");
     switch (severity)
     {
     case GL_DEBUG_SEVERITY_LOW:
-        cout << "LOW";
+        printf("LOW");
         break;
     case GL_DEBUG_SEVERITY_MEDIUM:
-        cout << "MEDIUM";
+        printf("MEDIUM");
         break;
     case GL_DEBUG_SEVERITY_HIGH:
-        cout << "HIGH";
+        printf("HIGH");
         break;
     }
-    cout << endl;
+    printf("\n");
 }
 
 void initGLDebugger()
@@ -75,11 +74,11 @@ void initGLDebugger()
 							  GL_DONT_CARE,
 							  0,
 							  &unusedIds,
-							  true);
-		cout << "OPENGL CALLBACK DEBUGGING IS ENABLED" << endl;
+							  GL_TRUE);
+		printf("OPENGL CALLBACK DEBUGGING IS ENABLED\n");
     }
     else
     {
-        cout << "OPENGL CALLBACK DEBUGGING IS NOT AVAILABLE" << endl;
+        printf("OPENGL CALLBACK DEBUGGING IS NOT AVAILABLE\n");
 	}
 }
