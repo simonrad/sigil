@@ -39,7 +39,7 @@ void sliText(Mat4 *modelview, Vec4 *color, const char *text)
 {
 	// prepare our shader object in case the dtx text buffer is ready for rendering
 	shaderBind(sliTextShader);
-	shaderUniformMatrix4fv(sliTextShader, "u_Modelview", 1, (float*)&modelview);
+	shaderUniformMatrix4fv(sliTextShader, "u_Modelview", 1, (float*)modelview);
 	shaderUniform4f(sliTextShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// queue the incoming text; this may result in a render if the buffer becomes full (which is why we activate our shader)
@@ -50,7 +50,7 @@ void sliTextFlush(Mat4 *modelview, Vec4 *color)
 {
 	// prepare our shader object
 	shaderBind(sliTextShader);
-	shaderUniformMatrix4fv(sliTextShader, "u_Modelview", 1, (float*)&modelview);
+	shaderUniformMatrix4fv(sliTextShader, "u_Modelview", 1, (float*)modelview);
 	shaderUniform4f(sliTextShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// render the buffered text

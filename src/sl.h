@@ -9,8 +9,6 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
-- replace cout with printf
-- make assetmanager C-style
 - delta time integration
 */
 

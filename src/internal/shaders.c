@@ -119,13 +119,13 @@ void sliShadersInit(Mat4 *projection)
 	shaderFinalize(sliPointShader);
 
 	sliTextureShader = shaderLoad(sliTextureVertexShaderCode, sliTextureFragmentShaderCode);
-	shaderBindAttrib(sliTextShader, "a_Vertex", 0);
-	shaderBindAttrib(sliTextShader, "a_TexCoord", 1);
-	shaderLink(sliTextShader);
-	shaderBind(sliTextShader);
-	shaderUniformMatrix4fv(sliTextShader, "u_Projection", 1, (float*)projection);
-	shaderUniform1i(sliTextShader, "u_Texture", 0);
-	shaderFinalize(sliTextShader);
+	shaderBindAttrib(sliTextureShader, "a_Vertex", 0);
+	shaderBindAttrib(sliTextureShader, "a_TexCoord", 1);
+	shaderLink(sliTextureShader);
+	shaderBind(sliTextureShader);
+	shaderUniformMatrix4fv(sliTextureShader, "u_Projection", 1, (float*)projection);
+	shaderUniform1i(sliTextureShader, "u_Texture", 0);
+	shaderFinalize(sliTextureShader);
 
 	sliTextShader = shaderLoad(sliTextVertexShaderCode, sliTextFragmentShaderCode);
 	shaderBindAttrib(sliTextShader, "a_Vertex", 0);
@@ -135,39 +135,6 @@ void sliShadersInit(Mat4 *projection)
 	shaderUniformMatrix4fv(sliTextShader, "u_Projection", 1, (float*)projection);
 	shaderUniform1i(sliTextShader, "u_Texture", 0);
 	shaderFinalize(sliTextShader);
-
-/*
-	sliBasicShader -> bindAttrib("a_Vertex", 0);
-	sliBasicShader -> link();
-	sliBasicShader -> bind();
-	sliBasicShader -> uniformMatrix4fv("u_Projection", 1, (float*)projection);
-	sliBasicShader -> finalize();
-
-	sliPointShader = shaderLoad(sliPointVertexShaderCode, sliPointFragmentShaderCode);
-	sliPointShader -> bindAttrib("a_Vertex", 0);
-	sliPointShader -> bindAttrib("a_Color", 1);
-	sliPointShader -> link();
-	sliPointShader -> bind();
-	sliPointShader -> uniformMatrix4fv("u_Projection", 1, (float*)projection);
-	sliPointShader -> finalize();
-
-	sliTextureShader = shaderLoad(sliTextureVertexShaderCode, sliTextureFragmentShaderCode);
-	sliTextureShader -> bindAttrib("a_Vertex", 0);
-	sliTextureShader -> bindAttrib("a_TexCoord", 1);
-	sliTextureShader -> link();
-	sliTextureShader -> bind();
-	sliTextureShader -> uniformMatrix4fv("u_Projection", 1, (float*)projection);
-	sliTextureShader -> uniform1i("u_Texture", 0);
-	sliTextureShader -> finalize();
-
-	sliTextShader = shaderLoad(sliTextVertexShaderCode, sliTextFragmentShaderCode);
-	sliTextShader -> bindAttrib("a_Vertex", 0);
-	sliTextShader -> bindAttrib("a_TexCoord", 1);
-	sliTextShader -> link();
-	sliTextShader -> bind();
-	sliTextShader -> uniformMatrix4fv("u_Projection", 1, (float*)projection);
-	sliTextShader -> uniform1i("u_Texture", 0);
-	sliTextShader -> finalize();*/
 }
 
 void sliShadersDestroy()

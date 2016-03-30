@@ -242,17 +242,17 @@ void slPop()
 
 void slTranslate(float x, float y)
 {
-	*slCurrentMatrix = translate(*slCurrentMatrix, x, y);
+	*slCurrentMatrix = translate(slCurrentMatrix, x, y);
 }
 
 void slRotate(float degrees)
 {
-	*slCurrentMatrix = rotate(*slCurrentMatrix, (float)degrees);
+	*slCurrentMatrix = rotate(slCurrentMatrix, (float)degrees);
 }
 
 void slScale(float x, float y)
 {
-	*slCurrentMatrix = scale(*slCurrentMatrix, x, y);
+	*slCurrentMatrix = scale(slCurrentMatrix, x, y);
 }
 
 // texture loading
@@ -266,8 +266,8 @@ int slLoadTexture(const char *filename)
 
 void slTriangleFill(float x, float y, float width, float height)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
-	modelview = scale(*slCurrentMatrix, width, height);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+	modelview = scale(slCurrentMatrix, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -277,8 +277,8 @@ void slTriangleFill(float x, float y, float width, float height)
 
 void slTriangleOutline(float x, float y, float width, float height)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
-	modelview = scale(*slCurrentMatrix, width, height);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+	modelview = scale(slCurrentMatrix, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -288,8 +288,8 @@ void slTriangleOutline(float x, float y, float width, float height)
 
 void slRectangleFill(float x, float y, float width, float height)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
-	modelview = scale(*slCurrentMatrix, width, height);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+	modelview = scale(slCurrentMatrix, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -299,8 +299,8 @@ void slRectangleFill(float x, float y, float width, float height)
 
 void slRectangleOutline(float x, float y, float width, float height)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
-	modelview = scale(*slCurrentMatrix, width, height);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+	modelview = scale(slCurrentMatrix, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -310,7 +310,7 @@ void slRectangleOutline(float x, float y, float width, float height)
 
 void slCircleFill(float x, float y, float radius, int numVertices)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -320,7 +320,7 @@ void slCircleFill(float x, float y, float radius, int numVertices)
 
 void slCircleOutline(float x, float y, float radius, int numVertices)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -330,7 +330,7 @@ void slCircleOutline(float x, float y, float radius, int numVertices)
 
 void slPoint(float x, float y)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
 	sliLinesFlush();
 	sliTextFlush(slCurrentMatrix, &slForeColor);
@@ -339,8 +339,8 @@ void slPoint(float x, float y)
 
 void slLine(float x1, float y1, float x2, float y2)
 {
-	Mat4 modelview1 = translate(*slCurrentMatrix, x1, y1);
-	Mat4 modelview2 = translate(*slCurrentMatrix, x2, y2);
+	Mat4 modelview1 = translate(slCurrentMatrix, x1, y1);
+	Mat4 modelview2 = translate(slCurrentMatrix, x2, y2);
 
 	sliPointsFlush();
 	sliTextFlush(slCurrentMatrix, &slForeColor);
@@ -365,8 +365,8 @@ void slSprite(int texture, float x, float y, float width, float height)
 	Vec2 tiling = {.x = slSpriteTilingX, .y = slSpriteTilingY};
 	Vec2 scroll = {.x = slSpriteScrollX, .y = slSpriteScrollY};
 
-	modelview = translate(*slCurrentMatrix, x, y);
-	modelview = scale(modelview, width, height);
+	modelview = translate(slCurrentMatrix, x, y);
+	modelview = scale(&modelview, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -411,15 +411,15 @@ void slSetFontSize(int fontSize)
 
 void slText(float x, float y, const char *text)
 {
-	Mat4 modelview = translate(*slCurrentMatrix, x, y);
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
 	if(slTextAlign == SL_ALIGN_CENTER)
 	{
-		modelview = translate(modelview, -slGetTextWidth(text) / 2.0, 0.0);
+		modelview = translate(&modelview, -slGetTextWidth(text) / 2.0, 0.0);
 	}
 	else if(slTextAlign == SL_ALIGN_RIGHT)
 	{
-		modelview = translate(modelview, -slGetTextWidth(text), 0.0);
+		modelview = translate(&modelview, -slGetTextWidth(text), 0.0);
 	}
 
 	sliPointsFlush();

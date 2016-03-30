@@ -3246,7 +3246,7 @@
 1459187931 c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\circle.h
 	"util/transform.h"
 
-1459187932 c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\transform.h
+1459372281 c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\transform.h
 
 1459187932 c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\shaders.h
 	"util/transform.h"
@@ -3275,7 +3275,7 @@
 1459187931 c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\line.h
 	"util/transform.h"
 
-1459187931 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\point.c
+1459372406 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\point.c
 	"internal/point.h"
 	"internal/shaders.h"
 	"util/shader.h"
@@ -3294,13 +3294,13 @@
 1459187932 c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\rectangle.h
 	"util/transform.h"
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\shaders.c
+1459373658 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\shaders.c
 	"internal/shaders.h"
 	"util/transform.h"
 	"util/shader.h"
 	<stdlib.h>
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\sprite.c
+1459373564 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\sprite.c
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"util/shader.h"
@@ -3310,7 +3310,7 @@
 	"util/transform.h"
 	<gl/glew.h>
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\text.c
+1459372141 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\text.c
 	"internal/text.h"
 	"internal/shaders.h"
 	"util/shader.h"
@@ -3333,12 +3333,12 @@
 1459187932 c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\triangle.h
 	"util/transform.h"
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\main.c
+1459373583 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\main.c
 	"sl.h"
 
-1459201222 c:\users\archiact14\desktop\dropbox\misc\sigil\src\sl.h
+1459373689 c:\users\archiact14\desktop\dropbox\misc\sigil\src\sl.h
 
-1459201953 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\sl.c
+1459373499 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\sl.c
 	"sl.h"
 	"internal/shaders.h"
 	"internal/triangle.h"
@@ -3385,23 +3385,25 @@
 	<assert.h>
 	<windows.h>
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\shader.c
+1459372935 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\shader.c
 	"util/shader.h"
 	<gl/glew.h>
 	<stdlib.h>
 	<stdio.h>
 
-1459187932 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\transform.c
+1459373516 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\transform.c
 	"util/transform.h"
+	<math.h>
 
-1459201913 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\images.c
+1459373434 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\images.c
 	"util/images.h"
 	<soil.h>
 	<gl/glew.h>
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
-1459201918 c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\images.h
+1459373630 c:\users\archiact14\desktop\dropbox\misc\sigil\src\util\images.h
 	<gl/glew.h>
 
 1458690300 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\libdrawtext\drawgl.c

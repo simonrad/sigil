@@ -6,14 +6,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 GLuint loadOpenGLTexture(const char *filename)
 {
     int width;
     int height;
     unsigned char *data;
-    //unsigned char *temp;
-    //int i;
+    unsigned char *temp;
+    int i;
     GLuint result = 0;
 
 	// much faster than using SOIL_load_OGL_texture(), plus this doesn't use any deprecated functionality that is illegal in 3.2 core contexts
@@ -22,19 +23,15 @@ GLuint loadOpenGLTexture(const char *filename)
 	// make sure the load was successful
 	if(data)
 	{
-		// if the pixel data is flipped vertically, so we need to flip it back; this uses an in-place reversal
-		/*
-		if(flipVertical)
+		// the pixel data is flipped vertically, so we need to flip it back; this uses an in-place reversal
+		temp = (unsigned char*)malloc(sizeof(unsigned char) * width * 4);					// enough space for one row of RGBA pixels
+		for(i = 0; i < height / 2; i ++)
 		{
-			temp = (unsigned char*)malloc(sizeof(unsigned char) * width * 4);					// enough space for one row of RGBA pixels
-			for(i = 0; i < height / 2; i ++)
-			{
-				memcpy(temp, &data[i * width * 4], (width * 4));								// copy row into temp array
-				memcpy(&data[i * width * 4], &data[(height - i - 1) * width * 4], (width * 4));	// copy other side of array into this row
-				memcpy(&data[(height - i - 1) * width * 4], temp, (width * 4));					// copy temp into other side of array
-			}
-			free(temp);
-		}*/
+			memcpy(temp, &data[i * width * 4], (width * 4));								// copy row into temp array
+			memcpy(&data[i * width * 4], &data[(height - i - 1) * width * 4], (width * 4));	// copy other side of array into this row
+			memcpy(&data[(height - i - 1) * width * 4], temp, (width * 4));					// copy temp into other side of array
+		}
+		free(temp);
 
 		// we can generate a texture object since we had a successful load
 		glGenTextures(1, &result);

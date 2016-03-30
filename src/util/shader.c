@@ -133,7 +133,7 @@ void shaderUniform3f(Shader *shader, const char *var, const float v1, const floa
 
 void shaderUniformMatrix3fv(Shader *shader, const char *var, GLsizei count, GLfloat *vals)
 {
-    glUniformMatrix3fv(shaderGetUniLoc(shader, var), count, 0, vals);
+    glUniformMatrix3fv(shaderGetUniLoc(shader, var), count, GL_FALSE, vals);
 }
 
 void shaderUniform4iv(Shader *shader, const char *var, int count, int *vals)
@@ -153,7 +153,7 @@ void shaderUniform4f(Shader *shader, const char *var, float v1, float v2, float 
 
 void shaderUniformMatrix4fv(Shader *shader, const char *var, GLsizei count, GLfloat *vals)
 {
-    glUniformMatrix4fv(shaderGetUniLoc(shader, var), count, 0, vals);
+    glUniformMatrix4fv(shaderGetUniLoc(shader, var), count, GL_FALSE, vals);
 }
 
 GLint shaderGetUniLoc(Shader *shader, const char *name)
