@@ -267,7 +267,7 @@ int slLoadTexture(const char *filename)
 void slTriangleFill(float x, float y, float width, float height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
-	modelview = scale(slCurrentMatrix, width, height);
+	modelview = scale(&modelview, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -278,7 +278,7 @@ void slTriangleFill(float x, float y, float width, float height)
 void slTriangleOutline(float x, float y, float width, float height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
-	modelview = scale(slCurrentMatrix, width, height);
+	modelview = scale(&modelview, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -289,7 +289,7 @@ void slTriangleOutline(float x, float y, float width, float height)
 void slRectangleFill(float x, float y, float width, float height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
-	modelview = scale(slCurrentMatrix, width, height);
+	modelview = scale(&modelview, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
@@ -300,7 +300,7 @@ void slRectangleFill(float x, float y, float width, float height)
 void slRectangleOutline(float x, float y, float width, float height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
-	modelview = scale(slCurrentMatrix, width, height);
+	modelview = scale(&modelview, width, height);
 
 	sliPointsFlush();
 	sliLinesFlush();
