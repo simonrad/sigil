@@ -113,6 +113,10 @@ int slGetKey(int key);
 int slGetMouseButton(int button);
 void slGetMousePos(int *posX, int *posY);
 
+// simple frame timing
+
+float slGetDeltaTime();
+
 // rendering commands
 
 void slRender();

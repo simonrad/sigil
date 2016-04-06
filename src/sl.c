@@ -44,6 +44,8 @@ static float slSpriteTilingY = 1.0;
 
 static int slTextAlign = SL_ALIGN_LEFT;
 
+static float slDeltaTime = 1.0 / 60.0;
+
 // private function prototypes
 
 static void slInitResources();
@@ -167,6 +169,13 @@ void slGetMousePos(int *posX, int *posY)
 	glfwGetCursorPos(slProgramWindow, &x, &y);
 	*posX = x;
 	*posY = slWindowHeight - y;
+}
+
+// simple frame timing
+
+float slGetDeltaTime()
+{
+	return slDeltaTime;
 }
 
 // rendering/clearing commands
