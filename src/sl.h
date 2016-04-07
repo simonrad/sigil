@@ -9,7 +9,6 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
-- delta time integration
 */
 
 // text alignment symbolic constants
