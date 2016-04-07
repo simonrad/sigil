@@ -23,6 +23,8 @@
 
 #define SL_MATRIX_STACK_SIZE 32
 
+#define IDEAL_FRAME_TIME 0.01666667
+
 // private vars
 
 static GLFWwindow *slProgramWindow = NULL;
@@ -44,7 +46,9 @@ static float slSpriteTilingY = 1.0;
 
 static int slTextAlign = SL_ALIGN_LEFT;
 
-static float slDeltaTime = 1.0 / 60.0;
+static float slDeltaTime = IDEAL_FRAME_TIME;
+static float slOldFrameTime = 0.0;
+static float slNewFrameTime = IDEAL_FRAME_TIME;
 
 // private function prototypes
 
@@ -182,6 +186,10 @@ float slGetDeltaTime()
 
 void slRender()
 {
+	// value close enough to zero for delta time management
+	const double SL_MIN_DELTA_TIME = 0.00001;			// tiny fraction of a second
+	const double SL_MAX_DELTA_TIME = 0.5;				// half a second dt max
+
 	// render any leftover points or lines
 	sliPointsFlush();
 	sliLinesFlush();
@@ -191,6 +199,17 @@ void slRender()
 	glfwPollEvents();
 	glfwSwapBuffers(slProgramWindow);
 	glClear(GL_COLOR_BUFFER_BIT);
+
+	// gather time values
+	slOldFrameTime = slNewFrameTime;
+	slNewFrameTime = glfwGetTime();
+
+	// compute delta time value; ensure we don't have any long pauses or tiny time quantums
+	slDeltaTime = (slNewFrameTime - slOldFrameTime);
+	if(slDeltaTime < SL_MIN_DELTA_TIME)
+		slDeltaTime = SL_MIN_DELTA_TIME;
+	if(slDeltaTime > SL_MAX_DELTA_TIME)
+		slDeltaTime = SL_MAX_DELTA_TIME;
 }
 
 // colour control
