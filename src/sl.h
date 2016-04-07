@@ -9,6 +9,7 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
+- respond to close button press
 */
 
 // text alignment symbolic constants
@@ -100,72 +101,80 @@ todo:
 #define SL_MOUSE_BUTTON_RIGHT SL_MOUSE_BUTTON_2
 #define SL_MOUSE_BUTTON_MIDDLE SL_MOUSE_BUTTON_3
 
-// initialization commands
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-void slWindow(int width, int height, const char *title);
-void slClose();
+	// initialization commands
 
-// simple input
+	void slWindow(int width, int height, const char *title);
+	void slClose();
 
-int slGetKey(int key);
+	// simple input
 
-int slGetMouseButton(int button);
-void slGetMousePos(int *posX, int *posY);
+	int slGetKey(int key);
 
-// simple frame timing
+	int slGetMouseButton(int button);
+	void slGetMousePos(int *posX, int *posY);
 
-float slGetDeltaTime();
+	// simple frame timing
 
-// rendering commands
+	float slGetDeltaTime();
 
-void slRender();
+	// rendering commands
 
-// color control
+	void slRender();
 
-void slSetBackColor(float red, float green, float blue);
-void slSetForeColor(float red, float green, float blue, float alpha);
+	// color control
 
-// blending control
+	void slSetBackColor(float red, float green, float blue);
+	void slSetForeColor(float red, float green, float blue, float alpha);
 
-void slAdditiveBlend(int additiveBlend);
+	// blending control
 
-// transformations
+	void slAdditiveBlend(int additiveBlend);
 
-void slPush();
-void slPop();
+	// transformations
 
-void slTranslate(float x, float y);
-void slRotate(float degrees);
-void slScale(float x, float y);
+	void slPush();
+	void slPop();
 
-// texture loading
+	void slTranslate(float x, float y);
+	void slRotate(float degrees);
+	void slScale(float x, float y);
 
-int slLoadTexture(const char *filename);
+	// texture loading
 
-// simple shape commands
+	int slLoadTexture(const char *filename);
 
-void slTriangleFill(float x, float y, float width, float height);
-void slTriangleOutline(float x, float y, float width, float height);
+	// simple shape commands
 
-void slRectangleFill(float x, float y, float width, float height);
-void slRectangleOutline(float x, float y, float width, float height);
+	void slTriangleFill(float x, float y, float width, float height);
+	void slTriangleOutline(float x, float y, float width, float height);
 
-void slCircleFill(float x, float y, float radius, int numVertices);
-void slCircleOutline(float x, float y, float radius, int numVertices);
+	void slRectangleFill(float x, float y, float width, float height);
+	void slRectangleOutline(float x, float y, float width, float height);
 
-void slPoint(float x, float y);
+	void slCircleFill(float x, float y, float radius, int numVertices);
+	void slCircleOutline(float x, float y, float radius, int numVertices);
 
-void slLine(float x1, float y1, float x2, float y2);
+	void slPoint(float x, float y);
 
-void slSetSpriteTiling(float x, float y);
-void slSetSpriteScroll(float x, float y);
-void slSprite(int texture, float x, float y, float width, float height);
+	void slLine(float x1, float y1, float x2, float y2);
 
-// text commands
+	void slSetSpriteTiling(float x, float y);
+	void slSetSpriteScroll(float x, float y);
+	void slSprite(int texture, float x, float y, float width, float height);
 
-void slSetTextAlign(int fontAlign);
-float slGetTextWidth(const char *text);
-float slGetTextHeight(const char *text);
-void slSetFont(const char *fontFilename, int fontSize);
-void slSetFontSize(int fontSize);
-void slText(float x, float y, const char *text);
+	// text commands
+
+	void slSetTextAlign(int fontAlign);
+	float slGetTextWidth(const char *text);
+	float slGetTextHeight(const char *text);
+	void slSetFont(const char *fontFilename, int fontSize);
+	void slSetFontSize(int fontSize);
+	void slText(float x, float y, const char *text);
+
+#ifdef __cplusplus
+} // closing brace for extern "C"
+#endif
