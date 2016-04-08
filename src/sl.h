@@ -9,7 +9,6 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
-- respond to close button press
 */
 
 // text alignment symbolic constants
@@ -109,6 +108,7 @@ extern "C" {
 
 	void slWindow(int width, int height, const char *title);
 	void slClose();
+	int slShouldClose();
 
 	// simple input
 

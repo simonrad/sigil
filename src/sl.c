@@ -155,6 +155,17 @@ void slClose()
 	}
 }
 
+int slShouldClose()
+{
+	if(slProgramWindow == NULL)
+	{
+		fprintf(stderr, "slShouldClose() cannot be called because no window exists\n");
+		exit(1);
+	}
+
+	return glfwWindowShouldClose(slProgramWindow);
+}
+
 // simple input
 
 int slGetKey(int key)
