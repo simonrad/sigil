@@ -1,3 +1,5 @@
+HOME      DOCUMENTATION      DOWNLOAD      CONTACT
+
 What is SIGIL?
 --------------
 SIGIL stands for Simple Input and Graphics Integration Library, and is meant to provide mind-bogglingly simple 2D graphics functions in C or C++. It is a great alternative to other, more complex graphics libraries when all you want is to make a simple game, teach basic graphics, or otherwise remove the complexity of graphics programming from your code.

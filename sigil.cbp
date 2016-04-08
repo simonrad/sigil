@@ -93,9 +93,6 @@
 		<Unit filename="src/libdrawtext/utf8.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="src/main.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="src/sl.c">
 			<Option compilerVar="CC" />
 		</Unit>
