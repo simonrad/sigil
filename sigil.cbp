@@ -6,20 +6,21 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/shape-library" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+			<Target title="MinGW32 Debug">
+				<Option output="bin/mingw32/sigil-debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/mingw32-debug/" />
+				<Option type="2" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-DDEBUG" />
 				</Compiler>
 			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/sigil" prefix_auto="1" extension_auto="1" />
+			<Target title="MinGW32 Release">
+				<Option output="bin/mingw32/sigil" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="obj/Release/" />
+				<Option object_output="obj/mingw32-release/" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Compiler>
