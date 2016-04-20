@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="MinGW32 Debug">
-				<Option output="bin/mingw32/sigil-debug" prefix_auto="1" extension_auto="1" />
+				<Option output="lib/mingw32/sigil-bare-debug" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/mingw32-debug/" />
 				<Option type="2" />
@@ -24,18 +24,19 @@
 					<Add library="opengl32" />
 					<Add library="gdi32" />
 				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c if exist bin\mingw32\libsigil-debug.a del bin\mingw32\libsigil-debug.a" />
+					<Add after="ar.exe -rcs bin\mingw32\libsigil-debug.a lib\mingw32\*.a" />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 			<Target title="MinGW32 Release">
-				<Option output="bin/mingw32/sigil" prefix_auto="1" extension_auto="1" />
+				<Option output="lib/mingw32/sigil-bare-release" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/mingw32-release/" />
 				<Option type="2" />
 				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
 				<Linker>
-					<Add option="-s" />
 					<Add library="lib\mingw32\libfreetype.dll.a" />
 					<Add library="lib\mingw32\libSOIL.a" />
 					<Add library="lib\mingw32\libglfw3.a" />
@@ -43,6 +44,25 @@
 					<Add library="opengl32" />
 					<Add library="gdi32" />
 				</Linker>
+				<ExtraCommands>
+					<Add before='cmd /c echo &quot;cleaning...&quot;' />
+					<Add before="cmd /c del *.o" />
+					<Add before="cmd /c del *.obj" />
+					<Add before="cmd /c if exist bin\mingw32\libsigil.a del bin\mingw32\libsigil.a" />
+					<Add after='cmd /c echo &quot;extracting object files...&quot;' />
+					<Add after="ar.exe -x lib\mingw32\libglfw3.a" />
+					<Add after="ar.exe -x lib\mingw32\libSOIL.a" />
+					<Add after="ar.exe -x lib\mingw32\libsigil-bare-release.a" />
+					<Add after="ar.exe -x lib\mingw32\freetype.a" />
+					<Add after="ar.exe -x lib\mingw32\libglew32.dll.a" />
+					<Add after='cmd /c echo &quot;building single static library...&quot;' />
+					<Add after="ar.exe -rcs bin\mingw32\libsigil.a *.o *.obj" />
+					<Add after='cmd /c echo &quot;cleaning up...&quot;' />
+					<Add after="cmd /c del *.o" />
+					<Add after="cmd /c del *.obj" />
+					<Add after='cmd /c echo &quot;done&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 		</Build>
 		<Compiler>

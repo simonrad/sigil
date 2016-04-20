@@ -3235,7 +3235,7 @@
 	<soil/soil.h>
 	<gl/glew.h>
 
-1459187931 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\circle.c
+1461189077 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\circle.c
 	"internal/circle.h"
 	"internal/shaders.h"
 	"util/shader.h"
@@ -3300,7 +3300,7 @@
 	"util/shader.h"
 	<stdlib.h>
 
-1459373564 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\sprite.c
+1460411516 source:c:\users\archiact14\desktop\dropbox\misc\sigil\src\internal\sprite.c
 	"internal/sprite.h"
 	"internal/shaders.h"
 	"util/shader.h"
