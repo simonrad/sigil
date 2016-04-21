@@ -6,7 +6,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #define PI 3.1415926
 #define MIN_VERTICES 3

@@ -3,7 +3,7 @@
 
 #include "util/shader.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 static GLuint sliSpriteVAO = 0;
 static GLuint sliSpriteVBOs[2] = {0, 0};

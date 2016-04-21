@@ -1,6 +1,6 @@
 #include "util/gldebugging.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #include <stdio.h>
 #include <assert.h>
@@ -15,8 +15,8 @@ static void APIENTRY openglCallbackFunction(GLenum source,
                                             GLenum severity,
                                             GLsizei length,
                                             const GLchar* message,
-                                            const void* userParam){
-
+                                            const void* userParam)
+{
     printf("---------------------OPENGL MESSAGE DETECTED------------\n");
     printf("message: %s\n", message);
     printf("type: ");

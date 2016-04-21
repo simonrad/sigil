@@ -6,7 +6,7 @@
 
 #include <stdlib.h>
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #define MAX_LINE_GROUP_SIZE 1000
 

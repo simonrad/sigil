@@ -17,10 +17,10 @@
 					<Add option="-DDEBUG" />
 				</Compiler>
 				<Linker>
-					<Add library="lib\mingw32\libfreetype.dll.a" />
-					<Add library="lib\mingw32\libSOIL.a" />
-					<Add library="lib\mingw32\libglfw3.a" />
-					<Add library="lib\mingw32\libglew32.dll.a" />
+					<Add library="lib/mingw32/libfreetype.dll.a" />
+					<Add library="lib/mingw32/libSOIL.a" />
+					<Add library="lib/mingw32/libglfw3.a" />
+					<Add library="lib/mingw32/libglew32.dll.a" />
 					<Add library="opengl32" />
 					<Add library="gdi32" />
 				</Linker>
@@ -37,10 +37,10 @@
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Linker>
-					<Add library="lib\mingw32\libfreetype.dll.a" />
-					<Add library="lib\mingw32\libSOIL.a" />
-					<Add library="lib\mingw32\libglfw3.a" />
-					<Add library="lib\mingw32\libglew32.dll.a" />
+					<Add library="lib/mingw32/libfreetype.dll.a" />
+					<Add library="lib/mingw32/libSOIL.a" />
+					<Add library="lib/mingw32/libglfw3.a" />
+					<Add library="lib/mingw32/libglew32.dll.a" />
 					<Add library="opengl32" />
 					<Add library="gdi32" />
 				</Linker>
@@ -61,6 +61,69 @@
 					<Add after="cmd /c del *.o" />
 					<Add after="cmd /c del *.obj" />
 					<Add after='cmd /c echo &quot;done&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="GCC Debug">
+				<Option output="lib/gcc/sigil-bare" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/gcc/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lgl" />
+					<Add library="lib/gcc/libfreetype.dll.a" />
+					<Add library="lib/gcc/libSOIL.a" />
+					<Add library="lib/gcc/libglfw3.a" />
+					<Add library="lib/gcc/libglew32.dll.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add before='echo &quot;cleaning...&quot;' />
+					<Add before="rm -f *.o" />
+					<Add after='echo &quot;extracting object files...&quot;' />
+					<Add after="ar -x lib/gcc/libglfw3.a" />
+					<Add after="ar -x lib/gcc/libSOIL.a" />
+					<Add after="ar -x lib/gcc/libsigil-bare.a" />
+					<Add after="ar -x lib/gcc/libfreetype.a" />
+					<Add after="ar -x lib/gcc/libGLEW.a" />
+					<Add after='echo &quot;building single static library...&quot;' />
+					<Add after="ar -rcs bin/gcc/libsigil-debug.a *.o" />
+					<Add after='echo &quot;cleaning up...&quot;' />
+					<Add after="rm -f *.o" />
+					<Add after='echo &quot;done&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="GCC Release">
+				<Option output="lib/gcc/sigil-bare" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/gcc/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add option="-lgl" />
+					<Add library="lib/gcc/libfreetype.dll.a" />
+					<Add library="lib/gcc/libSOIL.a" />
+					<Add library="lib/gcc/libglfw3.a" />
+					<Add library="lib/gcc/libglew32.dll.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add before='echo &quot;cleaning...&quot;' />
+					<Add before="rm -f *.o" />
+					<Add after='echo &quot;extracting object files...&quot;' />
+					<Add after="ar -x lib/gcc/libglfw3.a" />
+					<Add after="ar -x lib/gcc/libSOIL.a" />
+					<Add after="ar -x lib/gcc/libsigil-bare.a" />
+					<Add after="ar -x lib/gcc/libfreetype.a" />
+					<Add after="ar -x lib/gcc/libGLEW.a" />
+					<Add after='echo &quot;building single static library...&quot;' />
+					<Add after="ar -rcs bin/gcc/libsigil.a *.o" />
+					<Add after='echo &quot;cleaning up...&quot;' />
+					<Add after="rm -f *.o" />
+					<Add after='echo &quot;done&quot;' />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -119,8 +182,13 @@
 		<Unit filename="src/sl.h" />
 		<Unit filename="src/util/gldebugging.c">
 			<Option compilerVar="CC" />
+			<Option target="MinGW32 Debug" />
+			<Option target="MinGW32 Release" />
 		</Unit>
-		<Unit filename="src/util/gldebugging.h" />
+		<Unit filename="src/util/gldebugging.h">
+			<Option target="MinGW32 Debug" />
+			<Option target="MinGW32 Release" />
+		</Unit>
 		<Unit filename="src/util/images.c">
 			<Option compilerVar="CC" />
 		</Unit>

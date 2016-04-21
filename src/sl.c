@@ -13,11 +13,14 @@
 #include "util/transform.h"
 #include "util/images.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #include <glfw/glfw3.h>
 
+#ifdef __MINGW32__
 #include <windows.h>
+#endif
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -60,8 +63,10 @@ static void slKillResources();
 void slWindow(int width, int height, const char *title)
 {
 	// types enabling us to access WGL functionality for enabling vsync in Windows
-    typedef BOOL (WINAPI *PFNWGLSWAPINTERVALEXTPROC)(int interval);
-    PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = NULL;
+	#ifdef __MINGW32__
+		typedef BOOL (WINAPI *PFNWGLSWAPINTERVALEXTPROC)(int interval);
+		PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = NULL;
+    #endif
 
 	// error tracking for any window-creation issues we run into
 	GLenum error;
@@ -88,8 +93,10 @@ void slWindow(int width, int height, const char *title)
 		glfwSwapInterval(1);
 
 		// GLFW doesn't handle vsync well in all cases, so we have to go straight to WGL to do this
-		wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress("wglSwapIntervalEXT");
-		wglSwapIntervalEXT(1);
+		#ifdef __MINGW32__
+			wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress("wglSwapIntervalEXT");
+			wglSwapIntervalEXT(1);
+		#endif
 
 		// configure our viewing area
 		glViewport(0, 0, width, height);

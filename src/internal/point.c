@@ -5,7 +5,7 @@
 
 #include <stdlib.h>
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #define MAX_POINT_GROUP_SIZE 1000
 

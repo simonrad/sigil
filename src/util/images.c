@@ -1,8 +1,8 @@
 #include "util/images.h"
 
-#include <soil.h>
+#include "soil/SOIL.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 #include <stdio.h>
 #include <stdlib.h>

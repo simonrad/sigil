@@ -2,7 +2,7 @@
 
 #include "util/transform.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 void sliSpriteInit();
 void sliSpriteDestroy();

@@ -1,7 +1,7 @@
 #pragma once
 
 /*
-Simple Input and Graphics Integration Library (SIGIL), for Windows.
+Sound, Input, and Graphics Integration Library (SIGIL)
 Geoff Nagy
 */
 
@@ -9,6 +9,7 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
+- add audio functionality with OpenAL
 */
 
 // text alignment symbolic constants

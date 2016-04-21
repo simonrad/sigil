@@ -3,7 +3,7 @@
 
 #include "util/shader.h"
 
-#include <gl/glew.h>
+#include "gl/glew.h"
 
 static GLuint sliTriangleVAO = 0;
 static GLuint sliTriangleVBOs[1] = {0};
