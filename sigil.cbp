@@ -75,10 +75,10 @@
 				</Compiler>
 				<Linker>
 					<Add option="-lgl" />
-					<Add library="lib/gcc/libfreetype.dll.a" />
+					<Add library="lib/gcc/libfreetype.a" />
 					<Add library="lib/gcc/libSOIL.a" />
 					<Add library="lib/gcc/libglfw3.a" />
-					<Add library="lib/gcc/libglew32.dll.a" />
+					<Add library="lib/gcc/libglew.a" />
 				</Linker>
 				<ExtraCommands>
 					<Add before='echo &quot;cleaning...&quot;' />
@@ -86,9 +86,9 @@
 					<Add after='echo &quot;extracting object files...&quot;' />
 					<Add after="ar -x lib/gcc/libglfw3.a" />
 					<Add after="ar -x lib/gcc/libSOIL.a" />
-					<Add after="ar -x lib/gcc/libsigil-bare.a" />
 					<Add after="ar -x lib/gcc/libfreetype.a" />
 					<Add after="ar -x lib/gcc/libGLEW.a" />
+					<Add after="ar -x lib/gcc/libsigil-bare.a" />
 					<Add after='echo &quot;building single static library...&quot;' />
 					<Add after="ar -rcs bin/gcc/libsigil-debug.a *.o" />
 					<Add after='echo &quot;cleaning up...&quot;' />
@@ -105,10 +105,10 @@
 				<Option compiler="gcc" />
 				<Linker>
 					<Add option="-lgl" />
-					<Add library="lib/gcc/libfreetype.dll.a" />
+					<Add library="lib/gcc/libfreetype.a" />
 					<Add library="lib/gcc/libSOIL.a" />
 					<Add library="lib/gcc/libglfw3.a" />
-					<Add library="lib/gcc/libglew32.dll.a" />
+					<Add library="lib/gcc/libglew.a" />
 				</Linker>
 				<ExtraCommands>
 					<Add before='echo &quot;cleaning...&quot;' />
@@ -116,9 +116,9 @@
 					<Add after='echo &quot;extracting object files...&quot;' />
 					<Add after="ar -x lib/gcc/libglfw3.a" />
 					<Add after="ar -x lib/gcc/libSOIL.a" />
-					<Add after="ar -x lib/gcc/libsigil-bare.a" />
 					<Add after="ar -x lib/gcc/libfreetype.a" />
 					<Add after="ar -x lib/gcc/libGLEW.a" />
+					<Add after="ar -x lib/gcc/libsigil-bare.a" />
 					<Add after='echo &quot;building single static library...&quot;' />
 					<Add after="ar -rcs bin/gcc/libsigil.a *.o" />
 					<Add after='echo &quot;cleaning up...&quot;' />
