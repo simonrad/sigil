@@ -1,0 +1,25 @@
+LIB          apt?             solution?
+---------------------------------------------------------------
+glfw3         no              provide source to build alongside
+glew1.13      1.7             use find module
+freetype2     yes             use find module
+openal        yes             use find module
+soil          yes             provide source in project
+
+
+- clone glfw from git repo
+- 
+
+building from source:
+- download and install glew
+	- on windows, place glew.dll into project dir, and include into gl folder
+	- on linux, do an apt-get install for glew
+- download and install freetype
+- do a cmake and a make and then you're done
+
+precompiled:
+- download and install glew
+- download and install freetype
+- download and install main lib
+
+due to the difficulties of installing and compiling glfw, it makes more sense to *not* compile it as part of the project. it should be linked to, instead, from within the cmake project.

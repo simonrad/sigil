@@ -1,0 +1,752 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glext.h
+windows.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glu.h
+stddef.h
+-
+GL/gl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/assert.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/basetsd.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/basetyps.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/cderr.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/cguid.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/commctrl.h
+prsht.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/commdlg.h
+unknwn.h
+-
+prsht.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/dbt.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/dde.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ddeml.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/dlgs.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/excpt.h
+_mingw.h
+-
+windef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/float.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/getopt.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/imm.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/initguid.h
+basetyps.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/io.h
+_mingw.h
+-
+sys/types.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/limits.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/lzexpand.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/malloc.h
+_mingw.h
+-
+stdlib.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/mmsystem.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/mswsock.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/nb30.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oaidl.h
+windows.h
+-
+ole2.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objbase.h
+rpc.h
+-
+rpcndr.h
+-
+stdlib.h
+-
+basetyps.h
+-
+wtypes.h
+-
+unknwn.h
+-
+objidl.h
+-
+cguid.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objfwd.h
+basetyps.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objidl.h
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ole2.h
+winerror.h
+-
+objbase.h
+-
+olectlid.h
+-
+oleauto.h
+-
+oleidl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oleauto.h
+oaidl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/olectlid.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oleidl.h
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/poppack.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/process.h
+_mingw.h
+-
+sys/types.h
+-
+stdint.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/prsht.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/pshpack2.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/pshpack4.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpc.h
+windows.h
+-
+rpcdce.h
+-
+rpcnsi.h
+-
+rpcnterr.h
+-
+winerror.h
+-
+excpt.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcdce.h
+basetyps.h
+-
+rpcdcep.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcdcep.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcndr.h
+rpcnsip.h
+-
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnsi.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnsip.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnterr.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/shellapi.h
+pshpack2.h
+-
+poppack.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/signal.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
+_mingw.h
+-
+stddef.h
+-
+stdarg.h
+-
+sys/types.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/unistd.h
+io.h
+-
+process.h
+-
+getopt.h
+-
+sys/types.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/unknwn.h
+windows.h
+-
+objfwd.h
+-
+wtypes.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wctype.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winbase.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wincon.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/windef.h
+winnt.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/windows.h
+winresrc.h
+-
+stdarg.h
+-
+windef.h
+-
+wincon.h
+-
+winbase.h
+-
+wingdi.h
+-
+winuser.h
+-
+winnls.h
+-
+winver.h
+-
+winnetwk.h
+-
+winreg.h
+-
+winsvc.h
+-
+cderr.h
+-
+dde.h
+-
+ddeml.h
+-
+dlgs.h
+-
+imm.h
+-
+lzexpand.h
+-
+mmsystem.h
+-
+nb30.h
+-
+rpc.h
+-
+shellapi.h
+-
+winperf.h
+-
+commdlg.h
+-
+winspool.h
+-
+winsock2.h
+-
+winsock.h
+-
+ole2.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/windowsx.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winerror.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wingdi.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnetwk.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnls.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnt.h
+winerror.h
+-
+string.h
+-
+basetsd.h
+-
+pshpack4.h
+-
+poppack.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winperf.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winreg.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winresrc.h
+winuser.h
+-
+winnt.h
+-
+winver.h
+-
+dde.h
+-
+dlgs.h
+-
+commctrl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsock.h
+windows.h
+-
+mswsock.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsock2.h
+windows.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winspool.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsvc.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winuser.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winver.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wtypes.h
+rpc.h
+-
+rpcndr.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/include/GLFW/glfw3.h
+stddef.h
+-
+stdint.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/glcorearb.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES2/gl2ext.h
+-
+vulkan/vulkan.h
+-
+GL/gl.h
+-
+GL/glext.h
+-
+GL/glu.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/cocoa_joystick.h
+IOKit/IOKitLib.h
+-
+IOKit/IOCFPlugIn.h
+-
+IOKit/hid/IOHIDLib.h
+-
+IOKit/hid/IOHIDKeys.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/cocoa_platform.h
+stdint.h
+-
+dlfcn.h
+-
+Carbon/Carbon.h
+-
+Cocoa/Cocoa.h
+-
+Carbon/Carbon.h
+-
+ApplicationServices/ApplicationServices.h
+-
+posix_tls.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_tls.h
+cocoa_joystick.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/cocoa_joystick.h
+nsgl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/nsgl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/context.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+assert.h
+-
+stdio.h
+-
+string.h
+-
+limits.h
+-
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/egl_context.h
+EGL/eglplatform.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/glx_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/init.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+string.h
+-
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/input.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+assert.h
+-
+stdlib.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+glfw_config.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/glfw_config.h
+../include/GLFW/glfw3.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/include/GLFW/glfw3.h
+cocoa_platform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/cocoa_platform.h
+win32_platform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_platform.h
+x11_platform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/x11_platform.h
+wl_platform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wl_platform.h
+mir_platform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/mir_platform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/linux_joystick.h
+regex.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/mir_platform.h
+sys/queue.h
+-
+pthread.h
+-
+dlfcn.h
+-
+mir_toolkit/mir_client_library.h
+-
+posix_tls.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_tls.h
+posix_time.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_time.h
+linux_joystick.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/linux_joystick.h
+xkb_unicode.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/xkb_unicode.h
+egl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/egl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/monitor.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+assert.h
+-
+math.h
+-
+float.h
+-
+string.h
+-
+stdlib.h
+-
+limits.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/nsgl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_time.h
+stdint.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_tls.h
+pthread.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/vulkan.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+assert.h
+-
+string.h
+-
+stdlib.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wgl_context.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+stdlib.h
+-
+malloc.h
+-
+assert.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wgl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_init.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+stdlib.h
+-
+malloc.h
+-
+initguid.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_joystick.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+math.h
+-
+initguid.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_joystick.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_monitor.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+malloc.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_platform.h
+wctype.h
+-
+windows.h
+-
+mmsystem.h
+-
+dinput.h
+-
+xinput.h
+-
+dbt.h
+-
+malloc.h
+-
+win32_joystick.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_joystick.h
+wgl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wgl_context.h
+egl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/egl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_time.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_tls.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/win32_window.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+limits.h
+-
+stdlib.h
+-
+malloc.h
+-
+string.h
+-
+windowsx.h
+-
+shellapi.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/window.c
+internal.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/internal.h
+assert.h
+-
+string.h
+-
+stdlib.h
+-
+float.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wl_platform.h
+wayland-client.h
+-
+xkbcommon/xkbcommon.h
+-
+dlfcn.h
+-
+posix_tls.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_tls.h
+posix_time.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_time.h
+linux_joystick.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/linux_joystick.h
+xkb_unicode.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/xkb_unicode.h
+egl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/egl_context.h
+wayland-relative-pointer-unstable-v1-client-protocol.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
+wayland-pointer-constraints-unstable-v1-client-protocol.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/x11_platform.h
+unistd.h
+-
+signal.h
+-
+stdint.h
+-
+dlfcn.h
+-
+X11/Xlib.h
+-
+X11/keysym.h
+-
+X11/Xatom.h
+-
+X11/Xcursor/Xcursor.h
+-
+X11/extensions/Xrandr.h
+-
+X11/XKBlib.h
+-
+X11/extensions/Xinerama.h
+-
+X11/extensions/xf86vmode.h
+-
+posix_tls.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_tls.h
+posix_time.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/posix_time.h
+linux_joystick.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/linux_joystick.h
+xkb_unicode.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/xkb_unicode.h
+glx_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/glx_context.h
+egl_context.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/egl_context.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/glfw/src/xkb_unicode.h
+
+src/glfw/src/glfw_config.h
+
