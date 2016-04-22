@@ -1,0 +1,30 @@
+BUILDING SIGIL FROM SOURCE
+--------------------------
+
+1) SIGIL depends on a few libraries that need to be installed.
+
+	The OpenGL Extension Wrangler library (GLEW):
+
+		sudo apt-get install libglew-dev
+
+	The FreeType 2 Library (FT2):
+
+		sudo apt-get install libfreetype6-dev
+
+	The Open Audio Library (OpenAL):
+
+		sudo apt-get install libopenal-dev
+
+2) Next, we can download the SIGIL source code from GitLab and build it.
+
+		cd [home_directory]
+		git clone git@gitlab.com:geoff-nagy/sigil.git
+		cd sigil
+		mkdir build-linux
+		cd build-linux
+		cmake ../
+		make
+		sudo make install
+
+3) And you should be good to go!
+

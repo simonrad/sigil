@@ -1,6 +1,6 @@
-#include "util/gldebugging.h"
+#include "gldebugging.h"
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 #include <stdio.h>
 #include <assert.h>

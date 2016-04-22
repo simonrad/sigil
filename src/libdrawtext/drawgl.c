@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef TARGET_IPHONE
 #include <OpenGLES/ES2/gl.h>
 #else
-#include "gl/glew.h"
+#include <GL/glew.h>
 #endif
 
 #include "drawtext.h"

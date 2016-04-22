@@ -1,7 +1,7 @@
-#include "internal/shaders.h"
+#include "shaders.h"
 
-#include "util/transform.h"
-#include "util/shader.h"
+#include "../util/transform.h"
+#include "../util/shader.h"
 
 #include <stdlib.h>
 

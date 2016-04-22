@@ -1,12 +1,12 @@
-#include "internal/line.h"
-#include "internal/shaders.h"
+#include "line.h"
+#include "shaders.h"
 
-#include "util/shader.h"
-#include "util/transform.h"
+#include "../util/shader.h"
+#include "../util/transform.h"
 
 #include <stdlib.h>
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 #define MAX_LINE_GROUP_SIZE 1000
 

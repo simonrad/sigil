@@ -9,13 +9,15 @@
 #include "internal/sprite.h"
 #include "internal/text.h"
 
-#include "util/gldebugging.h"
 #include "util/transform.h"
 #include "util/images.h"
 
-#include "gl/glew.h"
+#ifdef __MINGW32__
+	#include "util/gldebugging.h"
+#endif
 
-#include <glfw/glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
 #ifdef __MINGW32__
 #include <windows.h>

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "util/transform.h"
-#include "util/shader.h"
+#include "../util/transform.h"
+#include "../util/shader.h"
 
 extern Shader *sliBasicShader;
 extern Shader *sliPointShader;

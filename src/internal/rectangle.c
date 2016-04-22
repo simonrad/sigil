@@ -1,9 +1,9 @@
-#include "internal/rectangle.h"
-#include "internal/shaders.h"
+#include "rectangle.h"
+#include "shaders.h"
 
-#include "util/shader.h"
+#include "../util/shader.h"
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 static GLuint sliRectangleVAO = 0;
 static GLuint sliRectangleVBOs[1] = {0};

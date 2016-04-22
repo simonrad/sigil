@@ -1,9 +1,9 @@
-#include "internal/sprite.h"
-#include "internal/shaders.h"
+#include "sprite.h"
+#include "shaders.h"
 
-#include "util/shader.h"
+#include "../util/shader.h"
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 static GLuint sliSpriteVAO = 0;
 static GLuint sliSpriteVBOs[2] = {0, 0};

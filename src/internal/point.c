@@ -1,11 +1,11 @@
-#include "internal/point.h"
-#include "internal/shaders.h"
+#include "point.h"
+#include "shaders.h"
 
-#include "util/shader.h"
+#include "../util/shader.h"
 
 #include <stdlib.h>
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 #define MAX_POINT_GROUP_SIZE 1000
 

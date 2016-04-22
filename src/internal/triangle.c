@@ -1,9 +1,9 @@
-#include "internal/triangle.h"
-#include "internal/shaders.h"
+#include "triangle.h"
+#include "shaders.h"
 
-#include "util/shader.h"
+#include "../util/shader.h"
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 static GLuint sliTriangleVAO = 0;
 static GLuint sliTriangleVBOs[1] = {0};

@@ -1,9 +1,9 @@
-#include "internal/text.h"
-#include "internal/shaders.h"
+#include "text.h"
+#include "shaders.h"
 
-#include "util/shader.h"
+#include "../util/shader.h"
 
-#include "libdrawtext/drawtext.h"
+#include "../libdrawtext/drawtext.h"
 
 #include <stdio.h>
 

@@ -1,8 +1,8 @@
 #pragma once
 
-#include "util/transform.h"
+#include "../util/transform.h"
 
-#include "gl/glew.h"
+#include <GL/glew.h>
 
 void sliSpriteInit();
 void sliSpriteDestroy();

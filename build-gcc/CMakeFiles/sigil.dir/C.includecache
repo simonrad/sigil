@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geoff/sigil/src/soil/stb_image_aug.c
+stb_image_aug.h
+/home/geoff/sigil/src/soil/stb_image_aug.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+stbi_DDS_aug.h
+/home/geoff/sigil/src/soil/stbi_DDS_aug.h
+stbi_DDS_aug_c.h
+/home/geoff/sigil/src/soil/stbi_DDS_aug_c.h
+
+/home/geoff/sigil/src/soil/stb_image_aug.h
+stdio.h
+-
+
+/home/geoff/sigil/src/soil/stbi_DDS_aug.h
+
+/home/geoff/sigil/src/soil/stbi_DDS_aug_c.h
+
