@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src
+# Install script for directory: C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,10 +29,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/internal/cmake_install.cmake")
-  include("C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/libdrawtext/cmake_install.cmake")
-  include("C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/soil/cmake_install.cmake")
-  include("C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/util/cmake_install.cmake")
+  include("C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/internal/cmake_install.cmake")
+  include("C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/libdrawtext/cmake_install.cmake")
+  include("C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/soil/cmake_install.cmake")
+  include("C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/util/cmake_install.cmake")
 
 endif()
 

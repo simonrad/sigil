@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util
+# Install script for directory: C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/src/util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

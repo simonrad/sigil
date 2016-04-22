@@ -1,29 +1,13 @@
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/title.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/joysticks.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/sigil.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/cursor.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/gears.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/sharing.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/CMakeFiles/uninstall.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/splitview.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/iconify.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/wave.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/boing.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/windows.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/icon.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/vulkan.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/clipboard.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/threads.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/tearing.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/simple.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/msaa.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/reopen.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/glfwinfo.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/particles.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/timeout.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/events.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/empty.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/gamma.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/examples/CMakeFiles/heightmap.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/src/CMakeFiles/glfw.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/glfw/tests/CMakeFiles/monitors.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/sigil.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/rebuild_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/CMakeFiles/rebuild_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/internal/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/internal/CMakeFiles/rebuild_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/libdrawtext/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/libdrawtext/CMakeFiles/rebuild_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/soil/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/soil/CMakeFiles/rebuild_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/util/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/src/util/CMakeFiles/rebuild_cache.dir

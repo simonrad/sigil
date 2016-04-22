@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\vulkan.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\vulkan.dir/objects.a @CMakeFiles\vulkan.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  -O3 -DNDEBUG  -mwindows -Wl,--whole-archive CMakeFiles\vulkan.dir/objects.a -Wl,--no-whole-archive  -o vulkan.exe -Wl,--out-implib,libvulkan.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\vulkan.dir\linklibs.rsp

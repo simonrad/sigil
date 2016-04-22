@@ -1,0 +1,32 @@
+BUILDING SIGIL FROM SOURCE
+--------------------------
+
+1) SIGIL depends on a few libraries that need to be installed.
+
+	The OpenGL Extension Wrangler library (GLEW):
+
+		sudo apt-get install libglew-dev
+
+	The FreeType 2 Library (FT2). Download and run the "Complete package, except sources" installer from
+
+		http://gnuwin32.sourceforge.net/packages/freetype.htm
+
+	Make sure that you install FT2 into the correct directory. If you're using MinGW32 provided by CodeBlocks, then you should install into C:\Program Files (x86)\CodeBlocks\MinGW\
+
+	The Open Audio Library (OpenAL). Download and run the "OpenAL 1.1 Windows Installer" from
+
+		https://www.openal.org/downloads/
+
+2) Next, we can download the SIGIL source code from GitLab and build it.
+
+		cd [home_directory]
+		git clone git@gitlab.com:geoff-nagy/sigil.git
+		cd sigil
+		mkdir build-mingw32
+		cd build-mingw32
+		cmake -G "MinGW Makefiles" ../
+		mingw32-make
+		sudo make install
+
+3) And you should be good to go!
+

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(sigil)
 
-# add subdirectories to the project (glfw has already been added, so we omit that)
+# add subdirectories to the project (only Linux projects add GLFW, and do this one dir level up)
 add_subdirectory(internal)
 add_subdirectory(libdrawtext)
 add_subdirectory(soil)
