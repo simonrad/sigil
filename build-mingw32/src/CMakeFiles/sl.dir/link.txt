@@ -1,0 +1,2 @@
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe qc libsl.a  CMakeFiles/sl.dir/sl.c.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ranlib.exe libsl.a

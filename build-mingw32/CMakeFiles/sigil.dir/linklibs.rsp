@@ -1,1 +1,0 @@
-"C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a" "C:/Program Files (x86)/CodeBlocks/MinGW/lib/freetype.lib" C:/Windows/System32/OpenAL32.dll -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

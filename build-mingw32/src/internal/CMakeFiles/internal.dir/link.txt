@@ -1,0 +1,2 @@
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe qc libinternal.a  CMakeFiles/internal.dir/circle.c.obj CMakeFiles/internal.dir/line.c.obj CMakeFiles/internal.dir/point.c.obj CMakeFiles/internal.dir/rectangle.c.obj CMakeFiles/internal.dir/shaders.c.obj CMakeFiles/internal.dir/sprite.c.obj CMakeFiles/internal.dir/text.c.obj CMakeFiles/internal.dir/triangle.c.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ranlib.exe libinternal.a
