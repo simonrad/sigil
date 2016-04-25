@@ -1,6 +1,0 @@
-# ignore build files and object files
-/obj
-/bin
-
-# annoying layout file
-*.layout
