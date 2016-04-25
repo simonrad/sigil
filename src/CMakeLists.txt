@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(sigil)
 
+# allow static libs to be compiled into shared libs
+set(CMAKE_C_FLAGS "-fPIC")
+
+# set the installation directory
+set(CMAKE_INSTALL_PREFIX "/usr/local/lib")
+
 # add source files to the project
 add_library(sigil SHARED sl.c)
 
@@ -28,17 +34,15 @@ if(MINGW)
 	include_directories(src/glfw/include/GLFW)
 	target_link_libraries(sigil ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
 else()
-	# with all other systems we can build straight from GLFW3 source alongside SIGIL
-	add_subdirectory(src/glfw)
-	include_directories(src/glfw/include)
-	target_link_libraries(sigil glfw ${GLFW_LIBRARIES})
-endif()
+	# don't bother building the GLFW docs, examples, or tests
+	set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
+	set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
+	set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
 
-# we depend on Freetype---it is available on apt and a cmake find module is available for it
-find_package(Freetype REQUIRED)
-if(FREETYPE_FOUND)
-	include_directories(${FREETYPE_INCLUDE_DIRS})
-	target_link_libraries(sigil ${FREETYPE_LIBRARIES})
+	# with all other systems we can build straight from GLFW3 source alongside SIGIL
+	add_subdirectory(glfw)
+	include_directories(glfw/include)
+	target_link_libraries(sigil glfw ${GLFW_LIBRARIES})
 endif()
 
 # we depend on OpenAL---it is available on apt and a cmake find module is available for it
@@ -49,8 +53,15 @@ if(OPENAL_FOUND)
 endif()
 
 # we depend on OpenGL---it should already be installed and we just need to link to it
-if(LINUX)
-	target_link_libraries(sigil GL)
-else()
+if(WIN32)
 	target_link_libraries(sigil opengl32)
+else()
+	target_link_libraries(sigil GL)
 endif()
+
+# configure our make install command
+if(WIN32)
+else()
+	install(TARGETS sigil DESTINATION ${CMAKE_INSTALL_PREFIX})
+endif()
+

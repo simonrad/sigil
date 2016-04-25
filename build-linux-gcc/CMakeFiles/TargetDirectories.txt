@@ -1,0 +1,7 @@
+/home/geoff/sigil/build-linux-gcc/src/libdrawtext/CMakeFiles/drawtext.dir
+/home/geoff/sigil/build-linux-gcc/src/glfw/src/CMakeFiles/glfw.dir
+/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir
+/home/geoff/sigil/build-linux-gcc/src/CMakeFiles/sigil.dir
+/home/geoff/sigil/build-linux-gcc/src/soil/CMakeFiles/soil.dir
+/home/geoff/sigil/build-linux-gcc/src/glfw/CMakeFiles/uninstall.dir
+/home/geoff/sigil/build-linux-gcc/src/util/CMakeFiles/util.dir

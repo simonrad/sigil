@@ -1,1 +1,0 @@
-/usr/bin/cc  -O3 -DNDEBUG    CMakeFiles/heightmap.dir/heightmap.c.o CMakeFiles/heightmap.dir/__/deps/glad.c.o  -o heightmap -rdynamic ../src/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 
