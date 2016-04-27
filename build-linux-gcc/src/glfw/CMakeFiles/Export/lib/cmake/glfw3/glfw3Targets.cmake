@@ -40,6 +40,15 @@ unset(_expectedTargets)
 
 # Compute the installation prefix relative to this file.
 get_filename_component(_IMPORT_PREFIX "${CMAKE_CURRENT_LIST_FILE}" PATH)
+# Use original install prefix when loaded through a
+# cross-prefix symbolic link such as /lib -> /usr/lib.
+get_filename_component(_realCurr "${_IMPORT_PREFIX}" REALPATH)
+get_filename_component(_realOrig "/usr/lib/lib/cmake/glfw3" REALPATH)
+if(_realCurr STREQUAL _realOrig)
+  set(_IMPORT_PREFIX "/usr/lib/lib/cmake/glfw3")
+endif()
+unset(_realOrig)
+unset(_realCurr)
 get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
 get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
 get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)

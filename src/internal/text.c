@@ -12,7 +12,7 @@ static int sliCurrentSize = 0;
 
 void sliTextInit()
 {
-	sliFont("ttf/arial.ttf", 12);
+	//sliFont("ttf/arial.ttf", 12);
 }
 
 void sliTextDestroy()

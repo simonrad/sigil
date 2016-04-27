@@ -21,6 +21,10 @@ We depend on OpenAL for audio:
 
 	sudo apt-get install libopenal-dev
 
+If you want to develop SIGIL applications using CodeBlocks, and want to use the CodeBlocks output console (such as in debug mode), you should install xterm, too:
+
+	sudo apt-get install xterm
+
 Next, we can download the SIGIL source code from GitLab and build it.
 
 		cd ~/

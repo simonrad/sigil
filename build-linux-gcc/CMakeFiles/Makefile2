@@ -88,10 +88,10 @@ src/preinstall: src/glfw/preinstall
 # Target rules for target src/CMakeFiles/sigil.dir
 
 # All Build rule for target.
-src/CMakeFiles/sigil.dir/all: src/internal/CMakeFiles/internal.dir/all
-src/CMakeFiles/sigil.dir/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
-src/CMakeFiles/sigil.dir/all: src/soil/CMakeFiles/soil.dir/all
 src/CMakeFiles/sigil.dir/all: src/util/CMakeFiles/util.dir/all
+src/CMakeFiles/sigil.dir/all: src/internal/CMakeFiles/internal.dir/all
+src/CMakeFiles/sigil.dir/all: src/soil/CMakeFiles/soil.dir/all
+src/CMakeFiles/sigil.dir/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
 src/CMakeFiles/sigil.dir/all: src/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/depend
 	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/build

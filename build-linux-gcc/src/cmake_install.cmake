@@ -2,7 +2,7 @@
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local/lib")
+  SET(CMAKE_INSTALL_PREFIX "/usr/lib")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,27 +33,27 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  IF(EXISTS "$ENV{DESTDIR}/usr/local/lib/libsigil.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libsigil.so")
+  IF(EXISTS "$ENV{DESTDIR}/usr/lib/libsigil.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/libsigil.so")
     FILE(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/usr/local/lib/libsigil.so"
+         FILE "$ENV{DESTDIR}/usr/lib/libsigil.so"
          RPATH "")
   ENDIF()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/libsigil.so")
+   "/usr/lib/libsigil.so")
   IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/geoff/sigil/build-linux-gcc/src/libsigil.so")
-  IF(EXISTS "$ENV{DESTDIR}/usr/local/lib/libsigil.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libsigil.so")
+FILE(INSTALL DESTINATION "/usr/lib" TYPE SHARED_LIBRARY FILES "/home/geoff/sigil/build-linux-gcc/src/libsigil.so")
+  IF(EXISTS "$ENV{DESTDIR}/usr/lib/libsigil.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/libsigil.so")
     FILE(RPATH_REMOVE
-         FILE "$ENV{DESTDIR}/usr/local/lib/libsigil.so")
+         FILE "$ENV{DESTDIR}/usr/lib/libsigil.so")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/lib/libsigil.so")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/lib/libsigil.so")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

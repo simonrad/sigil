@@ -5,7 +5,7 @@ project(sigil)
 set(CMAKE_C_FLAGS "-fPIC")
 
 # set the installation directory
-set(CMAKE_INSTALL_PREFIX "/usr/local/lib")
+set(CMAKE_INSTALL_PREFIX "/usr/lib")
 
 # add source files to the project
 add_library(sigil SHARED sl.c)
