@@ -71,4 +71,3 @@ if(WIN32)
 else()
 	install(TARGETS sigil DESTINATION ${CMAKE_INSTALL_PREFIX})
 endif()
-

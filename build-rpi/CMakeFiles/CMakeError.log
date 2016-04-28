@@ -1,71 +1,20 @@
 Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
-Change Dir: /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3790372769/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3790372769.dir/build.make CMakeFiles/cmTryCompileExec3790372769.dir/build
-make[1]: Entering directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3790372769.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec3790372769.dir/CheckIncludeFile.c.o   -c /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:38: fatal error: /opt/vc/include/bcm_host.h: No such file or directory
- #include </opt/vc/include/bcm_host.h>
-                                      ^
+Run Build Command:/usr/bin/make "cmTryCompileExec961001978/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec961001978.dir/build.make CMakeFiles/cmTryCompileExec961001978.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /opt/vc/include/bcm_host.h:50:0,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33:33: fatal error: interface/vcos/vcos.h: No such file or directory
 compilation terminated.
-make[1]: Leaving directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec3790372769.dir/CheckIncludeFile.c.o] Error 1
-make: *** [cmTryCompileExec3790372769/fast] Error 2
-
-
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec996840315/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec996840315.dir/build.make CMakeFiles/cmTryCompileExec996840315.dir/build
-make[1]: Entering directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec996840315.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec996840315.dir/CheckSymbolExists.c.o   -c /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec996840315
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec996840315.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC     CMakeFiles/cmTryCompileExec996840315.dir/CheckSymbolExists.c.o  -o cmTryCompileExec996840315 -rdynamic 
-CMakeFiles/cmTryCompileExec996840315.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
-collect2: error: ld returned 1 exit status
-make[1]: Leaving directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec996840315] Error 1
-make: *** [cmTryCompileExec996840315/fast] Error 2
-
-File /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <pthread.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1457729223/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1457729223.dir/build.make CMakeFiles/cmTryCompileExec1457729223.dir/build
-make[1]: Entering directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1457729223.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1457729223.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1457729223
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1457729223.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1457729223.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1457729223 -rdynamic -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-make[1]: Leaving directory `/home/geoff/sigil/build-rpi/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec1457729223] Error 1
-make: *** [cmTryCompileExec1457729223/fast] Error 2
+CMakeFiles/cmTryCompileExec961001978.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec961001978/fast' failed
+make: *** [cmTryCompileExec961001978/fast] Error 2
 
 
