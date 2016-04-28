@@ -57,6 +57,7 @@
 		<Unit filename="src/internal/shaders.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="src/internal/sound.h" />
 		<Unit filename="src/internal/sprite.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
@@ -168,6 +169,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

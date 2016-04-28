@@ -8,6 +8,7 @@
 #include "internal/line.h"
 #include "internal/sprite.h"
 #include "internal/text.h"
+#include "internal/sound.h"
 
 #include "util/transform.h"
 #include "util/images.h"
@@ -20,7 +21,7 @@
 #include <GLFW/glfw3.h>
 
 #ifdef __MINGW32__
-#include <windows.h>
+	#include <windows.h>
 #endif
 
 #include <stdlib.h>
@@ -310,6 +311,43 @@ int slLoadTexture(const char *filename)
 	return (int)loadOpenGLTexture(filename);
 }
 
+// sound loading and playing
+
+int slLoadWAV(const char *filename)
+{
+	return (int)sliLoadWAV(filename);
+}
+
+int slSoundPlay(int sound)
+{
+	return (int)sliSoundPlay((ALuint)sound);
+}
+
+int slSoundLoop(int sound)
+{
+	return (int)sliSoundLoop((ALuint)sound);
+}
+
+void slSoundPause(int sound)
+{
+	sliSoundPause((ALuint)sound);
+}
+
+void slSoundStop(int sound)
+{
+	sliSoundStop((ALuint)sound);
+}
+
+bool slIsSoundPlaying(int sound)
+{
+	return sliIsSoundPlaying((ALuint)sound);
+}
+
+bool slIsSoundLooping(int sound)
+{
+	return sliIsSoundLooping((ALuint)sound);
+}
+
 // simple shape commands
 
 void slTriangleFill(float x, float y, float width, float height)
@@ -487,6 +525,7 @@ void slInitResources()
 	sliLineInit();
 	sliSpriteInit();
 	sliTextInit();
+	sliSoundInit();
 }
 
 void slKillResources()
@@ -499,4 +538,5 @@ void slKillResources()
 	sliRectangleDestroy();
 	sliTriangleDestroy();
 	sliShadersDestroy();
+	sliSoundDestroy();
 }

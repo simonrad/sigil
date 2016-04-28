@@ -148,6 +148,16 @@ extern "C" {
 
 	int slLoadTexture(const char *filename);
 
+	// sound loading and playing
+
+	int slLoadWAV(const char *filename);
+	int slSoundPlay(int sound);
+	int slSoundLoop(int sound);
+	void slSoundPause(int sound);
+	void slSoundStop(int sound);
+	bool slIsSoundPlaying(int sound);
+	bool slIsSoundLooping(int sound);
+
 	// simple shape commands
 
 	void slTriangleFill(float x, float y, float width, float height);
