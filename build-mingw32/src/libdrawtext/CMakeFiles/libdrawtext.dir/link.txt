@@ -1,2 +1,0 @@
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe qc liblibdrawtext.a  CMakeFiles/libdrawtext.dir/drawgl.c.obj CMakeFiles/libdrawtext.dir/font.c.obj CMakeFiles/libdrawtext.dir/utf8.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ranlib.exe liblibdrawtext.a

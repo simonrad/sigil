@@ -96,8 +96,8 @@ src/libsigil.dll: src/util/libutil.a
 src/libsigil.dll: src/soil/libsoil.a
 src/libsigil.dll: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 src/libsigil.dll: ../glfw/lib/mingw32/glfw3dll.a
-src/libsigil.dll: C:/Program\ Files\ (x86)/GnuWin32/lib/libfreetype.dll.a
-src/libsigil.dll: C:/Windows/System32/OpenAL32.dll
+src/libsigil.dll: ../openal/lib/mingw32/libOpenAL32.dll.a
+src/libsigil.dll: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a
 src/libsigil.dll: src/CMakeFiles/sigil.dir/linklibs.rsp
 src/libsigil.dll: src/CMakeFiles/sigil.dir/objects1.rsp
 src/libsigil.dll: src/CMakeFiles/sigil.dir/link.txt

@@ -93,8 +93,8 @@ src/preinstall: src/libdrawtext/preinstall
 # All Build rule for target.
 src/CMakeFiles/sigil.dir/all: src/util/CMakeFiles/util.dir/all
 src/CMakeFiles/sigil.dir/all: src/soil/CMakeFiles/soil.dir/all
-src/CMakeFiles/sigil.dir/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
 src/CMakeFiles/sigil.dir/all: src/internal/CMakeFiles/internal.dir/all
+src/CMakeFiles/sigil.dir/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
 	$(MAKE) -f src\CMakeFiles\sigil.dir\build.make src/CMakeFiles/sigil.dir/depend
 	$(MAKE) -f src\CMakeFiles\sigil.dir\build.make src/CMakeFiles/sigil.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Archiact14\Desktop\Dropbox\misc\sigil\build-mingw32\CMakeFiles --progress-num=14,15 "Built target sigil"

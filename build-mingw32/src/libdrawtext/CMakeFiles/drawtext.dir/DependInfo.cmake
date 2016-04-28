@@ -13,6 +13,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
+  "C:/Program Files (x86)/CodeBlocks/MinGW/include"
+  "C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2"
   )
 
 # Targets to which this target links.

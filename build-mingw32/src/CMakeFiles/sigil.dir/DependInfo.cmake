@@ -13,8 +13,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "C:/Program Files (x86)/CodeBlocks/MinGW/include"
   "../src/src/glfw/include/GLFW"
-  "C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2"
-  "C:/Program Files (x86)/OpenAL"
+  "../openal/include"
   )
 
 # Targets to which this target links.

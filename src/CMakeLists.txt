@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 2.8.9)
 project(sigil)
 
 # allow static libs to be compiled into shared libs
-set(CMAKE_C_FLAGS "-fPIC")
+if(!MINGW)
+	set(CMAKE_C_FLAGS "-fPIC")
+endif()
 
 # set the installation directory
 set(CMAKE_INSTALL_PREFIX "/usr/lib")
@@ -52,11 +54,18 @@ else()					# any other Linux system
 	target_link_libraries(sigil glfw ${GLFW_LIBRARIES})
 endif()
 
-# we depend on OpenAL---it is available on apt and a cmake find module is available for it
-find_package(OpenAL REQUIRED)
-if(OPENAL_FOUND)
-	include_directories(${OPENAL_INCLUDE_DIR})
-	target_link_libraries(sigil ${OPENAL_LIBRARY})
+# we depend on OpenAL
+if(MINGW)
+	# when using MinGW, we link to pre-compiled libs instead
+	include_directories(${CMAKE_SOURCE_DIR}/openal/include)
+	target_link_libraries(sigil ${CMAKE_SOURCE_DIR}/openal/lib/mingw32/libOpenAL32.dll.a)
+else()
+	# on other platforms, we can just use whatever we downloaded from apt
+	find_package(OpenAL REQUIRED)
+	if(OPENAL_FOUND)
+		include_directories(${OPENAL_INCLUDE_DIR})
+		target_link_libraries(sigil ${OPENAL_LIBRARY})
+	endif()
 endif()
 
 # we depend on OpenGL---it should already be installed and we just need to link to it

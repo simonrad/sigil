@@ -1,0 +1,15 @@
+Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
+Change Dir: C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_1ecb8/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1ecb8.dir\build.make CMakeFiles/cmTC_1ecb8.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ecb8.dir/CheckIncludeFile.c.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_1ecb8.dir\CheckIncludeFile.c.obj   -c C:\Users\Archiact14\Desktop\Dropbox\misc\sigil\build-mingw32\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Archiact14\Desktop\Dropbox\misc\sigil\build-mingw32\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:38: fatal error: /opt/vc/include/bcm_host.h: No such file or directory
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_1ecb8.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory `C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [cmTC_1ecb8/fast] Error 2
+
+
