@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 2.8.9)
 project(sigil)
 
 # allow static libs to be compiled into shared libs
