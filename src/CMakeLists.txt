@@ -29,11 +29,18 @@ endif()
 # we depend on GLFW3, which is not available on apt---we integrate it per the instructions at http://www.glfw.org/docs/latest/build.html;
 # note that this only works on Linux; since there's no easy way to build GLFW3 using MinGW on-the-fly, we just link to pre-compiled libs
 
-if(MINGW)
+# detect if we're on a raspberry pi-like platform
+include(CheckIncludeFile)
+check_include_file(/opt/vc/include/bcm_host.h BCMHOST)
+message("BCM host:" ${BCMHOST})
+
+if(MINGW)				# Windows MinGW compiler
 	# when using MinGW, we link to pre-compiled libs instead
 	include_directories(src/glfw/include/GLFW)
 	target_link_libraries(sigil ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
-else()
+elseif(BCMHOST)			# Raspberry Pi
+	message("this is an RPi")
+else()					# any other Linux system
 	# don't bother building the GLFW docs, examples, or tests
 	set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
 	set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")

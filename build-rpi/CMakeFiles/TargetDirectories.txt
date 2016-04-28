@@ -1,0 +1,7 @@
+/home/geoff/sigil/build-rpi/src/libdrawtext/CMakeFiles/drawtext.dir
+/home/geoff/sigil/build-rpi/src/glfw/src/CMakeFiles/glfw.dir
+/home/geoff/sigil/build-rpi/src/internal/CMakeFiles/internal.dir
+/home/geoff/sigil/build-rpi/src/CMakeFiles/sigil.dir
+/home/geoff/sigil/build-rpi/src/soil/CMakeFiles/soil.dir
+/home/geoff/sigil/build-rpi/src/glfw/CMakeFiles/uninstall.dir
+/home/geoff/sigil/build-rpi/src/util/CMakeFiles/util.dir
