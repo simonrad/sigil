@@ -70,6 +70,10 @@ GL/glu.h
 ../util/shader.h
 /home/geoff/sigil/src/util/shader.h
 
+/home/geoff/sigil/src/internal/sound.h
+AL/al.h
+-
+
 /home/geoff/sigil/src/internal/sprite.h
 ../util/transform.h
 /home/geoff/sigil/src/util/transform.h
@@ -103,6 +107,8 @@ internal/sprite.h
 /home/geoff/sigil/src/internal/sprite.h
 internal/text.h
 /home/geoff/sigil/src/internal/text.h
+internal/sound.h
+/home/geoff/sigil/src/internal/sound.h
 util/transform.h
 /home/geoff/sigil/src/util/transform.h
 util/images.h

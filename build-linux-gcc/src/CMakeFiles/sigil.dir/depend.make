@@ -8,6 +8,7 @@ src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/line.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/point.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/rectangle.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/shaders.h
+src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/sound.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/sprite.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/text.h
 src/CMakeFiles/sigil.dir/sl.c.o: ../src/internal/triangle.h

@@ -236,6 +236,29 @@ src/internal/CMakeFiles/internal.dir/triangle.c.o.provides: src/internal/CMakeFi
 
 src/internal/CMakeFiles/internal.dir/triangle.c.o.provides.build: src/internal/CMakeFiles/internal.dir/triangle.c.o
 
+src/internal/CMakeFiles/internal.dir/sound.c.o: src/internal/CMakeFiles/internal.dir/flags.make
+src/internal/CMakeFiles/internal.dir/sound.c.o: ../src/internal/sound.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/internal/CMakeFiles/internal.dir/sound.c.o"
+	cd /home/geoff/sigil/build-linux-gcc/src/internal && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/internal.dir/sound.c.o   -c /home/geoff/sigil/src/internal/sound.c
+
+src/internal/CMakeFiles/internal.dir/sound.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/internal.dir/sound.c.i"
+	cd /home/geoff/sigil/build-linux-gcc/src/internal && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/geoff/sigil/src/internal/sound.c > CMakeFiles/internal.dir/sound.c.i
+
+src/internal/CMakeFiles/internal.dir/sound.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/internal.dir/sound.c.s"
+	cd /home/geoff/sigil/build-linux-gcc/src/internal && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/geoff/sigil/src/internal/sound.c -o CMakeFiles/internal.dir/sound.c.s
+
+src/internal/CMakeFiles/internal.dir/sound.c.o.requires:
+.PHONY : src/internal/CMakeFiles/internal.dir/sound.c.o.requires
+
+src/internal/CMakeFiles/internal.dir/sound.c.o.provides: src/internal/CMakeFiles/internal.dir/sound.c.o.requires
+	$(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/sound.c.o.provides.build
+.PHONY : src/internal/CMakeFiles/internal.dir/sound.c.o.provides
+
+src/internal/CMakeFiles/internal.dir/sound.c.o.provides.build: src/internal/CMakeFiles/internal.dir/sound.c.o
+
 # Object files for target internal
 internal_OBJECTS = \
 "CMakeFiles/internal.dir/circle.c.o" \
@@ -245,7 +268,8 @@ internal_OBJECTS = \
 "CMakeFiles/internal.dir/shaders.c.o" \
 "CMakeFiles/internal.dir/sprite.c.o" \
 "CMakeFiles/internal.dir/text.c.o" \
-"CMakeFiles/internal.dir/triangle.c.o"
+"CMakeFiles/internal.dir/triangle.c.o" \
+"CMakeFiles/internal.dir/sound.c.o"
 
 # External object files for target internal
 internal_EXTERNAL_OBJECTS =
@@ -258,6 +282,7 @@ src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/shaders.c.o
 src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/sprite.c.o
 src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/text.c.o
 src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/triangle.c.o
+src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/sound.c.o
 src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/build.make
 src/internal/libinternal.a: src/internal/CMakeFiles/internal.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library libinternal.a"
@@ -276,6 +301,7 @@ src/internal/CMakeFiles/internal.dir/requires: src/internal/CMakeFiles/internal.
 src/internal/CMakeFiles/internal.dir/requires: src/internal/CMakeFiles/internal.dir/sprite.c.o.requires
 src/internal/CMakeFiles/internal.dir/requires: src/internal/CMakeFiles/internal.dir/text.c.o.requires
 src/internal/CMakeFiles/internal.dir/requires: src/internal/CMakeFiles/internal.dir/triangle.c.o.requires
+src/internal/CMakeFiles/internal.dir/requires: src/internal/CMakeFiles/internal.dir/sound.c.o.requires
 .PHONY : src/internal/CMakeFiles/internal.dir/requires
 
 src/internal/CMakeFiles/internal.dir/clean:

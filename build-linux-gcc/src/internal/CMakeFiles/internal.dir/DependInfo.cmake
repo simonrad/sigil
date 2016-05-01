@@ -9,6 +9,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/geoff/sigil/src/internal/point.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/point.c.o"
   "/home/geoff/sigil/src/internal/rectangle.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/rectangle.c.o"
   "/home/geoff/sigil/src/internal/shaders.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/shaders.c.o"
+  "/home/geoff/sigil/src/internal/sound.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/sound.c.o"
   "/home/geoff/sigil/src/internal/sprite.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/sprite.c.o"
   "/home/geoff/sigil/src/internal/text.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/text.c.o"
   "/home/geoff/sigil/src/internal/triangle.c" "/home/geoff/sigil/build-linux-gcc/src/internal/CMakeFiles/internal.dir/triangle.c.o"

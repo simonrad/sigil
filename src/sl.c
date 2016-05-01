@@ -315,37 +315,37 @@ int slLoadTexture(const char *filename)
 
 int slLoadWAV(const char *filename)
 {
-	return (int)sliLoadWAV(filename);
+	return sliLoadWAV(filename);
 }
 
 int slSoundPlay(int sound)
 {
-	return (int)sliSoundPlay((ALuint)sound);
+	return sliSoundPlay(sound);
 }
 
 int slSoundLoop(int sound)
 {
-	return (int)sliSoundLoop((ALuint)sound);
+	return sliSoundLoop(sound);
 }
 
 void slSoundPause(int sound)
 {
-	sliSoundPause((ALuint)sound);
+	sliSoundPause(sound);
 }
 
 void slSoundStop(int sound)
 {
-	sliSoundStop((ALuint)sound);
+	sliSoundStop(sound);
 }
 
-bool slIsSoundPlaying(int sound)
+int slSoundPlaying(int sound)
 {
-	return sliIsSoundPlaying((ALuint)sound);
+	return sliSoundPlaying(sound);
 }
 
-bool slIsSoundLooping(int sound)
+int slSoundLooping(int sound)
 {
-	return sliIsSoundLooping((ALuint)sound);
+	return sliSoundLooping(sound);
 }
 
 // simple shape commands

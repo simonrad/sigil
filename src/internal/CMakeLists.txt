@@ -13,4 +13,5 @@ add_library(
 	sprite.c
 	text.c
 	triangle.c
+	sound.c
 )

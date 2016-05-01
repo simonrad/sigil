@@ -7,6 +7,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/internal.dir/sprite.c.o"
   "CMakeFiles/internal.dir/text.c.o"
   "CMakeFiles/internal.dir/triangle.c.o"
+  "CMakeFiles/internal.dir/sound.c.o"
   "libinternal.pdb"
   "libinternal.a"
 )

@@ -9,7 +9,6 @@ Geoff Nagy
 todo:
 - de-initialization of text/fonts
 - de-initialization of textures
-- add audio functionality with OpenAL
 */
 
 // text alignment symbolic constants
@@ -155,8 +154,8 @@ extern "C" {
 	int slSoundLoop(int sound);
 	void slSoundPause(int sound);
 	void slSoundStop(int sound);
-	bool slIsSoundPlaying(int sound);
-	bool slIsSoundLooping(int sound);
+	int slSoundPlaying(int sound);
+	int slSoundLooping(int sound);
 
 	// simple shape commands
 

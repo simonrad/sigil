@@ -1,21 +1,39 @@
+Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
+Change Dir: /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2419226485/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2419226485.dir/build.make CMakeFiles/cmTryCompileExec2419226485.dir/build
+make[1]: Entering directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2419226485.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec2419226485.dir/CheckIncludeFile.c.o   -c /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:38: fatal error: /opt/vc/include/bcm_host.h: No such file or directory
+ #include </opt/vc/include/bcm_host.h>
+                                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2419226485.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2419226485/fast] Error 2
+
+
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3930960713/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3930960713.dir/build.make CMakeFiles/cmTryCompileExec3930960713.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec813556240/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec813556240.dir/build.make CMakeFiles/cmTryCompileExec813556240.dir/build
 make[1]: Entering directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3930960713.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec3930960713.dir/CheckSymbolExists.c.o   -c /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec3930960713
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3930960713.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC     CMakeFiles/cmTryCompileExec3930960713.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3930960713 -rdynamic 
-CMakeFiles/cmTryCompileExec3930960713.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTryCompileExec813556240.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec813556240.dir/CheckSymbolExists.c.o   -c /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec813556240
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec813556240.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTryCompileExec813556240.dir/CheckSymbolExists.c.o  -o cmTryCompileExec813556240 -rdynamic 
+CMakeFiles/cmTryCompileExec813556240.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec3930960713] Error 1
+make[1]: *** [cmTryCompileExec813556240] Error 1
 make[1]: Leaving directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec3930960713/fast] Error 2
+make: *** [cmTryCompileExec813556240/fast] Error 2
 
 File /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -35,19 +53,19 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec851038469/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec851038469.dir/build.make CMakeFiles/cmTryCompileExec851038469.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1893663556/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1893663556.dir/build.make CMakeFiles/cmTryCompileExec1893663556.dir/build
 make[1]: Entering directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec851038469.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec851038469.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec851038469
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec851038469.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec851038469.dir/CheckFunctionExists.c.o  -o cmTryCompileExec851038469 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTryCompileExec1893663556.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1893663556.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1893663556
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1893663556.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1893663556.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1893663556 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 make[1]: Leaving directory `/home/geoff/sigil/build-linux-gcc/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec851038469] Error 1
-make: *** [cmTryCompileExec851038469/fast] Error 2
+make[1]: *** [cmTryCompileExec1893663556] Error 1
+make: *** [cmTryCompileExec1893663556/fast] Error 2
 
 

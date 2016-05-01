@@ -30,6 +30,9 @@ src/internal/CMakeFiles/internal.dir/shaders.c.o: ../src/internal/shaders.h
 src/internal/CMakeFiles/internal.dir/shaders.c.o: ../src/util/shader.h
 src/internal/CMakeFiles/internal.dir/shaders.c.o: ../src/util/transform.h
 
+src/internal/CMakeFiles/internal.dir/sound.c.o: ../src/internal/sound.c
+src/internal/CMakeFiles/internal.dir/sound.c.o: ../src/internal/sound.h
+
 src/internal/CMakeFiles/internal.dir/sprite.c.o: ../src/internal/shaders.h
 src/internal/CMakeFiles/internal.dir/sprite.c.o: ../src/internal/sprite.c
 src/internal/CMakeFiles/internal.dir/sprite.c.o: ../src/internal/sprite.h

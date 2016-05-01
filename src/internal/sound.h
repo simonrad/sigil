@@ -5,13 +5,13 @@
 void sliSoundInit();
 void sliSoundDestroy();
 
-ALuint sliLoadWAV(const char *filename);
-ALuint sliSoundPlay(ALuint sound);
-ALuint sliSoundLoop(ALuint sound);
-void sliSoundPause(ALuint sound);
-void sliSoundStop(ALuint sound);
+int sliLoadWAV(const char *filename);
+int sliSoundPlay(int sound);
+int sliSoundLoop(int sound);
+void sliSoundPause(int sound);
+void sliSoundStop(int sound);
 void sliSoundPauseAll();
 void sliSoundStopAll();
 void sliSoundResumeAll();
-bool sliIsSoundPlaying(ALuint sound);
-bool sliIsSoundLooping(ALuint sound);
+int sliSoundPlaying(int sound);
+int sliSoundLooping(int sound);

@@ -40,7 +40,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/internal/shaders.h" />
-		<Unit filename="src/internal/sound.cpp" />
+		<Unit filename="src/internal/sound.c">
+			<Option compilerVar="CPP" />
+		</Unit>
 		<Unit filename="src/internal/sound.h" />
 		<Unit filename="src/internal/sprite.c">
 			<Option compilerVar="CC" />

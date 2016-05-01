@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.9)
 project(sigil)
 
 # allow static libs to be compiled into shared libs
-if(!MINGW)
+if(NOT MINGW)
 	set(CMAKE_C_FLAGS "-fPIC")
 endif()
 

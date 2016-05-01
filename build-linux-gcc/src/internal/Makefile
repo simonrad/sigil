@@ -276,6 +276,30 @@ shaders.c.s:
 	cd /home/geoff/sigil/build-linux-gcc && $(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/shaders.c.s
 .PHONY : shaders.c.s
 
+sound.o: sound.c.o
+.PHONY : sound.o
+
+# target to build an object file
+sound.c.o:
+	cd /home/geoff/sigil/build-linux-gcc && $(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/sound.c.o
+.PHONY : sound.c.o
+
+sound.i: sound.c.i
+.PHONY : sound.i
+
+# target to preprocess a source file
+sound.c.i:
+	cd /home/geoff/sigil/build-linux-gcc && $(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/sound.c.i
+.PHONY : sound.c.i
+
+sound.s: sound.c.s
+.PHONY : sound.s
+
+# target to generate assembly for a file
+sound.c.s:
+	cd /home/geoff/sigil/build-linux-gcc && $(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/sound.c.s
+.PHONY : sound.c.s
+
 sprite.o: sprite.c.o
 .PHONY : sprite.o
 
@@ -376,6 +400,9 @@ help:
 	@echo "... shaders.o"
 	@echo "... shaders.i"
 	@echo "... shaders.s"
+	@echo "... sound.o"
+	@echo "... sound.i"
+	@echo "... sound.s"
 	@echo "... sprite.o"
 	@echo "... sprite.i"
 	@echo "... sprite.s"

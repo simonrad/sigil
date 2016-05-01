@@ -30,6 +30,9 @@ src/internal/CMakeFiles/internal.dir/shaders.c.o
  /home/geoff/sigil/src/internal/shaders.h
  /home/geoff/sigil/src/util/shader.h
  /home/geoff/sigil/src/util/transform.h
+src/internal/CMakeFiles/internal.dir/sound.c.o
+ /home/geoff/sigil/src/internal/sound.c
+ /home/geoff/sigil/src/internal/sound.h
 src/internal/CMakeFiles/internal.dir/sprite.c.o
  /home/geoff/sigil/src/internal/shaders.h
  /home/geoff/sigil/src/internal/sprite.c

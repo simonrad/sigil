@@ -455,6 +455,8 @@ util_LIB_DEPENDS:STATIC=
 # INTERNAL cache entries
 ########################
 
+//Have include /opt/vc/include/bcm_host.h
+BCMHOST:INTERNAL=
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
