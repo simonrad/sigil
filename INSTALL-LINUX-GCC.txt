@@ -17,7 +17,7 @@ Also install the FreeType 2 (FT2) Library:
 
 	sudo apt-get install libfreetype6-dev
 
-We depend on OpenAL for audio:
+We need OpenAL for audio:
 
 	sudo apt-get install libopenal-dev
 

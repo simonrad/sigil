@@ -38,6 +38,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/glfw/include"
   "/usr/local/include/freetype2"
   "/usr/include/AL"
+  "src"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

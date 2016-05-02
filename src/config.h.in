@@ -1,5 +1,10 @@
 #pragma once
 
+// version of this build of SIGIL
+#define SIGIL_VERSION_MAJOR @SIGIL_VERSION_MAJOR@
+#define SIGIL_VERSION_MINOR @SIGIL_VERSION_MINOR@
+#define SIGIL_VERSION_REVISION @SIGIL_VERSION_REVISION@
+
 // exactly one of these defines should be used:
 
 // do we use GLFW for context/window/input handling?
@@ -7,3 +12,4 @@
 
 // do we use PIGU for context/window/input handling?
 #cmakedefine USE_PIGU
+
