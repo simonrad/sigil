@@ -56,271 +56,38 @@ CMAKE_SOURCE_DIR = /home/geoff/sigil
 CMAKE_BINARY_DIR = /home/geoff/sigil/build-linux-gcc
 
 #=============================================================================
-# Directory level rules for directory src
-
-# Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/sigil.dir/all
-src/all: src/util/all
-src/all: src/internal/all
-src/all: src/soil/all
-src/all: src/libdrawtext/all
-src/all: src/glfw/all
-.PHONY : src/all
-
-# Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/sigil.dir/clean
-src/clean: src/util/clean
-src/clean: src/internal/clean
-src/clean: src/soil/clean
-src/clean: src/libdrawtext/clean
-src/clean: src/glfw/clean
-.PHONY : src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/preinstall: src/util/preinstall
-src/preinstall: src/internal/preinstall
-src/preinstall: src/soil/preinstall
-src/preinstall: src/libdrawtext/preinstall
-src/preinstall: src/glfw/preinstall
-.PHONY : src/preinstall
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/sigil.dir
+# Target rules for target CMakeFiles/sigil.dir
 
 # All Build rule for target.
-src/CMakeFiles/sigil.dir/all: src/internal/CMakeFiles/internal.dir/all
-src/CMakeFiles/sigil.dir/all: src/soil/CMakeFiles/soil.dir/all
-src/CMakeFiles/sigil.dir/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
-src/CMakeFiles/sigil.dir/all: src/util/CMakeFiles/util.dir/all
-src/CMakeFiles/sigil.dir/all: src/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/depend
-	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  27
+CMakeFiles/sigil.dir/all: src/glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/depend
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
 	@echo "Built target sigil"
-.PHONY : src/CMakeFiles/sigil.dir/all
+.PHONY : CMakeFiles/sigil.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/sigil.dir/all
+all: CMakeFiles/sigil.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/sigil.dir/rule: cmake_check_build_system
+CMakeFiles/sigil.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 34
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/sigil.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sigil.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 0
-.PHONY : src/CMakeFiles/sigil.dir/rule
+.PHONY : CMakeFiles/sigil.dir/rule
 
 # Convenience name for target.
-sigil: src/CMakeFiles/sigil.dir/rule
+sigil: CMakeFiles/sigil.dir/rule
 .PHONY : sigil
 
 # clean rule for target.
-src/CMakeFiles/sigil.dir/clean:
-	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/clean
-.PHONY : src/CMakeFiles/sigil.dir/clean
+CMakeFiles/sigil.dir/clean:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/clean
+.PHONY : CMakeFiles/sigil.dir/clean
 
 # clean rule for target.
-clean: src/CMakeFiles/sigil.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/util
-
-# Convenience name for "all" pass in the directory.
-src/util/all: src/util/CMakeFiles/util.dir/all
-.PHONY : src/util/all
-
-# Convenience name for "clean" pass in the directory.
-src/util/clean: src/util/CMakeFiles/util.dir/clean
-.PHONY : src/util/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/util/preinstall:
-.PHONY : src/util/preinstall
-
-#=============================================================================
-# Target rules for target src/util/CMakeFiles/util.dir
-
-# All Build rule for target.
-src/util/CMakeFiles/util.dir/all:
-	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/depend
-	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  32 33 34
-	@echo "Built target util"
-.PHONY : src/util/CMakeFiles/util.dir/all
-
-# Include target in all.
-all: src/util/CMakeFiles/util.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/util/CMakeFiles/util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/util/CMakeFiles/util.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 0
-.PHONY : src/util/CMakeFiles/util.dir/rule
-
-# Convenience name for target.
-util: src/util/CMakeFiles/util.dir/rule
-.PHONY : util
-
-# clean rule for target.
-src/util/CMakeFiles/util.dir/clean:
-	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/clean
-.PHONY : src/util/CMakeFiles/util.dir/clean
-
-# clean rule for target.
-clean: src/util/CMakeFiles/util.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/internal
-
-# Convenience name for "all" pass in the directory.
-src/internal/all: src/internal/CMakeFiles/internal.dir/all
-.PHONY : src/internal/all
-
-# Convenience name for "clean" pass in the directory.
-src/internal/clean: src/internal/CMakeFiles/internal.dir/clean
-.PHONY : src/internal/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/internal/preinstall:
-.PHONY : src/internal/preinstall
-
-#=============================================================================
-# Target rules for target src/internal/CMakeFiles/internal.dir
-
-# All Build rule for target.
-src/internal/CMakeFiles/internal.dir/all:
-	$(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/depend
-	$(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  18 19 20 21 22 23 24 25 26
-	@echo "Built target internal"
-.PHONY : src/internal/CMakeFiles/internal.dir/all
-
-# Include target in all.
-all: src/internal/CMakeFiles/internal.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/internal/CMakeFiles/internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 src/internal/CMakeFiles/internal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 0
-.PHONY : src/internal/CMakeFiles/internal.dir/rule
-
-# Convenience name for target.
-internal: src/internal/CMakeFiles/internal.dir/rule
-.PHONY : internal
-
-# clean rule for target.
-src/internal/CMakeFiles/internal.dir/clean:
-	$(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/clean
-.PHONY : src/internal/CMakeFiles/internal.dir/clean
-
-# clean rule for target.
-clean: src/internal/CMakeFiles/internal.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/soil
-
-# Convenience name for "all" pass in the directory.
-src/soil/all: src/soil/CMakeFiles/soil.dir/all
-.PHONY : src/soil/all
-
-# Convenience name for "clean" pass in the directory.
-src/soil/clean: src/soil/CMakeFiles/soil.dir/clean
-.PHONY : src/soil/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/soil/preinstall:
-.PHONY : src/soil/preinstall
-
-#=============================================================================
-# Target rules for target src/soil/CMakeFiles/soil.dir
-
-# All Build rule for target.
-src/soil/CMakeFiles/soil.dir/all:
-	$(MAKE) -f src/soil/CMakeFiles/soil.dir/build.make src/soil/CMakeFiles/soil.dir/depend
-	$(MAKE) -f src/soil/CMakeFiles/soil.dir/build.make src/soil/CMakeFiles/soil.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  28 29 30 31
-	@echo "Built target soil"
-.PHONY : src/soil/CMakeFiles/soil.dir/all
-
-# Include target in all.
-all: src/soil/CMakeFiles/soil.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/soil/CMakeFiles/soil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/soil/CMakeFiles/soil.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 0
-.PHONY : src/soil/CMakeFiles/soil.dir/rule
-
-# Convenience name for target.
-soil: src/soil/CMakeFiles/soil.dir/rule
-.PHONY : soil
-
-# clean rule for target.
-src/soil/CMakeFiles/soil.dir/clean:
-	$(MAKE) -f src/soil/CMakeFiles/soil.dir/build.make src/soil/CMakeFiles/soil.dir/clean
-.PHONY : src/soil/CMakeFiles/soil.dir/clean
-
-# clean rule for target.
-clean: src/soil/CMakeFiles/soil.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/libdrawtext
-
-# Convenience name for "all" pass in the directory.
-src/libdrawtext/all: src/libdrawtext/CMakeFiles/drawtext.dir/all
-.PHONY : src/libdrawtext/all
-
-# Convenience name for "clean" pass in the directory.
-src/libdrawtext/clean: src/libdrawtext/CMakeFiles/drawtext.dir/clean
-.PHONY : src/libdrawtext/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/libdrawtext/preinstall:
-.PHONY : src/libdrawtext/preinstall
-
-#=============================================================================
-# Target rules for target src/libdrawtext/CMakeFiles/drawtext.dir
-
-# All Build rule for target.
-src/libdrawtext/CMakeFiles/drawtext.dir/all:
-	$(MAKE) -f src/libdrawtext/CMakeFiles/drawtext.dir/build.make src/libdrawtext/CMakeFiles/drawtext.dir/depend
-	$(MAKE) -f src/libdrawtext/CMakeFiles/drawtext.dir/build.make src/libdrawtext/CMakeFiles/drawtext.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  1 2 3
-	@echo "Built target drawtext"
-.PHONY : src/libdrawtext/CMakeFiles/drawtext.dir/all
-
-# Include target in all.
-all: src/libdrawtext/CMakeFiles/drawtext.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/libdrawtext/CMakeFiles/drawtext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/libdrawtext/CMakeFiles/drawtext.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geoff/sigil/build-linux-gcc/CMakeFiles 0
-.PHONY : src/libdrawtext/CMakeFiles/drawtext.dir/rule
-
-# Convenience name for target.
-drawtext: src/libdrawtext/CMakeFiles/drawtext.dir/rule
-.PHONY : drawtext
-
-# clean rule for target.
-src/libdrawtext/CMakeFiles/drawtext.dir/clean:
-	$(MAKE) -f src/libdrawtext/CMakeFiles/drawtext.dir/build.make src/libdrawtext/CMakeFiles/drawtext.dir/clean
-.PHONY : src/libdrawtext/CMakeFiles/drawtext.dir/clean
-
-# clean rule for target.
-clean: src/libdrawtext/CMakeFiles/drawtext.dir/clean
+clean: CMakeFiles/sigil.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -392,7 +159,7 @@ src/glfw/src/preinstall:
 src/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f src/glfw/src/CMakeFiles/glfw.dir/build.make src/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f src/glfw/src/CMakeFiles/glfw.dir/build.make src/glfw/src/CMakeFiles/glfw.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  4 5 6 7 8 9 10 11 12 13 14 15 16 17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14
 	@echo "Built target glfw"
 .PHONY : src/glfw/src/CMakeFiles/glfw.dir/all
 

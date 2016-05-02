@@ -152,60 +152,8 @@ sigil: cmake_check_build_system
 
 # fast build rule for target.
 sigil/fast:
-	$(MAKE) -f src/CMakeFiles/sigil.dir/build.make src/CMakeFiles/sigil.dir/build
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/build
 .PHONY : sigil/fast
-
-#=============================================================================
-# Target rules for targets named util
-
-# Build rule for target.
-util: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 util
-.PHONY : util
-
-# fast build rule for target.
-util/fast:
-	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/build
-.PHONY : util/fast
-
-#=============================================================================
-# Target rules for targets named internal
-
-# Build rule for target.
-internal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 internal
-.PHONY : internal
-
-# fast build rule for target.
-internal/fast:
-	$(MAKE) -f src/internal/CMakeFiles/internal.dir/build.make src/internal/CMakeFiles/internal.dir/build
-.PHONY : internal/fast
-
-#=============================================================================
-# Target rules for targets named soil
-
-# Build rule for target.
-soil: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 soil
-.PHONY : soil
-
-# fast build rule for target.
-soil/fast:
-	$(MAKE) -f src/soil/CMakeFiles/soil.dir/build.make src/soil/CMakeFiles/soil.dir/build
-.PHONY : soil/fast
-
-#=============================================================================
-# Target rules for targets named drawtext
-
-# Build rule for target.
-drawtext: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 drawtext
-.PHONY : drawtext
-
-# fast build rule for target.
-drawtext/fast:
-	$(MAKE) -f src/libdrawtext/CMakeFiles/drawtext.dir/build.make src/libdrawtext/CMakeFiles/drawtext.dir/build
-.PHONY : drawtext/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -233,6 +181,486 @@ glfw/fast:
 	$(MAKE) -f src/glfw/src/CMakeFiles/glfw.dir/build.make src/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+src/internal/circle.o: src/internal/circle.c.o
+.PHONY : src/internal/circle.o
+
+# target to build an object file
+src/internal/circle.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/circle.c.o
+.PHONY : src/internal/circle.c.o
+
+src/internal/circle.i: src/internal/circle.c.i
+.PHONY : src/internal/circle.i
+
+# target to preprocess a source file
+src/internal/circle.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/circle.c.i
+.PHONY : src/internal/circle.c.i
+
+src/internal/circle.s: src/internal/circle.c.s
+.PHONY : src/internal/circle.s
+
+# target to generate assembly for a file
+src/internal/circle.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/circle.c.s
+.PHONY : src/internal/circle.c.s
+
+src/internal/line.o: src/internal/line.c.o
+.PHONY : src/internal/line.o
+
+# target to build an object file
+src/internal/line.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/line.c.o
+.PHONY : src/internal/line.c.o
+
+src/internal/line.i: src/internal/line.c.i
+.PHONY : src/internal/line.i
+
+# target to preprocess a source file
+src/internal/line.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/line.c.i
+.PHONY : src/internal/line.c.i
+
+src/internal/line.s: src/internal/line.c.s
+.PHONY : src/internal/line.s
+
+# target to generate assembly for a file
+src/internal/line.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/line.c.s
+.PHONY : src/internal/line.c.s
+
+src/internal/point.o: src/internal/point.c.o
+.PHONY : src/internal/point.o
+
+# target to build an object file
+src/internal/point.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/point.c.o
+.PHONY : src/internal/point.c.o
+
+src/internal/point.i: src/internal/point.c.i
+.PHONY : src/internal/point.i
+
+# target to preprocess a source file
+src/internal/point.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/point.c.i
+.PHONY : src/internal/point.c.i
+
+src/internal/point.s: src/internal/point.c.s
+.PHONY : src/internal/point.s
+
+# target to generate assembly for a file
+src/internal/point.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/point.c.s
+.PHONY : src/internal/point.c.s
+
+src/internal/rectangle.o: src/internal/rectangle.c.o
+.PHONY : src/internal/rectangle.o
+
+# target to build an object file
+src/internal/rectangle.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/rectangle.c.o
+.PHONY : src/internal/rectangle.c.o
+
+src/internal/rectangle.i: src/internal/rectangle.c.i
+.PHONY : src/internal/rectangle.i
+
+# target to preprocess a source file
+src/internal/rectangle.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/rectangle.c.i
+.PHONY : src/internal/rectangle.c.i
+
+src/internal/rectangle.s: src/internal/rectangle.c.s
+.PHONY : src/internal/rectangle.s
+
+# target to generate assembly for a file
+src/internal/rectangle.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/rectangle.c.s
+.PHONY : src/internal/rectangle.c.s
+
+src/internal/shaders.o: src/internal/shaders.c.o
+.PHONY : src/internal/shaders.o
+
+# target to build an object file
+src/internal/shaders.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.o
+.PHONY : src/internal/shaders.c.o
+
+src/internal/shaders.i: src/internal/shaders.c.i
+.PHONY : src/internal/shaders.i
+
+# target to preprocess a source file
+src/internal/shaders.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.i
+.PHONY : src/internal/shaders.c.i
+
+src/internal/shaders.s: src/internal/shaders.c.s
+.PHONY : src/internal/shaders.s
+
+# target to generate assembly for a file
+src/internal/shaders.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.s
+.PHONY : src/internal/shaders.c.s
+
+src/internal/sound.o: src/internal/sound.c.o
+.PHONY : src/internal/sound.o
+
+# target to build an object file
+src/internal/sound.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sound.c.o
+.PHONY : src/internal/sound.c.o
+
+src/internal/sound.i: src/internal/sound.c.i
+.PHONY : src/internal/sound.i
+
+# target to preprocess a source file
+src/internal/sound.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sound.c.i
+.PHONY : src/internal/sound.c.i
+
+src/internal/sound.s: src/internal/sound.c.s
+.PHONY : src/internal/sound.s
+
+# target to generate assembly for a file
+src/internal/sound.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sound.c.s
+.PHONY : src/internal/sound.c.s
+
+src/internal/sprite.o: src/internal/sprite.c.o
+.PHONY : src/internal/sprite.o
+
+# target to build an object file
+src/internal/sprite.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sprite.c.o
+.PHONY : src/internal/sprite.c.o
+
+src/internal/sprite.i: src/internal/sprite.c.i
+.PHONY : src/internal/sprite.i
+
+# target to preprocess a source file
+src/internal/sprite.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sprite.c.i
+.PHONY : src/internal/sprite.c.i
+
+src/internal/sprite.s: src/internal/sprite.c.s
+.PHONY : src/internal/sprite.s
+
+# target to generate assembly for a file
+src/internal/sprite.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/sprite.c.s
+.PHONY : src/internal/sprite.c.s
+
+src/internal/text.o: src/internal/text.c.o
+.PHONY : src/internal/text.o
+
+# target to build an object file
+src/internal/text.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/text.c.o
+.PHONY : src/internal/text.c.o
+
+src/internal/text.i: src/internal/text.c.i
+.PHONY : src/internal/text.i
+
+# target to preprocess a source file
+src/internal/text.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/text.c.i
+.PHONY : src/internal/text.c.i
+
+src/internal/text.s: src/internal/text.c.s
+.PHONY : src/internal/text.s
+
+# target to generate assembly for a file
+src/internal/text.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/text.c.s
+.PHONY : src/internal/text.c.s
+
+src/internal/triangle.o: src/internal/triangle.c.o
+.PHONY : src/internal/triangle.o
+
+# target to build an object file
+src/internal/triangle.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/triangle.c.o
+.PHONY : src/internal/triangle.c.o
+
+src/internal/triangle.i: src/internal/triangle.c.i
+.PHONY : src/internal/triangle.i
+
+# target to preprocess a source file
+src/internal/triangle.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/triangle.c.i
+.PHONY : src/internal/triangle.c.i
+
+src/internal/triangle.s: src/internal/triangle.c.s
+.PHONY : src/internal/triangle.s
+
+# target to generate assembly for a file
+src/internal/triangle.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/triangle.c.s
+.PHONY : src/internal/triangle.c.s
+
+src/libdrawtext/drawgl.o: src/libdrawtext/drawgl.c.o
+.PHONY : src/libdrawtext/drawgl.o
+
+# target to build an object file
+src/libdrawtext/drawgl.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o
+.PHONY : src/libdrawtext/drawgl.c.o
+
+src/libdrawtext/drawgl.i: src/libdrawtext/drawgl.c.i
+.PHONY : src/libdrawtext/drawgl.i
+
+# target to preprocess a source file
+src/libdrawtext/drawgl.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.i
+.PHONY : src/libdrawtext/drawgl.c.i
+
+src/libdrawtext/drawgl.s: src/libdrawtext/drawgl.c.s
+.PHONY : src/libdrawtext/drawgl.s
+
+# target to generate assembly for a file
+src/libdrawtext/drawgl.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.s
+.PHONY : src/libdrawtext/drawgl.c.s
+
+src/libdrawtext/font.o: src/libdrawtext/font.c.o
+.PHONY : src/libdrawtext/font.o
+
+# target to build an object file
+src/libdrawtext/font.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/font.c.o
+.PHONY : src/libdrawtext/font.c.o
+
+src/libdrawtext/font.i: src/libdrawtext/font.c.i
+.PHONY : src/libdrawtext/font.i
+
+# target to preprocess a source file
+src/libdrawtext/font.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/font.c.i
+.PHONY : src/libdrawtext/font.c.i
+
+src/libdrawtext/font.s: src/libdrawtext/font.c.s
+.PHONY : src/libdrawtext/font.s
+
+# target to generate assembly for a file
+src/libdrawtext/font.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/font.c.s
+.PHONY : src/libdrawtext/font.c.s
+
+src/libdrawtext/utf8.o: src/libdrawtext/utf8.c.o
+.PHONY : src/libdrawtext/utf8.o
+
+# target to build an object file
+src/libdrawtext/utf8.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.o
+.PHONY : src/libdrawtext/utf8.c.o
+
+src/libdrawtext/utf8.i: src/libdrawtext/utf8.c.i
+.PHONY : src/libdrawtext/utf8.i
+
+# target to preprocess a source file
+src/libdrawtext/utf8.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.i
+.PHONY : src/libdrawtext/utf8.c.i
+
+src/libdrawtext/utf8.s: src/libdrawtext/utf8.c.s
+.PHONY : src/libdrawtext/utf8.s
+
+# target to generate assembly for a file
+src/libdrawtext/utf8.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.s
+.PHONY : src/libdrawtext/utf8.c.s
+
+src/sl.o: src/sl.c.o
+.PHONY : src/sl.o
+
+# target to build an object file
+src/sl.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/sl.c.o
+.PHONY : src/sl.c.o
+
+src/sl.i: src/sl.c.i
+.PHONY : src/sl.i
+
+# target to preprocess a source file
+src/sl.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/sl.c.i
+.PHONY : src/sl.c.i
+
+src/sl.s: src/sl.c.s
+.PHONY : src/sl.s
+
+# target to generate assembly for a file
+src/sl.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/sl.c.s
+.PHONY : src/sl.c.s
+
+src/soil/SOIL.o: src/soil/SOIL.c.o
+.PHONY : src/soil/SOIL.o
+
+# target to build an object file
+src/soil/SOIL.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/SOIL.c.o
+.PHONY : src/soil/SOIL.c.o
+
+src/soil/SOIL.i: src/soil/SOIL.c.i
+.PHONY : src/soil/SOIL.i
+
+# target to preprocess a source file
+src/soil/SOIL.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/SOIL.c.i
+.PHONY : src/soil/SOIL.c.i
+
+src/soil/SOIL.s: src/soil/SOIL.c.s
+.PHONY : src/soil/SOIL.s
+
+# target to generate assembly for a file
+src/soil/SOIL.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/SOIL.c.s
+.PHONY : src/soil/SOIL.c.s
+
+src/soil/image_DXT.o: src/soil/image_DXT.c.o
+.PHONY : src/soil/image_DXT.o
+
+# target to build an object file
+src/soil/image_DXT.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_DXT.c.o
+.PHONY : src/soil/image_DXT.c.o
+
+src/soil/image_DXT.i: src/soil/image_DXT.c.i
+.PHONY : src/soil/image_DXT.i
+
+# target to preprocess a source file
+src/soil/image_DXT.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_DXT.c.i
+.PHONY : src/soil/image_DXT.c.i
+
+src/soil/image_DXT.s: src/soil/image_DXT.c.s
+.PHONY : src/soil/image_DXT.s
+
+# target to generate assembly for a file
+src/soil/image_DXT.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_DXT.c.s
+.PHONY : src/soil/image_DXT.c.s
+
+src/soil/image_helper.o: src/soil/image_helper.c.o
+.PHONY : src/soil/image_helper.o
+
+# target to build an object file
+src/soil/image_helper.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_helper.c.o
+.PHONY : src/soil/image_helper.c.o
+
+src/soil/image_helper.i: src/soil/image_helper.c.i
+.PHONY : src/soil/image_helper.i
+
+# target to preprocess a source file
+src/soil/image_helper.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_helper.c.i
+.PHONY : src/soil/image_helper.c.i
+
+src/soil/image_helper.s: src/soil/image_helper.c.s
+.PHONY : src/soil/image_helper.s
+
+# target to generate assembly for a file
+src/soil/image_helper.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/image_helper.c.s
+.PHONY : src/soil/image_helper.c.s
+
+src/soil/stb_image_aug.o: src/soil/stb_image_aug.c.o
+.PHONY : src/soil/stb_image_aug.o
+
+# target to build an object file
+src/soil/stb_image_aug.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.o
+.PHONY : src/soil/stb_image_aug.c.o
+
+src/soil/stb_image_aug.i: src/soil/stb_image_aug.c.i
+.PHONY : src/soil/stb_image_aug.i
+
+# target to preprocess a source file
+src/soil/stb_image_aug.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.i
+.PHONY : src/soil/stb_image_aug.c.i
+
+src/soil/stb_image_aug.s: src/soil/stb_image_aug.c.s
+.PHONY : src/soil/stb_image_aug.s
+
+# target to generate assembly for a file
+src/soil/stb_image_aug.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.s
+.PHONY : src/soil/stb_image_aug.c.s
+
+src/util/images.o: src/util/images.c.o
+.PHONY : src/util/images.o
+
+# target to build an object file
+src/util/images.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/images.c.o
+.PHONY : src/util/images.c.o
+
+src/util/images.i: src/util/images.c.i
+.PHONY : src/util/images.i
+
+# target to preprocess a source file
+src/util/images.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/images.c.i
+.PHONY : src/util/images.c.i
+
+src/util/images.s: src/util/images.c.s
+.PHONY : src/util/images.s
+
+# target to generate assembly for a file
+src/util/images.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/images.c.s
+.PHONY : src/util/images.c.s
+
+src/util/shader.o: src/util/shader.c.o
+.PHONY : src/util/shader.o
+
+# target to build an object file
+src/util/shader.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/shader.c.o
+.PHONY : src/util/shader.c.o
+
+src/util/shader.i: src/util/shader.c.i
+.PHONY : src/util/shader.i
+
+# target to preprocess a source file
+src/util/shader.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/shader.c.i
+.PHONY : src/util/shader.c.i
+
+src/util/shader.s: src/util/shader.c.s
+.PHONY : src/util/shader.s
+
+# target to generate assembly for a file
+src/util/shader.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/shader.c.s
+.PHONY : src/util/shader.c.s
+
+src/util/transform.o: src/util/transform.c.o
+.PHONY : src/util/transform.o
+
+# target to build an object file
+src/util/transform.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/transform.c.o
+.PHONY : src/util/transform.c.o
+
+src/util/transform.i: src/util/transform.c.i
+.PHONY : src/util/transform.i
+
+# target to preprocess a source file
+src/util/transform.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/transform.c.i
+.PHONY : src/util/transform.c.i
+
+src/util/transform.s: src/util/transform.c.s
+.PHONY : src/util/transform.s
+
+# target to generate assembly for a file
+src/util/transform.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/util/transform.c.s
+.PHONY : src/util/transform.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,12 +674,68 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... sigil"
-	@echo "... util"
-	@echo "... internal"
-	@echo "... soil"
-	@echo "... drawtext"
 	@echo "... uninstall"
 	@echo "... glfw"
+	@echo "... src/internal/circle.o"
+	@echo "... src/internal/circle.i"
+	@echo "... src/internal/circle.s"
+	@echo "... src/internal/line.o"
+	@echo "... src/internal/line.i"
+	@echo "... src/internal/line.s"
+	@echo "... src/internal/point.o"
+	@echo "... src/internal/point.i"
+	@echo "... src/internal/point.s"
+	@echo "... src/internal/rectangle.o"
+	@echo "... src/internal/rectangle.i"
+	@echo "... src/internal/rectangle.s"
+	@echo "... src/internal/shaders.o"
+	@echo "... src/internal/shaders.i"
+	@echo "... src/internal/shaders.s"
+	@echo "... src/internal/sound.o"
+	@echo "... src/internal/sound.i"
+	@echo "... src/internal/sound.s"
+	@echo "... src/internal/sprite.o"
+	@echo "... src/internal/sprite.i"
+	@echo "... src/internal/sprite.s"
+	@echo "... src/internal/text.o"
+	@echo "... src/internal/text.i"
+	@echo "... src/internal/text.s"
+	@echo "... src/internal/triangle.o"
+	@echo "... src/internal/triangle.i"
+	@echo "... src/internal/triangle.s"
+	@echo "... src/libdrawtext/drawgl.o"
+	@echo "... src/libdrawtext/drawgl.i"
+	@echo "... src/libdrawtext/drawgl.s"
+	@echo "... src/libdrawtext/font.o"
+	@echo "... src/libdrawtext/font.i"
+	@echo "... src/libdrawtext/font.s"
+	@echo "... src/libdrawtext/utf8.o"
+	@echo "... src/libdrawtext/utf8.i"
+	@echo "... src/libdrawtext/utf8.s"
+	@echo "... src/sl.o"
+	@echo "... src/sl.i"
+	@echo "... src/sl.s"
+	@echo "... src/soil/SOIL.o"
+	@echo "... src/soil/SOIL.i"
+	@echo "... src/soil/SOIL.s"
+	@echo "... src/soil/image_DXT.o"
+	@echo "... src/soil/image_DXT.i"
+	@echo "... src/soil/image_DXT.s"
+	@echo "... src/soil/image_helper.o"
+	@echo "... src/soil/image_helper.i"
+	@echo "... src/soil/image_helper.s"
+	@echo "... src/soil/stb_image_aug.o"
+	@echo "... src/soil/stb_image_aug.i"
+	@echo "... src/soil/stb_image_aug.s"
+	@echo "... src/util/images.o"
+	@echo "... src/util/images.i"
+	@echo "... src/util/images.s"
+	@echo "... src/util/shader.o"
+	@echo "... src/util/shader.i"
+	@echo "... src/util/shader.s"
+	@echo "... src/util/transform.o"
+	@echo "... src/util/transform.i"
+	@echo "... src/util/transform.s"
 .PHONY : help
 
 

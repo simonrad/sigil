@@ -1,2 +1,0 @@
-/usr/bin/ar cr libdrawtext.a  CMakeFiles/drawtext.dir/drawgl.c.o CMakeFiles/drawtext.dir/font.c.o CMakeFiles/drawtext.dir/utf8.c.o
-/usr/bin/ranlib libdrawtext.a
