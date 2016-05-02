@@ -143,19 +143,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pigu
-
-# Build rule for target.
-pigu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pigu
-.PHONY : pigu
-
-# fast build rule for target.
-pigu/fast:
-	$(MAKE) -f CMakeFiles/pigu.dir/build.make CMakeFiles/pigu.dir/build
-.PHONY : pigu/fast
-
-#=============================================================================
 # Target rules for targets named sigil
 
 # Build rule for target.
@@ -167,6 +154,19 @@ sigil: cmake_check_build_system
 sigil/fast:
 	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/build
 .PHONY : sigil/fast
+
+#=============================================================================
+# Target rules for targets named pigu
+
+# Build rule for target.
+pigu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pigu
+.PHONY : pigu
+
+# fast build rule for target.
+pigu/fast:
+	$(MAKE) -f src/pigu/CMakeFiles/pigu.dir/build.make src/pigu/CMakeFiles/pigu.dir/build
+.PHONY : pigu/fast
 
 src/internal/circle.o: src/internal/circle.c.o
 .PHONY : src/internal/circle.o
@@ -659,9 +659,9 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... pigu"
 	@echo "... rebuild_cache"
 	@echo "... sigil"
+	@echo "... pigu"
 	@echo "... src/internal/circle.o"
 	@echo "... src/internal/circle.i"
 	@echo "... src/internal/circle.s"

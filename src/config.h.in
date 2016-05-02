@@ -1,3 +1,9 @@
-#cmakedefine USE_GLFW
-#cmakedefine USE_PIGU
+#pragma once
 
+// exactly one of these defines should be used:
+
+// do we use GLFW for context/window/input handling?
+#cmakedefine USE_GLFW
+
+// do we use PIGU for context/window/input handling?
+#cmakedefine USE_PIGU

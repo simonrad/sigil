@@ -1,0 +1,2 @@
+/usr/bin/ar cr libpigu.a  CMakeFiles/pigu.dir/src/graphics.c.o CMakeFiles/pigu.dir/src/input.c.o CMakeFiles/pigu.dir/src/pigu.c.o CMakeFiles/pigu.dir/src/state.c.o CMakeFiles/pigu.dir/src/time.c.o
+/usr/bin/ranlib libpigu.a

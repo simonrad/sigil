@@ -29,12 +29,14 @@ SET(CMAKE_C_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/pi/sigil/build-rpi/src/pigu/CMakeFiles/pigu.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../src/pigu/include"
+  "src"
   "/usr/local/include/freetype2"
   "/usr/local/include"
   "/usr/include/AL"

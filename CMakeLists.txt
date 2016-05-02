@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.8.9)
 project(sigil)
 set(CMAKE_BUILD_TYPE Release)
 
+# by default, we don't use GLFW or PIGU
+set(USE_PIGU OFF)
+set(USE_GLFW OFF)
+
 # define our source files
 include_directories(include)
 set(
@@ -56,22 +60,16 @@ if(NOT FOUND_BCM)
 
 endif()
 
-# setup any compile-time variables
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/src/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/src/config.h)
-
 # the RPi uses the PIGU library for window, input, and context handling
 if(FOUND_BCM)
 
-	# PIGU already includes a makefile, so let's invoke that to compile
-	add_custom_target(
-		pigu
-		COMMAND make
-		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/pigu
-	)
-
-	# add the include file and the library we just built with PIGU's makefile
+	# use the cmake file we added to PIGU
+	add_subdirectory(${CMAKE_SOURCE_DIR}/src/pigu)
 	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
-	target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/pigu/lib/libpigu.a)
+	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
+
+	# tell config.h to use PIGU, not GLFW
+	set(USE_PIGU ON)
 
 else()
 
@@ -95,7 +93,14 @@ else()
 
 	endif()
 
+	# tell config.h to use GLFW, not PIGU
+	set(USE_GLFW ON)
+
 endif()
+
+# setup any compile-time variables
+configure_file(${CMAKE_SOURCE_DIR}/src/config.h.in ${CMAKE_BINARY_DIR}/src/config.h)
+include_directories(${CMAKE_BINARY_DIR}/src)
 
 # give the RPi a little hint with the whereabouts of freetype
 if(FOUND_BCM)

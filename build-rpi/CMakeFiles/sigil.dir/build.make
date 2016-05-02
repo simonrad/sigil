@@ -559,9 +559,14 @@ libsigil.so: CMakeFiles/sigil.dir/src/util/images.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/shader.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/transform.c.o
 libsigil.so: CMakeFiles/sigil.dir/build.make
-libsigil.so: ../src/pigu/lib/libpigu.a
+libsigil.so: src/pigu/libpigu.a
 libsigil.so: /usr/local/lib/libfreetype.a
 libsigil.so: /usr/lib/arm-linux-gnueabihf/libopenal.so
+libsigil.so: /opt/vc/lib/libGLESv2.so
+libsigil.so: /opt/vc/lib/libEGL.so
+libsigil.so: /opt/vc/lib/libbcm_host.so
+libsigil.so: /opt/vc/lib/libvcos.so
+libsigil.so: /usr/lib/arm-linux-gnueabihf/librt.so
 libsigil.so: CMakeFiles/sigil.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library libsigil.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sigil.dir/link.txt --verbose=$(VERBOSE)
