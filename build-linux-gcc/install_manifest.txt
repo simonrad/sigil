@@ -1,9 +1,0 @@
-/usr/lib/libsigil.so
-/usr/lib/include/GLFW/glfw3.h
-/usr/lib/include/GLFW/glfw3native.h
-/usr/lib/lib/cmake/glfw3/glfw3Config.cmake
-/usr/lib/lib/cmake/glfw3/glfw3ConfigVersion.cmake
-/usr/lib/lib/cmake/glfw3/glfw3Targets.cmake
-/usr/lib/lib/cmake/glfw3/glfw3Targets-release.cmake
-/usr/lib/lib/pkgconfig/glfw3.pc
-/usr/lib/lib/libglfw3.a

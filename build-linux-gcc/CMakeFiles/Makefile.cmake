@@ -11,6 +11,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "../src/config.h.in"
   "../src/glfw/CMake/modules/FindVulkan.cmake"
   "../src/glfw/CMakeLists.txt"
   "../src/glfw/cmake_uninstall.cmake.in"
@@ -58,6 +59,7 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 SET(CMAKE_MAKEFILE_PRODUCTS
+  "src/config.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"

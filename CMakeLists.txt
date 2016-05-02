@@ -22,7 +22,7 @@ set(
 	src/soil/image_DXT
 	src/soil/image_helper
 	src/soil/SOIL
-	src/soil/stb_image_aug	
+	src/soil/stb_image_aug
 	src/util/images
 	src/util/shader
 	src/util/transform
@@ -44,31 +44,60 @@ endif()
 
 # RPi's don't use GLEW, but everything else does
 if(NOT FOUND_BCM)
-	# we depend on GLEW---it is available on apt and a cmake 'find' module is available for it
+	
+	# we depend on GLEW---it's on apt and a cmake 'find' module is available for it
 	find_package(GLEW REQUIRED)
 	if(GLEW_FOUND)
+
 		include_directories(${GLEW_INCLUDE_DIRS})
 		target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
+
 	endif()
+
 endif()
 
-# we depend on GLFW3, which is not available on apt---we integrate it per the instructions at http://www.glfw.org/docs/latest/build.html;
-# note that this only works on Linux; since there's no easy way to build GLFW3 using MinGW on-the-fly, we just link to pre-compiled libs
-if(MINGW)							# Windows MinGW compiler
-	# when using MinGW, we link to pre-compiled libs instead
-	include_directories(src/glfw/include/GLFW)
-	target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
-elseif(NOT FOUND_BCM)				# any other Linux system (that's not an RPi)
-	# don't bother building the GLFW docs, examples, or tests
-	set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
-	set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
-	set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
+# setup any compile-time variables
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/src/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/src/config.h)
 
-	# with all other systems we can build straight from GLFW3 source alongside SIGIL
-	add_subdirectory(src/glfw)
-	include_directories(src/glfw/include)
-	target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+# the RPi uses the PIGU library for window, input, and context handling
+if(FOUND_BCM)
+
+	# PIGU already includes a makefile, so let's invoke that to compile
+	add_custom_target(
+		pigu
+		COMMAND make
+		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/pigu
+	)
+
+	# add the include file and the library we just built with PIGU's makefile
+	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
+	target_link_libraries(${CMAKE_SOURCE_DIR}/src/pigu/lib/libpigu.a)
+
+else()
+
+	# when using MinGW on Windows, we link to pre-compiled libs
+	if(MINGW)
+
+		include_directories(src/glfw/include/GLFW)
+		target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
+
+	else()
+
+		# linux systems can build GLFW from source more easily, but don't bother building docs, examples, or tests
+		set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
+		set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
+		set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
+
+		# with all other systems we can build straight from GLFW3 source alongside SIGIL
+		add_subdirectory(${CMAKE_SOURCE_DIR}/src/glfw)
+		include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
+		target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+
+	endif()
+
 endif()
+
+
 
 # we depend on Freetype---it is available on apt and a cmake find module is available for it
 find_package(Freetype REQUIRED)
@@ -77,16 +106,22 @@ target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
 
 # we depend on OpenAL
 if(MINGW)
+
 	# when using MinGW, we link to pre-compiled libs instead
 	include_directories(${CMAKE_SOURCE_DIR}/openal/include)
 	target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/openal/lib/mingw32/libOpenAL32.dll.a)
+
 else()
+
 	# on other platforms, we can just use whatever we downloaded from apt
 	find_package(OpenAL REQUIRED)
 	if(OPENAL_FOUND)
+
 		include_directories(${OPENAL_INCLUDE_DIR})
 		target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
+
 	endif()
+
 endif()
 
 # we depend on OpenGL---it should already be installed and we just need to link to it
@@ -103,3 +138,4 @@ else()
 endif()
 
 # end of root CMakeLists.txt
+

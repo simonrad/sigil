@@ -1,0 +1,3 @@
+#cmakedefine USE_GLFW
+#cmakedefine USE_PIGU
+
