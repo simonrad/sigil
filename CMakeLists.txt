@@ -71,7 +71,7 @@ if(FOUND_BCM)
 
 	# add the include file and the library we just built with PIGU's makefile
 	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
-	target_link_libraries(${CMAKE_SOURCE_DIR}/src/pigu/lib/libpigu.a)
+	target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/pigu/lib/libpigu.a)
 
 else()
 
@@ -97,7 +97,12 @@ else()
 
 endif()
 
-
+# give the RPi a little hint with the whereabouts of freetype
+if(FOUND_BCM)
+	set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
+	set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
+	set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
+endif()
 
 # we depend on Freetype---it is available on apt and a cmake find module is available for it
 find_package(Freetype REQUIRED)

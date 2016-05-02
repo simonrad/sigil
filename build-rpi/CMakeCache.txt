@@ -158,12 +158,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a file.
 FOUND_BCM:FILEPATH=/opt/vc/include/bcm_host.h
 
-//Path to a file.
-FREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include
-
-//Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=/usr/include/freetype2
-
 //Path to a library.
 FREETYPE_LIBRARY:FILEPATH=/usr/local/lib/libfreetype.a
 
@@ -177,7 +171,7 @@ OPENAL_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libopenal.so
 sigil_BINARY_DIR:STATIC=/home/pi/sigil/build-rpi
 
 //Dependencies for the target
-sigil_LIB_DEPENDS:STATIC=general;/usr/local/lib/libfreetype.a;general;/usr/lib/arm-linux-gnueabihf/libopenal.so;general;GL;
+sigil_LIB_DEPENDS:STATIC=general;/home/pi/sigil/src/pigu/lib/libpigu.a;general;/usr/local/lib/libfreetype.a;general;/usr/lib/arm-linux-gnueabihf/libopenal.so;general;GL;
 
 //Value Computed by CMake
 sigil_SOURCE_DIR:STATIC=/home/pi/sigil
@@ -189,8 +183,6 @@ sigil_SOURCE_DIR:STATIC=/home/pi/sigil
 
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_BUILD_TOOL
-CMAKE_BUILD_TOOL-ADVANCED:INTERNAL=1
 //What is the target build tool cmake is generating for.
 CMAKE_BUILD_TOOL:INTERNAL=/usr/bin/make
 //This is the directory where this CMakeCache.txt was created
@@ -311,17 +303,9 @@ CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Freetype
-FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[/usr/local/lib/libfreetype.a][/usr/include/freetype2;/usr/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[/usr/local/lib/libfreetype.a][/usr/local/include/freetype2;/usr/local/include][v()]
 //Details about finding OpenAL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/arm-linux-gnueabihf/libopenal.so][/usr/include/AL][v()]
-//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
-FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: FREETYPE_INCLUDE_DIR_freetype2
-FREETYPE_INCLUDE_DIR_freetype2-MODIFIED:INTERNAL=ON
-//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
-FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: FREETYPE_INCLUDE_DIR_ft2build
-FREETYPE_INCLUDE_DIR_ft2build-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: FREETYPE_LIBRARY
 FREETYPE_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENAL_INCLUDE_DIR

@@ -559,6 +559,7 @@ libsigil.so: CMakeFiles/sigil.dir/src/util/images.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/shader.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/transform.c.o
 libsigil.so: CMakeFiles/sigil.dir/build.make
+libsigil.so: ../src/pigu/lib/libpigu.a
 libsigil.so: /usr/local/lib/libfreetype.a
 libsigil.so: /usr/lib/arm-linux-gnueabihf/libopenal.so
 libsigil.so: CMakeFiles/sigil.dir/link.txt

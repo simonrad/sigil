@@ -56,6 +56,37 @@ CMAKE_SOURCE_DIR = /home/pi/sigil
 CMAKE_BINARY_DIR = /home/pi/sigil/build-rpi
 
 #=============================================================================
+# Target rules for target CMakeFiles/pigu.dir
+
+# All Build rule for target.
+CMakeFiles/pigu.dir/all:
+	$(MAKE) -f CMakeFiles/pigu.dir/build.make CMakeFiles/pigu.dir/depend
+	$(MAKE) -f CMakeFiles/pigu.dir/build.make CMakeFiles/pigu.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles 
+	@echo "Built target pigu"
+.PHONY : CMakeFiles/pigu.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pigu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/sigil/build-rpi/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pigu.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/sigil/build-rpi/CMakeFiles 0
+.PHONY : CMakeFiles/pigu.dir/rule
+
+# Convenience name for target.
+pigu: CMakeFiles/pigu.dir/rule
+.PHONY : pigu
+
+# clean rule for target.
+CMakeFiles/pigu.dir/clean:
+	$(MAKE) -f CMakeFiles/pigu.dir/build.make CMakeFiles/pigu.dir/clean
+.PHONY : CMakeFiles/pigu.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pigu.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sigil.dir
 
 # All Build rule for target.
