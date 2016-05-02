@@ -14,4 +14,3 @@ add_library(
 find_package(Freetype REQUIRED)
 include_directories(${FREETYPE_INCLUDE_DIRS})
 target_link_libraries(drawtext ${FREETYPE_LIBRARIES})
-

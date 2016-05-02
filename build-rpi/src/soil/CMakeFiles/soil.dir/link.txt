@@ -1,2 +1,0 @@
-/usr/bin/ar cr libsoil.a  CMakeFiles/soil.dir/image_DXT.c.o CMakeFiles/soil.dir/image_helper.c.o CMakeFiles/soil.dir/SOIL.c.o CMakeFiles/soil.dir/stb_image_aug.c.o
-/usr/bin/ranlib libsoil.a

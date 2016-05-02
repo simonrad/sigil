@@ -1,20 +1,167 @@
 Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
 Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec961001978/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec961001978.dir/build.make CMakeFiles/cmTryCompileExec961001978.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec703622658/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec703622658.dir/build.make CMakeFiles/cmTryCompileExec703622658.dir/build
 make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTryCompileExec703622658.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -fPIC     -o CMakeFiles/cmTryCompileExec703622658.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 In file included from /opt/vc/include/bcm_host.h:50:0,
                  from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
 /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33:33: fatal error: interface/vcos/vcos.h: No such file or directory
 compilation terminated.
-CMakeFiles/cmTryCompileExec961001978.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o' failed
+CMakeFiles/cmTryCompileExec703622658.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec703622658.dir/CheckIncludeFile.c.o' failed
 make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec961001978.dir/CheckIncludeFile.c.o] Error 1
-Makefile:117: recipe for target 'cmTryCompileExec961001978/fast' failed
-make: *** [cmTryCompileExec961001978/fast] Error 2
+make[1]: *** [CMakeFiles/cmTryCompileExec703622658.dir/CheckIncludeFile.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec703622658/fast' failed
+make: *** [cmTryCompileExec703622658/fast] Error 2
+
+
+Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3560810331/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3560810331.dir/build.make CMakeFiles/cmTryCompileExec3560810331.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3560810331.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -fPIC   -I/usr/local/include    -o CMakeFiles/cmTryCompileExec3560810331.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /opt/vc/include/bcm_host.h:50:0,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33:33: fatal error: interface/vcos/vcos.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec3560810331.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec3560810331.dir/CheckIncludeFile.c.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3560810331.dir/CheckIncludeFile.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec3560810331/fast' failed
+make: *** [cmTryCompileExec3560810331/fast] Error 2
+
+
+Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec829266782/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec829266782.dir/build.make CMakeFiles/cmTryCompileExec829266782.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec829266782.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -fPIC   -I/opt/vc/include    -o CMakeFiles/cmTryCompileExec829266782.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /opt/vc/include/interface/vcos/vcos_assert.h:149:0,
+                 from /opt/vc/include/interface/vcos/vcos.h:114,
+                 from /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33,
+                 from /opt/vc/include/bcm_host.h:50,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/opt/vc/include/interface/vcos/vcos_types.h:38:33: fatal error: vcos_platform_types.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec829266782.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec829266782.dir/CheckIncludeFile.c.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec829266782.dir/CheckIncludeFile.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec829266782/fast' failed
+make: *** [cmTryCompileExec829266782/fast] Error 2
+
+
+Determining if the include file bcm_host.h exists failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4116269439/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4116269439.dir/build.make CMakeFiles/cmTryCompileExec4116269439.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4116269439.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -fPIC   -I/opt/vc/include    -o CMakeFiles/cmTryCompileExec4116269439.dir/CheckIncludeFile.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /opt/vc/include/interface/vcos/vcos_assert.h:149:0,
+                 from /opt/vc/include/interface/vcos/vcos.h:114,
+                 from /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33,
+                 from /opt/vc/include/bcm_host.h:50,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/opt/vc/include/interface/vcos/vcos_types.h:38:33: fatal error: vcos_platform_types.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec4116269439.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec4116269439.dir/CheckIncludeFile.c.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4116269439.dir/CheckIncludeFile.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec4116269439/fast' failed
+make: *** [cmTryCompileExec4116269439/fast] Error 2
+
+
+Determining if files /opt/vc/include/bcm_host.h exist failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2862627914/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2862627914.dir/build.make CMakeFiles/cmTryCompileExec2862627914.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2862627914.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -fPIC   -I/opt/vc/include    -o CMakeFiles/cmTryCompileExec2862627914.dir/CheckIncludeFiles.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+In file included from /opt/vc/include/interface/vcos/vcos_assert.h:149:0,
+                 from /opt/vc/include/interface/vcos/vcos.h:114,
+                 from /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33,
+                 from /opt/vc/include/bcm_host.h:50,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:
+/opt/vc/include/interface/vcos/vcos_types.h:38:33: fatal error: vcos_platform_types.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec2862627914.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec2862627914.dir/CheckIncludeFiles.c.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2862627914.dir/CheckIncludeFiles.c.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec2862627914/fast' failed
+make: *** [cmTryCompileExec2862627914/fast] Error 2
+
+Source:
+/* */
+#include </opt/vc/include/bcm_host.h>
+
+
+int main(){return 0;}
+
+Determining if files /opt/vc/include/bcm_host.h exist failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1643826174/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1643826174.dir/build.make CMakeFiles/cmTryCompileExec1643826174.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1643826174.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -fPIC   -I/opt/vc/include    -o CMakeFiles/cmTryCompileExec1643826174.dir/CheckIncludeFiles.c.o   -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+In file included from /opt/vc/include/interface/vcos/vcos_assert.h:149:0,
+                 from /opt/vc/include/interface/vcos/vcos.h:114,
+                 from /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33,
+                 from /opt/vc/include/bcm_host.h:50,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:
+/opt/vc/include/interface/vcos/vcos_types.h:38:33: fatal error: vcos_platform_types.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec1643826174.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec1643826174.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec1643826174.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec1643826174/fast' failed
+make: *** [cmTryCompileExec1643826174/fast] Error 2
+
+Source:
+/* */
+#include </opt/vc/include/bcm_host.h>
+
+
+int main(){return 0;}
+
+Determining if the include file /opt/vc/include/bcm_host.h exists failed with the following output:
+Change Dir: /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2970879617/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2970879617.dir/build.make CMakeFiles/cmTryCompileExec2970879617.dir/build
+make[1]: Entering directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2970879617.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -I/opt/vc/include    -o CMakeFiles/cmTryCompileExec2970879617.dir/CheckIncludeFile.cxx.o -c /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /opt/vc/include/interface/vcos/vcos_assert.h:149:0,
+                 from /opt/vc/include/interface/vcos/vcos.h:114,
+                 from /opt/vc/include/interface/vmcs_host/vc_dispmanx.h:33,
+                 from /opt/vc/include/bcm_host.h:50,
+                 from /home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/opt/vc/include/interface/vcos/vcos_types.h:38:33: fatal error: vcos_platform_types.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTryCompileExec2970879617.dir/build.make:60: recipe for target 'CMakeFiles/cmTryCompileExec2970879617.dir/CheckIncludeFile.cxx.o' failed
+make[1]: Leaving directory '/home/pi/sigil/build-rpi/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2970879617.dir/CheckIncludeFile.cxx.o] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec2970879617/fast' failed
+make: *** [cmTryCompileExec2970879617/fast] Error 2
 
 

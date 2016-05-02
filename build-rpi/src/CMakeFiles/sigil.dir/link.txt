@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libsigil.so -o libsigil.so CMakeFiles/sigil.dir/sl.c.o internal/libinternal.a libdrawtext/libdrawtext.a util/libutil.a soil/libsoil.a -lGLEW glfw/src/libglfw3.a -lopenal -lGL /usr/local/lib/libfreetype.so -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor -Wl,-rpath,/usr/local/lib: 

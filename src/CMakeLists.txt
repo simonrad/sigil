@@ -12,6 +12,9 @@ set(CMAKE_INSTALL_PREFIX "/usr/lib")
 # add source files to the project
 add_library(sigil SHARED sl.c)
 
+# the presence of bcm_host.h means we're probably running on an RPi
+find_file(FOUND_BCM bcm_host.h /opt/vc/include)
+
 # add subdirectories to the project (only Linux projects add GLFW, and do this one dir level up)
 add_subdirectory(util)
 add_subdirectory(internal)
@@ -21,20 +24,18 @@ add_subdirectory(libdrawtext)
 # link the libs we've built in the subdirectories
 target_link_libraries(sigil internal drawtext util soil)
 
-# we depend on GLEW---it is available on apt and a cmake 'find' module is available for it
-find_package(GLEW REQUIRED)
-if(GLEW_FOUND)
-	include_directories(${GLEW_INCLUDE_DIRS})
-	target_link_libraries(sigil ${GLEW_LIBRARIES})
+# RPi's don't use GLEW, but everything else does
+if(FOUND_BCM)
+	# we depend on GLEW---it is available on apt and a cmake 'find' module is available for it
+	find_package(GLEW REQUIRED)
+	if(GLEW_FOUND)
+		include_directories(${GLEW_INCLUDE_DIRS})
+		target_link_libraries(sigil ${GLEW_LIBRARIES})
+	endif()
 endif()
 
 # we depend on GLFW3, which is not available on apt---we integrate it per the instructions at http://www.glfw.org/docs/latest/build.html;
 # note that this only works on Linux; since there's no easy way to build GLFW3 using MinGW on-the-fly, we just link to pre-compiled libs
-
-# detect if we're on a raspberry pi-like platform
-include(CheckIncludeFile)
-check_include_file(/opt/vc/include/bcm_host.h BCMHOST)
-message("BCM host:" ${BCMHOST})
 
 if(MINGW)				# Windows MinGW compiler
 	# when using MinGW, we link to pre-compiled libs instead
