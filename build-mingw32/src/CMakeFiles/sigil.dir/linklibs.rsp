@@ -1,1 +1,0 @@
-internal/libinternal.a libdrawtext/libdrawtext.a util/libutil.a soil/libsoil.a -lglew32 ../../glfw/lib/mingw32/glfw3dll.a ../../openal/lib/mingw32/libOpenAL32.dll.a -lopengl32 -lfreetype -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

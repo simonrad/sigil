@@ -1,2 +1,0 @@
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe qc libsoil.a  CMakeFiles/soil.dir/image_DXT.c.obj CMakeFiles/soil.dir/image_helper.c.obj CMakeFiles/soil.dir/SOIL.c.obj CMakeFiles/soil.dir/stb_image_aug.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ranlib.exe libsoil.a

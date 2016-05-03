@@ -37,8 +37,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CMakeTestCXXCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CMakeTestCompilerCommon.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CMakeTestRCCompiler.cmake"
-  "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CheckIncludeFile.c.in"
-  "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CheckIncludeFile.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Compiler/Borland-DetermineCompiler.cmake"
@@ -83,13 +81,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/FindFreetype.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/FindGLEW.cmake"
+  "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/FindOpenAL.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/FindPackageMessage.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-CXX.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-GNU-C.cmake"
-  "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-GNU.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/Platform/Windows-windres.cmake"
@@ -102,11 +100,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.4.0-rc1/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
-  "../src/CMakeLists.txt"
-  "../src/internal/CMakeLists.txt"
-  "../src/libdrawtext/CMakeLists.txt"
-  "../src/soil/CMakeLists.txt"
-  "../src/util/CMakeLists.txt"
+  "../src/config.h.in"
   )
 
 # The corresponding makefile is:
@@ -123,19 +117,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.4.0-rc1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.4.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.4.0-rc1/CMakeCXXCompiler.cmake"
+  "src/config.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/util/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/internal/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/soil/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/libdrawtext/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/sigil.dir/DependInfo.cmake"
-  "src/util/CMakeFiles/util.dir/DependInfo.cmake"
-  "src/internal/CMakeFiles/internal.dir/DependInfo.cmake"
-  "src/soil/CMakeFiles/soil.dir/DependInfo.cmake"
-  "src/libdrawtext/CMakeFiles/drawtext.dir/DependInfo.cmake"
+  "CMakeFiles/sigil.dir/DependInfo.cmake"
   )

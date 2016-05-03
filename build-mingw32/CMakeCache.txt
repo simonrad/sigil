@@ -181,6 +181,9 @@ CMAKE_STRIP:FILEPATH=C:/Program Files (x86)/CodeBlocks/MinGW/bin/strip.exe
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a file.
+FOUND_BCM:FILEPATH=FOUND_BCM-NOTFOUND
+
+//Path to a file.
 FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
 
 //Path to a file.
@@ -195,34 +198,26 @@ GLEW_INCLUDE_DIR:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include
 //Path to a library.
 GLEW_LIBRARY:FILEPATH=C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 
-//Dependencies for the target
-drawtext_LIB_DEPENDS:STATIC=general;C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a;
+//Path to a file.
+OPENAL_INCLUDE_DIR:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include/AL
 
-//Dependencies for target
-internal_LIB_DEPENDS:STATIC=
-
-//Value Computed by CMake
-sigil_BINARY_DIR:STATIC=C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/libdrawtext
-
-//Dependencies for the target
-sigil_LIB_DEPENDS:STATIC=general;internal;general;drawtext;general;util;general;soil;general;C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a;general;C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/glfw/lib/mingw32/glfw3dll.a;general;C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/openal/lib/mingw32/libOpenAL32.dll.a;general;opengl32;
+//Path to a library.
+OPENAL_LIBRARY:FILEPATH=C:/Program Files (x86)/CodeBlocks/MinGW/lib/libOpenAL32.dll.a
 
 //Value Computed by CMake
-sigil_SOURCE_DIR:STATIC=C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext
+sigil_BINARY_DIR:STATIC=C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32
 
-//Dependencies for target
-soil_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+sigil_LIB_DEPENDS:STATIC=general;C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a;general;C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/glfw/lib/mingw32/glfw3dll.a;general;C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a;general;C:/Program Files (x86)/CodeBlocks/MinGW/lib/libOpenAL32.dll.a;general;opengl32;
 
-//Dependencies for target
-util_LIB_DEPENDS:STATIC=
+//Value Computed by CMake
+sigil_SOURCE_DIR:STATIC=C:/Users/Archiact14/Desktop/Dropbox/misc/sigil
 
 
 ########################
 # INTERNAL cache entries
 ########################
 
-//Have include /opt/vc/include/bcm_host.h
-BCMHOST:INTERNAL=
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -311,7 +306,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -359,6 +354,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a][C:/Program Files (x86)/CodeBlocks/MinGW/include;C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2][v2.3.5()]
 //Details about finding GLEW
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[C:/Program Files (x86)/CodeBlocks/MinGW/include][C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a][v()]
+//Details about finding OpenAL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Program Files (x86)/CodeBlocks/MinGW/lib/libOpenAL32.dll.a][C:/Program Files (x86)/CodeBlocks/MinGW/include/AL][v()]
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
 FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
@@ -369,4 +366,8 @@ FREETYPE_LIBRARY-ADVANCED:INTERNAL=1
 GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_LIBRARY
 GLEW_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_INCLUDE_DIR
+OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_LIBRARY
+OPENAL_LIBRARY-ADVANCED:INTERNAL=1
 

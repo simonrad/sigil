@@ -1,0 +1,28 @@
+HOW TO USE SIGIL WHEN COMPILING WITH MINGW32 IN WINDOWS
+-------------------------------------------------------
+
+If you haven't already, it's probably a good idea to download the CodeBlocks IDE. This guide assumes that you'll be using CodeBlocks to build your SIGIL applications. If this is not the case, some of the instructions and directories in this guide will need to be changed to reflect your approach. Download the "codeblocks-XX.XXmingw-setup.exe" binary release from:
+
+	http://codeblocks.org/downloads/26
+
+Next, download the pre-compiled SIGIL libraries for MinGW32:
+
+	[some download link here]
+
+Unzip the downloaded file, and copy the contents of the "sigil-mingw32" folder into the root directory of your CodeBlocks project (this will be wherever your .cbp file is located). If you've done this correctly, the DLL's should be alongside your .cbp file and there should be a "lib" folder and an "sl" folder present as well.
+
+In your CodeBlocks project, all you need to do is link against the "lib/libsigil.dll.a" file that was copied in the previous step:
+
+1. Select Project -> Build Options
+2. Select the name of your project in the left-hand list (*not* Debug, Release, or any other configuration, otherwise not all of your build configurations will link correctly)
+3. Select the "Linker settings" tab
+4. Under the "Link libraries" group, click "Add" and browse to "lib/libsigil.dll.a" that you copied previously. Click "Open"
+5. Click "OK" on the "Add library" dialog
+6. When prompted, be sure to indicate that the path to the library should be kept as a relative path.
+7. Click "OK" on the "Project build options" dialog
+
+In your source code, now just add
+
+	#include "sl/sl.h"
+
+to use any of the SIGIL functions in your application.

@@ -1,0 +1,812 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sl.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/alc.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glext.h
+windows.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glu.h
+stddef.h
+-
+GL/gl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/GLFW/glfw3.h
+stddef.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/glcorearb.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES3/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES3/gl2ext.h
+-
+GL/gl.h
+-
+GL/glext.h
+-
+GL/glu.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/assert.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/basetsd.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/basetyps.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/cderr.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/cguid.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/commctrl.h
+prsht.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/commdlg.h
+unknwn.h
+-
+prsht.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ctype.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/dde.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ddeml.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/dlgs.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/errno.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/excpt.h
+_mingw.h
+-
+windef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/float.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2/freetype/config/ftheader.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ft2build.h
+freetype/config/ftheader.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/imm.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
+_mingw.h
+-
+stdint.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/limits.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/lzexpand.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/malloc.h
+_mingw.h
+-
+stdlib.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
+_mingw.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/memory.h
+string.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/mmsystem.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/mswsock.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/nb30.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oaidl.h
+windows.h
+-
+ole2.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objbase.h
+rpc.h
+-
+rpcndr.h
+-
+stdlib.h
+-
+basetyps.h
+-
+wtypes.h
+-
+unknwn.h
+-
+objidl.h
+-
+cguid.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objfwd.h
+basetyps.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/objidl.h
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/ole2.h
+winerror.h
+-
+objbase.h
+-
+olectlid.h
+-
+oleauto.h
+-
+oleidl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oleauto.h
+oaidl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/olectlid.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/oleidl.h
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/poppack.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/prsht.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/pshpack2.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/pshpack4.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpc.h
+windows.h
+-
+rpcdce.h
+-
+rpcnsi.h
+-
+rpcnterr.h
+-
+winerror.h
+-
+excpt.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcdce.h
+basetyps.h
+-
+rpcdcep.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcdcep.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcndr.h
+rpcnsip.h
+-
+objfwd.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnsi.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnsip.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/rpcnterr.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/shellapi.h
+pshpack2.h
+-
+poppack.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
+_mingw.h
+-
+stddef.h
+-
+stdarg.h
+-
+sys/types.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
+_mingw.h
+-
+stddef.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/unknwn.h
+windows.h
+-
+objfwd.h
+-
+wtypes.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winbase.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wincon.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/windef.h
+winnt.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/windows.h
+winresrc.h
+-
+stdarg.h
+-
+windef.h
+-
+wincon.h
+-
+winbase.h
+-
+wingdi.h
+-
+winuser.h
+-
+winnls.h
+-
+winver.h
+-
+winnetwk.h
+-
+winreg.h
+-
+winsvc.h
+-
+cderr.h
+-
+dde.h
+-
+ddeml.h
+-
+dlgs.h
+-
+imm.h
+-
+lzexpand.h
+-
+mmsystem.h
+-
+nb30.h
+-
+rpc.h
+-
+shellapi.h
+-
+winperf.h
+-
+commdlg.h
+-
+winspool.h
+-
+winsock2.h
+-
+winsock.h
+-
+ole2.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winerror.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wingdi.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnetwk.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnls.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winnt.h
+winerror.h
+-
+string.h
+-
+basetsd.h
+-
+pshpack4.h
+-
+poppack.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winperf.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winreg.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winresrc.h
+winuser.h
+-
+winnt.h
+-
+winver.h
+-
+dde.h
+-
+dlgs.h
+-
+commctrl.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsock.h
+windows.h
+-
+mswsock.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsock2.h
+windows.h
+-
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winspool.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winsvc.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winuser.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/winver.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/wtypes.h
+rpc.h
+-
+rpcndr.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/circle.c
+circle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/circle.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+math.h
+-
+stdlib.h
+-
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/circle.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/line.c
+line.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/line.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+stdlib.h
+-
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/line.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/point.c
+point.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/point.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+stdlib.h
+-
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/point.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/rectangle.c
+rectangle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/rectangle.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/rectangle.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.c
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+stdlib.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sound.c
+sound.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sound.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+AL/al.h
+-
+AL/alc.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sound.h
+AL/al.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sprite.c
+sprite.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sprite.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sprite.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/text.c
+text.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/text.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+../libdrawtext/drawtext.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext.h
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/text.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/triangle.c
+triangle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/triangle.h
+shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+../util/shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/triangle.h
+../util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawgl.c
+stdarg.h
+-
+math.h
+-
+ctype.h
+-
+float.h
+-
+stdlib.h
+-
+stdio.h
+-
+malloc.h
+-
+malloc.h
+-
+OpenGLES/ES2/gl.h
+-
+GL/glew.h
+-
+drawtext.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext.h
+drawtext_impl.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext_impl.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext_impl.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/font.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+limits.h
+-
+ctype.h
+-
+float.h
+-
+errno.h
+-
+ft2build.h
+-
+drawtext.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext.h
+drawtext_impl.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext_impl.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/utf8.c
+drawtext.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/libdrawtext/drawtext.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/sl.c
+sl.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/sl.h
+internal/shaders.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/shaders.h
+internal/triangle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/triangle.h
+internal/rectangle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/rectangle.h
+internal/circle.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/circle.h
+internal/point.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/point.h
+internal/line.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/line.h
+internal/sprite.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sprite.h
+internal/text.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/text.h
+internal/sound.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/internal/sound.h
+util/transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+util/images.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/images.h
+util/gldebugging.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/gldebugging.h
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+windows.h
+-
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/SOIL.c
+windows.h
+-
+wingdi.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+Carbon/Carbon.h
+-
+GL/gl.h
+-
+GL/glx.h
+-
+SOIL.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/SOIL.h
+stb_image_aug.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stb_image_aug.h
+image_helper.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_helper.h
+image_DXT.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_DXT.h
+stdlib.h
+-
+string.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/SOIL.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_DXT.c
+image_DXT.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_DXT.h
+math.h
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_DXT.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_helper.c
+image_helper.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_helper.h
+stdlib.h
+-
+math.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/image_helper.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stb_image_aug.c
+stb_image_aug.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stb_image_aug.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+stbi_DDS_aug.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stbi_DDS_aug.h
+stbi_DDS_aug_c.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stbi_DDS_aug_c.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stb_image_aug.h
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stbi_DDS_aug.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/stbi_DDS_aug_c.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/gldebugging.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/images.c
+images.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/images.h
+../soil/SOIL.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/soil/SOIL.h
+GL/glew.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/images.h
+GL/glew.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/GL/glew.h
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.c
+shader.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+GL/glew.h
+-
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/shader.h
+GL/glew.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.c
+transform.h
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+math.h
+-
+
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/src/util/transform.h
+

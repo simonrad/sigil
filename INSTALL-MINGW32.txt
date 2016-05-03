@@ -1,18 +1,22 @@
-BUILDING SIGIL FROM SOURCE USING MINGW IN WINDOWS
--------------------------------------------------
+BUILDING SIGIL FROM SOURCE USING MINGW32 IN WINDOWS
+---------------------------------------------------
 
-Pick a nice location for SIGIL. Using a command prompt, type
+If you haven't already, it's probaby a good idea to download the CodeBlocks IDE. This guide assumes that you'll be using the MinGW compiler provided by CodeBlocks to compile your code, and that you'll be using CodeBlocks to build your SIGIL applications. If this is not the case, some of the instructions and directories in this guide will need to be changed to reflect your approach. Download the "codeblocks-XX.XXmingw-setup.exe" binary release from:
+
+	http://codeblocks.org/downloads/26
+
+Next, download SIGIL. If you have git, you can use a command prompt:
 
 	git clone git@gitlab.com:geoff-nagy/sigil.git
 
-to download the SIGIL source code.
+Otherwise, you can download the source code as a .zip file from:
 
-This guide assumes that you're using the MinGW32 compiler provided by CodeBlocks (which is an ideal IDE choice if you're going to be compiling C/C++ applications using MinGW32). You will need to change some of the installation directories below if you're using a different approach.
+	https://gitlab.com/geoff-nagy/sigil
 
 SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-compiled libs are included with SIGIL in the /glew folder. Copy and paste the following files into the appropriate locations as below:
 
-	/glew/lib/mingw32/libglew32.dll.a ---> C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
-	/glew/include/*.h                 ---> C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/*.h
+	sigil/glew/lib/mingw32/libglew32.dll.a    ---> C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
+	sigil/glew/include/GL/*.h                 ---> C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/*.h
 
 We also need to get a copy of the FreeType 2 (FT2) library. Download and run the "Complete package, except sources" installer from 
 
@@ -28,8 +32,37 @@ and NOT
 
 or anywhere else, otherwise you may encounter difficulties when building SIGIL.
 
-Next, we can start building SIGIL. Enter the root directory 'sigil' where you cloned the SIGIL source code and type:
+We need OpenAL for audio. Download the zipped OpenAL Soft Windows binaries ("openal-soft-X.XX.X-bin.zip") from
+
+	http://kcat.strangesoft.net/openal.html#download
+
+and extract the contents of this zip folder somewhere (we will use the location "OAL"). Copy and paste the following files into the appropriate locations as below:
+
+	OAL/openal-soft-X.XX.X-bin/libs/Win32/libOpenAL32.dll.a ---> C:/Program Files (x86)/CodeBlocks/MinGW/lib/libOpenAL32.dll.a
+	OAL/openal-soft-X.XX.X-bin/include/AL/*.h               ---> C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/*.h
+
+Next, we can start building SIGIL. Enter the directory "sigil" (where you cloned the SIGIL source code) in a command prompt and type:
 
 	mkdir build-mingw32
 	cd build-mingw32
 	cmake -G "MinGW Makefiles" ../
+
+Now, proceed with the build:
+
+	mingw32-make
+
+This will create the files
+
+	sigil/build-mingw32/libsigil.dll
+	sigil/build-mingw32/libsigil.dll.a
+
+It's probably now a good idea to put all of the necessary DLLs and libsigil.a in a common location for you to copy into your SIGIL projects later on. This is the same process that we use when building and distributing SIGIL.
+
+	OAL/openal-soft-X.XX.X-bin/bin/Win32/soft_oal.dll ---> sigil/sigil-mingw32/soft_oal.dll
+	sigil/glew/lib/mingw32/glew32.dll                 ---> sigil/sigil-mingw32/glew32.dll
+	sigil/glfw/lib/mingw32/glfw3.dll                  ---> sigil/sigil-mingw32/glfw3.dll
+	sigil/build-mingw32/libsigil.dll                  ---> sigil/sigil-mingw32/libsigil.dll
+	sigil/build-mingw32/libsigil.dll.a                ---> sigil/sigil-mingw32/lib/libsigil.dll.a
+	sigil/include/sl.h                                ---> sigil/sl/sl.h
+
+Now, please consult USING-SIGIL-MINGW32.txt for instructions on how to integrate SIGIL into your applications.

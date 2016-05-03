@@ -73,12 +73,8 @@ if(NOT FOUND_BCM)
 
 	# we depend on GLEW---it's on apt and a cmake 'find' module is available for it
 	find_package(GLEW REQUIRED)
-	if(GLEW_FOUND)
-
-		include_directories(${GLEW_INCLUDE_DIRS})
-		target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
-
-	endif()
+	include_directories(${GLEW_INCLUDE_DIRS})
+	target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
 
 endif()
 
@@ -145,24 +141,20 @@ target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
 #--------------------------------------------------------------------
 
 # MinGW is a special case since it's more difficult to build AL using it
-if(MINGW)
+#if(MINGW)
 
 	# ...so, we link to pre-compiled libs instead
-	include_directories(${CMAKE_SOURCE_DIR}/openal/include)
-	target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/openal/lib/mingw32/libOpenAL32.dll.a)
+	#include_directories(${CMAKE_SOURCE_DIR}/openal/include)
+	#target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/openal/lib/mingw32/libOpenAL32.dll.a)
 
-else()
+#else()
 
 	# on other platforms, we can just use whatever we downloaded from apt
 	find_package(OpenAL REQUIRED)
-	if(OPENAL_FOUND)
+	include_directories(${OPENAL_INCLUDE_DIR})
+	target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
 
-		include_directories(${OPENAL_INCLUDE_DIR})
-		target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
-
-	endif()
-
-endif()
+#endif()
 
 #--------------------------------------------------------------------
 # link to the appropriate GL library

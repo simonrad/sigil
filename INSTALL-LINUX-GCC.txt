@@ -28,24 +28,13 @@ If you want to develop SIGIL applications using CodeBlocks, and want to use the 
 Next, we can download the SIGIL source code from GitLab and build it.
 
 		cd ~/
+		sudo apt-get install git
 		git clone git@gitlab.com:geoff-nagy/sigil.git
 		cd sigil
 		mkdir build-linux-gcc
 		cd build-linux-gcc
 		cmake ../
-
-**** NOTE ****
-The CMake configuration and generation should run without any errors. If errors occur, try installing cmake-curses-gui (as above) and run
-
-		ccmake ../
-
-to set some of the library or include paths that may be missing or incorrect.
-**** NOTE ****
-
-Otherwise, just proceed with the build and installation:
-
 		make
 		sudo make install
 
-And you're done!
-
+And you're done! Please consult USING-SIGIL-LINUX-GCC.txt for instructions on how to integrate SIGIL into your application.

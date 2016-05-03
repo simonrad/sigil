@@ -1,5 +1,1 @@
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/CMakeFiles/sigil.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/util/CMakeFiles/util.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/soil/CMakeFiles/soil.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/internal/CMakeFiles/internal.dir
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/src/libdrawtext/CMakeFiles/drawtext.dir
+C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/sigil.dir

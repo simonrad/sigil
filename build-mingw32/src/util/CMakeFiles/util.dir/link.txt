@@ -1,2 +1,0 @@
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe qc libutil.a  CMakeFiles/util.dir/images.c.obj CMakeFiles/util.dir/shader.c.obj CMakeFiles/util.dir/transform.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ranlib.exe libutil.a
