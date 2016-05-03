@@ -1,0 +1,7 @@
+SIGIL comes with no official license. However, the project maintainer, Geoff, would like to ask that users of SIGIL do not use it:
+
+	1) to promote their ridiculous religious and/or political beliefs
+	2) to harm little bunnies and/or small children
+	3) to fuel their campaign(s) for world domination (this includes benevolent dictatorships)
+
+With all that nonsense out of the way, many of the libraries that SIGIL uses come with licenses of their own. So pay attention.
