@@ -132,7 +132,7 @@ extern "C" {
 
 	// blending control
 
-	void slAdditiveBlend(int additiveBlend);
+	void slSetAdditiveBlend(int additiveBlend);
 
 	// transformations
 
