@@ -9,8 +9,8 @@
 #define MIN_CIRCLES 5
 #define MAX_CIRCLES 50
 
-// linear interpolation between two values
-float linear(float current, float target, float step);
+// linear interpolation between two values, with clamping to prevent overshoot
+float moveTowards(float current, float target, float step);
 
 // main program
 int main(int args, char *argv[])
@@ -21,7 +21,7 @@ int main(int args, char *argv[])
 	const int WINDOW_HEIGHT = 600;
 
 	// circle properties
-	const float CIRCLE_SPEED = 50.0;		// how fast the circles move towards their target, in units per second
+	const float CIRCLE_SPEED = 750.0;		// how fast the circles move towards their target, in units per second
 	const float CIRCLE_RADIUS = 40.0;		// radius of largest circle
 
 	// the number of actual bubbles we're using
@@ -107,16 +107,16 @@ int main(int args, char *argv[])
 
 		// make the first circle follow the mouse
 		speed = CIRCLE_SPEED * dt;
-		circleXCoords[0] = linear(circleXCoords[0], mouseX, speed);
-		circleYCoords[0] = linear(circleYCoords[0], mouseY, speed);
+		circleXCoords[0] = moveTowards(circleXCoords[0], mouseX, speed);
+		circleYCoords[0] = moveTowards(circleYCoords[0], mouseY, speed);
 
 		// the other circles follow the one ahead of it
 		for(i = 1; i < MAX_CIRCLES; i ++)
 		{
 			tailFactor = (float)i / (float)MAX_CIRCLES;
 			speed = CIRCLE_SPEED * dt * (1.0 - tailFactor);
-			circleXCoords[i] = linear(circleXCoords[i], circleXCoords[i - 1], speed);
-			circleYCoords[i] = linear(circleYCoords[i], circleYCoords[i - 1], speed);
+			circleXCoords[i] = moveTowards(circleXCoords[i], circleXCoords[i - 1], speed);
+			circleYCoords[i] = moveTowards(circleYCoords[i], circleYCoords[i - 1], speed);
 		}
 
 		// now render our circles
@@ -158,8 +158,25 @@ int main(int args, char *argv[])
 	return 0;
 }
 
-// linear interpolation between two values
-float linear(float current, float target, float step)
+// linear interpolation between two values, with clamping to prevent overshoot
+float moveTowards(float current, float target, float step)
 {
-	return current + (target - current) * step;
+	if(current < target)
+	{
+		current += step;
+		if(current > target) current = target;
+	}
+	else
+	{
+		current -= step;
+		if(current < target) current = target;
+	}
+
+	return current;
+/*
+	float result = current + (target - current) * step;
+	if(current < target && result > target) result = target;
+	else if(current > target && result < target) result = target;
+	return result;
+*/
 }

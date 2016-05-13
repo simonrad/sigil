@@ -1,1 +1,3 @@
-C:/Users/Archiact14/Desktop/Dropbox/misc/sigil/build-mingw32/CMakeFiles/sigil.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/sigil.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/edit_cache.dir
+C:/Users/Geoff/Desktop/Drive/Development/Small OpenGL Projects/sigil/build-mingw32/CMakeFiles/rebuild_cache.dir
