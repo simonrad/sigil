@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463115607 source:/home/geoff/sigil/examples/input/input.cpp
+	"sl.h"
+
+1463113939 /home/geoff/sigil/include/sl.h
+

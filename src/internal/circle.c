@@ -18,6 +18,9 @@ static GLuint sliCircleOutlineVBOs[1] = {0};
 static GLuint sliCircleFillVAO = 0;
 static GLuint sliCircleFillVBOs[1] = {0};
 
+static float sliOutlineRadius = 0;
+static float sliFillRadius = 0;
+
 static int sliNumOutlineVertices = 0;
 static int sliNumFillVertices = 0;
 
@@ -57,6 +60,8 @@ void sliCircleDestroy()
 
 void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 {
+	const float EPS = 0.00001;
+
 	GLfloat vertices[MAX_VERTICES * 3];
 	float theta;
 	float transform;
@@ -69,10 +74,11 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 	if(numVertices > MAX_VERTICES) numVertices = MAX_VERTICES;
 
 	// if the number of vertices specified is different from what we've allocated, prepare to re-compute them
-	if(numVertices != sliNumOutlineVertices)
+	if(numVertices != sliNumOutlineVertices || fabs(radius - sliOutlineRadius) > EPS)
 	{
-		// assign new vertex count
+		// assign new vertex count and radius
 		sliNumOutlineVertices = numVertices;
+		sliOutlineRadius = radius;
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (float)sliNumOutlineVertices);
@@ -114,6 +120,8 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 
 void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 {
+	const float EPS = 0.00001;
+
 	GLfloat *vertices;
 	float theta;
 	float transform;
@@ -126,10 +134,11 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 	if(numVertices > MAX_VERTICES) numVertices = MAX_VERTICES;
 
 	// if the number of vertices specified is different from what we've allocated, prepare to re-compute them
-	if(numVertices != sliNumFillVertices)
+	if(numVertices != sliNumFillVertices || fabs(radius - sliFillRadius) > EPS)
 	{
 		// assign new vertex count
 		sliNumFillVertices = numVertices;
+		sliFillRadius = radius;
 
 		// allocate space for new circle vertices (we use +2 for the center vertex and for the last vertex of
 		// the triangle fan, since it doesn't loop back and close itself on its own)
