@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463112976 source:/home/geoff/sigil/examples/shapes/shapes.cpp
+	"sl.h"
+
+1462511642 /home/geoff/sigil/include/sl.h
+
