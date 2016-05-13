@@ -36,7 +36,7 @@ void sliTriangleOutline(Mat4 *modelview, Vec4 *color)
 {
 	// prepare our shader object
 	shaderBind(sliBasicShader);
-	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)&modelview);
+	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)modelview);
 	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// bind appropriate object state and render the object
@@ -48,7 +48,7 @@ void sliTriangleFill(Mat4 *modelview, Vec4 *color)
 {
 	// prepare our shader object
 	shaderBind(sliBasicShader);
-	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)&modelview);
+	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)modelview);
 	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// bind appropriate object state and render the object
