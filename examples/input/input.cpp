@@ -21,7 +21,7 @@ int main(int args, char *argv[])
 	const int WINDOW_HEIGHT = 600;
 
 	// circle properties
-	const float CIRCLE_SPEED = 750.0;		// how fast the circles move towards their target, in units per second
+	const float CIRCLE_SPEED = 20.0;		// how fast the circles move towards their target, in units per second
 	const float CIRCLE_RADIUS = 40.0;		// radius of largest circle
 
 	// the number of actual bubbles we're using
@@ -102,19 +102,15 @@ int main(int args, char *argv[])
 			keyS = false;
 		}
 
-		// get the current mouse position
-		slGetMousePos(&mouseX, &mouseY);
-
 		// make the first circle follow the mouse
-		speed = CIRCLE_SPEED * dt;
-		circleXCoords[0] = moveTowards(circleXCoords[0], mouseX, speed);
-		circleYCoords[0] = moveTowards(circleYCoords[0], mouseY, speed);
+		slGetMousePos(&mouseX, &mouseY);
+		circleXCoords[0] = mouseX;
+		circleYCoords[0] = mouseY;
 
 		// the other circles follow the one ahead of it
 		for(i = 1; i < MAX_CIRCLES; i ++)
 		{
-			tailFactor = (float)i / (float)MAX_CIRCLES;
-			speed = CIRCLE_SPEED * dt * (1.0 - tailFactor);
+			speed = CIRCLE_SPEED * dt;
 			circleXCoords[i] = moveTowards(circleXCoords[i], circleXCoords[i - 1], speed);
 			circleYCoords[i] = moveTowards(circleYCoords[i], circleYCoords[i - 1], speed);
 		}
@@ -125,7 +121,7 @@ int main(int args, char *argv[])
 			// compute a colour and size factor for the bubbles
 			tailFactor = (float)i / (float)MAX_CIRCLES;
 			radius = CIRCLE_RADIUS * (1.0 - tailFactor);
-			vertices = 15 - (10.0 * tailFactor);
+			vertices = 15 - (10.0 * tailFactor);					// larger bubbles require more vertices
 
 			// render the solid circle fill
 			slSetForeColor(0.0, 1.0 - tailFactor, tailFactor, 0.3);
@@ -161,22 +157,8 @@ int main(int args, char *argv[])
 // linear interpolation between two values, with clamping to prevent overshoot
 float moveTowards(float current, float target, float step)
 {
-	if(current < target)
-	{
-		current += step;
-		if(current > target) current = target;
-	}
-	else
-	{
-		current -= step;
-		if(current < target) current = target;
-	}
-
-	return current;
-/*
 	float result = current + (target - current) * step;
 	if(current < target && result > target) result = target;
 	else if(current > target && result < target) result = target;
 	return result;
-*/
 }
