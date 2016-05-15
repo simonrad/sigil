@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="asteroids-mingw32" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="asteroids-mingw32-debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Windows;" />
+				<Option output="asteroids-mingw32-release" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="lib\libsigil.dll.a" />
+		</Linker>
+		<Unit filename="../src/cursor.cpp" />
+		<Unit filename="../src/cursor.h" />
+		<Unit filename="../src/entity.cpp" />
+		<Unit filename="../src/entity.h" />
+		<Unit filename="../src/gun.cpp" />
+		<Unit filename="../src/gun.h" />
+		<Unit filename="../src/guns.cpp" />
+		<Unit filename="../src/guns.h" />
+		<Unit filename="../src/laser.cpp" />
+		<Unit filename="../src/laser.h" />
+		<Unit filename="../src/main.cpp" />
+		<Unit filename="../src/object.cpp" />
+		<Unit filename="../src/object.h" />
+		<Unit filename="../src/player.cpp" />
+		<Unit filename="../src/player.h" />
+		<Unit filename="../src/prop.cpp" />
+		<Unit filename="../src/prop.h" />
+		<Unit filename="../src/ship.cpp" />
+		<Unit filename="../src/ship.h" />
+		<Unit filename="../src/sl/sl.h" />
+		<Unit filename="../src/util.cpp" />
+		<Unit filename="../src/util.h" />
+		<Unit filename="../src/world.cpp" />
+		<Unit filename="../src/world.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
