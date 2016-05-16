@@ -40,7 +40,6 @@ int main(int args, char *argv[])
 
 		// rotate the entire limb system around the center of the screen
 		slPush();
-
 			slTranslate(250, 250);					// move to the center of the screen
 			slRotate(angle);						// entire system rotates around the center of the screen
 			drawLimb(120);							// the length of the parent limb is 120

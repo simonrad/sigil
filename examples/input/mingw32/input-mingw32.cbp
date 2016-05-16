@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="bin/Release/input-mingw32" prefix_auto="1" extension_auto="1" />
+				<Option output="input-mingw32" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -24,7 +24,7 @@
 			<Add directory="../../../include" />
 		</Compiler>
 		<Linker>
-			<Add library="lib\libsigil.dll.a" />
+			<Add library="lib/libsigil.dll.a" />
 		</Linker>
 		<Unit filename="../input.cpp" />
 		<Extensions>
