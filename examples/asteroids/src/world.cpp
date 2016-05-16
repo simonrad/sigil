@@ -62,7 +62,7 @@ void World::run()
 	float dt;				// time delta tracking for smooth frame rate
 
 	// open our game window
-	slWindow(WORLD_SIZE_X, WORLD_SIZE_Y, "Hailfox");
+	slWindow(WORLD_SIZE_X, WORLD_SIZE_Y, "Asteroids");
 	slSetBackColor(1.0, 1.0, 1.0);
 
 	starsTex = slLoadTexture("../png/stars.png");

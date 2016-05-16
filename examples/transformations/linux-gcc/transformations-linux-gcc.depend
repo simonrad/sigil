@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1463340604 source:/home/geoff/sigil/examples/input/input.cpp
+1463390111 source:/home/geoff/sigil/examples/transformations/transformations.cpp
 	"sl.h"
-	<cstdio>
 
 1463113939 /home/geoff/sigil/include/sl.h
 

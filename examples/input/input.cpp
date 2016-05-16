@@ -69,7 +69,7 @@ int main(int args, char *argv[])
 	// the window will remain open (and the program will remain in this loop) until the user presses the 'X' to close
 	while(!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
 	{
-		// grab our time increment
+		// grab our time multiplier
 		dt = slGetDeltaTime();
 
 		// read the 'W' key to increase the number of circles
