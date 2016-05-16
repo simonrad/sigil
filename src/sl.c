@@ -262,7 +262,7 @@ void slSetAdditiveBlend(int additiveBlend)
 
 void slPush()
 {
-	if(slStackSize < SL_MATRIX_STACK_SIZE)
+	if(slStackSize < SL_MATRIX_STACK_SIZE - 1)
 	{
 		slStackSize ++;
 		slCurrentMatrix ++;
