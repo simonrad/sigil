@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="shapes-linux-gcc" />
+		<Option title="text-linux-gcc" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="shapes-linux-gcc" prefix_auto="1" extension_auto="1" />
+				<Option output="text-linux-gcc" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -26,7 +26,7 @@
 		<Linker>
 			<Add option="-lsigil" />
 		</Linker>
-		<Unit filename="../shapes.cpp" />
+		<Unit filename="../text.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
