@@ -20,11 +20,6 @@ void sliTextDestroy()
 
 }
 
-void sliTextAlign(int fontAlign)
-{
-
-}
-
 double sliTextWidth(const char *text)
 {
 	return dtx_string_width(text);

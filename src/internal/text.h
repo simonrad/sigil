@@ -5,7 +5,6 @@
 void sliTextInit();
 void sliTextDestroy();
 
-void sliTextAlign(int fontAlign);
 double sliTextWidth(const char *text);
 double sliTextHeight(const char *text);
 void sliText(Mat4 *modelview, Vec4 *color, const char *text);
