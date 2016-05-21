@@ -397,6 +397,30 @@ src/internal/triangle.c.s:
 	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/triangle.c.s
 .PHONY : src/internal/triangle.c.s
 
+src/internal/window_glfw.o: src/internal/window_glfw.c.o
+.PHONY : src/internal/window_glfw.o
+
+# target to build an object file
+src/internal/window_glfw.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.o
+.PHONY : src/internal/window_glfw.c.o
+
+src/internal/window_glfw.i: src/internal/window_glfw.c.i
+.PHONY : src/internal/window_glfw.i
+
+# target to preprocess a source file
+src/internal/window_glfw.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.i
+.PHONY : src/internal/window_glfw.c.i
+
+src/internal/window_glfw.s: src/internal/window_glfw.c.s
+.PHONY : src/internal/window_glfw.s
+
+# target to generate assembly for a file
+src/internal/window_glfw.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.s
+.PHONY : src/internal/window_glfw.c.s
+
 src/libdrawtext/drawgl.o: src/libdrawtext/drawgl.c.o
 .PHONY : src/libdrawtext/drawgl.o
 
@@ -703,6 +727,9 @@ help:
 	@echo "... src/internal/triangle.o"
 	@echo "... src/internal/triangle.i"
 	@echo "... src/internal/triangle.s"
+	@echo "... src/internal/window_glfw.o"
+	@echo "... src/internal/window_glfw.i"
+	@echo "... src/internal/window_glfw.s"
 	@echo "... src/libdrawtext/drawgl.o"
 	@echo "... src/libdrawtext/drawgl.i"
 	@echo "... src/libdrawtext/drawgl.s"

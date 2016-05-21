@@ -512,6 +512,29 @@ CMakeFiles/sigil.dir/src/util/transform.c.o.provides: CMakeFiles/sigil.dir/src/u
 
 CMakeFiles/sigil.dir/src/util/transform.c.o.provides.build: CMakeFiles/sigil.dir/src/util/transform.c.o
 
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o: CMakeFiles/sigil.dir/flags.make
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o: ../src/internal/window_glfw.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/geoff/sigil/build-linux-gcc/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/sigil.dir/src/internal/window_glfw.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/sigil.dir/src/internal/window_glfw.c.o   -c /home/geoff/sigil/src/internal/window_glfw.c
+
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/window_glfw.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/geoff/sigil/src/internal/window_glfw.c > CMakeFiles/sigil.dir/src/internal/window_glfw.c.i
+
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/window_glfw.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/geoff/sigil/src/internal/window_glfw.c -o CMakeFiles/sigil.dir/src/internal/window_glfw.c.s
+
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.requires:
+.PHONY : CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.requires
+
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.provides: CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.requires
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.provides.build
+.PHONY : CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.provides
+
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.provides.build: CMakeFiles/sigil.dir/src/internal/window_glfw.c.o
+
 # Object files for target sigil
 sigil_OBJECTS = \
 "CMakeFiles/sigil.dir/src/sl.c.o" \
@@ -533,7 +556,8 @@ sigil_OBJECTS = \
 "CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.o" \
 "CMakeFiles/sigil.dir/src/util/images.c.o" \
 "CMakeFiles/sigil.dir/src/util/shader.c.o" \
-"CMakeFiles/sigil.dir/src/util/transform.c.o"
+"CMakeFiles/sigil.dir/src/util/transform.c.o" \
+"CMakeFiles/sigil.dir/src/internal/window_glfw.c.o"
 
 # External object files for target sigil
 sigil_EXTERNAL_OBJECTS =
@@ -558,9 +582,10 @@ libsigil.so: CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/images.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/shader.c.o
 libsigil.so: CMakeFiles/sigil.dir/src/util/transform.c.o
+libsigil.so: CMakeFiles/sigil.dir/src/internal/window_glfw.c.o
 libsigil.so: CMakeFiles/sigil.dir/build.make
-libsigil.so: /usr/lib/x86_64-linux-gnu/libGLEW.so
 libsigil.so: src/glfw/src/libglfw3.a
+libsigil.so: /usr/lib/x86_64-linux-gnu/libGLEW.so
 libsigil.so: /usr/local/lib/libfreetype.so
 libsigil.so: /usr/lib/x86_64-linux-gnu/libopenal.so
 libsigil.so: /usr/lib/x86_64-linux-gnu/librt.so
@@ -598,6 +623,7 @@ CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.o.r
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/images.c.o.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/shader.c.o.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/transform.c.o.requires
+CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/window_glfw.c.o.requires
 .PHONY : CMakeFiles/sigil.dir/requires
 
 CMakeFiles/sigil.dir/clean:

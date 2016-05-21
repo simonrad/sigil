@@ -18,7 +18,7 @@ void sliOpenWindow(int width, int height, const char *title)
 					 8,						// alpha bits
 					 24,					// depth bits
 					 8,						// stencil bits
-					 0);					// samples (although don't ask what kind...PIGU doesn't specify)
+					 0);					// no multi-sampling
 
 	// record window size
 	sliWindowWidth = width;
@@ -44,19 +44,19 @@ int sliShouldClose()
 	return 0;
 }
 
-int sliGetKey()
+int sliGetKey(int key)
 {
 	return piguIsKeyDown(key);
 }
 
-int sliGetMouseButton()
+int sliGetMouseButton(int button)
 {
-	return piguIsMouseButtonDown(key);
+	return piguIsMouseButtonDown(button);
 }
 
 void sliGetMousePos(int *posX, int *posY)
 {
-	piguGetMousePosition(sliProgramWindow, posX, posY);
+	piguGetMousePosition(posX, posY);
 	*posY = sliWindowHeight - posY;
 }
 
@@ -67,6 +67,6 @@ double sliGetTime()
 
 void sliPollAndSwap()
 {
-	glfwPollEvents();
-	glfwSwapBuffers(slProgramWindow);
+	piguPollEvents();
+	piguSwapBuffers();
 }

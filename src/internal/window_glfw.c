@@ -1,4 +1,4 @@
-#include "GLFW/glfw.h"
+#include "GLFW/glfw3.h"
 
 static GLFWwindow *sliProgramWindow = NULL;
 static int sliWindowWidth = 0;
@@ -27,7 +27,8 @@ void sliOpenWindow(int width, int height, const char *title)
 	glfwSwapInterval(1);
 
 	// record window size
-
+	sliWindowWidth = width;
+	sliWindowHeight = height;
 
 	// GLFW doesn't handle vsync well in all cases, so we have to go straight to WGL to do this
 	#ifdef __MINGW32__
@@ -55,7 +56,7 @@ int sliIsWindowOpen()
 
 int sliShouldClose()
 {
-	return glfwShouldWindowClose(sliProgramWindow);
+	return glfwWindowShouldClose(sliProgramWindow);
 }
 
 int sliGetKey(int key)
@@ -84,5 +85,5 @@ double sliGetTime()
 void sliPollAndSwap()
 {
 	glfwPollEvents();
-	glfwSwapBuffers(slProgramWindow);
+	glfwSwapBuffers(sliProgramWindow);
 }

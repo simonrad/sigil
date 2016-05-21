@@ -52,6 +52,9 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.o
  /home/geoff/sigil/src/internal/triangle.h
  /home/geoff/sigil/src/util/shader.h
  /home/geoff/sigil/src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.o
+ ../src/glfw/include/GLFW/glfw3.h
+ /home/geoff/sigil/src/internal/window_glfw.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o
  /home/geoff/sigil/src/libdrawtext/drawgl.c
  /home/geoff/sigil/src/libdrawtext/drawtext.h
@@ -67,7 +70,6 @@ CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.o
  /home/geoff/sigil/src/libdrawtext/utf8.c
 CMakeFiles/sigil.dir/src/sl.c.o
  ../include/sl.h
- ../src/glfw/include/GLFW/glfw3.h
  /home/geoff/sigil/src/internal/circle.h
  /home/geoff/sigil/src/internal/line.h
  /home/geoff/sigil/src/internal/point.h
@@ -83,6 +85,7 @@ CMakeFiles/sigil.dir/src/sl.c.o
  /home/geoff/sigil/src/util/images.h
  /home/geoff/sigil/src/util/shader.h
  /home/geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/soil/SOIL.c.o
  /home/geoff/sigil/src/soil/SOIL.c
  /home/geoff/sigil/src/soil/SOIL.h

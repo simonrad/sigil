@@ -13,6 +13,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/geoff/sigil/src/internal/sprite.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/internal/sprite.c.o"
   "/home/geoff/sigil/src/internal/text.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/internal/text.c.o"
   "/home/geoff/sigil/src/internal/triangle.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/internal/triangle.c.o"
+  "/home/geoff/sigil/src/internal/window_glfw.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/internal/window_glfw.c.o"
   "/home/geoff/sigil/src/libdrawtext/drawgl.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o"
   "/home/geoff/sigil/src/libdrawtext/font.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/libdrawtext/font.c.o"
   "/home/geoff/sigil/src/libdrawtext/utf8.c" "/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.o"

@@ -45,9 +45,6 @@ set(
 	src/util/transform
 )
 
-# add source files to the project
-add_library(${PROJECT_NAME} SHARED ${SIGIL_SOURCE})
-
 # set the installation directory
 set(CMAKE_INSTALL_PREFIX "/usr/lib")
 
@@ -61,6 +58,67 @@ if(FOUND_BCM)
 	message("-- Detected a Raspberry Pi platform (bcm_host.h was found)")
 else()
 	message("-- Did NOT detect a Raspberry Pi platform (bcm_host.h not found)")
+endif()
+
+#--------------------------------------------------------------------
+# include either GLFW- or PIGU-based functionality in our project
+#--------------------------------------------------------------------
+
+if(FOUND_BCM)
+
+	# use the PIGU version of SIGIL window, context, and input handler
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_pigu)
+
+	# tell config.h to use PIGU, not GLFW
+	set(USE_GLFW OFF)
+
+else()
+
+	# use the GLFW version of SIGIL window, context, and input handler
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_glfw)
+
+	# tell config.h to use GLFW, not PIGU
+	set(USE_GLFW ON)
+
+endif()
+
+# now that we have all the SIGIL source files, add them to the SIGIL shared lib
+add_library(${PROJECT_NAME} SHARED ${SIGIL_SOURCE})
+
+#--------------------------------------------------------------------
+# locate underlying context/window/input library
+#--------------------------------------------------------------------
+
+# RPi's use PIGU, everything else uses GLFW
+if(FOUND_BCM)
+
+	# use the cmake file we added to PIGU
+	add_subdirectory(${CMAKE_SOURCE_DIR}/src/pigu)
+	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
+	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
+
+else()
+
+	# when using MinGW, we link to pre-compiled libs because compiling GLFW from scratch with MinGW is a pain in the ass
+	if(MINGW)
+
+		# ...which we keep in our lib/mingw32 foler
+		target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
+
+	else()
+
+		# turn off unnecessary GLFW components
+		set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
+		set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
+		set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
+
+		# linux systems can build GLFW from source more easily
+		add_subdirectory(${CMAKE_SOURCE_DIR}/src/glfw)
+		include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
+		target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+
+	endif()
+
 endif()
 
 #--------------------------------------------------------------------
@@ -78,58 +136,10 @@ if(NOT FOUND_BCM)
 endif()
 
 #--------------------------------------------------------------------
-# locate underlying context/window/input library
-#--------------------------------------------------------------------
-
-# RPi's use PIGU, everything else uses GLFW
-if(FOUND_BCM)
-
-	# use the cmake file we added to PIGU
-	add_subdirectory(${CMAKE_SOURCE_DIR}/src/pigu)
-	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
-	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
-
-	# use the PIGU version of SIGIL window handler
-	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_pigu)
-
-	# tell config.h to use PIGU, not GLFW
-	set(USE_GLFW OFF)
-
-else()
-
-	# when using MinGW on Windows, we link to pre-compiled libs
-	if(MINGW)
-
-		include_directories(src/glfw/include/GLFW)
-		target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
-
-	else()
-
-		# turn off unnecessary GLFW components
-		set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
-		set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
-		set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
-
-		# linux systems can build GLFW from source more easily
-		add_subdirectory(${CMAKE_SOURCE_DIR}/src/glfw)
-		include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
-		target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
-
-	endif()
-
-	# use the GLFW version of SIGIL window handler
-	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_glfw)
-
-	# tell config.h to use GLFW, not PIGU
-	set(USE_GLFW ON)
-
-endif()
-
-#--------------------------------------------------------------------
 # find our font library, freetype
 #--------------------------------------------------------------------
 
-# give the RPi a little hint with the whereabouts of freetype
+# give the RPi a little hint regarding the whereabouts of freetype
 if(FOUND_BCM)
 	set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
 	set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
@@ -176,7 +186,7 @@ endif()
 # setup our config.h file for our conditional compilation
 #--------------------------------------------------------------------
 
-# setup our #define preprocessor directives that define how SIGIL should be compiled
+# setup our #define preprocessor directives that specify how SIGIL should be compiled
 configure_file(${CMAKE_SOURCE_DIR}/src/config.h.in ${CMAKE_BINARY_DIR}/src/config.h)
 include_directories(${CMAKE_BINARY_DIR}/src)
 

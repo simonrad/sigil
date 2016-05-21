@@ -20,11 +20,7 @@
 
 #include <GL/glew.h>
 
-#ifdef USE_GLFW
-	#include "GLFW/glfw3.h"
-#else
-	#include "pigu.h"
-#endif
+#include "config.h"
 
 #ifdef __MINGW32__
 	#include <windows.h>
@@ -70,7 +66,7 @@ void slWindow(int width, int height, const char *title)
 	// error tracking for any window-creation issues we run into
 	GLenum error;
 
-	if(sliIsWindowOpen())
+	if(!sliIsWindowOpen())
 	{
 		// use either GLFW or PIGU to set up our window
 		sliOpenWindow(width, height, title);

@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1463462408 source:/home/geoff/sigil/examples/transformations/transformations.cpp
+1463462408 source:/home/geoff/sigil/examples/sprites/sprites.cpp
 	"sl.h"
+	<cstdlib>
 
 1463113939 /home/geoff/sigil/include/sl.h
 

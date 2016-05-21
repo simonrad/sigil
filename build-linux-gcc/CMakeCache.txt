@@ -265,10 +265,10 @@ X11_X11_INCLUDE_PATH:PATH=/usr/include
 X11_X11_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libX11.so
 
 //Path to a file.
-X11_XRes_INCLUDE_PATH:PATH=/usr/include
+X11_XRes_INCLUDE_PATH:PATH=X11_XRes_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_XRes_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXRes.so
+X11_XRes_LIB:FILEPATH=X11_XRes_LIB-NOTFOUND
 
 //Path to a file.
 X11_XShm_INCLUDE_PATH:PATH=/usr/include
@@ -277,13 +277,13 @@ X11_XShm_INCLUDE_PATH:PATH=/usr/include
 X11_XSync_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_XTest_INCLUDE_PATH:PATH=/usr/include
+X11_XTest_INCLUDE_PATH:PATH=X11_XTest_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_XTest_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXtst.so
+X11_XTest_LIB:FILEPATH=X11_XTest_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xaccessrules_INCLUDE_PATH:PATH=/usr/include
+X11_Xaccessrules_INCLUDE_PATH:PATH=X11_Xaccessrules_INCLUDE_PATH-NOTFOUND
 
 //Path to a file.
 X11_Xaccessstr_INCLUDE_PATH:PATH=/usr/include
@@ -295,10 +295,10 @@ X11_Xau_INCLUDE_PATH:PATH=/usr/include
 X11_Xau_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXau.so
 
 //Path to a file.
-X11_Xcomposite_INCLUDE_PATH:PATH=/usr/include
+X11_Xcomposite_INCLUDE_PATH:PATH=X11_Xcomposite_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xcomposite_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXcomposite.so
+X11_Xcomposite_LIB:FILEPATH=X11_Xcomposite_LIB-NOTFOUND
 
 //Path to a file.
 X11_Xcursor_INCLUDE_PATH:PATH=/usr/include
@@ -355,10 +355,10 @@ X11_Xinput_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXi.so
 X11_Xkb_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xkbfile_INCLUDE_PATH:PATH=/usr/include
+X11_Xkbfile_INCLUDE_PATH:PATH=X11_Xkbfile_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xkbfile_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxkbfile.so
+X11_Xkbfile_LIB:FILEPATH=X11_Xkbfile_LIB-NOTFOUND
 
 //Path to a file.
 X11_Xkblib_INCLUDE_PATH:PATH=/usr/include
@@ -373,10 +373,10 @@ X11_Xmu_INCLUDE_PATH:PATH=/usr/include
 X11_Xmu_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXmu.so
 
 //Path to a file.
-X11_Xpm_INCLUDE_PATH:PATH=/usr/include
+X11_Xpm_INCLUDE_PATH:PATH=X11_Xpm_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xpm_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXpm.so
+X11_Xpm_LIB:FILEPATH=X11_Xpm_LIB-NOTFOUND
 
 //Path to a file.
 X11_Xrandr_INCLUDE_PATH:PATH=/usr/include
@@ -391,10 +391,10 @@ X11_Xrender_INCLUDE_PATH:PATH=/usr/include
 X11_Xrender_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXrender.so
 
 //Path to a file.
-X11_Xscreensaver_INCLUDE_PATH:PATH=/usr/include
+X11_Xscreensaver_INCLUDE_PATH:PATH=X11_Xscreensaver_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xscreensaver_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXss.so
+X11_Xscreensaver_LIB:FILEPATH=X11_Xscreensaver_LIB-NOTFOUND
 
 //Path to a file.
 X11_Xshape_INCLUDE_PATH:PATH=/usr/include
@@ -409,10 +409,10 @@ X11_Xt_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXt.so
 X11_Xutil_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xv_INCLUDE_PATH:PATH=/usr/include
+X11_Xv_INCLUDE_PATH:PATH=X11_Xv_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xv_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXv.so
+X11_Xv_LIB:FILEPATH=X11_Xv_LIB-NOTFOUND
 
 //Path to a library.
 X11_Xxf86misc_LIB:FILEPATH=X11_Xxf86misc_LIB-NOTFOUND
@@ -436,7 +436,7 @@ glfw_LIB_DEPENDS:STATIC=
 sigil_BINARY_DIR:STATIC=/home/geoff/sigil/build-linux-gcc
 
 //Dependencies for the target
-sigil_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libGLEW.so;general;glfw;general;/usr/local/lib/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libopenal.so;general;GL;
+sigil_LIB_DEPENDS:STATIC=general;glfw;general;/usr/lib/x86_64-linux-gnu/libGLEW.so;general;/usr/local/lib/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libopenal.so;general;GL;
 
 //Value Computed by CMake
 sigil_SOURCE_DIR:STATIC=/home/geoff/sigil
