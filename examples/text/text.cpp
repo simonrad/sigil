@@ -25,14 +25,16 @@ int main(int args, char *argv[])
 	while(!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
 	{
         // print the title out
+        slSetTextAlign(SL_ALIGN_CENTER);
         slSetFontSize(28);
-        slText(20, 250, "A Tale of Two Cities");
+        slText(300, 250, "A Tale of Two Cities");
 
         // print the author
         slSetFontSize(20);
-        slText(20, 200, "Charles Dickens");
+        slText(300, 200, "Charles Dickens");
 
         // print the first paragraph
+        slSetTextAlign(SL_ALIGN_LEFT);
         slSetFontSize(14);
         slText(20, 150, "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age\n" \
 						"of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season\n" \
@@ -41,6 +43,10 @@ int main(int args, char *argv[])
 						"Heaven, we were all going direct the other way - in short, the period was so far like the\n" \
 						"present period, that some of its noisiest authorities insisted on its being received, for\n" \
 						"good or for evil, in the superlative degree of comparison only.");
+
+		// lastly, demonstrate right-aligned text
+		slSetTextAlign(SL_ALIGN_RIGHT);
+		slText(580, 20, "[continued in actual book...]");
 
 		// display anything that SIGIL needs to as a result of drawing commands
 		slRender();
