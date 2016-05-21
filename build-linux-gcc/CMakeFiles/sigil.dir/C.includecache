@@ -88,6 +88,8 @@ GL/glew.h
 ../util/transform.h
 /home/geoff/sigil/src/util/transform.h
 
+/home/geoff/sigil/src/internal/window.h
+
 /home/geoff/sigil/src/sl.c
 sl.h
 /home/geoff/sigil/src/sl.h
@@ -109,6 +111,8 @@ internal/text.h
 /home/geoff/sigil/src/internal/text.h
 internal/sound.h
 /home/geoff/sigil/src/internal/sound.h
+internal/window.h
+/home/geoff/sigil/src/internal/window.h
 util/transform.h
 /home/geoff/sigil/src/util/transform.h
 util/images.h
@@ -118,7 +122,9 @@ util/gldebugging.h
 GL/glew.h
 -
 GLFW/glfw3.h
--
+/home/geoff/sigil/src/GLFW/glfw3.h
+pigu.h
+/home/geoff/sigil/src/pigu.h
 windows.h
 -
 stdlib.h

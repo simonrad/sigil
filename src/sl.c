@@ -9,6 +9,7 @@
 #include "internal/sprite.h"
 #include "internal/text.h"
 #include "internal/sound.h"
+#include "internal/window.h"
 
 #include "util/transform.h"
 #include "util/images.h"
@@ -18,7 +19,12 @@
 #endif
 
 #include <GL/glew.h>
-#include <GLFW/glfw3.h>
+
+#ifdef USE_GLFW
+	#include "GLFW/glfw3.h"
+#else
+	#include "pigu.h"
+#endif
 
 #ifdef __MINGW32__
 	#include <windows.h>
@@ -32,10 +38,6 @@
 #define IDEAL_FRAME_TIME 0.01666667
 
 // private vars
-
-static GLFWwindow *slProgramWindow = NULL;
-static int slWindowWidth = 0;
-static int slWindowHeight = 0;
 
 static Mat4 slMatrixStack[SL_MATRIX_STACK_SIZE];
 static Mat4 *slCurrentMatrix = &slMatrixStack[0];
@@ -65,41 +67,13 @@ static void slKillResources();
 
 void slWindow(int width, int height, const char *title)
 {
-	// types enabling us to access WGL functionality for enabling vsync in Windows
-	#ifdef __MINGW32__
-		typedef BOOL (WINAPI *PFNWGLSWAPINTERVALEXTPROC)(int interval);
-		PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = NULL;
-    #endif
-
 	// error tracking for any window-creation issues we run into
 	GLenum error;
 
-	if(slProgramWindow == NULL)
+	if(sliIsWindowOpen())
 	{
-		// start up GLFW
-		glfwInit();
-
-		// set our OpenGL context to something that doesn't support any old-school shit
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-		glfwWindowHint(GLFW_REFRESH_RATE, 60);
-
-		// enable OpenGL debugging context if we're in a debug build
-		#ifdef DEBUG
-			glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
-		#endif
-
-		// create our OpenGL window
-		slProgramWindow = glfwCreateWindow(width, height, title, NULL, NULL);
-		glfwMakeContextCurrent(slProgramWindow);
-		glfwSwapInterval(1);
-
-		// GLFW doesn't handle vsync well in all cases, so we have to go straight to WGL to do this
-		#ifdef __MINGW32__
-			wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress("wglSwapIntervalEXT");
-			wglSwapIntervalEXT(1);
-		#endif
+		// use either GLFW or PIGU to set up our window
+		sliOpenWindow(width, height, title);
 
 		// configure our viewing area
 		glViewport(0, 0, width, height);
@@ -128,8 +102,6 @@ void slWindow(int width, int height, const char *title)
 
 		// camera view settings
 		slProjectionMatrix = ortho(0.0f, (float)width, 0.0f, (float)height);
-		slWindowWidth = width;
-		slWindowHeight = height;
 
 		// default colors
 		slSetBackColor(0.0, 0.0, 0.0);
@@ -143,57 +115,51 @@ void slWindow(int width, int height, const char *title)
 	}
 	else
 	{
-		fprintf(stderr, "slWindow() cannot be called because a window already exists\n");
+		fprintf(stderr, "slWindow() cannot be called when a window already exists\n");
 		exit(1);
 	}
 }
 
 void slClose()
 {
-	if(slProgramWindow != NULL)
+	if(sliIsWindowOpen())
 	{
 		slKillResources();
-
-		glfwDestroyWindow(slProgramWindow);
-		glfwTerminate();
-		slProgramWindow = NULL;
+		sliCloseWindow();
 	}
 	else
 	{
-		fprintf(stderr, "slClose() cannot be called because no window exists\n");
+		fprintf(stderr, "slClose() cannot be called when no window exists\n");
 		exit(1);
 	}
 }
 
 int slShouldClose()
 {
-	if(slProgramWindow == NULL)
+	if(!sliIsWindowOpen())
 	{
 		fprintf(stderr, "slShouldClose() cannot be called because no window exists\n");
 		exit(1);
 	}
 
-	return glfwWindowShouldClose(slProgramWindow);
+	return sliShouldClose();
 }
 
 // simple input
 
 int slGetKey(int key)
 {
-	return glfwGetKey(slProgramWindow, key) == GLFW_PRESS;
+	return sliGetKey(key);
 }
 
 int slGetMouseButton(int button)
 {
-	return glfwGetMouseButton(slProgramWindow, button) == GLFW_PRESS;
+	return sliGetMouseButton(button);
 }
 
 void slGetMousePos(int *posX, int *posY)
 {
-	double x, y;
-	glfwGetCursorPos(slProgramWindow, &x, &y);
-	*posX = x;
-	*posY = slWindowHeight - y;
+	sliGetMousePos(posX, posY);
 }
 
 // simple frame timing
@@ -217,13 +183,12 @@ void slRender()
 	sliTextFlush(slCurrentMatrix, &slForeColor);
 
 	// read any input events, show the back buffer, and clear the (previous) front buffer
-	glfwPollEvents();
-	glfwSwapBuffers(slProgramWindow);
+	sliPollAndSwap();
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	// gather time values
 	slOldFrameTime = slNewFrameTime;
-	slNewFrameTime = glfwGetTime();
+	slNewFrameTime = sliGetTime();
 
 	// compute delta time value; ensure we don't have any long pauses or tiny time quantums
 	slDeltaTime = (slNewFrameTime - slOldFrameTime);

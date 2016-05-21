@@ -76,6 +76,7 @@ CMakeFiles/sigil.dir/src/sl.c.o: ../src/internal/sound.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/internal/sprite.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/internal/text.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/internal/triangle.h
+CMakeFiles/sigil.dir/src/sl.c.o: ../src/internal/window.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/sl.c
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/util/gldebugging.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/util/images.h

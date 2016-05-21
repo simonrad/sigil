@@ -77,6 +77,7 @@ CMakeFiles/sigil.dir/src/sl.c.o
  /home/geoff/sigil/src/internal/sprite.h
  /home/geoff/sigil/src/internal/text.h
  /home/geoff/sigil/src/internal/triangle.h
+ /home/geoff/sigil/src/internal/window.h
  /home/geoff/sigil/src/sl.c
  /home/geoff/sigil/src/util/gldebugging.h
  /home/geoff/sigil/src/util/images.h

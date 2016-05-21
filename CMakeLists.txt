@@ -8,7 +8,6 @@ set(SIGIL_VERSION_MINOR 5)
 set(SIGIL_VERSION_REVISION 1)
 
 # exactly one of these should be turned on after we do some platform-detection
-set(USE_PIGU OFF)
 set(USE_GLFW OFF)
 
 # print our version number
@@ -90,8 +89,11 @@ if(FOUND_BCM)
 	include_directories(${CMAKE_SOURCE_DIR}/src/pigu/include)
 	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
 
+	# use the PIGU version of SIGIL window handler
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_pigu)
+
 	# tell config.h to use PIGU, not GLFW
-	set(USE_PIGU ON)
+	set(USE_GLFW OFF)
 
 else()
 
@@ -114,6 +116,9 @@ else()
 		target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
 
 	endif()
+
+	# use the GLFW version of SIGIL window handler
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_glfw)
 
 	# tell config.h to use GLFW, not PIGU
 	set(USE_GLFW ON)
