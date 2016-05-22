@@ -5,6 +5,10 @@ If you haven't already, it's probaby a good idea to download the CodeBlocks IDE.
 
 	http://codeblocks.org/downloads/26
 
+SIGIL uses CMake, which is a cross-platform build tool. You will need to download and run the CMake "Windows Installer" (.msi). When the installer asks, make sure you add CMake to your PATH variable. You can download the installer from:
+
+	https://cmake.org/download/
+
 Next, download SIGIL. If you have git, you can use a command prompt:
 
 	git clone git@gitlab.com:geoff-nagy/sigil.git
@@ -30,7 +34,7 @@ and NOT
 
 	C:\Program Files (x86)\CodeBlocks\MinGW\GnuWin32
 
-or anywhere else, otherwise you may encounter difficulties when building SIGIL.
+or anywhere else, otherwise you may encounter difficulties when building SIGIL. You may have to manually edit out the "GnuWin32" portion.
 
 We need OpenAL for audio. Download the zipped OpenAL Soft Windows binaries ("openal-soft-X.XX.X-bin.zip") from
 

@@ -22,10 +22,6 @@
 
 #include "config.h"
 
-#ifdef __MINGW32__
-	#include <windows.h>
-#endif
-
 #include <stdlib.h>
 #include <stdio.h>
 

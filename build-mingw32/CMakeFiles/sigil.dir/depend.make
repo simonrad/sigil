@@ -115,6 +115,71 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/internal/triangle.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/util/transform.h
 
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: ../src/glfw/include/GLFW/glfw3.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glext.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/basetsd.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/basetyps.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/cderr.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/cguid.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/commctrl.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/commdlg.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/dde.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/ddeml.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/dlgs.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/excpt.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/imm.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/lzexpand.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/mmsystem.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/mswsock.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/nb30.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oaidl.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objbase.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objfwd.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objidl.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/ole2.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oleauto.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/olectlid.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oleidl.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/poppack.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/prsht.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/pshpack2.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/pshpack4.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpc.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcdce.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcdcep.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcndr.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnsi.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnsip.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnterr.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/shellapi.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdlib.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/string.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/unknwn.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winbase.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wincon.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/windef.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/windows.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winerror.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wingdi.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnetwk.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnls.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnt.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winperf.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winreg.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winresrc.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsock.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsock2.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winspool.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsvc.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winuser.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winver.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wtypes.h
+CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: ../src/internal/window_glfw.c
+
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
@@ -159,71 +224,13 @@ CMakeFiles/sigil.dir/src/sl.c.obj: ../include/sl.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/al.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glext.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GLFW/glfw3.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/basetsd.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/basetyps.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/cderr.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/cguid.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/commctrl.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/commdlg.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/dde.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/ddeml.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/dlgs.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/excpt.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/imm.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/inttypes.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/lzexpand.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/mmsystem.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/mswsock.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/nb30.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oaidl.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objbase.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objfwd.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/objidl.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/ole2.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oleauto.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/olectlid.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/oleidl.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/poppack.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/prsht.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/pshpack2.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/pshpack4.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpc.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcdce.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcdcep.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcndr.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnsi.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnsip.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/rpcnterr.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/shellapi.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdio.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdlib.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/string.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/sys/types.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/unknwn.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winbase.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wincon.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/windef.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/windows.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winerror.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wingdi.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnetwk.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnls.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winnt.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winperf.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winreg.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winresrc.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsock.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsock2.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winspool.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winsvc.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winuser.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/winver.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/wtypes.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/circle.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/line.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/point.h
@@ -233,11 +240,13 @@ CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/sound.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/sprite.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/text.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/triangle.h
+CMakeFiles/sigil.dir/src/sl.c.obj: ../src/internal/window.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/sl.c
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/util/gldebugging.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/util/images.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/sl.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h

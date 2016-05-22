@@ -1,5 +1,9 @@
 #include "GLFW/glfw3.h"
 
+#ifdef __MINGW32__
+	#include <windows.h>
+#endif
+
 static GLFWwindow *sliProgramWindow = NULL;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;

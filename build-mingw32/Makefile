@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Geoff\Desktop\Drive\Development\Small OpenGL Projects\sigil"
+CMAKE_SOURCE_DIR = C:\Users\Geoff\Desktop\sigil
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Geoff\Desktop\Drive\Development\Small OpenGL Projects\sigil\build-mingw32"
+CMAKE_BINARY_DIR = C:\Users\Geoff\Desktop\sigil\build-mingw32
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Geoff\Desktop\Drive\Development\Small OpenGL Projects\sigil\build-mingw32\CMakeFiles" "C:\Users\Geoff\Desktop\Drive\Development\Small OpenGL Projects\sigil\build-mingw32\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Geoff\Desktop\Drive\Development\Small OpenGL Projects\sigil\build-mingw32\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -364,6 +364,33 @@ src/internal/triangle.s: src/internal/triangle.c.s
 src/internal/triangle.c.s:
 	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/triangle.c.s
 .PHONY : src/internal/triangle.c.s
+
+src/internal/window_glfw.obj: src/internal/window_glfw.c.obj
+
+.PHONY : src/internal/window_glfw.obj
+
+# target to build an object file
+src/internal/window_glfw.c.obj:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj
+.PHONY : src/internal/window_glfw.c.obj
+
+src/internal/window_glfw.i: src/internal/window_glfw.c.i
+
+.PHONY : src/internal/window_glfw.i
+
+# target to preprocess a source file
+src/internal/window_glfw.c.i:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.i
+.PHONY : src/internal/window_glfw.c.i
+
+src/internal/window_glfw.s: src/internal/window_glfw.c.s
+
+.PHONY : src/internal/window_glfw.s
+
+# target to generate assembly for a file
+src/internal/window_glfw.c.s:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/window_glfw.c.s
+.PHONY : src/internal/window_glfw.c.s
 
 src/libdrawtext/drawgl.obj: src/libdrawtext/drawgl.c.obj
 
@@ -698,6 +725,9 @@ help:
 	@echo ... src/internal/triangle.obj
 	@echo ... src/internal/triangle.i
 	@echo ... src/internal/triangle.s
+	@echo ... src/internal/window_glfw.obj
+	@echo ... src/internal/window_glfw.i
+	@echo ... src/internal/window_glfw.s
 	@echo ... src/libdrawtext/drawgl.obj
 	@echo ... src/libdrawtext/drawgl.i
 	@echo ... src/libdrawtext/drawgl.s

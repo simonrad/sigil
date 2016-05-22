@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sigil.dir/src/util/images.c.obj"
   "CMakeFiles/sigil.dir/src/util/shader.c.obj"
   "CMakeFiles/sigil.dir/src/util/transform.c.obj"
+  "CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj"
   "libsigil.pdb"
   "libsigil.dll"
   "libsigil.dll.a"

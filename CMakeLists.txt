@@ -102,7 +102,8 @@ else()
 	# when using MinGW, we link to pre-compiled libs because compiling GLFW from scratch with MinGW is a pain in the ass
 	if(MINGW)
 
-		# ...which we keep in our lib/mingw32 foler
+		# ...which we keep in our lib/mingw32 folder
+		include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
 		target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
 
 	else()
