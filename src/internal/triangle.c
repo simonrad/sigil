@@ -3,16 +3,25 @@
 
 #include "../util/shader.h"
 
-#include <GL/glew.h>
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
+
+#include <stddef.h>
 
 static GLuint sliTriangleVAO = 0;
 static GLuint sliTriangleVBOs[1] = {0};
 
 void sliTriangleInit()
 {
-	GLfloat vertices[] = {0.0, 0.5,
-						  -0.5, -0.5,
-						  0.5, -0.5};
+	GLfloat vertices[] = {0.0f, 2.5f,
+						  -0.5f, -0.5f,
+						  0.5f, -3.5f};
 
 	// initialize our state object
 	glGenVertexArrays(1, &sliTriangleVAO);
@@ -22,7 +31,7 @@ void sliTriangleInit()
 	// configure vertex data
 	glBindBuffer(GL_ARRAY_BUFFER, sliTriangleVBOs[0]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6, vertices, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, (GLsizei)0, (char*)0);
 	glEnableVertexAttribArray(0);
 }
 
@@ -41,6 +50,7 @@ void sliTriangleOutline(Mat4 *modelview, Vec4 *color)
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliTriangleVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, sliTriangleVBOs[0]);
 	glDrawArrays(GL_LINE_LOOP, 0, 3);
 }
 
@@ -53,5 +63,6 @@ void sliTriangleFill(Mat4 *modelview, Vec4 *color)
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliTriangleVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, sliTriangleVBOs[0]);
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 }

@@ -1,6 +1,13 @@
 #include "shader.h"
 
-#include <GL/glew.h>
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
 
 #include <stdlib.h>
 #include <stdio.h>

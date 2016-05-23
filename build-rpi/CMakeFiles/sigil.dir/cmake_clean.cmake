@@ -4,7 +4,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/sigil.dir/src/internal/line.c.o"
   "CMakeFiles/sigil.dir/src/internal/point.c.o"
   "CMakeFiles/sigil.dir/src/internal/rectangle.c.o"
-  "CMakeFiles/sigil.dir/src/internal/shaders.c.o"
   "CMakeFiles/sigil.dir/src/internal/sound.c.o"
   "CMakeFiles/sigil.dir/src/internal/sprite.c.o"
   "CMakeFiles/sigil.dir/src/internal/text.c.o"
@@ -20,6 +19,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/sigil.dir/src/util/shader.c.o"
   "CMakeFiles/sigil.dir/src/util/transform.c.o"
   "CMakeFiles/sigil.dir/src/internal/window_pigu.c.o"
+  "CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o"
   "libsigil.pdb"
   "libsigil.so"
 )

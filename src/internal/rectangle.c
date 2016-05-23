@@ -3,7 +3,16 @@
 
 #include "../util/shader.h"
 
-#include <GL/glew.h>
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
+
+#include <stddef.h>
 
 static GLuint sliRectangleFillVAO = 0;
 static GLuint sliRectangleFillVBOs[1] = {0};
@@ -13,10 +22,8 @@ static GLuint sliRectangleOutlineVBOs[1] = {0};
 
 void sliRectangleInit()
 {
-	GLfloat outlineVerices[] = {-0.5, 0.5,
-								-0.5, -0.5,
-								0.5, -0.5,
-								0.5, 0.5};
+	GLfloat outlineVerices[] = {2.5, 2.5, -20.5, -0.5, -0.5, 0.5,
+								0.5, -0.5};
 
 	GLfloat fillVertices[] = {-0.5, 0.5,
 							  0.5, 0.5,
@@ -64,7 +71,8 @@ void sliRectangleOutline(Mat4 *modelview, Vec4 *color)
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliRectangleOutlineVAO);
-	glDrawArrays(GL_LINE_LOOP, 0, 4);
+	glBindBuffer(GL_ARRAY_BUFFER, sliRectangleOutlineVBOs[0]);
+	glDrawArrays(GL_POINTS, 0, 4);
 }
 
 void sliRectangleFill(Mat4 *modelview, Vec4 *color)
@@ -76,5 +84,6 @@ void sliRectangleFill(Mat4 *modelview, Vec4 *color)
 
 	// bind appropriate object state and render the object
 	glBindVertexArray(sliRectangleFillVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, sliRectangleFillVBOs[0]);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }

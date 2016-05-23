@@ -32,10 +32,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <malloc.h>
 #endif
 
-#ifdef TARGET_IPHONE
-#include <OpenGLES/ES2/gl.h>
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
 #else
-#include <GL/glew.h>
+	#include <GL/glew.h>
 #endif
 
 #include "drawtext.h"
@@ -135,7 +138,7 @@ static void set_glyphmap_texture(struct dtx_glyphmap *gmap)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
 		// fill our texture data
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, gmap->xsz, gmap->ysz, 0, GL_RED, GL_UNSIGNED_BYTE, gmap->pixels);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, gmap->xsz, gmap->ysz, 0, GL_ALPHA, GL_UNSIGNED_BYTE, gmap->pixels);
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}
 

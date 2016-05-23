@@ -7,8 +7,9 @@ set(SIGIL_VERSION_MAJOR 0)
 set(SIGIL_VERSION_MINOR 5)
 set(SIGIL_VERSION_REVISION 1)
 
-# exactly one of these should be turned on after we do some platform-detection
+# defaults for libraries we use
 set(USE_GLFW OFF)
+set(USE_GLES OFF)
 
 # print our version number
 message("------------------------------")
@@ -28,7 +29,6 @@ set(
 	src/internal/line
 	src/internal/point
 	src/internal/rectangle
-	src/internal/shaders
 	src/internal/sound
 	src/internal/sprite
 	src/internal/text
@@ -66,19 +66,27 @@ endif()
 
 if(FOUND_BCM)
 
-	# use the PIGU version of SIGIL window, context, and input handler
+	# use the PIGU- and GLES2-based version of SIGIL
 	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_pigu)
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/shaders_gles)
 
 	# tell config.h to use PIGU, not GLFW
 	set(USE_GLFW OFF)
 
+	# tell config.h that we need GLES
+	set(USE_GLES ON)
+
 else()
 
-	# use the GLFW version of SIGIL window, context, and input handler
+	# use the GLFW- and GL-based version of SIGIL
 	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/window_glfw)
+	set(SIGIL_SOURCE ${SIGIL_SOURCE} src/internal/shaders_gl)
 
 	# tell config.h to use GLFW, not PIGU
 	set(USE_GLFW ON)
+
+	# tell config.h that we don't need GLES
+	set(USE_GLES OFF)
 
 endif()
 
@@ -126,8 +134,14 @@ endif()
 # OpenGL extension handling for non-RPi systems
 #--------------------------------------------------------------------
 
-# RPi's don't use GLEW, but everything else does
-if(NOT FOUND_BCM)
+# RPi's use GLES; everything else uses GLEW
+if(USE_GLES)
+
+	include_directories(/opt/vc/include)
+	find_library(GLES_LIBS NAMES GLESv2 EGL bcm_host vcos rt PATHS /opt/vc/lib)
+	target_link_libraries(${PROJECT_NAME} ${GLES_LIBS})
+
+else()
 
 	# we depend on GLEW---it's on apt and a cmake 'find' module is available for it
 	find_package(GLEW REQUIRED)

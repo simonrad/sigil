@@ -8,3 +8,5 @@
 // do we use GLFW for context/window/input handling?
 /* #undef USE_GLFW */
 
+// do we need to use GLES to handle our GL rendering?
+#define USE_GLES

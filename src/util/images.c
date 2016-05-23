@@ -2,7 +2,14 @@
 
 #include "../soil/SOIL.h"
 
-#include <GL/glew.h>
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>

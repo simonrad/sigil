@@ -14,13 +14,18 @@
 #include "util/transform.h"
 #include "util/images.h"
 
+#include "config.h"
+
 #ifdef __MINGW32__
 	#include "util/gldebugging.h"
 #endif
 
-#include <GL/glew.h>
-
-#include "config.h"
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -71,15 +76,17 @@ void slWindow(int width, int height, const char *title)
 		glViewport(0, 0, width, height);
 
 		// enable our extensions handler
-		glewExperimental = 1;
-		error = glewInit();
-		if(error != GLEW_OK)
-		{
-			fprintf(stderr, "slWindow() could not initialize GLEW: %s\n", glewGetErrorString(error));
-			exit(1);
-		}
+		#ifdef USE_GLEW
+			glewExperimental = 1;
+			error = glewInit();
+			if(error != GLEW_OK)
+			{
+				fprintf(stderr, "slWindow() could not initialize GLEW: %s\n", glewGetErrorString(error));
+				exit(1);
+			}
+		#endif
 
-		// clear the OpenGL error resulting from glewInit()
+		// start with a clean error slate
 		glGetError();
 
 		// turn on OpenGL debugging

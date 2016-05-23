@@ -4,24 +4,22 @@
 #include "../util/shader.h"
 
 #include <stdlib.h>
+#include <stdio.h>
 
 static const char *sliBasicVertexShaderCode =
-"#version 150 \n"
 "uniform mat4 u_Projection;"
 "uniform mat4 u_Modelview;"
-"in vec2 a_Vertex;"
+"attribute vec2 a_Vertex;"
 "void main()"
 "{"
 "gl_Position = u_Projection * u_Modelview * vec4(a_Vertex, 0.0, 1.0);"
 "}";
 
 static const char *sliBasicFragmentShaderCode =
-"#version 150 \n"
 "uniform vec4 u_Color;"
-"out vec4 f_Color;"
 "void main()"
 "{"
-"f_Color = u_Color;"
+"gl_FragColor = u_Color;"
 "}";
 
 static const char *sliPointVertexShaderCode =
@@ -92,7 +90,7 @@ static const char *sliTextFragmentShaderCode =
 "out vec4 f_Color;"
 "void main()"
 "{"
-"float luminance = texture(u_Texture, v_TexCoord).r;"
+"float luminance = texture(u_Texture, v_TexCoord).a;"
 "f_Color = u_Color * vec4(luminance);"
 "}";
 
@@ -103,6 +101,7 @@ Shader *sliTextShader;
 
 void sliShadersInit(Mat4 *projection)
 {
+	printf("basic\n");
 	sliBasicShader = shaderLoad(sliBasicVertexShaderCode, sliBasicFragmentShaderCode);
 	shaderBindAttrib(sliBasicShader, "a_Vertex", 0);
 	shaderLink(sliBasicShader);
@@ -110,6 +109,7 @@ void sliShadersInit(Mat4 *projection)
 	shaderUniformMatrix4fv(sliBasicShader, "u_Projection", 1, (float*)projection);
 	shaderFinalize(sliBasicShader);
 
+	printf("point\n");
 	sliPointShader = shaderLoad(sliPointVertexShaderCode, sliPointFragmentShaderCode);
 	shaderBindAttrib(sliPointShader, "a_Vertex", 0);
 	shaderBindAttrib(sliPointShader, "a_Color", 1);
@@ -118,6 +118,7 @@ void sliShadersInit(Mat4 *projection)
 	shaderUniformMatrix4fv(sliPointShader, "u_Projection", 1, (float*)projection);
 	shaderFinalize(sliPointShader);
 
+	printf("texture\n");
 	sliTextureShader = shaderLoad(sliTextureVertexShaderCode, sliTextureFragmentShaderCode);
 	shaderBindAttrib(sliTextureShader, "a_Vertex", 0);
 	shaderBindAttrib(sliTextureShader, "a_TexCoord", 1);
@@ -127,6 +128,7 @@ void sliShadersInit(Mat4 *projection)
 	shaderUniform1i(sliTextureShader, "u_Texture", 0);
 	shaderFinalize(sliTextureShader);
 
+	printf("text\n");
 	sliTextShader = shaderLoad(sliTextVertexShaderCode, sliTextFragmentShaderCode);
 	shaderBindAttrib(sliTextShader, "a_Vertex", 0);
 	shaderBindAttrib(sliTextShader, "a_TexCoord", 1);

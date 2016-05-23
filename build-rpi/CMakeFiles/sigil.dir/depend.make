@@ -6,29 +6,69 @@ CMakeFiles/sigil.dir/src/internal/circle.c.o: ../src/internal/../util/transform.
 CMakeFiles/sigil.dir/src/internal/circle.c.o: ../src/internal/circle.c
 CMakeFiles/sigil.dir/src/internal/circle.c.o: ../src/internal/circle.h
 CMakeFiles/sigil.dir/src/internal/circle.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/circle.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/line.c.o: ../src/internal/../util/shader.h
 CMakeFiles/sigil.dir/src/internal/line.c.o: ../src/internal/../util/transform.h
 CMakeFiles/sigil.dir/src/internal/line.c.o: ../src/internal/line.c
 CMakeFiles/sigil.dir/src/internal/line.c.o: ../src/internal/line.h
 CMakeFiles/sigil.dir/src/internal/line.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/line.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/point.c.o: ../src/internal/../util/shader.h
 CMakeFiles/sigil.dir/src/internal/point.c.o: ../src/internal/../util/transform.h
 CMakeFiles/sigil.dir/src/internal/point.c.o: ../src/internal/point.c
 CMakeFiles/sigil.dir/src/internal/point.c.o: ../src/internal/point.h
 CMakeFiles/sigil.dir/src/internal/point.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/point.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/rectangle.c.o: ../src/internal/../util/shader.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.o: ../src/internal/../util/transform.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.o: ../src/internal/rectangle.c
 CMakeFiles/sigil.dir/src/internal/rectangle.c.o: ../src/internal/rectangle.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.o: src/config.h
 
-CMakeFiles/sigil.dir/src/internal/shaders.c.o: ../src/internal/../util/shader.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.o: ../src/internal/../util/transform.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.o: ../src/internal/shaders.c
-CMakeFiles/sigil.dir/src/internal/shaders.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: ../src/internal/../util/shader.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: ../src/internal/../util/transform.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: ../src/internal/shaders_gles.c
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/sound.c.o: ../src/internal/sound.c
 CMakeFiles/sigil.dir/src/internal/sound.c.o: ../src/internal/sound.h
@@ -38,6 +78,14 @@ CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/../util/transform.
 CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/sprite.c
 CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/sprite.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/../libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/../util/shader.h
@@ -45,12 +93,28 @@ CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/../util/transform.h
 CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/text.c
 CMakeFiles/sigil.dir/src/internal/text.c.o: ../src/internal/text.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/text.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/triangle.c.o: ../src/internal/../util/shader.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.o: ../src/internal/../util/transform.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.o: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.o: ../src/internal/triangle.c
 CMakeFiles/sigil.dir/src/internal/triangle.c.o: ../src/internal/triangle.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/window_pigu.c.o: ../src/pigu/include/pigu.h
 CMakeFiles/sigil.dir/src/internal/window_pigu.c.o: ../src/internal/window_pigu.c
@@ -58,6 +122,14 @@ CMakeFiles/sigil.dir/src/internal/window_pigu.c.o: ../src/internal/window_pigu.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: ../src/libdrawtext/drawgl.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: ../src/libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: ../src/libdrawtext/drawtext_impl.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.o: ../src/libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.o: ../src/libdrawtext/drawtext_impl.h
@@ -85,6 +157,13 @@ CMakeFiles/sigil.dir/src/sl.c.o: ../src/sl.c
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/util/gldebugging.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/util/images.h
 CMakeFiles/sigil.dir/src/sl.c.o: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/vcinclude/common.h
 CMakeFiles/sigil.dir/src/sl.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.o: ../src/soil/SOIL.c
@@ -107,9 +186,25 @@ CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.o: ../src/soil/stbi_DDS_aug_c.h
 CMakeFiles/sigil.dir/src/util/images.c.o: ../src/util/../soil/SOIL.h
 CMakeFiles/sigil.dir/src/util/images.c.o: ../src/util/images.c
 CMakeFiles/sigil.dir/src/util/images.c.o: ../src/util/images.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/util/images.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/util/images.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/util/shader.c.o: ../src/util/shader.c
 CMakeFiles/sigil.dir/src/util/shader.c.o: ../src/util/shader.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/GLES2/../KHR/khrplatform.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/GLES2/gl2.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/GLES2/gl2ext.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/GLES2/gl2platform.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/util/shader.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/util/transform.c.o: ../src/util/transform.c
 CMakeFiles/sigil.dir/src/util/transform.c.o: ../src/util/transform.h

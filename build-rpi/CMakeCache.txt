@@ -170,6 +170,9 @@ FREETYPE_LIBRARY:FILEPATH=/usr/local/lib/libfreetype.a
 //Path to a library.
 GLES_LIBRARY:FILEPATH=/opt/vc/lib/libGLESv2.so
 
+//Path to a library.
+GLES_LIBS:FILEPATH=/opt/vc/lib/libGLESv2.so
+
 //Path to a file.
 OPENAL_INCLUDE_DIR:PATH=/usr/include/AL
 
@@ -195,7 +198,7 @@ pigu_SOURCE_DIR:STATIC=/home/pi/sigil/src/pigu
 sigil_BINARY_DIR:STATIC=/home/pi/sigil/build-rpi
 
 //Dependencies for the target
-sigil_LIB_DEPENDS:STATIC=general;pigu;general;/usr/local/lib/libfreetype.a;general;/usr/lib/arm-linux-gnueabihf/libopenal.so;general;GL;
+sigil_LIB_DEPENDS:STATIC=general;pigu;general;/opt/vc/lib/libGLESv2.so;general;/usr/local/lib/libfreetype.a;general;/usr/lib/arm-linux-gnueabihf/libopenal.so;general;GL;
 
 //Value Computed by CMake
 sigil_SOURCE_DIR:STATIC=/home/pi/sigil

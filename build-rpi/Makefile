@@ -264,29 +264,29 @@ src/internal/rectangle.c.s:
 	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/rectangle.c.s
 .PHONY : src/internal/rectangle.c.s
 
-src/internal/shaders.o: src/internal/shaders.c.o
-.PHONY : src/internal/shaders.o
+src/internal/shaders_gles.o: src/internal/shaders_gles.c.o
+.PHONY : src/internal/shaders_gles.o
 
 # target to build an object file
-src/internal/shaders.c.o:
-	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.o
-.PHONY : src/internal/shaders.c.o
+src/internal/shaders_gles.c.o:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o
+.PHONY : src/internal/shaders_gles.c.o
 
-src/internal/shaders.i: src/internal/shaders.c.i
-.PHONY : src/internal/shaders.i
+src/internal/shaders_gles.i: src/internal/shaders_gles.c.i
+.PHONY : src/internal/shaders_gles.i
 
 # target to preprocess a source file
-src/internal/shaders.c.i:
-	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.i
-.PHONY : src/internal/shaders.c.i
+src/internal/shaders_gles.c.i:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders_gles.c.i
+.PHONY : src/internal/shaders_gles.c.i
 
-src/internal/shaders.s: src/internal/shaders.c.s
-.PHONY : src/internal/shaders.s
+src/internal/shaders_gles.s: src/internal/shaders_gles.c.s
+.PHONY : src/internal/shaders_gles.s
 
 # target to generate assembly for a file
-src/internal/shaders.c.s:
-	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders.c.s
-.PHONY : src/internal/shaders.c.s
+src/internal/shaders_gles.c.s:
+	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/src/internal/shaders_gles.c.s
+.PHONY : src/internal/shaders_gles.c.s
 
 src/internal/sound.o: src/internal/sound.c.o
 .PHONY : src/internal/sound.o
@@ -698,9 +698,9 @@ help:
 	@echo "... src/internal/rectangle.o"
 	@echo "... src/internal/rectangle.i"
 	@echo "... src/internal/rectangle.s"
-	@echo "... src/internal/shaders.o"
-	@echo "... src/internal/shaders.i"
-	@echo "... src/internal/shaders.s"
+	@echo "... src/internal/shaders_gles.o"
+	@echo "... src/internal/shaders_gles.i"
+	@echo "... src/internal/shaders_gles.s"
 	@echo "... src/internal/sound.o"
 	@echo "... src/internal/sound.i"
 	@echo "... src/internal/sound.s"

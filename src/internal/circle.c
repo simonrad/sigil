@@ -3,10 +3,17 @@
 
 #include "../util/shader.h"
 
+#include "config.h"
+
+#ifdef USE_GLES
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#else
+	#include <GL/glew.h>
+#endif
+
 #include <math.h>
 #include <stdlib.h>
-
-#include <GL/glew.h>
 
 #define PI 3.1415926
 #define MIN_VERTICES 3

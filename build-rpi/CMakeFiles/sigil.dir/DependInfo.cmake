@@ -8,7 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/pi/sigil/src/internal/line.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/line.c.o"
   "/home/pi/sigil/src/internal/point.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/point.c.o"
   "/home/pi/sigil/src/internal/rectangle.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/rectangle.c.o"
-  "/home/pi/sigil/src/internal/shaders.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/shaders.c.o"
+  "/home/pi/sigil/src/internal/shaders_gles.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o"
   "/home/pi/sigil/src/internal/sound.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/sound.c.o"
   "/home/pi/sigil/src/internal/sprite.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/sprite.c.o"
   "/home/pi/sigil/src/internal/text.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/text.c.o"
@@ -37,6 +37,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../src/pigu/include"
+  "/opt/vc/include"
   "/usr/local/include/freetype2"
   "/usr/local/include"
   "/usr/include/AL"
