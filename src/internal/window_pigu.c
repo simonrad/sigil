@@ -1,6 +1,6 @@
 #include "pigu.h"
 
-static inr sliWindowOpen = 0;
+static int sliWindowOpen = 0;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;
 
@@ -57,7 +57,7 @@ int sliGetMouseButton(int button)
 void sliGetMousePos(int *posX, int *posY)
 {
 	piguGetMousePosition(posX, posY);
-	*posY = sliWindowHeight - posY;
+	*posY = sliWindowHeight - *posY;
 }
 
 double sliGetTime()

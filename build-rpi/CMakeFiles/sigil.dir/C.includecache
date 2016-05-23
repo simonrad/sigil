@@ -8,6 +8,8 @@
 
 ../include/sl.h
 
+../src/pigu/include/pigu.h
+
 /home/pi/sigil/src/internal/../libdrawtext/drawtext.h
 stdio.h
 -
@@ -166,6 +168,12 @@ GL/glew.h
 ../util/transform.h
 /home/pi/sigil/src/internal/../util/transform.h
 
+/home/pi/sigil/src/internal/window.h
+
+/home/pi/sigil/src/internal/window_pigu.c
+pigu.h
+/home/pi/sigil/src/internal/pigu.h
+
 /home/pi/sigil/src/libdrawtext/drawgl.c
 stdarg.h
 -
@@ -249,6 +257,8 @@ internal/text.h
 /home/pi/sigil/src/internal/text.h
 internal/sound.h
 /home/pi/sigil/src/internal/sound.h
+internal/window.h
+/home/pi/sigil/src/internal/window.h
 util/transform.h
 /home/pi/sigil/src/util/transform.h
 util/images.h
@@ -257,10 +267,8 @@ util/gldebugging.h
 /home/pi/sigil/src/util/gldebugging.h
 GL/glew.h
 -
-GLFW/glfw3.h
--
-windows.h
--
+config.h
+/home/pi/sigil/src/config.h
 stdlib.h
 -
 stdio.h
@@ -394,49 +402,11 @@ math.h
 
 /home/pi/sigil/src/util/transform.h
 
-/usr/local/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/glcorearb.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-vulkan/vulkan.h
--
-GL/gl.h
--
-GL/glext.h
--
-GL/glu.h
--
-
 /usr/local/include/freetype2/config/ftheader.h
 
 /usr/local/include/freetype2/ft2build.h
 config/ftheader.h
 -
+
+src/config.h
 

@@ -52,6 +52,9 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.o
  /home/pi/sigil/src/internal/shaders.h
  /home/pi/sigil/src/internal/triangle.c
  /home/pi/sigil/src/internal/triangle.h
+CMakeFiles/sigil.dir/src/internal/window_pigu.c.o
+ ../src/pigu/include/pigu.h
+ /home/pi/sigil/src/internal/window_pigu.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o
  /home/pi/sigil/src/libdrawtext/drawgl.c
  /home/pi/sigil/src/libdrawtext/drawtext.h
@@ -78,11 +81,12 @@ CMakeFiles/sigil.dir/src/sl.c.o
  /home/pi/sigil/src/internal/sprite.h
  /home/pi/sigil/src/internal/text.h
  /home/pi/sigil/src/internal/triangle.h
+ /home/pi/sigil/src/internal/window.h
  /home/pi/sigil/src/sl.c
  /home/pi/sigil/src/util/gldebugging.h
  /home/pi/sigil/src/util/images.h
  /home/pi/sigil/src/util/transform.h
- /usr/local/include/GLFW/glfw3.h
+ src/config.h
 CMakeFiles/sigil.dir/src/soil/SOIL.c.o
  /home/pi/sigil/src/soil/SOIL.c
  /home/pi/sigil/src/soil/SOIL.h

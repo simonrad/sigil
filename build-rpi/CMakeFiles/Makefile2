@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/pi/sigil/build-rpi
 CMakeFiles/sigil.dir/all: src/pigu/CMakeFiles/pigu.dir/all
 	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/depend
 	$(MAKE) -f CMakeFiles/sigil.dir/build.make CMakeFiles/sigil.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles  6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/sigil/build-rpi/CMakeFiles  6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
 	@echo "Built target sigil"
 .PHONY : CMakeFiles/sigil.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/sigil.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sigil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/sigil/build-rpi/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/sigil/build-rpi/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sigil.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/sigil/build-rpi/CMakeFiles 0
 .PHONY : CMakeFiles/sigil.dir/rule

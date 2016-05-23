@@ -13,6 +13,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/pi/sigil/src/internal/sprite.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/sprite.c.o"
   "/home/pi/sigil/src/internal/text.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/text.c.o"
   "/home/pi/sigil/src/internal/triangle.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/triangle.c.o"
+  "/home/pi/sigil/src/internal/window_pigu.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/internal/window_pigu.c.o"
   "/home/pi/sigil/src/libdrawtext/drawgl.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.o"
   "/home/pi/sigil/src/libdrawtext/font.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/libdrawtext/font.c.o"
   "/home/pi/sigil/src/libdrawtext/utf8.c" "/home/pi/sigil/build-rpi/CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.o"
@@ -36,10 +37,10 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../src/pigu/include"
-  "src"
   "/usr/local/include/freetype2"
   "/usr/local/include"
   "/usr/include/AL"
+  "src"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
