@@ -4,8 +4,8 @@ set(CMAKE_BUILD_TYPE Release)
 
 # SIGIL versioning
 set(SIGIL_VERSION_MAJOR 0)
-set(SIGIL_VERSION_MINOR 5)
-set(SIGIL_VERSION_REVISION 1)
+set(SIGIL_VERSION_MINOR 6)
+set(SIGIL_VERSION_REVISION 0)
 
 # defaults for libraries we use
 set(USE_GLFW OFF)
@@ -137,6 +137,7 @@ endif()
 # RPi's use GLES; everything else uses GLEW
 if(USE_GLES)
 
+	# add in the GLES 2.0 libraries and other dependencies
 	include_directories(/opt/vc/include)
 	find_library(GLES_LIBS NAMES GLESv2 EGL bcm_host vcos rt PATHS /opt/vc/lib)
 	target_link_libraries(${PROJECT_NAME} ${GLES_LIBS})
@@ -170,21 +171,11 @@ target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
 # everything uses OpenAL for audio handling
 #--------------------------------------------------------------------
 
-# MinGW is a special case since it's more difficult to build AL using it
-#if(MINGW)
+# use the OpenAL find_package module to locate OpenAL for us
+find_package(OpenAL REQUIRED)
+include_directories(${OPENAL_INCLUDE_DIR})
+target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
 
-	# ...so, we link to pre-compiled libs instead
-	#include_directories(${CMAKE_SOURCE_DIR}/openal/include)
-	#target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/openal/lib/mingw32/libOpenAL32.dll.a)
-
-#else()
-
-	# on other platforms, we can just use whatever we downloaded from apt
-	find_package(OpenAL REQUIRED)
-	include_directories(${OPENAL_INCLUDE_DIR})
-	target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
-
-#endif()
 
 #--------------------------------------------------------------------
 # link to the appropriate GL library
@@ -211,9 +202,9 @@ include_directories(${CMAKE_BINARY_DIR}/src)
 
 # configure our make install command
 if(WIN32)
+	# nothing to install; at this time, the users copies things manually
 else()
 	install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX})
 endif()
 
 # end of root CMakeLists.txt
-

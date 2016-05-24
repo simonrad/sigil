@@ -19,10 +19,14 @@
 #define MIN_VERTICES 3
 #define MAX_VERTICES 100
 
-static GLuint sliCircleOutlineVAO = 0;
+#ifndef USE_GLES
+	static GLuint sliCircleOutlineVAO = 0;
+#endif
 static GLuint sliCircleOutlineVBOs[1] = {0};
 
-static GLuint sliCircleFillVAO = 0;
+#ifndef USE_GLES
+	static GLuint sliCircleFillVAO = 0;
+#endif
 static GLuint sliCircleFillVBOs[1] = {0};
 
 static float sliOutlineRadius = 0;
@@ -34,8 +38,10 @@ static int sliNumFillVertices = 0;
 void sliCircleInit()
 {
 	// initialize our outline state object
-	glGenVertexArrays(1, &sliCircleOutlineVAO);
-	glBindVertexArray(sliCircleOutlineVAO);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &sliCircleOutlineVAO);
+		glBindVertexArray(sliCircleOutlineVAO);
+	#endif
 	glGenBuffers(1, sliCircleOutlineVBOs);
 
 	// configure outline vertex data
@@ -45,8 +51,10 @@ void sliCircleInit()
 	glEnableVertexAttribArray(0);
 
 	// initialize our fill state object
-	glGenVertexArrays(1, &sliCircleFillVAO);
-	glBindVertexArray(sliCircleFillVAO);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &sliCircleFillVAO);
+		glBindVertexArray(sliCircleFillVAO);
+	#endif
 	glGenBuffers(1, sliCircleFillVBOs);
 
 	// configure fill vertex data
@@ -59,10 +67,14 @@ void sliCircleInit()
 void sliCircleDestroy()
 {
 	glDeleteBuffers(1, sliCircleOutlineVBOs);
-	glDeleteVertexArrays(1, &sliCircleOutlineVAO);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &sliCircleOutlineVAO);
+	#endif
 
 	glDeleteBuffers(1, sliCircleFillVBOs);
-	glDeleteVertexArrays(1, &sliCircleFillVAO);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &sliCircleFillVAO);
+	#endif
 }
 
 void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
@@ -110,7 +122,9 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 		}
 
 		// now pass the vertex data to OpenGL
-		glBindVertexArray(sliCircleOutlineVAO);
+		#ifndef USE_GLES
+			glBindVertexArray(sliCircleOutlineVAO);
+		#endif
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliNumOutlineVertices * 3, vertices);
 	}
@@ -121,7 +135,12 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// bind appropriate object state and render the object
-	glBindVertexArray(sliCircleOutlineVAO);
+	#ifndef USE_GLES
+		glBindVertexArray(sliCircleOutlineVAO);
+	#else
+		glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	#endif
 	glDrawArrays(GL_LINE_LOOP, 0, sliNumOutlineVertices);
 }
 
@@ -179,7 +198,9 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 		}
 
 		// now pass the vertex data to OpenGL
-		glBindVertexArray(sliCircleFillVAO);
+		#ifndef USE_GLES
+			glBindVertexArray(sliCircleFillVAO);
+		#endif
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleFillVBOs[0]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * (sliNumFillVertices + 2) * 3, vertices);
 
@@ -193,6 +214,11 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
 
 	// bind appropriate object state and render the object
-	glBindVertexArray(sliCircleFillVAO);
+	#ifndef USE_GLES
+		glBindVertexArray(sliCircleFillVAO);
+	#else
+		glBindBuffer(GL_ARRAY_BUFFER, sliCircleFillVBOs[0]);
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	#endif
 	glDrawArrays(GL_TRIANGLE_FAN, 0, sliNumFillVertices + 2);
 }

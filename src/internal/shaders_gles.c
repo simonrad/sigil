@@ -30,6 +30,7 @@ static const char *sliPointVertexShaderCode =
 "void main()"
 "{"
 "v_Color = a_Color;"
+"gl_PointSize = 1.0;"
 "gl_Position = u_Projection * vec4(a_Vertex, 0.0, 1.0);"
 "}";
 

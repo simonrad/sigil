@@ -9,10 +9,6 @@ Optionally, you may want to install a more visually-pleasing version of CMake. I
 
 	sudo-apt-get install cmake-curses-gui
 
-We depend on the OpenGL Extension Wrangler (GLEW) library:
-
-	sudo apt-get install libglew-dev
-
 Also install the FreeType 2 (FT2) Library:
 
 	sudo apt-get install libfreetype6-dev
@@ -48,4 +44,3 @@ Otherwise, just proceed with the build and installation:
 		sudo make install
 
 And you're done!
-

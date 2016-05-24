@@ -16,7 +16,9 @@
 
 #define MAX_POINT_GROUP_SIZE 1000
 
-static GLuint sliPointVAO = 0;
+#ifndef USE_GLES
+	static GLuint sliPointVAO = 0;
+#endif
 static GLuint sliPointVBOs[2] = {0, 0};
 
 static GLfloat *sliPointVertices;
@@ -29,8 +31,10 @@ static GLfloat *sliPointColorsPtr;
 void sliPointInit()
 {
 	// initialize our state object
-	glGenVertexArrays(1, &sliPointVAO);
-	glBindVertexArray(sliPointVAO);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &sliPointVAO);
+		glBindVertexArray(sliPointVAO);
+	#endif
 	glGenBuffers(2, sliPointVBOs);
 
 	// configure vertex data
@@ -65,7 +69,9 @@ void sliPointDestroy()
 
 	// free OpenGL objects
 	glDeleteBuffers(2, sliPointVBOs);
-	glDeleteVertexArrays(1, &sliPointVAO);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &sliPointVAO);
+	#endif
 }
 
 void sliPoint(Mat4 *modelview, Vec4 *color)
@@ -94,15 +100,23 @@ void sliPointsFlush()
 	if(sliPointCount > 0)
 	{
 		// activate our state object
-		glBindVertexArray(sliPointVAO);
+		#ifndef USE_GLES
+			glBindVertexArray(sliPointVAO);
+		#endif
 
 		// send vertex positions to graphics card
 		glBindBuffer(GL_ARRAY_BUFFER, sliPointVBOs[0]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliPointCount * 2, sliPointVertices);
+		#ifdef USE_GLES
+			glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+		#endif
 
 		// send vertex colors to graphics card
 		glBindBuffer(GL_ARRAY_BUFFER, sliPointVBOs[1]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliPointCount * 4, sliPointColors);
+		#ifdef USE_GLES
+			glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, NULL);
+		#endif
 
 		// prepare our shader object
 		shaderBind(sliPointShader);
