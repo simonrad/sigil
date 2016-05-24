@@ -1,13 +1,12 @@
-
-# CFLAGS+=-O3 -march=armv6 -mfpu=vfp -mfloat-abi=hard -Wall -Wextra
+CFLAGS+=-O3 -march=armv6 -mfpu=vfp -mfloat-abi=hard -Wall
 LDFLAGS+=-lsigil -lGLESv2
 INCLUDES+=-I../../../include
 LIBS+=-L/opt/vc/lib
 SRC=../shapes.cpp
-OBJ=${SRC:.cpp=.bin}
+BIN=shapes
 
-$(OBJ): %.bin: %.cpp
-	$(CXX) $< -o $@ $(CFLAGS) $(INCLUDES) $(LIBS) $(LDFLAGS)
+all: $(SRC)
+	$(CXX) -o $(BIN) $(SRC) $(CFLAGS) $(INCLUDES) $(LIBS) $(LDFLAGS)
 
 clean:
-	-rm *.bin
+	-rm $(BIN)

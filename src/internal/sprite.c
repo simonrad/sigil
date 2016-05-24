@@ -14,7 +14,9 @@
 
 #include <stddef.h>
 
-static GLuint sliSpriteVAO = 0;
+#ifndef USE_GLES
+	static GLuint sliSpriteVAO = 0;
+#endif
 static GLuint sliSpriteVBOs[2] = {0, 0};
 
 void sliSpriteInit()
@@ -30,8 +32,10 @@ void sliSpriteInit()
 						   1.0, 0.0};
 
 	// initialize our state object
-	glGenVertexArrays(1, &sliSpriteVAO);
-	glBindVertexArray(sliSpriteVAO);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &sliSpriteVAO);
+		glBindVertexArray(sliSpriteVAO);
+	#endif
 	glGenBuffers(2, sliSpriteVBOs);
 
 	// configure vertex data
@@ -50,7 +54,9 @@ void sliSpriteInit()
 void sliSpriteDestroy()
 {
 	glDeleteBuffers(2, sliSpriteVBOs);
-	glDeleteVertexArrays(1, &sliSpriteVAO);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &sliSpriteVAO);
+	#endif
 }
 
 void sliSprite(Mat4 *modelview, Vec4 *color, GLuint texture, Vec2 *tiling, Vec2 *scroll)
@@ -63,7 +69,14 @@ void sliSprite(Mat4 *modelview, Vec4 *color, GLuint texture, Vec2 *tiling, Vec2 
 	shaderUniform2f(sliTextureShader, "u_Scroll", scroll -> x, scroll -> y);
 
 	// bind appropriate object state and render the object
-	glBindVertexArray(sliSpriteVAO);
+	#ifndef USE_GLES
+		glBindVertexArray(sliSpriteVAO);
+	#else
+		glBindBuffer(GL_ARRAY_BUFFER, sliSpriteVBOs[0]);
+		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+		glBindBuffer(GL_ARRAY_BUFFER, sliSpriteVBOs[1]);
+		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+	#endif
 	glBindTexture(GL_TEXTURE_2D, texture);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }

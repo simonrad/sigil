@@ -19,10 +19,10 @@ Shader *shaderLoad(const char *vertexCode, const char *fragmentCode)
 {
 	GLuint program = 0;
 	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
 
 	GLint vertexCompiled;
-    GLint fragCompiled;
+	GLint fragCompiled;
 	Shader *result = NULL;
 
 	glShaderSource(vertexShader, 1, &vertexCode, NULL);

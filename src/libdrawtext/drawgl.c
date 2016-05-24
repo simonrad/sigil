@@ -81,8 +81,10 @@ int dtx_gl_init(void)
 	num_quads = 0;
 
 	// generate our default vertex array object and the one we'll use for rendering
-	glGenVertexArrays(1, &vao);
-	glBindVertexArray(vao);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &vao);
+		glBindVertexArray(vao);
+	#endif
 
 	// set up our buffer object and allocate enough space for the entire character buffer
 	glGenBuffers(1, &vbo);
@@ -378,11 +380,17 @@ void dtx_render()
 		dtx_update_texture_interpolation();
 
 		// activate our vertex array object to bring in attribute states
-		glBindVertexArray(vao);
+		#ifndef USE_GLES
+			glBindVertexArray(vao);
+		#endif
 
 		// fill the buffer with our new quad data
 		glBindBuffer(GL_ARRAY_BUFFER, vbo);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(struct vertex) * num_quads * 6, &qbuf[0]);
+		#ifdef USE_GLES
+        		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(struct vertex), 0);
+        		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(struct vertex), (GLvoid*)(sizeof(float) * 2));
+		#endif
 
 		// render the text itself
 		glDrawArrays(GL_TRIANGLES, 0, num_quads * 6);
@@ -393,50 +401,6 @@ void dtx_flush(void)
 {
 	dtx_render();
 	num_quads = 0;
-/*
-	// don't do anything unless we have more text to render
-	if(num_quads)
-	{
-		// enable texturing and set the texture we want to use that contains our text portions
-		glBindTexture(GL_TEXTURE_2D, font_tex);
-		dtx_update_texture_interpolation();
-
-		// bind the VBO object and send the vertex and texture coord attributes
-		glBindBuffer(GL_ARRAY_BUFFER, vbos[0]);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(struct vertex) * num_quads * 6, &qbuf[0], GL_STATIC_DRAW);
-
-		// configure the vertex coord attributes
-		glEnableVertexAttribArray(vattr);
-		glVertexAttribPointer((GLint)vattr, 2, GL_FLOAT, GL_FALSE, sizeof(struct vertex), 0);
-
-		// configure the texture coord attributes (the sizeof(float) * 2 is meant to offset into the s and t vertex params, after x and y)
-		glEnableVertexAttribArray(tattr);
-		glVertexAttribPointer((GLint)tattr, 2, GL_FLOAT, GL_FALSE, sizeof(struct vertex), (GLvoid*)(sizeof(float) * 2));
-
-		// enable the proper blending mode
-		//glEnable(GL_BLEND);
-		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-		// make sure polygons are rendered properly
-		//glDisable(GL_CULL_FACE);
-		//glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-
-		// disable depth writes to prevent occlusion
-		glDepthMask(0);
-
-		// render the text itself
-		glDrawArrays(GL_TRIANGLES, 0, num_quads * 6);
-
-		// depth writes are usually enabled, so turn them on when we're done
-		glDepthMask(1);
-
-		// we're done with the vertex and tex coord attributes
-		glDisableVertexAttribArray(vattr);
-		glDisableVertexAttribArray(tattr);
-
-		// no more quads to render
-		num_quads = 0;
-	}*/
 }
 
 #endif	/* !def NO_OPENGL */

@@ -17,7 +17,9 @@
 
 #define MAX_LINE_GROUP_SIZE 1000
 
-static GLuint sliLineVAO = 0;
+#ifndef USE_GLES
+	static GLuint sliLineVAO = 0;
+#endif
 static GLuint sliLineVBOs[2] = {0, 0};
 
 static GLfloat *sliLineVertices;
@@ -30,8 +32,10 @@ static GLfloat *sliLineColorsPtr;
 void sliLineInit()
 {
 	// initialize our state object
-	glGenVertexArrays(1, &sliLineVAO);
-	glBindVertexArray(sliLineVAO);
+	#ifndef USE_GLES
+		glGenVertexArrays(1, &sliLineVAO);
+		glBindVertexArray(sliLineVAO);
+	#endif
 	glGenBuffers(2, sliLineVBOs);
 
 	// configure vertex data
@@ -66,7 +70,9 @@ void sliLineDestroy()
 
 	// free OpenGL objects
 	glDeleteBuffers(2, sliLineVBOs);
-	glDeleteVertexArrays(1, &sliLineVAO);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &sliLineVAO);
+	#endif
 }
 
 void sliLine(Vec4 *color, double x1, double y1, double x2, double y2)
@@ -103,15 +109,23 @@ void sliLinesFlush()
 	if(sliLineCount > 0)
 	{
 		// activate our state object
-		glBindVertexArray(sliLineVAO);
+		#ifndef USE_GLES
+			glBindVertexArray(sliLineVAO);
+		#endif
 
 		// send vertex positions to graphics card
 		glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[0]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliLineCount * 4, sliLineVertices);
+		#ifdef USE_GLES
+			glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+		#endif
 
 		// send vertex colors to graphics card
 		glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[1]);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliLineCount * 8, sliLineColors);
+		#ifdef USE_GLES
+			glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, NULL);
+		#endif
 
 		// prepare our shader object
 		shaderBind(sliPointShader);
