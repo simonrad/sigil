@@ -14,6 +14,7 @@ CMakeFiles/sigil.dir/src/internal/circle.c.obj: ../src/internal/circle.h
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/circle.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/line.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/internal/line.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -27,6 +28,7 @@ CMakeFiles/sigil.dir/src/internal/line.c.obj: ../src/internal/line.h
 CMakeFiles/sigil.dir/src/internal/line.c.obj: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/line.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/line.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/line.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/point.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/internal/point.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -40,6 +42,7 @@ CMakeFiles/sigil.dir/src/internal/point.c.obj: ../src/internal/point.h
 CMakeFiles/sigil.dir/src/internal/point.c.obj: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/point.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/point.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/point.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -52,18 +55,22 @@ CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: ../src/internal/rectangle.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: ../src/internal/shaders.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: src/config.h
 
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/inttypes.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdlib.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: ../src/internal/shaders.c
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: ../src/internal/shaders.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: ../src/util/shader.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/inttypes.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdio.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdlib.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/sys/types.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/internal/shaders.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/internal/shaders_gl.c
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/util/shader.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/al.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/alc.h
@@ -86,6 +93,7 @@ CMakeFiles/sigil.dir/src/internal/sprite.c.obj: ../src/internal/sprite.c
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: ../src/internal/sprite.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/sprite.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/text.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/internal/text.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -102,6 +110,7 @@ CMakeFiles/sigil.dir/src/internal/text.c.obj: ../src/internal/text.h
 CMakeFiles/sigil.dir/src/internal/text.c.obj: ../src/libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/internal/text.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/text.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/text.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -114,6 +123,7 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/internal/triangle.c
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/internal/triangle.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/util/transform.h
+CMakeFiles/sigil.dir/src/internal/triangle.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: ../src/glfw/include/GLFW/glfw3.h
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
@@ -196,6 +206,7 @@ CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: C:/Program\ Files\ (x86)/Code
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: ../src/libdrawtext/drawgl.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: ../src/libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: ../src/libdrawtext/drawtext_impl.h
+CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/ctype.h
@@ -356,6 +367,7 @@ CMakeFiles/sigil.dir/src/util/images.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/
 CMakeFiles/sigil.dir/src/util/images.c.obj: ../src/soil/SOIL.h
 CMakeFiles/sigil.dir/src/util/images.c.obj: ../src/util/images.c
 CMakeFiles/sigil.dir/src/util/images.c.obj: ../src/util/images.h
+CMakeFiles/sigil.dir/src/util/images.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/util/shader.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/util/shader.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -368,6 +380,7 @@ CMakeFiles/sigil.dir/src/util/shader.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/
 CMakeFiles/sigil.dir/src/util/shader.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/sys/types.h
 CMakeFiles/sigil.dir/src/util/shader.c.obj: ../src/util/shader.c
 CMakeFiles/sigil.dir/src/util/shader.c.obj: ../src/util/shader.h
+CMakeFiles/sigil.dir/src/util/shader.c.obj: src/config.h
 
 CMakeFiles/sigil.dir/src/util/transform.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
 CMakeFiles/sigil.dir/src/util/transform.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/math.h

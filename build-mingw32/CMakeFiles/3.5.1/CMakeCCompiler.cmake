@@ -1,7 +1,7 @@
 set(CMAKE_C_COMPILER "C:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "4.9.2")
+set(CMAKE_C_COMPILER_VERSION "4.7.1")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "90")
 set(CMAKE_C_COMPILE_FEATURES "c_function_prototypes;c_restrict;c_variadic_macros;c_static_assert")
@@ -62,6 +62,6 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2;C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc;C:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib;C:/Program Files (x86)/CodeBlocks/MinGW/lib")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

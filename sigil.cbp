@@ -36,10 +36,13 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/internal/rectangle.h" />
-		<Unit filename="src/internal/shaders.c">
+		<Unit filename="src/internal/shaders.h" />
+		<Unit filename="src/internal/shaders_gl.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="src/internal/shaders.h" />
+		<Unit filename="src/internal/shaders_gles.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/internal/sound.c">
 			<Option compilerVar="CPP" />
 		</Unit>
@@ -59,13 +62,9 @@
 		<Unit filename="src/internal/window.h" />
 		<Unit filename="src/internal/window_glfw.c">
 			<Option compilerVar="CPP" />
-			<Option compile="0" />
-			<Option link="0" />
 		</Unit>
 		<Unit filename="src/internal/window_pigu.c">
 			<Option compilerVar="CPP" />
-			<Option compile="0" />
-			<Option link="0" />
 		</Unit>
 		<Unit filename="src/libdrawtext/drawgl.c">
 			<Option compilerVar="CC" />

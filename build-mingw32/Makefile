@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Geoff\Desktop\sigil
+CMAKE_SOURCE_DIR = C:\Users\Geoff\sigil
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Geoff\Desktop\sigil\build-mingw32
+CMAKE_BINARY_DIR = C:\Users\Geoff\sigil\build-mingw32
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\sigil\build-mingw32\CMakeFiles C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geoff\sigil\build-mingw32\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -230,32 +230,32 @@ src/internal/rectangle.c.s:
 	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/rectangle.c.s
 .PHONY : src/internal/rectangle.c.s
 
-src/internal/shaders.obj: src/internal/shaders.c.obj
+src/internal/shaders_gl.obj: src/internal/shaders_gl.c.obj
 
-.PHONY : src/internal/shaders.obj
+.PHONY : src/internal/shaders_gl.obj
 
 # target to build an object file
-src/internal/shaders.c.obj:
-	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders.c.obj
-.PHONY : src/internal/shaders.c.obj
+src/internal/shaders_gl.c.obj:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj
+.PHONY : src/internal/shaders_gl.c.obj
 
-src/internal/shaders.i: src/internal/shaders.c.i
+src/internal/shaders_gl.i: src/internal/shaders_gl.c.i
 
-.PHONY : src/internal/shaders.i
+.PHONY : src/internal/shaders_gl.i
 
 # target to preprocess a source file
-src/internal/shaders.c.i:
-	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders.c.i
-.PHONY : src/internal/shaders.c.i
+src/internal/shaders_gl.c.i:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders_gl.c.i
+.PHONY : src/internal/shaders_gl.c.i
 
-src/internal/shaders.s: src/internal/shaders.c.s
+src/internal/shaders_gl.s: src/internal/shaders_gl.c.s
 
-.PHONY : src/internal/shaders.s
+.PHONY : src/internal/shaders_gl.s
 
 # target to generate assembly for a file
-src/internal/shaders.c.s:
-	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders.c.s
-.PHONY : src/internal/shaders.c.s
+src/internal/shaders_gl.c.s:
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders_gl.c.s
+.PHONY : src/internal/shaders_gl.c.s
 
 src/internal/sound.obj: src/internal/sound.c.obj
 
@@ -710,9 +710,9 @@ help:
 	@echo ... src/internal/rectangle.obj
 	@echo ... src/internal/rectangle.i
 	@echo ... src/internal/rectangle.s
-	@echo ... src/internal/shaders.obj
-	@echo ... src/internal/shaders.i
-	@echo ... src/internal/shaders.s
+	@echo ... src/internal/shaders_gl.obj
+	@echo ... src/internal/shaders_gl.i
+	@echo ... src/internal/shaders_gl.s
 	@echo ... src/internal/sound.obj
 	@echo ... src/internal/sound.i
 	@echo ... src/internal/sound.s

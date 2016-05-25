@@ -10,11 +10,12 @@ CMakeFiles/sigil.dir/src/internal/circle.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
- C:/Users/Geoff/Desktop/sigil/src/internal/circle.c
- C:/Users/Geoff/Desktop/sigil/src/internal/circle.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/circle.c
+ C:/Users/Geoff/sigil/src/internal/circle.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/line.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -23,11 +24,12 @@ CMakeFiles/sigil.dir/src/internal/line.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
- C:/Users/Geoff/Desktop/sigil/src/internal/line.c
- C:/Users/Geoff/Desktop/sigil/src/internal/line.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/line.c
+ C:/Users/Geoff/sigil/src/internal/line.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/point.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -36,11 +38,12 @@ CMakeFiles/sigil.dir/src/internal/point.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
- C:/Users/Geoff/Desktop/sigil/src/internal/point.c
- C:/Users/Geoff/Desktop/sigil/src/internal/point.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/point.c
+ C:/Users/Geoff/sigil/src/internal/point.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -48,23 +51,27 @@ CMakeFiles/sigil.dir/src/internal/rectangle.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
- C:/Users/Geoff/Desktop/sigil/src/internal/rectangle.c
- C:/Users/Geoff/Desktop/sigil/src/internal/rectangle.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj
+ C:/Users/Geoff/sigil/src/internal/rectangle.c
+ C:/Users/Geoff/sigil/src/internal/rectangle.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glu.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
+ C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.c
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/internal/shaders_gl.c
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/alc.h
@@ -73,8 +80,8 @@ CMakeFiles/sigil.dir/src/internal/sound.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/internal/sound.c
- C:/Users/Geoff/Desktop/sigil/src/internal/sound.h
+ C:/Users/Geoff/sigil/src/internal/sound.c
+ C:/Users/Geoff/sigil/src/internal/sound.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -82,11 +89,12 @@ CMakeFiles/sigil.dir/src/internal/sprite.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/internal/sprite.c
- C:/Users/Geoff/Desktop/sigil/src/internal/sprite.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/internal/sprite.c
+ C:/Users/Geoff/sigil/src/internal/sprite.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/text.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -97,12 +105,13 @@ CMakeFiles/sigil.dir/src/internal/text.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/internal/text.c
- C:/Users/Geoff/Desktop/sigil/src/internal/text.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/internal/text.c
+ C:/Users/Geoff/sigil/src/internal/text.h
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -110,11 +119,12 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/internal/triangle.c
- C:/Users/Geoff/Desktop/sigil/src/internal/triangle.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/internal/triangle.c
+ C:/Users/Geoff/sigil/src/internal/triangle.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
+ src/config.h
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj
  ../src/glfw/include/GLFW/glfw3.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
@@ -179,7 +189,7 @@ CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/winuser.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/winver.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/wtypes.h
- C:/Users/Geoff/Desktop/sigil/src/internal/window_glfw.c
+ C:/Users/Geoff/sigil/src/internal/window_glfw.c
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -194,9 +204,10 @@ CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawgl.c
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext_impl.h
+ C:/Users/Geoff/sigil/src/libdrawtext/drawgl.c
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext.h
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext_impl.h
+ src/config.h
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/ctype.h
@@ -210,16 +221,16 @@ CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext_impl.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/font.c
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext.h
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext_impl.h
+ C:/Users/Geoff/sigil/src/libdrawtext/font.c
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/drawtext.h
- C:/Users/Geoff/Desktop/sigil/src/libdrawtext/utf8.c
+ C:/Users/Geoff/sigil/src/libdrawtext/drawtext.h
+ C:/Users/Geoff/sigil/src/libdrawtext/utf8.c
 CMakeFiles/sigil.dir/src/sl.c.obj
  ../include/sl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
@@ -232,21 +243,21 @@ CMakeFiles/sigil.dir/src/sl.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/internal/circle.h
- C:/Users/Geoff/Desktop/sigil/src/internal/line.h
- C:/Users/Geoff/Desktop/sigil/src/internal/point.h
- C:/Users/Geoff/Desktop/sigil/src/internal/rectangle.h
- C:/Users/Geoff/Desktop/sigil/src/internal/shaders.h
- C:/Users/Geoff/Desktop/sigil/src/internal/sound.h
- C:/Users/Geoff/Desktop/sigil/src/internal/sprite.h
- C:/Users/Geoff/Desktop/sigil/src/internal/text.h
- C:/Users/Geoff/Desktop/sigil/src/internal/triangle.h
- C:/Users/Geoff/Desktop/sigil/src/internal/window.h
- C:/Users/Geoff/Desktop/sigil/src/sl.c
- C:/Users/Geoff/Desktop/sigil/src/util/gldebugging.h
- C:/Users/Geoff/Desktop/sigil/src/util/images.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/internal/circle.h
+ C:/Users/Geoff/sigil/src/internal/line.h
+ C:/Users/Geoff/sigil/src/internal/point.h
+ C:/Users/Geoff/sigil/src/internal/rectangle.h
+ C:/Users/Geoff/sigil/src/internal/shaders.h
+ C:/Users/Geoff/sigil/src/internal/sound.h
+ C:/Users/Geoff/sigil/src/internal/sprite.h
+ C:/Users/Geoff/sigil/src/internal/text.h
+ C:/Users/Geoff/sigil/src/internal/triangle.h
+ C:/Users/Geoff/sigil/src/internal/window.h
+ C:/Users/Geoff/sigil/src/sl.c
+ C:/Users/Geoff/sigil/src/util/gldebugging.h
+ C:/Users/Geoff/sigil/src/util/images.h
+ C:/Users/Geoff/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/transform.h
  src/config.h
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
@@ -310,11 +321,11 @@ CMakeFiles/sigil.dir/src/soil/SOIL.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/winuser.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/winver.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/wtypes.h
- C:/Users/Geoff/Desktop/sigil/src/soil/SOIL.c
- C:/Users/Geoff/Desktop/sigil/src/soil/SOIL.h
- C:/Users/Geoff/Desktop/sigil/src/soil/image_DXT.h
- C:/Users/Geoff/Desktop/sigil/src/soil/image_helper.h
- C:/Users/Geoff/Desktop/sigil/src/soil/stb_image_aug.h
+ C:/Users/Geoff/sigil/src/soil/SOIL.c
+ C:/Users/Geoff/sigil/src/soil/SOIL.h
+ C:/Users/Geoff/sigil/src/soil/image_DXT.h
+ C:/Users/Geoff/sigil/src/soil/image_helper.h
+ C:/Users/Geoff/sigil/src/soil/stb_image_aug.h
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
@@ -322,14 +333,14 @@ CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/soil/image_DXT.c
- C:/Users/Geoff/Desktop/sigil/src/soil/image_DXT.h
+ C:/Users/Geoff/sigil/src/soil/image_DXT.c
+ C:/Users/Geoff/sigil/src/soil/image_DXT.h
 CMakeFiles/sigil.dir/src/soil/image_helper.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
- C:/Users/Geoff/Desktop/sigil/src/soil/image_helper.c
- C:/Users/Geoff/Desktop/sigil/src/soil/image_helper.h
+ C:/Users/Geoff/sigil/src/soil/image_helper.c
+ C:/Users/Geoff/sigil/src/soil/image_helper.h
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/assert.h
@@ -339,10 +350,10 @@ CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/soil/stb_image_aug.c
- C:/Users/Geoff/Desktop/sigil/src/soil/stb_image_aug.h
- C:/Users/Geoff/Desktop/sigil/src/soil/stbi_DDS_aug.h
- C:/Users/Geoff/Desktop/sigil/src/soil/stbi_DDS_aug_c.h
+ C:/Users/Geoff/sigil/src/soil/stb_image_aug.c
+ C:/Users/Geoff/sigil/src/soil/stb_image_aug.h
+ C:/Users/Geoff/sigil/src/soil/stbi_DDS_aug.h
+ C:/Users/Geoff/sigil/src/soil/stbi_DDS_aug_c.h
 CMakeFiles/sigil.dir/src/util/images.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -354,9 +365,10 @@ CMakeFiles/sigil.dir/src/util/images.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/string.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/soil/SOIL.h
- C:/Users/Geoff/Desktop/sigil/src/util/images.c
- C:/Users/Geoff/Desktop/sigil/src/util/images.h
+ C:/Users/Geoff/sigil/src/soil/SOIL.h
+ C:/Users/Geoff/sigil/src/util/images.c
+ C:/Users/Geoff/sigil/src/util/images.h
+ src/config.h
 CMakeFiles/sigil.dir/src/util/shader.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -367,10 +379,11 @@ CMakeFiles/sigil.dir/src/util/shader.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/sys/types.h
- C:/Users/Geoff/Desktop/sigil/src/util/shader.c
- C:/Users/Geoff/Desktop/sigil/src/util/shader.h
+ C:/Users/Geoff/sigil/src/util/shader.c
+ C:/Users/Geoff/sigil/src/util/shader.h
+ src/config.h
 CMakeFiles/sigil.dir/src/util/transform.c.obj
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/math.h
- C:/Users/Geoff/Desktop/sigil/src/util/transform.c
- C:/Users/Geoff/Desktop/sigil/src/util/transform.h
+ C:/Users/Geoff/sigil/src/util/transform.c
+ C:/Users/Geoff/sigil/src/util/transform.h

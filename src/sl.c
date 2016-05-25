@@ -76,7 +76,7 @@ void slWindow(int width, int height, const char *title)
 		glViewport(0, 0, width, height);
 
 		// enable our extensions handler
-		#ifdef USE_GLEW
+		#ifndef USE_GLES
 			glewExperimental = 1;
 			error = glewInit();
 			if(error != GLEW_OK)

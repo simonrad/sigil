@@ -14,7 +14,7 @@
 
 #include <stddef.h>
 
-#ifdef USE_GLES
+#ifndef USE_GLES
 	static GLuint sliTriangleVAO = 0;
 #endif
 static GLuint sliTriangleVBOs[1] = {0};

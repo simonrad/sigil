@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Geoff\Desktop\sigil
+CMAKE_SOURCE_DIR = C:\Users\Geoff\sigil
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Geoff\Desktop\sigil\build-mingw32
+CMAKE_BINARY_DIR = C:\Users\Geoff\sigil\build-mingw32
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sigil.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/sl.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/sl.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/sl.c.obj: ../src/sl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sigil.dir/src/sl.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\sl.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\sl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sigil.dir/src/sl.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\sl.c.obj   -c C:\Users\Geoff\sigil\src\sl.c
 
 CMakeFiles/sigil.dir/src/sl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/sl.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\sl.c > CMakeFiles\sigil.dir\src\sl.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\sl.c > CMakeFiles\sigil.dir\src\sl.c.i
 
 CMakeFiles/sigil.dir/src/sl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/sl.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\sl.c -o CMakeFiles\sigil.dir\src\sl.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\sl.c -o CMakeFiles\sigil.dir\src\sl.c.s
 
 CMakeFiles/sigil.dir/src/sl.c.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/sigil.dir/src/sl.c.obj.provides.build: CMakeFiles/sigil.dir/src/sl.c.
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/circle.c.obj: ../src/internal/circle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sigil.dir/src/internal/circle.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\circle.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\circle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sigil.dir/src/internal/circle.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\circle.c.obj   -c C:\Users\Geoff\sigil\src\internal\circle.c
 
 CMakeFiles/sigil.dir/src/internal/circle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/circle.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\circle.c > CMakeFiles\sigil.dir\src\internal\circle.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\circle.c > CMakeFiles\sigil.dir\src\internal\circle.c.i
 
 CMakeFiles/sigil.dir/src/internal/circle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/circle.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\circle.c -o CMakeFiles\sigil.dir\src\internal\circle.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\circle.c -o CMakeFiles\sigil.dir\src\internal\circle.c.s
 
 CMakeFiles/sigil.dir/src/internal/circle.c.obj.requires:
 
@@ -109,16 +109,16 @@ CMakeFiles/sigil.dir/src/internal/circle.c.obj.provides.build: CMakeFiles/sigil.
 CMakeFiles/sigil.dir/src/internal/line.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/line.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/line.c.obj: ../src/internal/line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sigil.dir/src/internal/line.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\line.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sigil.dir/src/internal/line.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\line.c.obj   -c C:\Users\Geoff\sigil\src\internal\line.c
 
 CMakeFiles/sigil.dir/src/internal/line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/line.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\line.c > CMakeFiles\sigil.dir\src\internal\line.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\line.c > CMakeFiles\sigil.dir\src\internal\line.c.i
 
 CMakeFiles/sigil.dir/src/internal/line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/line.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\line.c -o CMakeFiles\sigil.dir\src\internal\line.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\line.c -o CMakeFiles\sigil.dir\src\internal\line.c.s
 
 CMakeFiles/sigil.dir/src/internal/line.c.obj.requires:
 
@@ -134,16 +134,16 @@ CMakeFiles/sigil.dir/src/internal/line.c.obj.provides.build: CMakeFiles/sigil.di
 CMakeFiles/sigil.dir/src/internal/point.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/point.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/point.c.obj: ../src/internal/point.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sigil.dir/src/internal/point.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\point.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\point.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sigil.dir/src/internal/point.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\point.c.obj   -c C:\Users\Geoff\sigil\src\internal\point.c
 
 CMakeFiles/sigil.dir/src/internal/point.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/point.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\point.c > CMakeFiles\sigil.dir\src\internal\point.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\point.c > CMakeFiles\sigil.dir\src\internal\point.c.i
 
 CMakeFiles/sigil.dir/src/internal/point.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/point.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\point.c -o CMakeFiles\sigil.dir\src\internal\point.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\point.c -o CMakeFiles\sigil.dir\src\internal\point.c.s
 
 CMakeFiles/sigil.dir/src/internal/point.c.obj.requires:
 
@@ -159,16 +159,16 @@ CMakeFiles/sigil.dir/src/internal/point.c.obj.provides.build: CMakeFiles/sigil.d
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj: ../src/internal/rectangle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/sigil.dir/src/internal/rectangle.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\rectangle.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\rectangle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/sigil.dir/src/internal/rectangle.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\rectangle.c.obj   -c C:\Users\Geoff\sigil\src\internal\rectangle.c
 
 CMakeFiles/sigil.dir/src/internal/rectangle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/rectangle.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\rectangle.c > CMakeFiles\sigil.dir\src\internal\rectangle.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\rectangle.c > CMakeFiles\sigil.dir\src\internal\rectangle.c.i
 
 CMakeFiles/sigil.dir/src/internal/rectangle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/rectangle.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\rectangle.c -o CMakeFiles\sigil.dir\src\internal\rectangle.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\rectangle.c -o CMakeFiles\sigil.dir\src\internal\rectangle.c.s
 
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj.requires:
 
@@ -181,44 +181,19 @@ CMakeFiles/sigil.dir/src/internal/rectangle.c.obj.provides: CMakeFiles/sigil.dir
 CMakeFiles/sigil.dir/src/internal/rectangle.c.obj.provides.build: CMakeFiles/sigil.dir/src/internal/rectangle.c.obj
 
 
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: CMakeFiles/sigil.dir/flags.make
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj: ../src/internal/shaders.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/sigil.dir/src/internal/shaders.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\shaders.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\shaders.c
-
-CMakeFiles/sigil.dir/src/internal/shaders.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/shaders.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\shaders.c > CMakeFiles\sigil.dir\src\internal\shaders.c.i
-
-CMakeFiles/sigil.dir/src/internal/shaders.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/shaders.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\shaders.c -o CMakeFiles\sigil.dir\src\internal\shaders.c.s
-
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj.requires:
-
-.PHONY : CMakeFiles/sigil.dir/src/internal/shaders.c.obj.requires
-
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj.provides: CMakeFiles/sigil.dir/src/internal/shaders.c.obj.requires
-	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders.c.obj.provides.build
-.PHONY : CMakeFiles/sigil.dir/src/internal/shaders.c.obj.provides
-
-CMakeFiles/sigil.dir/src/internal/shaders.c.obj.provides.build: CMakeFiles/sigil.dir/src/internal/shaders.c.obj
-
-
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: ../src/internal/sound.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/sigil.dir/src/internal/sound.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\sound.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\sound.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/sigil.dir/src/internal/sound.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\sound.c.obj   -c C:\Users\Geoff\sigil\src\internal\sound.c
 
 CMakeFiles/sigil.dir/src/internal/sound.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/sound.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\sound.c > CMakeFiles\sigil.dir\src\internal\sound.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\sound.c > CMakeFiles\sigil.dir\src\internal\sound.c.i
 
 CMakeFiles/sigil.dir/src/internal/sound.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/sound.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\sound.c -o CMakeFiles\sigil.dir\src\internal\sound.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\sound.c -o CMakeFiles\sigil.dir\src\internal\sound.c.s
 
 CMakeFiles/sigil.dir/src/internal/sound.c.obj.requires:
 
@@ -234,16 +209,16 @@ CMakeFiles/sigil.dir/src/internal/sound.c.obj.provides.build: CMakeFiles/sigil.d
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj: ../src/internal/sprite.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/sigil.dir/src/internal/sprite.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\sprite.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\sprite.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/sigil.dir/src/internal/sprite.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\sprite.c.obj   -c C:\Users\Geoff\sigil\src\internal\sprite.c
 
 CMakeFiles/sigil.dir/src/internal/sprite.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/sprite.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\sprite.c > CMakeFiles\sigil.dir\src\internal\sprite.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\sprite.c > CMakeFiles\sigil.dir\src\internal\sprite.c.i
 
 CMakeFiles/sigil.dir/src/internal/sprite.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/sprite.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\sprite.c -o CMakeFiles\sigil.dir\src\internal\sprite.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\sprite.c -o CMakeFiles\sigil.dir\src\internal\sprite.c.s
 
 CMakeFiles/sigil.dir/src/internal/sprite.c.obj.requires:
 
@@ -259,16 +234,16 @@ CMakeFiles/sigil.dir/src/internal/sprite.c.obj.provides.build: CMakeFiles/sigil.
 CMakeFiles/sigil.dir/src/internal/text.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/text.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/text.c.obj: ../src/internal/text.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/sigil.dir/src/internal/text.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\text.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\text.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/sigil.dir/src/internal/text.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\text.c.obj   -c C:\Users\Geoff\sigil\src\internal\text.c
 
 CMakeFiles/sigil.dir/src/internal/text.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/text.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\text.c > CMakeFiles\sigil.dir\src\internal\text.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\text.c > CMakeFiles\sigil.dir\src\internal\text.c.i
 
 CMakeFiles/sigil.dir/src/internal/text.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/text.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\text.c -o CMakeFiles\sigil.dir\src\internal\text.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\text.c -o CMakeFiles\sigil.dir\src\internal\text.c.s
 
 CMakeFiles/sigil.dir/src/internal/text.c.obj.requires:
 
@@ -284,16 +259,16 @@ CMakeFiles/sigil.dir/src/internal/text.c.obj.provides.build: CMakeFiles/sigil.di
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj: ../src/internal/triangle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sigil.dir/src/internal/triangle.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\triangle.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\triangle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/sigil.dir/src/internal/triangle.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\triangle.c.obj   -c C:\Users\Geoff\sigil\src\internal\triangle.c
 
 CMakeFiles/sigil.dir/src/internal/triangle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/triangle.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\triangle.c > CMakeFiles\sigil.dir\src\internal\triangle.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\triangle.c > CMakeFiles\sigil.dir\src\internal\triangle.c.i
 
 CMakeFiles/sigil.dir/src/internal/triangle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/triangle.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\triangle.c -o CMakeFiles\sigil.dir\src\internal\triangle.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\triangle.c -o CMakeFiles\sigil.dir\src\internal\triangle.c.s
 
 CMakeFiles/sigil.dir/src/internal/triangle.c.obj.requires:
 
@@ -309,16 +284,16 @@ CMakeFiles/sigil.dir/src/internal/triangle.c.obj.provides.build: CMakeFiles/sigi
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj: ../src/libdrawtext/drawgl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\libdrawtext\drawgl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.obj   -c C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c
 
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\libdrawtext\drawgl.c > CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c > CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.i
 
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\libdrawtext\drawgl.c -o CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c -o CMakeFiles\sigil.dir\src\libdrawtext\drawgl.c.s
 
 CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj.requires:
 
@@ -334,16 +309,16 @@ CMakeFiles/sigil.dir/src/libdrawtext/drawgl.c.obj.provides.build: CMakeFiles/sig
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj: ../src/libdrawtext/font.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\font.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\libdrawtext\font.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\font.c.obj   -c C:\Users\Geoff\sigil\src\libdrawtext\font.c
 
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/libdrawtext/font.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\libdrawtext\font.c > CMakeFiles\sigil.dir\src\libdrawtext\font.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\libdrawtext\font.c > CMakeFiles\sigil.dir\src\libdrawtext\font.c.i
 
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/libdrawtext/font.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\libdrawtext\font.c -o CMakeFiles\sigil.dir\src\libdrawtext\font.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\libdrawtext\font.c -o CMakeFiles\sigil.dir\src\libdrawtext\font.c.s
 
 CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj.requires:
 
@@ -359,16 +334,16 @@ CMakeFiles/sigil.dir/src/libdrawtext/font.c.obj.provides.build: CMakeFiles/sigil
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj: ../src/libdrawtext/utf8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\libdrawtext\utf8.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.obj   -c C:\Users\Geoff\sigil\src\libdrawtext\utf8.c
 
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\libdrawtext\utf8.c > CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\libdrawtext\utf8.c > CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.i
 
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\libdrawtext\utf8.c -o CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\libdrawtext\utf8.c -o CMakeFiles\sigil.dir\src\libdrawtext\utf8.c.s
 
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj.requires:
 
@@ -384,16 +359,16 @@ CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj.provides.build: CMakeFiles/sigil
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj: ../src/soil/image_DXT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\image_DXT.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\soil\image_DXT.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\image_DXT.c.obj   -c C:\Users\Geoff\sigil\src\soil\image_DXT.c
 
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/soil/image_DXT.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\soil\image_DXT.c > CMakeFiles\sigil.dir\src\soil\image_DXT.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\soil\image_DXT.c > CMakeFiles\sigil.dir\src\soil\image_DXT.c.i
 
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/soil/image_DXT.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\soil\image_DXT.c -o CMakeFiles\sigil.dir\src\soil\image_DXT.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\soil\image_DXT.c -o CMakeFiles\sigil.dir\src\soil\image_DXT.c.s
 
 CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj.requires:
 
@@ -409,16 +384,16 @@ CMakeFiles/sigil.dir/src/soil/image_DXT.c.obj.provides.build: CMakeFiles/sigil.d
 CMakeFiles/sigil.dir/src/soil/image_helper.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/soil/image_helper.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/soil/image_helper.c.obj: ../src/soil/image_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sigil.dir/src/soil/image_helper.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\image_helper.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\soil\image_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sigil.dir/src/soil/image_helper.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\image_helper.c.obj   -c C:\Users\Geoff\sigil\src\soil\image_helper.c
 
 CMakeFiles/sigil.dir/src/soil/image_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/soil/image_helper.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\soil\image_helper.c > CMakeFiles\sigil.dir\src\soil\image_helper.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\soil\image_helper.c > CMakeFiles\sigil.dir\src\soil\image_helper.c.i
 
 CMakeFiles/sigil.dir/src/soil/image_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/soil/image_helper.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\soil\image_helper.c -o CMakeFiles\sigil.dir\src\soil\image_helper.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\soil\image_helper.c -o CMakeFiles\sigil.dir\src\soil\image_helper.c.s
 
 CMakeFiles/sigil.dir/src/soil/image_helper.c.obj.requires:
 
@@ -434,16 +409,16 @@ CMakeFiles/sigil.dir/src/soil/image_helper.c.obj.provides.build: CMakeFiles/sigi
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj: ../src/soil/SOIL.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sigil.dir/src/soil/SOIL.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\SOIL.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\soil\SOIL.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sigil.dir/src/soil/SOIL.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\SOIL.c.obj   -c C:\Users\Geoff\sigil\src\soil\SOIL.c
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/soil/SOIL.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\soil\SOIL.c > CMakeFiles\sigil.dir\src\soil\SOIL.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\soil\SOIL.c > CMakeFiles\sigil.dir\src\soil\SOIL.c.i
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/soil/SOIL.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\soil\SOIL.c -o CMakeFiles\sigil.dir\src\soil\SOIL.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\soil\SOIL.c -o CMakeFiles\sigil.dir\src\soil\SOIL.c.s
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.obj.requires:
 
@@ -459,16 +434,16 @@ CMakeFiles/sigil.dir/src/soil/SOIL.c.obj.provides.build: CMakeFiles/sigil.dir/sr
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj: ../src/soil/stb_image_aug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\soil\stb_image_aug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.obj   -c C:\Users\Geoff\sigil\src\soil\stb_image_aug.c
 
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\soil\stb_image_aug.c > CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\soil\stb_image_aug.c > CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.i
 
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\soil\stb_image_aug.c -o CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\soil\stb_image_aug.c -o CMakeFiles\sigil.dir\src\soil\stb_image_aug.c.s
 
 CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj.requires:
 
@@ -484,16 +459,16 @@ CMakeFiles/sigil.dir/src/soil/stb_image_aug.c.obj.provides.build: CMakeFiles/sig
 CMakeFiles/sigil.dir/src/util/images.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/util/images.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/util/images.c.obj: ../src/util/images.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sigil.dir/src/util/images.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\images.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\util\images.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sigil.dir/src/util/images.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\images.c.obj   -c C:\Users\Geoff\sigil\src\util\images.c
 
 CMakeFiles/sigil.dir/src/util/images.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/util/images.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\util\images.c > CMakeFiles\sigil.dir\src\util\images.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\util\images.c > CMakeFiles\sigil.dir\src\util\images.c.i
 
 CMakeFiles/sigil.dir/src/util/images.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/util/images.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\util\images.c -o CMakeFiles\sigil.dir\src\util\images.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\util\images.c -o CMakeFiles\sigil.dir\src\util\images.c.s
 
 CMakeFiles/sigil.dir/src/util/images.c.obj.requires:
 
@@ -509,16 +484,16 @@ CMakeFiles/sigil.dir/src/util/images.c.obj.provides.build: CMakeFiles/sigil.dir/
 CMakeFiles/sigil.dir/src/util/shader.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/util/shader.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/util/shader.c.obj: ../src/util/shader.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/sigil.dir/src/util/shader.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\shader.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\util\shader.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sigil.dir/src/util/shader.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\shader.c.obj   -c C:\Users\Geoff\sigil\src\util\shader.c
 
 CMakeFiles/sigil.dir/src/util/shader.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/util/shader.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\util\shader.c > CMakeFiles\sigil.dir\src\util\shader.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\util\shader.c > CMakeFiles\sigil.dir\src\util\shader.c.i
 
 CMakeFiles/sigil.dir/src/util/shader.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/util/shader.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\util\shader.c -o CMakeFiles\sigil.dir\src\util\shader.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\util\shader.c -o CMakeFiles\sigil.dir\src\util\shader.c.s
 
 CMakeFiles/sigil.dir/src/util/shader.c.obj.requires:
 
@@ -534,16 +509,16 @@ CMakeFiles/sigil.dir/src/util/shader.c.obj.provides.build: CMakeFiles/sigil.dir/
 CMakeFiles/sigil.dir/src/util/transform.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/util/transform.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/util/transform.c.obj: ../src/util/transform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sigil.dir/src/util/transform.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\transform.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\util\transform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/sigil.dir/src/util/transform.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\util\transform.c.obj   -c C:\Users\Geoff\sigil\src\util\transform.c
 
 CMakeFiles/sigil.dir/src/util/transform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/util/transform.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\util\transform.c > CMakeFiles\sigil.dir\src\util\transform.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\util\transform.c > CMakeFiles\sigil.dir\src\util\transform.c.i
 
 CMakeFiles/sigil.dir/src/util/transform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/util/transform.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\util\transform.c -o CMakeFiles\sigil.dir\src\util\transform.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\util\transform.c -o CMakeFiles\sigil.dir\src\util\transform.c.s
 
 CMakeFiles/sigil.dir/src/util/transform.c.obj.requires:
 
@@ -559,16 +534,16 @@ CMakeFiles/sigil.dir/src/util/transform.c.obj.provides.build: CMakeFiles/sigil.d
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: CMakeFiles/sigil.dir/flags.make
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj: ../src/internal/window_glfw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\window_glfw.c.obj   -c C:\Users\Geoff\Desktop\sigil\src\internal\window_glfw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\window_glfw.c.obj   -c C:\Users\Geoff\sigil\src\internal\window_glfw.c
 
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/window_glfw.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\Desktop\sigil\src\internal\window_glfw.c > CMakeFiles\sigil.dir\src\internal\window_glfw.c.i
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\window_glfw.c > CMakeFiles\sigil.dir\src\internal\window_glfw.c.i
 
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/window_glfw.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\Desktop\sigil\src\internal\window_glfw.c -o CMakeFiles\sigil.dir\src\internal\window_glfw.c.s
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\window_glfw.c -o CMakeFiles\sigil.dir\src\internal\window_glfw.c.s
 
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj.requires:
 
@@ -581,6 +556,31 @@ CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj.provides: CMakeFiles/sigil.d
 CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj.provides.build: CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj
 
 
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: CMakeFiles/sigil.dir/flags.make
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: CMakeFiles/sigil.dir/includes_C.rsp
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/internal/shaders_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\sigil.dir\src\internal\shaders_gl.c.obj   -c C:\Users\Geoff\sigil\src\internal\shaders_gl.c
+
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sigil.dir/src/internal/shaders_gl.c.i"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Geoff\sigil\src\internal\shaders_gl.c > CMakeFiles\sigil.dir\src\internal\shaders_gl.c.i
+
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sigil.dir/src/internal/shaders_gl.c.s"
+	"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Geoff\sigil\src\internal\shaders_gl.c -o CMakeFiles\sigil.dir\src\internal\shaders_gl.c.s
+
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.requires:
+
+.PHONY : CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.requires
+
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.provides: CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.requires
+	$(MAKE) -f CMakeFiles\sigil.dir\build.make CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.provides.build
+.PHONY : CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.provides
+
+CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.provides.build: CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj
+
+
 # Object files for target sigil
 sigil_OBJECTS = \
 "CMakeFiles/sigil.dir/src/sl.c.obj" \
@@ -588,7 +588,6 @@ sigil_OBJECTS = \
 "CMakeFiles/sigil.dir/src/internal/line.c.obj" \
 "CMakeFiles/sigil.dir/src/internal/point.c.obj" \
 "CMakeFiles/sigil.dir/src/internal/rectangle.c.obj" \
-"CMakeFiles/sigil.dir/src/internal/shaders.c.obj" \
 "CMakeFiles/sigil.dir/src/internal/sound.c.obj" \
 "CMakeFiles/sigil.dir/src/internal/sprite.c.obj" \
 "CMakeFiles/sigil.dir/src/internal/text.c.obj" \
@@ -603,7 +602,8 @@ sigil_OBJECTS = \
 "CMakeFiles/sigil.dir/src/util/images.c.obj" \
 "CMakeFiles/sigil.dir/src/util/shader.c.obj" \
 "CMakeFiles/sigil.dir/src/util/transform.c.obj" \
-"CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj"
+"CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj" \
+"CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj"
 
 # External object files for target sigil
 sigil_EXTERNAL_OBJECTS =
@@ -613,7 +613,6 @@ libsigil.dll: CMakeFiles/sigil.dir/src/internal/circle.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/line.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/point.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/rectangle.c.obj
-libsigil.dll: CMakeFiles/sigil.dir/src/internal/shaders.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/sound.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/sprite.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/text.c.obj
@@ -629,6 +628,7 @@ libsigil.dll: CMakeFiles/sigil.dir/src/util/images.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/util/shader.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/util/transform.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj
+libsigil.dll: CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj
 libsigil.dll: CMakeFiles/sigil.dir/build.make
 libsigil.dll: ../glfw/lib/mingw32/glfw3dll.a
 libsigil.dll: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
@@ -637,7 +637,7 @@ libsigil.dll: C:/Windows/System32/OpenAL32.dll
 libsigil.dll: CMakeFiles/sigil.dir/linklibs.rsp
 libsigil.dll: CMakeFiles/sigil.dir/objects1.rsp
 libsigil.dll: CMakeFiles/sigil.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C shared library libsigil.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Geoff\sigil\build-mingw32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C shared library libsigil.dll"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sigil.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -650,7 +650,6 @@ CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/circle.c.obj.re
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/line.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/point.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/rectangle.c.obj.requires
-CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/shaders.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/sound.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/sprite.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/text.c.obj.requires
@@ -666,6 +665,7 @@ CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/images.c.obj.requir
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/shader.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/util/transform.c.obj.requires
 CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/window_glfw.c.obj.requires
+CMakeFiles/sigil.dir/requires: CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj.requires
 
 .PHONY : CMakeFiles/sigil.dir/requires
 
@@ -674,6 +674,6 @@ CMakeFiles/sigil.dir/clean:
 .PHONY : CMakeFiles/sigil.dir/clean
 
 CMakeFiles/sigil.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Geoff\Desktop\sigil C:\Users\Geoff\Desktop\sigil C:\Users\Geoff\Desktop\sigil\build-mingw32 C:\Users\Geoff\Desktop\sigil\build-mingw32 C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\sigil.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Geoff\sigil C:\Users\Geoff\sigil C:\Users\Geoff\sigil\build-mingw32 C:\Users\Geoff\sigil\build-mingw32 C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\sigil.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sigil.dir/depend
 

@@ -1,4 +1,4 @@
-The system is: Windows - 6.1.7601 - AMD64
+The system is: Windows - 6.2.9200 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/3.5.2/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/3.5.1/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe 
@@ -23,163 +23,104 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/3.5.2/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/3.5.1/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d8e2a/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d8e2a.dir\build.make CMakeFiles/cmTC_d8e2a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d8e2a.dir/testCCompiler.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_d8e2a.dir\testCCompiler.c.obj   -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_d8e2a.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d8e2a.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d8e2a.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d8e2a.dir/objects.a @CMakeFiles\cmTC_d8e2a.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_d8e2a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d8e2a.exe -Wl,--out-implib,libcmTC_d8e2a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d8e2a.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_b979b/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b979b.dir\build.make CMakeFiles/cmTC_b979b.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b979b.dir/testCCompiler.c.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"     -o CMakeFiles\cmTC_b979b.dir\testCCompiler.c.obj   -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_b979b.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b979b.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b979b.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_b979b.dir/objects.a @CMakeFiles\cmTC_b979b.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"       -Wl,--whole-archive CMakeFiles\cmTC_b979b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b979b.exe -Wl,--out-implib,libcmTC_b979b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b979b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d9c83/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d9c83.dir\build.make CMakeFiles/cmTC_d9c83.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d9c83.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_d9c83.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_d9c83.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d9c83.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d9c83.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d9c83.dir/objects.a @CMakeFiles\cmTC_d9c83.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d9c83.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d9c83.exe -Wl,--out-implib,libcmTC_d9c83.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_98b26/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_98b26.dir\build.make CMakeFiles/cmTC_98b26.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98b26.dir/CMakeCCompilerABI.c.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"     -o CMakeFiles\cmTC_98b26.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_98b26.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_98b26.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_98b26.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_98b26.dir/objects.a @CMakeFiles\cmTC_98b26.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"      -v -Wl,--whole-archive CMakeFiles\cmTC_98b26.dir/objects.a -Wl,--no-whole-archive  -o cmTC_98b26.exe -Wl,--out-implib,libcmTC_98b26.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
-COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe
-COLLECT_LTO_WRAPPER=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe
+COLLECT_GCC=C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/lto-wrapper.exe
 Target: mingw32
-Configured with: ../../../src/gcc-4.9.2/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --disable-symvers --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
-Thread model: posix
-gcc version 4.9.2 (tdm-1) 
-COMPILER_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/bin/
-LIBRARY_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d9c83.exe' '-mtune=generic' '-march=pentiumpro'
- C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe -plugin C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccOO0s91.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic -o cmTC_d9c83.exe C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2 -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d9c83.dir/objects.a --no-whole-archive --out-implib libcmTC_d9c83.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Configured with: ../../src/gcc-4.7.1/configure --build=mingw32 --enable-languages=c,c++,ada,fortran,objc,obj-c++ --enable-threads=win32 --enable-libgomp --enable-lto --enable-fully-dynamic-string --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gnu-ld --disable-nls --disable-win32-registry --disable-symvers --disable-build-poststage1-with-cxx --disable-werror --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --enable-cxx-flags='-fno-function-sections -fno-data-sections' --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: win32
+gcc version 4.7.1 (tdm-1) 
+COMPILER_PATH=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/;c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/bin/
+LIBRARY_PATH=c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98b26.exe' '-mtune=i386' '-march=i386'
+ c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/collect2.exe -Bdynamic -o cmTC_98b26.exe c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../crt2.o c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtbegin.o -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1 -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../.. --whole-archive CMakeFiles\cmTC_98b26.dir/objects.a --no-whole-archive --out-implib libcmTC_98b26.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtend.o
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d9c83/fast"]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d9c83.dir\build.make CMakeFiles/cmTC_d9c83.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_d9c83.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_d9c83.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_d9c83.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d9c83.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d9c83.dir/objects.a]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d9c83.dir/objects.a @CMakeFiles\cmTC_d9c83.dir\objects1.rsp]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d9c83.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d9c83.exe -Wl,--out-implib,libcmTC_d9c83.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_98b26/fast"]
+  ignore line: [C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_98b26.dir\build.make CMakeFiles/cmTC_98b26.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_98b26.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"     -o CMakeFiles\cmTC_98b26.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_98b26.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_98b26.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_98b26.dir/objects.a]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_98b26.dir/objects.a @CMakeFiles\cmTC_98b26.dir\objects1.rsp]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"      -v -Wl,--whole-archive CMakeFiles\cmTC_98b26.dir/objects.a -Wl,--no-whole-archive  -o cmTC_98b26.exe -Wl,--out-implib,libcmTC_98b26.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/lto-wrapper.exe]
   ignore line: [Target: mingw32]
-  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --disable-symvers --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.9.2 (tdm-1) ]
-  ignore line: [COMPILER_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d9c83.exe' '-mtune=generic' '-march=pentiumpro']
-  link line: [ C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe -plugin C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccOO0s91.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic -o cmTC_d9c83.exe C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2 -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d9c83.dir/objects.a --no-whole-archive --out-implib libcmTC_d9c83.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o]
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccOO0s91.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--exclude-libs=libpthread.a] ==> ignore
-    arg [-Bdynamic] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_d9c83.exe] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o] ==> ignore
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_d9c83.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTC_d9c83.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib]
-  implicit libs: [mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2;C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc;C:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib;C:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  ignore line: [Configured with: ../../src/gcc-4.7.1/configure --build=mingw32 --enable-languages=c,c++,ada,fortran,objc,obj-c++ --enable-threads=win32 --enable-libgomp --enable-lto --enable-fully-dynamic-string --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gnu-ld --disable-nls --disable-win32-registry --disable-symvers --disable-build-poststage1-with-cxx --disable-werror --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --enable-cxx-flags='-fno-function-sections -fno-data-sections' --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.7.1 (tdm-1) ]
+  ignore line: [COMPILER_PATH=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98b26.exe' '-mtune=i386' '-march=i386']
+  ignore line: [ c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/collect2.exe -Bdynamic -o cmTC_98b26.exe c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../crt2.o c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtbegin.o -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1 -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../.. --whole-archive CMakeFiles\cmTC_98b26.dir/objects.a --no-whole-archive --out-implib libcmTC_98b26.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtend.o]
+  ignore line: [mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp']
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_e97ab/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e97ab.dir\build.make CMakeFiles/cmTC_e97ab.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e97ab.dir/feature_tests.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_e97ab.dir\feature_tests.c.obj   -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.c
-Linking C executable cmTC_e97ab.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e97ab.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e97ab.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e97ab.dir/objects.a @CMakeFiles\cmTC_e97ab.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_e97ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e97ab.exe -Wl,--out-implib,libcmTC_e97ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e97ab.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_bf218/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_bf218.dir\build.make CMakeFiles/cmTC_bf218.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf218.dir/feature_tests.c.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"    -std=c11 -o CMakeFiles\cmTC_bf218.dir\feature_tests.c.obj   -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\feature_tests.c
+Linking C executable cmTC_bf218.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bf218.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_bf218.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_bf218.dir/objects.a @CMakeFiles\cmTC_bf218.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"       -Wl,--whole-archive CMakeFiles\cmTC_bf218.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bf218.exe -Wl,--out-implib,libcmTC_bf218.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bf218.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,19 +130,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_42bdd/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_42bdd.dir\build.make CMakeFiles/cmTC_42bdd.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_42bdd.dir/feature_tests.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_42bdd.dir\feature_tests.c.obj   -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.c
-Linking C executable cmTC_42bdd.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_42bdd.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_42bdd.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_42bdd.dir/objects.a @CMakeFiles\cmTC_42bdd.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_42bdd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_42bdd.exe -Wl,--out-implib,libcmTC_42bdd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_42bdd.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_3ff01/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3ff01.dir\build.make CMakeFiles/cmTC_3ff01.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ff01.dir/feature_tests.c.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"    -std=c99 -o CMakeFiles\cmTC_3ff01.dir\feature_tests.c.obj   -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\feature_tests.c
+Linking C executable cmTC_3ff01.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3ff01.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3ff01.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_3ff01.dir/objects.a @CMakeFiles\cmTC_3ff01.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"       -Wl,--whole-archive CMakeFiles\cmTC_3ff01.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3ff01.exe -Wl,--out-implib,libcmTC_3ff01.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3ff01.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -211,19 +152,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_41a3f/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_41a3f.dir\build.make CMakeFiles/cmTC_41a3f.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_41a3f.dir/feature_tests.c.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_41a3f.dir\feature_tests.c.obj   -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.c
-Linking C executable cmTC_41a3f.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_41a3f.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_41a3f.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_41a3f.dir/objects.a @CMakeFiles\cmTC_41a3f.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_41a3f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_41a3f.exe -Wl,--out-implib,libcmTC_41a3f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_41a3f.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_57f56/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_57f56.dir\build.make CMakeFiles/cmTC_57f56.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57f56.dir/feature_tests.c.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"    -std=c90 -o CMakeFiles\cmTC_57f56.dir\feature_tests.c.obj   -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\feature_tests.c
+Linking C executable cmTC_57f56.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_57f56.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_57f56.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_57f56.dir/objects.a @CMakeFiles\cmTC_57f56.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"       -Wl,--whole-archive CMakeFiles\cmTC_57f56.dir/objects.a -Wl,--no-whole-archive  -o cmTC_57f56.exe -Wl,--out-implib,libcmTC_57f56.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_57f56.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -231,245 +172,108 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d20cb/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d20cb.dir\build.make CMakeFiles/cmTC_d20cb.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d20cb.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -o CMakeFiles\cmTC_d20cb.dir\testCXXCompiler.cxx.obj -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_d20cb.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d20cb.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d20cb.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d20cb.dir/objects.a @CMakeFiles\cmTC_d20cb.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE       -Wl,--whole-archive CMakeFiles\cmTC_d20cb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d20cb.exe -Wl,--out-implib,libcmTC_d20cb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d20cb.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_c32f4/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_c32f4.dir\build.make CMakeFiles/cmTC_c32f4.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c32f4.dir/testCXXCompiler.cxx.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"      -o CMakeFiles\cmTC_c32f4.dir\testCXXCompiler.cxx.obj -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_c32f4.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c32f4.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c32f4.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_c32f4.dir/objects.a @CMakeFiles\cmTC_c32f4.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"       -Wl,--whole-archive CMakeFiles\cmTC_c32f4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c32f4.exe -Wl,--out-implib,libcmTC_c32f4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c32f4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d780f/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d780f.dir\build.make CMakeFiles/cmTC_d780f.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d780f.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -o CMakeFiles\cmTC_d780f.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTC_d780f.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d780f.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d780f.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d780f.dir/objects.a @CMakeFiles\cmTC_d780f.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -v -Wl,--whole-archive CMakeFiles\cmTC_d780f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d780f.exe -Wl,--out-implib,libcmTC_d780f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_a3c4e/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a3c4e.dir\build.make CMakeFiles/cmTC_a3c4e.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3c4e.dir/CMakeCXXCompilerABI.cpp.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"      -o CMakeFiles\cmTC_a3c4e.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_a3c4e.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a3c4e.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a3c4e.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_a3c4e.dir/objects.a @CMakeFiles\cmTC_a3c4e.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"      -v -Wl,--whole-archive CMakeFiles\cmTC_a3c4e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a3c4e.exe -Wl,--out-implib,libcmTC_a3c4e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
-COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE
-COLLECT_LTO_WRAPPER=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe
+COLLECT_GCC=C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/lto-wrapper.exe
 Target: mingw32
-Configured with: ../../../src/gcc-4.9.2/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --disable-symvers --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
-Thread model: posix
-gcc version 4.9.2 (tdm-1) 
-COMPILER_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/bin/
-LIBRARY_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib/;C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d780f.exe' '-mtune=generic' '-march=pentiumpro'
- C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe -plugin C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccP1SVsQ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic -o cmTC_d780f.exe C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2 -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d780f.dir/objects.a --no-whole-archive --out-implib libcmTC_d780f.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Configured with: ../../src/gcc-4.7.1/configure --build=mingw32 --enable-languages=c,c++,ada,fortran,objc,obj-c++ --enable-threads=win32 --enable-libgomp --enable-lto --enable-fully-dynamic-string --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gnu-ld --disable-nls --disable-win32-registry --disable-symvers --disable-build-poststage1-with-cxx --disable-werror --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --enable-cxx-flags='-fno-function-sections -fno-data-sections' --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: win32
+gcc version 4.7.1 (tdm-1) 
+COMPILER_PATH=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/;c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/bin/
+LIBRARY_PATH=c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib/;c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3c4e.exe' '-mtune=i386' '-march=i386'
+ c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/collect2.exe -Bdynamic -o cmTC_a3c4e.exe c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../crt2.o c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtbegin.o -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1 -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../.. --whole-archive CMakeFiles\cmTC_a3c4e.dir/objects.a --no-whole-archive --out-implib libcmTC_a3c4e.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtend.o
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_d780f/fast"]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d780f.dir\build.make CMakeFiles/cmTC_d780f.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_d780f.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -o CMakeFiles\cmTC_d780f.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTC_d780f.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d780f.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d780f.dir/objects.a]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d780f.dir/objects.a @CMakeFiles\cmTC_d780f.dir\objects1.rsp]
-  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -v -Wl,--whole-archive CMakeFiles\cmTC_d780f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d780f.exe -Wl,--out-implib,libcmTC_d780f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_a3c4e/fast"]
+  ignore line: [C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a3c4e.dir\build.make CMakeFiles/cmTC_a3c4e.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a3c4e.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"      -o CMakeFiles\cmTC_a3c4e.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTC_a3c4e.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a3c4e.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a3c4e.dir/objects.a]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_a3c4e.dir/objects.a @CMakeFiles\cmTC_a3c4e.dir\objects1.rsp]
+  ignore line: ["C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"      -v -Wl,--whole-archive CMakeFiles\cmTC_a3c4e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a3c4e.exe -Wl,--out-implib,libcmTC_a3c4e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/lto-wrapper.exe]
   ignore line: [Target: mingw32]
-  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=mingw32 --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --disable-symvers --enable-cxx-flags='-fno-function-sections -fno-data-sections -DWINPTHREAD_STATIC' --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.9.2 (tdm-1) ]
-  ignore line: [COMPILER_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib/]
-  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d780f.exe' '-mtune=generic' '-march=pentiumpro']
-  link line: [ C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe -plugin C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccP1SVsQ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --exclude-libs=libpthread.a -Bdynamic -o cmTC_d780f.exe C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2 -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib -LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d780f.dir/objects.a --no-whole-archive --out-implib libcmTC_d780f.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o]
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/collect2.exe] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/PROGRA~2/CODEBL~1/MinGW/bin/../libexec/gcc/mingw32/4.9.2/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\Geoff\AppData\Local\Temp\ccP1SVsQ.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--exclude-libs=libpthread.a] ==> ignore
-    arg [-Bdynamic] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_d780f.exe] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../crt2.o] ==> ignore
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtbegin.o] ==> ignore
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib]
-    arg [-LC:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..] ==> dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_d780f.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTC_d780f.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [-Bstatic] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-Bdynamic] ==> ignore
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/crtend.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../mingw32/lib] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib]
-  collapse library dir [C:/PROGRA~2/CODEBL~1/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../..] ==> [C:/Program Files (x86)/CodeBlocks/MinGW/lib]
-  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2;C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc;C:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib;C:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  ignore line: [Configured with: ../../src/gcc-4.7.1/configure --build=mingw32 --enable-languages=c,c++,ada,fortran,objc,obj-c++ --enable-threads=win32 --enable-libgomp --enable-lto --enable-fully-dynamic-string --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gnu-ld --disable-nls --disable-win32-registry --disable-symvers --disable-build-poststage1-with-cxx --disable-werror --prefix=/mingw32tdm --with-local-prefix=/mingw32tdm --enable-cxx-flags='-fno-function-sections -fno-data-sections' --with-pkgversion=tdm-1 --enable-sjlj-exceptions --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.7.1 (tdm-1) ]
+  ignore line: [COMPILER_PATH=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib/]
+  ignore line: [c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3c4e.exe' '-mtune=i386' '-march=i386']
+  ignore line: [ c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.7.1/collect2.exe -Bdynamic -o cmTC_a3c4e.exe c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../crt2.o c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtbegin.o -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1 -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../../../mingw32/lib -Lc:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/../../.. --whole-archive CMakeFiles\cmTC_a3c4e.dir/objects.a --no-whole-archive --out-implib libcmTC_a3c4e.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.7.1/crtend.o]
+  ignore line: [mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp']
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
   implicit fwks: []
 
 
 
 
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
-
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_2f06a/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_2f06a.dir\build.make CMakeFiles/cmTC_2f06a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2f06a.dir/feature_tests.cxx.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -std=c++14 -o CMakeFiles\cmTC_2f06a.dir\feature_tests.cxx.obj -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_2f06a.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2f06a.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2f06a.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_2f06a.dir/objects.a @CMakeFiles\cmTC_2f06a.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE       -Wl,--whole-archive CMakeFiles\cmTC_2f06a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2f06a.exe -Wl,--out-implib,libcmTC_2f06a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2f06a.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_ac6bb/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ac6bb.dir\build.make CMakeFiles/cmTC_ac6bb.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ac6bb.dir/feature_tests.cxx.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -std=c++11 -o CMakeFiles\cmTC_ac6bb.dir\feature_tests.cxx.obj -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_ac6bb.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ac6bb.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ac6bb.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_ac6bb.dir/objects.a @CMakeFiles\cmTC_ac6bb.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE       -Wl,--whole-archive CMakeFiles\cmTC_ac6bb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ac6bb.exe -Wl,--out-implib,libcmTC_ac6bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ac6bb.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_4a5a7/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4a5a7.dir\build.make CMakeFiles/cmTC_4a5a7.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a5a7.dir/feature_tests.cxx.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"     -std=c++11 -o CMakeFiles\cmTC_4a5a7.dir\feature_tests.cxx.obj -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_4a5a7.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4a5a7.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_4a5a7.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_4a5a7.dir/objects.a @CMakeFiles\cmTC_4a5a7.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"       -Wl,--whole-archive CMakeFiles\cmTC_4a5a7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4a5a7.exe -Wl,--out-implib,libcmTC_4a5a7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4a5a7.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
     Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
     Feature record: CXX_FEATURE:0cxx_attribute_deprecated
     Feature record: CXX_FEATURE:1cxx_auto_type
     Feature record: CXX_FEATURE:0cxx_binary_literals
@@ -477,7 +281,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
     Feature record: CXX_FEATURE:0cxx_contextual_conversions
     Feature record: CXX_FEATURE:1cxx_decltype
     Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
     Feature record: CXX_FEATURE:1cxx_default_function_template_args
     Feature record: CXX_FEATURE:1cxx_defaulted_functions
     Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
@@ -492,7 +296,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
     Feature record: CXX_FEATURE:1cxx_func_identifier
     Feature record: CXX_FEATURE:1cxx_generalized_initializers
     Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
     Feature record: CXX_FEATURE:1cxx_inline_namespaces
     Feature record: CXX_FEATURE:1cxx_lambdas
     Feature record: CXX_FEATURE:0cxx_lambda_init_captures
@@ -504,7 +308,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
     Feature record: CXX_FEATURE:1cxx_override
     Feature record: CXX_FEATURE:1cxx_range_for
     Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
     Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
     Feature record: CXX_FEATURE:0cxx_return_type_deduction
     Feature record: CXX_FEATURE:1cxx_right_angle_brackets
@@ -513,7 +317,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
     Feature record: CXX_FEATURE:1cxx_static_assert
     Feature record: CXX_FEATURE:1cxx_strong_enums
     Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_thread_local
     Feature record: CXX_FEATURE:1cxx_trailing_return_types
     Feature record: CXX_FEATURE:1cxx_unicode_literals
     Feature record: CXX_FEATURE:1cxx_uniform_initialization
@@ -525,19 +329,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_68c18/fast"
-C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_68c18.dir\build.make CMakeFiles/cmTC_68c18.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_68c18.dir/feature_tests.cxx.obj
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -std=c++98 -o CMakeFiles\cmTC_68c18.dir\feature_tests.cxx.obj -c C:\Users\Geoff\Desktop\sigil\build-mingw32\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_68c18.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_68c18.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_68c18.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTC_68c18.dir/objects.a @CMakeFiles\cmTC_68c18.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE       -Wl,--whole-archive CMakeFiles\cmTC_68c18.dir/objects.a -Wl,--no-whole-archive  -o cmTC_68c18.exe -Wl,--out-implib,libcmTC_68c18.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_68c18.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Geoff/Desktop/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "cmTC_20174/fast"
+C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_20174.dir\build.make CMakeFiles/cmTC_20174.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20174.dir/feature_tests.cxx.obj
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"     -std=c++98 -o CMakeFiles\cmTC_20174.dir\feature_tests.cxx.obj -c C:\Users\Geoff\sigil\build-mingw32\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_20174.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_20174.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_20174.dir/objects.a
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_20174.dir/objects.a @CMakeFiles\cmTC_20174.dir\objects1.rsp
+"C:\Program Files (x86)\CodeBlocks\MinGW\bin\g++.exe"       -Wl,--whole-archive CMakeFiles\cmTC_20174.dir/objects.a -Wl,--no-whole-archive  -o cmTC_20174.exe -Wl,--out-implib,libcmTC_20174.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_20174.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory `C:/Users/Geoff/sigil/build-mingw32/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
