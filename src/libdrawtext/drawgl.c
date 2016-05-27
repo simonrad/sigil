@@ -24,7 +24,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdlib.h>
 #include <stdio.h>
 
-
 #ifndef _MSC_VER
 //#include <alloca.h>
 #include <malloc.h>
@@ -64,7 +63,9 @@ static unsigned int font_tex;
 static int buf_mode = DTX_NBF;
 static struct dtx_box prepared_box;
 
-static GLuint vao;
+#ifndef USE_GLES
+	static GLuint vao;
+#endif
 static GLuint vbo;
 
 int dtx_gl_init(void)
@@ -140,7 +141,11 @@ static void set_glyphmap_texture(struct dtx_glyphmap *gmap)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
 		// fill our texture data
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, gmap->xsz, gmap->ysz, 0, GL_ALPHA, GL_UNSIGNED_BYTE, gmap->pixels);
+		#ifdef USE_GLES
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, gmap->xsz, gmap->ysz, 0, GL_ALPHA, GL_UNSIGNED_BYTE, gmap->pixels);
+		#else
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, gmap->xsz, gmap->ysz, 0, GL_RED, GL_UNSIGNED_BYTE, gmap->pixels);
+		#endif
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}
 

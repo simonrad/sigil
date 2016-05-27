@@ -93,7 +93,7 @@ static const char *sliTextFragmentShaderCode =
 "out vec4 f_Color;"
 "void main()"
 "{"
-"float luminance = texture(u_Texture, v_TexCoord).a;"
+"float luminance = texture(u_Texture, v_TexCoord).r;"
 "f_Color = u_Color * vec4(luminance);"
 "}";
 

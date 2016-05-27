@@ -272,14 +272,38 @@ void slScale(float x, float y)
 
 int slLoadTexture(const char *filename)
 {
-	return (int)loadOpenGLTexture(filename);
+	int result = -1;
+
+	if(sliIsWindowOpen())
+	{
+		result = (int)loadOpenGLTexture(filename);
+	}
+	else
+	{
+		fprintf(stderr, "slLoadTexture() cannot be called before slWindow() is called\n");
+		exit(1);
+	}
+
+	return result;
 }
 
 // sound loading and playing
 
 int slLoadWAV(const char *filename)
 {
-	return sliLoadWAV(filename);
+	int result =  -1;
+
+	if(sliIsWindowOpen())
+	{
+		result = sliLoadWAV(filename);
+	}
+	else
+	{
+		fprintf(stderr, "slLoadWAV() cannot be called before slWindow() is called\n");
+		exit(1);
+	}
+
+	return result;
 }
 
 int slSoundPlay(int sound)
@@ -451,7 +475,15 @@ float slGetTextHeight(const char *text)
 
 void slSetFont(const char *fontFilename, int fontSize)
 {
-	sliFont(fontFilename, fontSize);
+	if(sliIsWindowOpen())
+	{
+		sliFont(fontFilename, fontSize);
+	}
+	else
+	{
+		fprintf(stderr, "slSetFont() cannot be called before slWindow() is called\n");
+		exit(1);
+	}
 }
 
 void slSetFontSize(int fontSize)

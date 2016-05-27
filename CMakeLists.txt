@@ -5,7 +5,7 @@ set(CMAKE_BUILD_TYPE Release)
 # SIGIL versioning
 set(SIGIL_VERSION_MAJOR 0)
 set(SIGIL_VERSION_MINOR 6)
-set(SIGIL_VERSION_REVISION 0)
+set(SIGIL_VERSION_REVISION 4)
 
 # defaults for libraries we use
 set(USE_GLFW OFF)
@@ -47,6 +47,9 @@ set(
 
 # set the installation directory
 set(CMAKE_INSTALL_PREFIX "/usr/lib")
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #--------------------------------------------------------------------
 # detect Raspberry Pi platform
@@ -175,7 +178,6 @@ target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
 find_package(OpenAL REQUIRED)
 include_directories(${OPENAL_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
-
 
 #--------------------------------------------------------------------
 # link to the appropriate GL library

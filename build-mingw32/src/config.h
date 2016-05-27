@@ -3,7 +3,7 @@
 // version of this build of SIGIL
 #define SIGIL_VERSION_MAJOR 0
 #define SIGIL_VERSION_MINOR 6
-#define SIGIL_VERSION_REVISION 0
+#define SIGIL_VERSION_REVISION 4
 
 // do we use GLFW for context/window/input handling?
 #define USE_GLFW

@@ -90,7 +90,7 @@ void sliSoundInit()
         exit(1);
     }
 
-	// enable support for up to NUM_AL_BUFFER different sounds
+	// enable support for up to MAX_BUFFERS different sounds
 	alGenBuffers(MAX_BUFFERS, buffers);
 	alGenSources(MAX_SOURCES, sources);
 }
@@ -116,9 +116,11 @@ int sliLoadWAV(const char *filename)
 	else
 	{
 		fprintf(stderr, "sliLoadWAV() has already reached the maximum number of OpenAL buffers, %d\n", MAX_BUFFERS);
-		fprintf(stderr, "\t(Please email Geoff at geoff@libsigil.com and tell him this, since he stupidly thought %d buffers would be enough!)\n", MAX_BUFFERS);
+		fprintf(stderr, "\t(Please email Geoff at geoff@libsigil.com and tell him that he stupidly thought %d buffers would be enough!)\n", MAX_BUFFERS);
 		exit(1);
 	}
+
+	return sliNextFreeBuffer - 1;
 }
 
 int sliSoundPlay(int sound)
@@ -293,7 +295,7 @@ void sliLoadWaveFormat(const char *filename, ALuint buffer)
 
 	ALsizei size;
 	ALsizei frequency;
-	ALenum format;
+	ALenum format = 0;
 	ALenum error;
 
 	// attempt to open the file to see if it exists and is readable
