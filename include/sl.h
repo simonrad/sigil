@@ -154,6 +154,9 @@ extern "C" {
 	int slSoundLoop(int sound);
 	void slSoundPause(int sound);
 	void slSoundStop(int sound);
+	void slSoundPauseAll();
+	void slSoundResumeAll();
+	void slSoundStopAll();
 	int slSoundPlaying(int sound);
 	int slSoundLooping(int sound);
 

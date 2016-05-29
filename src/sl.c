@@ -326,6 +326,21 @@ void slSoundStop(int sound)
 	sliSoundStop(sound);
 }
 
+void slSoundPauseAll()
+{
+	sliSoundResumeAll();
+}
+
+void slSoundResumeAll()
+{
+	sliSoundResumeAll();
+}
+
+void slSoundStopAll()
+{
+	sliSoundStopAll();
+}
+
 int slSoundPlaying(int sound)
 {
 	return sliSoundPlaying(sound);
