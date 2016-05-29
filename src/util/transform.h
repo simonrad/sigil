@@ -26,7 +26,7 @@ typedef struct MAT4
 	Vec4 cols[4];
 } Mat4;
 
-Mat4 identity();
+Mat4 identity(void);
 Mat4 ortho(float left, float right, float bottom, float top);
 
 Mat4 translate(Mat4 *mat, float x, float y);

@@ -9,18 +9,19 @@ int main(int args, char *argv[])
 {
 	// the width and height of our desired window in pixels; rendered objects use the same coordinate space,
 	// with the bottom left-hand corner having the world-space coordinate of (0, 0)
-	const int WINDOW_WIDTH = 300;
-	const int WINDOW_HEIGHT = 200;
+	const int WINDOW_WIDTH = 380;
+	const int WINDOW_HEIGHT = 140;
 
 	// track the keys that are currently down
 	bool digitKeysDown[10];
-	bool musicKeyDown = false;
+	bool musicPlayKeyDown = false;
+	bool musicLoopKeyDown = false;
 	bool pauseKeyDown = false;
 	bool resumeKeyDown = false;
 	bool stopKeyDown = false;
 
 	// SL sound loading
-	char soundName[32];
+	char soundName[32];					// to build filenames of the phone beeps
 	int digitSounds[10];				// for phone digit beeps we load
 	int music;							// for the music loop we load
 	int i;
@@ -48,19 +49,23 @@ int main(int args, char *argv[])
 	while(!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
 	{
 		// print some introductory text giving some options to the user
-		slText(50, 450, "Press 0-9 for the corresponding phone beeps");
-		slText(50, 430, "Press M to start playing music");
-		slText(50, 410, "Press P to pause all sounds");
-		slText(50, 390, "Press R to resume any paused sounds");
-		slText(50, 390, "Press S to stop all sounds");
+		slText(20, 120, "Press 0-9 for the corresponding phone beeps");
+		slText(20, 100, "Press M to play music once");
+		slText(20, 80, "Press L to loop music");
+		slText(20, 60, "Press P to pause all sounds");
+		slText(20, 40, "Press R to resume any paused sounds");
+		slText(20, 20, "Press S to stop all sounds");
 
 		// play phone digit beep when user presses corresponding key
 		for(i = 0; i <= 9; i ++)
 		{
-			if(slGetKey('0' + i) && !digitKeysDown[i])
+			if(slGetKey('0' + i))
 			{
-				slSoundPlay(digitSounds[i]);
-				digitKeysDown[i] = true;
+				if(!digitKeysDown[i])
+				{
+					slSoundPlay(digitSounds[i]);
+					digitKeysDown[i] = true;
+				}
 			}
 			else
 			{
@@ -68,22 +73,42 @@ int main(int args, char *argv[])
 			}
 		}
 
-		// M key starts music
-		if(slGetKey('M') && !musicKeyDown)
+		// M key plays music once
+		if(slGetKey('M'))
 		{
-			slSoundPlay(music);
-			musicKeyDown = true;
+			if(!musicPlayKeyDown)
+			{
+				slSoundPlay(music);
+				musicPlayKeyDown = true;
+			}
 		}
 		else
 		{
-			musicKeyDown = false;
+			musicPlayKeyDown = false;
+		}
+
+		// L key loops music
+		if(slGetKey('L'))
+		{
+			if(!musicLoopKeyDown)
+			{
+				slSoundLoop(music);
+				musicLoopKeyDown = true;
+			}
+		}
+		else
+		{
+			musicLoopKeyDown = false;
 		}
 
 		// P key pauses everything
-		if(slGetKey('P') && !pauseKeyDown)
+		if(slGetKey('P'))
 		{
-			slSoundPauseAll();
-			pauseKeyDown = true;
+			if(!pauseKeyDown)
+			{
+				slSoundPauseAll();
+				pauseKeyDown = true;
+			}
 		}
 		else
 		{
@@ -91,10 +116,13 @@ int main(int args, char *argv[])
 		}
 
 		// R key resumes everything that was paused
-		if(slGetKey('R') && !resumeKeyDown)
+		if(slGetKey('R'))
 		{
-			slSoundResumeAll();
-			resumeKeyDown = true;
+			if(!resumeKeyDown)
+			{
+				slSoundResumeAll();
+				resumeKeyDown = true;
+			}
 		}
 		else
 		{
@@ -102,10 +130,13 @@ int main(int args, char *argv[])
 		}
 
 		// S key stops all sounds (including paused ones)
-		if(slGetKey('S') && !stopKeyDown)
+		if(slGetKey('S'))
 		{
-			slSoundStopAll();
-			stopKeyDown = true;
+			if(!stopKeyDown)
+			{
+				slSoundStopAll();
+				stopKeyDown = true;
+			}
 		}
 		else
 		{

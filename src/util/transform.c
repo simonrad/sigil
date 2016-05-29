@@ -1,27 +1,40 @@
 #include "transform.h"
 
+#ifdef _MSC_VER
+	#define _USE_MATH_DEFINES
+#endif
 #include <math.h>
 
 static Mat4 matrixMultiply(Mat4 *a, Mat4 *b);
 
-Mat4 identity()
+Mat4 identity(void)
 {
+	/*
     Mat4 result = {.cols[0] = {.x = 1.0, .y = 0.0, .z = 0.0, .w = 0.0},
 				   .cols[1] = {.x = 0.0, .y = 1.0, .z = 0.0, .w = 0.0},
 				   .cols[2] = {.x = 0.0, .y = 0.0, .z = 1.0, .w = 0.0},
 				   .cols[3] = {.x = 0.0, .y = 0.0, .z = 0.0, .w = 1.0}};
+	*/
+
+	Mat4 result;
+
+	result.cols[0].x = 1.0f; result.cols[0].y = 0.0f; result.cols[0].z = 0.0f; result.cols[0].w = 0.0f;
+	result.cols[1].x = 0.0f; result.cols[1].y = 1.0f; result.cols[1].z = 0.0f; result.cols[1].w = 0.0f;
+	result.cols[2].x = 0.0f; result.cols[2].y = 0.0f; result.cols[2].z = 1.0f; result.cols[2].w = 0.0f;
+	result.cols[3].x = 0.0f; result.cols[3].y = 0.0f; result.cols[3].z = 0.0f; result.cols[3].w = 1.0f;
+
 	return result;
 }
 
 Mat4 ortho(float left, float right, float bottom, float top)
 {
-	const float NEAR = 0.0;
-	const float FAR = 1.0;
+	const float NEAR = 0.0f;
+	const float FAR = 1.0f;
 
 	Mat4 result = identity();
-	result.cols[0].x = 2.0 / (right - left);
-	result.cols[1].y = 2.0 / (top - bottom);
-	result.cols[2].z = -2.0 / (FAR - NEAR);
+	result.cols[0].x = 2.0f / (right - left);
+	result.cols[1].y = 2.0f / (top - bottom);
+	result.cols[2].z = -2.0f / (FAR - NEAR);
 	result.cols[3].x = -(right + left) / (right - left);
 	result.cols[3].y = -(top + bottom) / (top - bottom);
 	result.cols[3].z = -(FAR + NEAR) / (FAR - NEAR);
@@ -41,7 +54,7 @@ Mat4 translate(Mat4 *mat, float x, float y)
 Mat4 rotate(Mat4 *mat, float degrees)
 {
 	Mat4 r = identity();
-	float radians = (M_PI * degrees) / 180.0;
+	float radians = (float)(M_PI * degrees) / 180.0f;
 	float s = sinf(radians);
 	float c = cosf(radians);
 	r.cols[0].x = c;

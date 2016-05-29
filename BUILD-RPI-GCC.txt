@@ -1,0 +1,46 @@
+BUILDING SIGIL FROM SOURCE
+--------------------------
+
+SIGIL uses CMake to compile, so you will need to install it:
+
+	sudo apt-get install cmake
+
+Optionally, you may want to install a more visually-pleasing version of CMake. It's only really necessary when you run into CMake problems when trying to build SIGIL, so it's optional:
+
+	sudo-apt-get install cmake-curses-gui
+
+Also install the FreeType 2 (FT2) Library:
+
+	sudo apt-get install libfreetype6-dev
+
+We depend on OpenAL for audio:
+
+	sudo apt-get install libopenal-dev
+
+If you want to develop SIGIL applications using CodeBlocks, and want to use the CodeBlocks output console (such as in debug mode), you should install xterm, too:
+
+	sudo apt-get install xterm
+
+Next, we can download the SIGIL source code from GitLab and build it.
+
+		cd ~/
+		git clone git@gitlab.com:geoff-nagy/sigil.git
+		cd sigil
+		mkdir build-linux-gcc
+		cd build-linux-gcc
+		cmake ../
+
+**** NOTE ****
+The CMake configuration and generation should run without any errors. If errors occur, try installing cmake-curses-gui (as above) and run
+
+		ccmake ../
+
+to set some of the library or include paths that may be missing or incorrect.
+**** NOTE ****
+
+Otherwise, just proceed with the build and installation:
+
+		make
+		sudo make install
+
+And you're done! Please consult USING-SIGIL-RPI.txt for instructions on how to integrate SIGIL into your application.

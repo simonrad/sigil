@@ -73,9 +73,9 @@ CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj
  C:/Users/Geoff/sigil/src/util/transform.h
  src/config.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj
- C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
- C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/alc.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
+ C:/Program Files (x86)/CodeBlocks/MinGW/include/al.h
+ C:/Program Files (x86)/CodeBlocks/MinGW/include/alc.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdlib.h
@@ -233,11 +233,11 @@ CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj
  C:/Users/Geoff/sigil/src/libdrawtext/utf8.c
 CMakeFiles/sigil.dir/src/sl.c.obj
  ../include/sl.h
- C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glu.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
+ C:/Program Files (x86)/CodeBlocks/MinGW/include/al.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/inttypes.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdint.h
  C:/Program Files (x86)/CodeBlocks/MinGW/include/stdio.h

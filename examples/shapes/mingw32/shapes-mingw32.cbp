@@ -17,13 +17,15 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="lib/libsigil.dll.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Linker>
+			<Add library="lib\libsigil.dll.a" />
+		</Linker>
 		<Unit filename="../shapes.cpp" />
 		<Extensions>
 			<code_completion />

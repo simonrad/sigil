@@ -1,0 +1,19 @@
+﻿Build started Sun, May 29 1:49:06 am.
+     1>Project "C:\Users\Geoff\sigil\build-vc2010\ZERO_CHECK.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Win32\Release\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2010/src/glfw/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2010/src/glfw/src/CMakeFiles/generate.stamp is up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild".
+         Touching "Win32\Release\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010\ZERO_CHECK.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

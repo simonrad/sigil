@@ -42,7 +42,7 @@ static int slStackSize = 0;
 
 static Mat4 slProjectionMatrix;
 
-static Vec4 slForeColor = {.x = 1.0, .y = 1.0, .z = 1.0, .w = 1.0};
+static Vec4 slForeColor;// = {.x = 1.0, .y = 1.0, .z = 1.0, .w = 1.0};
 
 static float slSpriteScrollX = 0.0;
 static float slSpriteScrollY = 0.0;
@@ -328,7 +328,7 @@ void slSoundStop(int sound)
 
 void slSoundPauseAll()
 {
-	sliSoundResumeAll();
+	sliSoundPauseAll();
 }
 
 void slSoundResumeAll()
@@ -451,8 +451,16 @@ void slSetSpriteScroll(float x, float y)
 void slSprite(int texture, float x, float y, float width, float height)
 {
 	Mat4 modelview;
-	Vec2 tiling = {.x = slSpriteTilingX, .y = slSpriteTilingY};
-	Vec2 scroll = {.x = slSpriteScrollX, .y = slSpriteScrollY};
+	
+	// this shorthand causes compiler errors on MSVC...
+	Vec2 tiling;// = {.x = slSpriteTilingX, .y = slSpriteTilingY};
+	Vec2 scroll;// = {.x = slSpriteScrollX, .y = slSpriteScrollY};
+
+	// ...so we do it the hard way instead
+	tiling.x = slSpriteTilingX;
+	tiling.y = slSpriteTilingY;
+	scroll.x = slSpriteScrollX;
+	scroll.y = slSpriteScrollY;
 
 	modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);

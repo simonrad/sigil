@@ -1,6 +1,6 @@
 #pragma once
 
-#include <AL/al.h>
+#include <al.h>
 
 void sliSoundInit();
 void sliSoundDestroy();
@@ -10,8 +10,8 @@ int sliSoundPlay(int sound);
 int sliSoundLoop(int sound);
 void sliSoundPause(int sound);
 void sliSoundStop(int sound);
-void sliSoundPauseAll();
-void sliSoundStopAll();
-void sliSoundResumeAll();
+void sliSoundPauseAll(void);
+void sliSoundStopAll(void);
+void sliSoundResumeAll(void);
 int sliSoundPlaying(int sound);
 int sliSoundLooping(int sound);

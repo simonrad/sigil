@@ -72,9 +72,9 @@ CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/util/shader.h
 CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: ../src/util/transform.h
 CMakeFiles/sigil.dir/src/internal/shaders_gl.c.obj: src/config.h
 
-CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/al.h
-CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/alc.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
+CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/al.h
+CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/alc.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdio.h
 CMakeFiles/sigil.dir/src/internal/sound.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdlib.h
@@ -232,11 +232,11 @@ CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj: ../src/libdrawtext/drawtext.h
 CMakeFiles/sigil.dir/src/libdrawtext/utf8.c.obj: ../src/libdrawtext/utf8.c
 
 CMakeFiles/sigil.dir/src/sl.c.obj: ../include/sl.h
-CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/AL/al.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/gl.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glew.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/GL/glu.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/_mingw.h
+CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/al.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/inttypes.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdint.h
 CMakeFiles/sigil.dir/src/sl.c.obj: C:/Program\ Files\ (x86)/CodeBlocks/MinGW/include/stdio.h

@@ -11,6 +11,8 @@ todo:
 - de-initialization of textures
 */
 
+#define SIGIL_API __declspec(dllexport)
+
 // text alignment symbolic constants
 #define SL_ALIGN_CENTER 0
 #define SL_ALIGN_RIGHT 1
@@ -106,87 +108,87 @@ extern "C" {
 
 	// initialization commands
 
-	void slWindow(int width, int height, const char *title);
-	void slClose();
-	int slShouldClose();
+	SIGIL_API void slWindow(int width, int height, const char *title);
+	SIGIL_API void slClose();
+	SIGIL_API int slShouldClose();
 
 	// simple input
 
-	int slGetKey(int key);
+	SIGIL_API int slGetKey(int key);
 
-	int slGetMouseButton(int button);
-	void slGetMousePos(int *posX, int *posY);
+	SIGIL_API int slGetMouseButton(int button);
+	SIGIL_API void slGetMousePos(int *posX, int *posY);
 
 	// simple frame timing
 
-	float slGetDeltaTime();
+	SIGIL_API float slGetDeltaTime();
 
 	// rendering commands
 
-	void slRender();
+	SIGIL_API void slRender();
 
 	// color control
 
-	void slSetBackColor(float red, float green, float blue);
-	void slSetForeColor(float red, float green, float blue, float alpha);
+	SIGIL_API void slSetBackColor(float red, float green, float blue);
+	SIGIL_API void slSetForeColor(float red, float green, float blue, float alpha);
 
 	// blending control
 
-	void slSetAdditiveBlend(int additiveBlend);
+	SIGIL_API void slSetAdditiveBlend(int additiveBlend);
 
 	// transformations
 
-	void slPush();
-	void slPop();
+	SIGIL_API void slPush();
+	SIGIL_API void slPop();
 
-	void slTranslate(float x, float y);
-	void slRotate(float degrees);
-	void slScale(float x, float y);
+	SIGIL_API void slTranslate(float x, float y);
+	SIGIL_API void slRotate(float degrees);
+	SIGIL_API void slScale(float x, float y);
 
 	// texture loading
 
-	int slLoadTexture(const char *filename);
+	SIGIL_API int slLoadTexture(const char *filename);
 
 	// sound loading and playing
 
-	int slLoadWAV(const char *filename);
-	int slSoundPlay(int sound);
-	int slSoundLoop(int sound);
-	void slSoundPause(int sound);
-	void slSoundStop(int sound);
-	void slSoundPauseAll();
-	void slSoundResumeAll();
-	void slSoundStopAll();
-	int slSoundPlaying(int sound);
-	int slSoundLooping(int sound);
+	SIGIL_API int slLoadWAV(const char *filename);
+	SIGIL_API int slSoundPlay(int sound);
+	SIGIL_API int slSoundLoop(int sound);
+	SIGIL_API void slSoundPause(int sound);
+	SIGIL_API void slSoundStop(int sound);
+	SIGIL_API void slSoundPauseAll();
+	SIGIL_API void slSoundResumeAll();
+	SIGIL_API void slSoundStopAll();
+	SIGIL_API int slSoundPlaying(int sound);
+	SIGIL_API int slSoundLooping(int sound);
 
 	// simple shape commands
 
-	void slTriangleFill(float x, float y, float width, float height);
-	void slTriangleOutline(float x, float y, float width, float height);
+	SIGIL_API void slTriangleFill(float x, float y, float width, float height);
+	SIGIL_API void slTriangleOutline(float x, float y, float width, float height);
 
-	void slRectangleFill(float x, float y, float width, float height);
-	void slRectangleOutline(float x, float y, float width, float height);
+	SIGIL_API void slRectangleFill(float x, float y, float width, float height);
+	SIGIL_API void slRectangleOutline(float x, float y, float width, float height);
 
-	void slCircleFill(float x, float y, float radius, int numVertices);
-	void slCircleOutline(float x, float y, float radius, int numVertices);
+	SIGIL_API void slCircleFill(float x, float y, float radius, int numVertices);
+	SIGIL_API void slCircleOutline(float x, float y, float radius, int numVertices);
 
-	void slPoint(float x, float y);
+	SIGIL_API void slPoint(float x, float y);
 
-	void slLine(float x1, float y1, float x2, float y2);
+	SIGIL_API void slLine(float x1, float y1, float x2, float y2);
 
-	void slSetSpriteTiling(float x, float y);
-	void slSetSpriteScroll(float x, float y);
-	void slSprite(int texture, float x, float y, float width, float height);
+	SIGIL_API void slSetSpriteTiling(float x, float y);
+	SIGIL_API void slSetSpriteScroll(float x, float y);
+	SIGIL_API void slSprite(int texture, float x, float y, float width, float height);
 
 	// text commands
 
-	void slSetTextAlign(int fontAlign);
-	float slGetTextWidth(const char *text);
-	float slGetTextHeight(const char *text);
-	void slSetFont(const char *fontFilename, int fontSize);
-	void slSetFontSize(int fontSize);
-	void slText(float x, float y, const char *text);
+	SIGIL_API void slSetTextAlign(int fontAlign);
+	SIGIL_API float slGetTextWidth(const char *text);
+	SIGIL_API float slGetTextHeight(const char *text);
+	SIGIL_API void slSetFont(const char *fontFilename, int fontSize);
+	SIGIL_API void slSetFontSize(int fontSize);
+	SIGIL_API void slText(float x, float y, const char *text);
 
 #ifdef __cplusplus
 } // closing brace for extern "C"

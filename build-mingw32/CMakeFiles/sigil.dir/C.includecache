@@ -48,10 +48,6 @@ GL/glext.h
 GL/glu.h
 -
 
-C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/al.h
-
-C:/Program Files (x86)/CodeBlocks/MinGW/include/AL/alc.h
-
 C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/gl.h
 
 C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/glew.h
@@ -79,6 +75,10 @@ GL/gl.h
 -
 
 C:/Program Files (x86)/CodeBlocks/MinGW/include/_mingw.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/al.h
+
+C:/Program Files (x86)/CodeBlocks/MinGW/include/alc.h
 
 C:/Program Files (x86)/CodeBlocks/MinGW/include/assert.h
 _mingw.h
@@ -559,13 +559,13 @@ stdlib.h
 -
 stdint.h
 -
-AL/al.h
+al.h
 -
-AL/alc.h
+alc.h
 -
 
 C:/Users/Geoff/sigil/src/internal/sound.h
-AL/al.h
+al.h
 -
 
 C:/Users/Geoff/sigil/src/internal/sprite.c

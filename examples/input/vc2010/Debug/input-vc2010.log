@@ -1,0 +1,17 @@
+﻿Build started Sat, May 28 11:32:02 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\input\vc2010\input-vc2010.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\input-vc2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         input-vc2010.vcxproj -> C:\Users\Geoff\sigil\examples\input\vc2010\Debug\input-vc2010.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\input-vc2010.unsuccessfulbuild".
+         Touching "Debug\input-vc2010.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\input\vc2010\input-vc2010.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07

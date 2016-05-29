@@ -34,7 +34,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/glfw/include"
   "C:/Program Files (x86)/CodeBlocks/MinGW/include"
   "C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2"
-  "C:/Program Files (x86)/CodeBlocks/MinGW/include/AL"
   "src"
   )
 

@@ -1,0 +1,20 @@
+﻿Build started Sat, May 28 11:37:58 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\sprites\vc2010\sprites.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\sprites.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\sprites.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.lib" /MACHINE:X86 Debug\sprites.obj
+         LINK : C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.exe not found or not built by the last incremental link; performing full link
+         sprites.vcxproj -> C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Geoff\sigil\examples\sprites\vc2010\Debug\sprites.exe;#1" /manifest Debug\sprites.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\sprites.unsuccessfulbuild".
+         Touching "Debug\sprites.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\sprites\vc2010\sprites.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.58

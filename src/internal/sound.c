@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#include <AL/al.h>
-#include <AL/alc.h>
+#include <al.h>
+#include <alc.h>
 
 #define MAX_BUFFERS 100						// how many different sounds we can keep in memory at once
 #define MAX_SOURCES 100						// how many different sounds we can have active at one time
@@ -25,7 +25,7 @@ static int sliNextFreeSource = 0;
 static ALuint sources[MAX_SOURCES];
 
 static void sliLoadWaveFormat(const char *filename, ALuint buffer);
-static int sliGetFreeSource();
+static int sliGetFreeSource(void);
 static int sliIsIndexValid(int sourceIndex);
 
 /*
@@ -68,7 +68,7 @@ struct WAVE_Data
 };
 
 // special thanks to http://kcat.strangesoft.net/openal-tutorial.html for this
-void sliSoundInit()
+void sliSoundInit(void)
 {
     ALCdevice *sliDevice;
     ALCcontext *sliContext;
@@ -267,12 +267,14 @@ int sliSoundPlaying(int sound)
 int sliSoundLooping(int sound)
 {
 	int state;
+	ALint looping;
 	int result = 0;
 
 	if(sliIsIndexValid(sound))
 	{
 		alGetSourcei(sources[sound], AL_SOURCE_STATE, &state);
-		result = state == AL_LOOPING;
+		alGetSourcei(sources[sound], AL_LOOPING, &looping);
+		result = state == AL_PLAYING && looping == AL_TRUE;
 	}
 	else
 	{
@@ -291,7 +293,6 @@ void sliLoadWaveFormat(const char *filename, ALuint buffer)
 	struct RIFF_Header riff_header;
 	struct WAVE_Data wave_data;
 	uint8_t *data;
-	int len;
 
 	ALsizei size;
 	ALsizei frequency;
@@ -307,7 +308,7 @@ void sliLoadWaveFormat(const char *filename, ALuint buffer)
 	}
 
 	// read in the first chunk into the struct
-	len = fread(&riff_header, sizeof(struct RIFF_Header), 1, soundFile);
+	fread(&riff_header, sizeof(struct RIFF_Header), 1, soundFile);
 
 	// check for RIFF and WAVE tag in memeory
 	if ((riff_header.chunkID[0] != 'R' || riff_header.chunkID[1] != 'I' || riff_header.chunkID[2] != 'F' || riff_header.chunkID[3] != 'F') ||
@@ -318,7 +319,7 @@ void sliLoadWaveFormat(const char *filename, ALuint buffer)
 	}
 
 	// read in the 2nd chunk for the wave info
-	len = fread(&wave_format, sizeof(struct WAVE_Format), 1, soundFile);
+	fread(&wave_format, sizeof(struct WAVE_Format), 1, soundFile);
 
 	// make sure the wave format is something we can work with
 	if (wave_format.subChunkID[0] != 'f' || wave_format.subChunkID[1] != 'm' || wave_format.subChunkID[2] != 't' || wave_format.subChunkID[3] != ' ')
@@ -334,7 +335,7 @@ void sliLoadWaveFormat(const char *filename, ALuint buffer)
 	}
 
 	// read in the the last byte of data before the sound file
-	len = fread(&wave_data, sizeof(struct WAVE_Data), 1, soundFile);
+	fread(&wave_data, sizeof(struct WAVE_Data), 1, soundFile);
 
 	// check for data tag in memory
 	if (wave_data.subChunkID[0] != 'd' || wave_data.subChunkID[1] != 'a' || wave_data.subChunkID[2] != 't' || wave_data.subChunkID[3] != 'a')

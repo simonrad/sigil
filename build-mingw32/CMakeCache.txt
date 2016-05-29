@@ -199,7 +199,7 @@ GLEW_INCLUDE_DIR:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include
 GLEW_LIBRARY:FILEPATH=C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 
 //Path to a file.
-OPENAL_INCLUDE_DIR:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include/AL
+OPENAL_INCLUDE_DIR:PATH=C:/Program Files (x86)/CodeBlocks/MinGW/include
 
 //Path to a library.
 OPENAL_LIBRARY:FILEPATH=C:/Windows/System32/OpenAL32.dll
@@ -355,7 +355,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[C:/Program Files (x86)/CodeBlock
 //Details about finding GLEW
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[C:/Program Files (x86)/CodeBlocks/MinGW/include][C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a][v()]
 //Details about finding OpenAL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Windows/System32/OpenAL32.dll][C:/Program Files (x86)/CodeBlocks/MinGW/include/AL][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Windows/System32/OpenAL32.dll][C:/Program Files (x86)/CodeBlocks/MinGW/include][v()]
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
 FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build

@@ -4,8 +4,8 @@ set(CMAKE_BUILD_TYPE Release)
 
 # SIGIL versioning
 set(SIGIL_VERSION_MAJOR 0)
-set(SIGIL_VERSION_MINOR 6)
-set(SIGIL_VERSION_REVISION 4)
+set(SIGIL_VERSION_MINOR 7)
+set(SIGIL_VERSION_REVISION 1)
 
 # defaults for libraries we use
 set(USE_GLFW OFF)
@@ -48,8 +48,11 @@ set(
 # set the installation directory
 set(CMAKE_INSTALL_PREFIX "/usr/lib")
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+# enable all compiler warnings, except in MSVC, since it own headers annoyingly generate around 4000 warnings
+if(NOT MSVC)
+	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+endif()
 
 #--------------------------------------------------------------------
 # detect Raspberry Pi platform
@@ -58,9 +61,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 # the presence of bcm_host.h means we're probably running on an RPi; this is a sketchy-enough test as of right now that we should print it out for debugging purposes
 find_file(FOUND_BCM bcm_host.h /opt/vc/include)
 if(FOUND_BCM)
-	message("-- Detected a Raspberry Pi platform (bcm_host.h was found)")
+	message(STATUS "Detected a Raspberry Pi platform (bcm_host.h was found)")
 else()
-	message("-- Did NOT detect a Raspberry Pi platform (bcm_host.h not found)")
+	message(STATUS "Did NOT detect a Raspberry Pi platform (bcm_host.h not found)")
 endif()
 
 #--------------------------------------------------------------------
@@ -147,7 +150,7 @@ if(USE_GLES)
 
 else()
 
-	# we depend on GLEW---it's on apt and a cmake 'find' module is available for it
+	# add in the GLEW libraries
 	find_package(GLEW REQUIRED)
 	include_directories(${GLEW_INCLUDE_DIRS})
 	target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
