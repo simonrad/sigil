@@ -1,20 +1,20 @@
-﻿Build started Sat, May 28 11:39:08 pm.
-     1>Project "C:\Users\Geoff\sigil\examples\text\text\text.vcxproj" on node 2 (build target(s)).
+﻿Build started Sun, May 29 4:51:02 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\text\vc2010\text.vcxproj" on node 2 (rebuild target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\text.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Creating "Debug\text-vc2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Geoff\sigil\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\text.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\text.cpp
          text.cpp
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\text\text\Debug\text.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\text.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\text\text\Debug\text.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\text\text\Debug\text.lib" /MACHINE:X86 Debug\text.obj
-         text.vcxproj -> C:\Users\Geoff\sigil\examples\text\text\Debug\text.exe
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\text\vc2010\Debug\text-vc2010.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\text-vc2010.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\text\vc2010\Debug\text-vc2010.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\text\vc2010\Debug\text-vc2010.lib" /MACHINE:X86 Debug\text.obj
+         text.vcxproj -> C:\Users\Geoff\sigil\examples\text\vc2010\Debug\text-vc2010.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Geoff\sigil\examples\text\text\Debug\text.exe;#1" /manifest Debug\text.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Geoff\sigil\examples\text\vc2010\Debug\text-vc2010.exe;#1" /manifest "Debug\text-vc2010.exe.intermediate.manifest"
        FinalizeBuildStatus:
-         Deleting file "Debug\text.unsuccessfulbuild".
-         Touching "Debug\text.lastbuildstate".
-     1>Done Building Project "C:\Users\Geoff\sigil\examples\text\text\text.vcxproj" (build target(s)).
+         Deleting file "Debug\text-vc2010.unsuccessfulbuild".
+         Touching "Debug\text-vc2010.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\text\vc2010\text.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:00.74

@@ -17,20 +17,20 @@ Otherwise, you can download the source code as a .zip file from:
 
 SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-compiled libs are included with SIGIL in the /glew folder. Copy and paste the following files into the appropriate locations as below:
 
-	sigil/glew/lib/msvc32/glew32.lib    ---> C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/glew32.lib
-	sigil/glew/include/GL/*.h           ---> C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/gl/*.h
+	sigil/glew/lib/msvc32/glew32.lib    ---> C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib
+	sigil/glew/include/GL/*.h           ---> C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/GL/*.h
 
 We also need to get a copy of the FreeType 2 (FT2) library. Download and run the "Complete package, except sources" installer from 
 
 	http://gnuwin32.sourceforge.net/packages/freetype.htm
 
-to install FT2. If you plan to use CodeBlocks for your SIGIL projects, make sure that you install into
+to install FT2. Make sure that you install into
 
-	C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A
+	C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC
 
 and NOT
 
-	C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/GnuWin32
+	C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\GnuWin32
 
 or anywhere else, otherwise you may encounter difficulties when building SIGIL. You may have to manually edit out the "GnuWin32" portion.
 
@@ -40,8 +40,8 @@ We need OpenAL for audio. Download the "OpenAL 1.1 Core SDK (zip)" file from
 
 and extract and run the installer. When prompted, you should also run the OpenAL redistributable, which will place the OpenAL DLLs into your system folder. After all of this, copy the OpenAL header and library files into the proper locations:
 
-	C:\Program Files (x86)\OpenAL 1.1 SDK\include\*.h             ---> C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\*.h
-	C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib ---> C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib
+	C:\Program Files (x86)\OpenAL 1.1 SDK\include\*.h             ---> C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\*.h
+	C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib ---> C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\OpenAL32.lib
 
 Next, we can start building SIGIL. Enter the directory "sigil" and create a folder called "build-vc2010".
 
@@ -51,13 +51,13 @@ Click "Configure". When prompted, select the "Visual Studio 10 2010" generator (
 
 Assuming you followed the directions above correctly, you should not get any configuration errors. However, you can fix them by assigning the appropriate values to the given CMake variables. For your reference, these are the values that I use to compile SIGIL.
 
-FREETYPE_INCLUDE_DIR_freetype2: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/freetype2
-FREETYPE_INCLUDE_DIR_ft2build: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/freetype2
-FREETYPE_LIBRARY: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/freetype.lib
-GLEW_INCLUDE_DIR: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include
-GLEW_LIBRARY: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/glew32.lib
-OPENAL_INCLUDE_DIR: C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include
-OPENAL_LIBRARY: C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib
+FREETYPE_INCLUDE_DIR_freetype2: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/freetype2
+FREETYPE_INCLUDE_DIR_ft2build: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/freetype2
+FREETYPE_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/freetype.lib
+GLEW_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include
+GLEW_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib
+OPENAL_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include
+OPENAL_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/OpenAL32.lib
 
 This will create the Visual Studio 2010 project file that can be used to build SIGIL. Navigate to "build-vc2010" and open the solution "sigil.sln".
 
@@ -68,11 +68,10 @@ In Visual Studio, select the build type "Release", and then click "Build -> Buil
 
 It's probably now a good idea to put all of the necessary SIGIL files in a common location for you to copy into your SIGIL projects later on. This is the same process that I use when building and distributing SIGIL.
 
+	C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/freetype6.dll ---> sigil/sigil-vc2010/freetype6.dll
 	C:/Windows/System32/OpenAL32.dll     ---> sigil/sigil-vc2010/OpenAL32.dll
 	sigil/glew/lib/msvc32/glew32.dll     ---> sigil/sigil-vc2010/glew32.dll
-	sigil/glfw/lib/vc2010/glfw3.dll      ---> sigil/sigil-vc2010/glfw3.dll
 	sigil/build-vc2010/Release/sigil.dll ---> sigil/sigil-vc2010/sigil.dll
 	sigil/build-vc2010/Release/sigil.lib ---> sigil/sigil-vc2010/lib/sigil.lib
-	sigil/include/sl.h                   ---> sigil/sigil-vc2010/sl/sl.h
 
 Now, please consult USING-SIGIL-VC2010.txt for instructions on how to integrate SIGIL into your applications.

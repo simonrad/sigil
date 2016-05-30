@@ -1,0 +1,22 @@
+﻿Build started Sun, May 29 8:21:27 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\shapes-vc2012.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\shapes.cpp
+         shapes.cpp
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(27): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(35): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(43): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(51): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(57): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(57): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(58): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(70): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(73): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\Debug\shapes-vc2012.exe" /INCREMENTAL /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\Debug\shapes-vc2012.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\Debug\shapes-vc2012.lib" /MACHINE:X86 Debug\shapes.obj
+         shapes-vc2012.vcxproj -> C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\Debug\shapes-vc2012.exe
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\shapes\shapes-vc2012\shapes-vc2012.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.62

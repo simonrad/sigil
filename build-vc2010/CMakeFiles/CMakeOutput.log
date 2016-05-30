@@ -10,7 +10,7 @@ Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:39:58 am.
+Build started Sun, May 29 3:27:18 pm.
 Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -37,7 +37,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:00.80
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -57,7 +57,7 @@ Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:39:59 am.
+Build started Sun, May 29 3:27:19 pm.
 Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -84,7 +84,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.02
+Time Elapsed 00:00:00.67
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -96,189 +96,189 @@ The CXX compiler identification is MSVC, found in "C:/Users/Geoff/sigil/build-vc
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_19968.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_54556.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
 Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:40:00 am.
-Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_19968.vcxproj" on node 1 (default targets).
+Build started Sun, May 29 3:27:20 pm.
+Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_54556.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_19968.dir\Debug\".
+  Creating directory "cmTC_54556.dir\Debug\".
   Creating directory "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTC_19968.dir\Debug\cmTC_19968.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_54556.dir\Debug\cmTC_54556.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_19968.dir\Debug\\" /Fd"cmTC_19968.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_54556.dir\Debug\\" /Fd"cmTC_54556.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_19968.dir\Debug\\" /Fd"cmTC_19968.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_54556.dir\Debug\\" /Fd"cmTC_54556.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   
   testCCompiler.c
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_19968.dir\Debug\cmTC_19968.exe.embed.manifest.res" cmTC_19968.dir\Debug\cmTC_19968_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_54556.dir\Debug\cmTC_54556.exe.embed.manifest.res" cmTC_54556.dir\Debug\cmTC_54556_manifest.rc 
 Link:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_19968.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_19968.dir\Debug\cmTC_19968.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_19968.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_19968.lib" /MACHINE:X86 cmTC_19968.dir\Debug\cmTC_19968.exe.embed.manifest.res
-  cmTC_19968.dir\Debug\testCCompiler.obj  /machine:X86 
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_54556.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_54556.dir\Debug\cmTC_54556.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_54556.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_54556.lib" /MACHINE:X86 cmTC_54556.dir\Debug\cmTC_54556.exe.embed.manifest.res
+  cmTC_54556.dir\Debug\testCCompiler.obj  /machine:X86 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_19968.dir\Debug\cmTC_19968.exe.embed.manifest" /manifest cmTC_19968.dir\Debug\cmTC_19968.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_19968.dir\Debug\cmTC_19968.exe.embed.manifest.res" cmTC_19968.dir\Debug\cmTC_19968_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_54556.dir\Debug\cmTC_54556.exe.embed.manifest" /manifest cmTC_54556.dir\Debug\cmTC_54556.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_54556.dir\Debug\cmTC_54556.exe.embed.manifest.res" cmTC_54556.dir\Debug\cmTC_54556_manifest.rc 
 LinkEmbedManifest:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_19968.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_19968.dir\Debug\cmTC_19968.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_19968.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_19968.lib" /MACHINE:X86 cmTC_19968.dir\Debug\cmTC_19968.exe.embed.manifest.res
-  cmTC_19968.dir\Debug\testCCompiler.obj  /machine:X86 
-  cmTC_19968.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_19968.exe
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_54556.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_54556.dir\Debug\cmTC_54556.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_54556.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_54556.lib" /MACHINE:X86 cmTC_54556.dir\Debug\cmTC_54556.exe.embed.manifest.res
+  cmTC_54556.dir\Debug\testCCompiler.obj  /machine:X86 
+  cmTC_54556.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_54556.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_19968.dir\Debug\cmTC_19968.unsuccessfulbuild".
-  Touching "cmTC_19968.dir\Debug\cmTC_19968.lastbuildstate".
-Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_19968.vcxproj" (default targets).
+  Deleting file "cmTC_54556.dir\Debug\cmTC_54556.unsuccessfulbuild".
+  Touching "cmTC_54556.dir\Debug\cmTC_54556.lastbuildstate".
+Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_54556.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.73
+Time Elapsed 00:00:01.87
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_b2548.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_72405.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
 Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:40:02 am.
-Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_b2548.vcxproj" on node 1 (default targets).
+Build started Sun, May 29 3:27:23 pm.
+Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_72405.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_b2548.dir\Debug\".
+  Creating directory "cmTC_72405.dir\Debug\".
   Creating directory "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTC_b2548.dir\Debug\cmTC_b2548.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_72405.dir\Debug\cmTC_72405.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_b2548.dir\Debug\\" /Fd"cmTC_b2548.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_72405.dir\Debug\\" /Fd"cmTC_72405.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_b2548.dir\Debug\\" /Fd"cmTC_b2548.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_72405.dir\Debug\\" /Fd"cmTC_72405.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_b2548.dir\Debug\cmTC_b2548.exe.embed.manifest.res" cmTC_b2548.dir\Debug\cmTC_b2548_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_72405.dir\Debug\cmTC_72405.exe.embed.manifest.res" cmTC_72405.dir\Debug\cmTC_72405_manifest.rc 
 Link:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_b2548.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_b2548.dir\Debug\cmTC_b2548.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_b2548.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_b2548.lib" /MACHINE:X86 cmTC_b2548.dir\Debug\cmTC_b2548.exe.embed.manifest.res
-  cmTC_b2548.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_72405.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_72405.dir\Debug\cmTC_72405.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_72405.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_72405.lib" /MACHINE:X86 cmTC_72405.dir\Debug\cmTC_72405.exe.embed.manifest.res
+  cmTC_72405.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_b2548.dir\Debug\cmTC_b2548.exe.embed.manifest" /manifest cmTC_b2548.dir\Debug\cmTC_b2548.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_b2548.dir\Debug\cmTC_b2548.exe.embed.manifest.res" cmTC_b2548.dir\Debug\cmTC_b2548_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_72405.dir\Debug\cmTC_72405.exe.embed.manifest" /manifest cmTC_72405.dir\Debug\cmTC_72405.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_72405.dir\Debug\cmTC_72405.exe.embed.manifest.res" cmTC_72405.dir\Debug\cmTC_72405_manifest.rc 
 LinkEmbedManifest:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_b2548.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_b2548.dir\Debug\cmTC_b2548.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_b2548.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_b2548.lib" /MACHINE:X86 cmTC_b2548.dir\Debug\cmTC_b2548.exe.embed.manifest.res
-  cmTC_b2548.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 
-  cmTC_b2548.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_b2548.exe
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_72405.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_72405.dir\Debug\cmTC_72405.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_72405.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_72405.lib" /MACHINE:X86 cmTC_72405.dir\Debug\cmTC_72405.exe.embed.manifest.res
+  cmTC_72405.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 
+  cmTC_72405.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_72405.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_b2548.dir\Debug\cmTC_b2548.unsuccessfulbuild".
-  Touching "cmTC_b2548.dir\Debug\cmTC_b2548.lastbuildstate".
-Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_b2548.vcxproj" (default targets).
+  Deleting file "cmTC_72405.dir\Debug\cmTC_72405.unsuccessfulbuild".
+  Touching "cmTC_72405.dir\Debug\cmTC_72405.lastbuildstate".
+Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_72405.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.31
+Time Elapsed 00:00:01.69
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_540a7.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_89179.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
 Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:40:04 am.
-Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_540a7.vcxproj" on node 1 (default targets).
+Build started Sun, May 29 3:27:25 pm.
+Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_89179.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_540a7.dir\Debug\".
+  Creating directory "cmTC_89179.dir\Debug\".
   Creating directory "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTC_540a7.dir\Debug\cmTC_540a7.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_89179.dir\Debug\cmTC_89179.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_540a7.dir\Debug\\" /Fd"cmTC_540a7.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_89179.dir\Debug\\" /Fd"cmTC_89179.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_540a7.dir\Debug\\" /Fd"cmTC_540a7.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_89179.dir\Debug\\" /Fd"cmTC_89179.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_540a7.dir\Debug\cmTC_540a7.exe.embed.manifest.res" cmTC_540a7.dir\Debug\cmTC_540a7_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_89179.dir\Debug\cmTC_89179.exe.embed.manifest.res" cmTC_89179.dir\Debug\cmTC_89179_manifest.rc 
 Link:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_540a7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_540a7.dir\Debug\cmTC_540a7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_540a7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_540a7.lib" /MACHINE:X86 cmTC_540a7.dir\Debug\cmTC_540a7.exe.embed.manifest.res
-  cmTC_540a7.dir\Debug\testCXXCompiler.obj  /machine:X86 
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_89179.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_89179.dir\Debug\cmTC_89179.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_89179.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_89179.lib" /MACHINE:X86 cmTC_89179.dir\Debug\cmTC_89179.exe.embed.manifest.res
+  cmTC_89179.dir\Debug\testCXXCompiler.obj  /machine:X86 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_540a7.dir\Debug\cmTC_540a7.exe.embed.manifest" /manifest cmTC_540a7.dir\Debug\cmTC_540a7.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_540a7.dir\Debug\cmTC_540a7.exe.embed.manifest.res" cmTC_540a7.dir\Debug\cmTC_540a7_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_89179.dir\Debug\cmTC_89179.exe.embed.manifest" /manifest cmTC_89179.dir\Debug\cmTC_89179.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_89179.dir\Debug\cmTC_89179.exe.embed.manifest.res" cmTC_89179.dir\Debug\cmTC_89179_manifest.rc 
 LinkEmbedManifest:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_540a7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_540a7.dir\Debug\cmTC_540a7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_540a7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_540a7.lib" /MACHINE:X86 cmTC_540a7.dir\Debug\cmTC_540a7.exe.embed.manifest.res
-  cmTC_540a7.dir\Debug\testCXXCompiler.obj  /machine:X86 
-  cmTC_540a7.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_540a7.exe
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_89179.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_89179.dir\Debug\cmTC_89179.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_89179.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_89179.lib" /MACHINE:X86 cmTC_89179.dir\Debug\cmTC_89179.exe.embed.manifest.res
+  cmTC_89179.dir\Debug\testCXXCompiler.obj  /machine:X86 
+  cmTC_89179.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_89179.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_540a7.dir\Debug\cmTC_540a7.unsuccessfulbuild".
-  Touching "cmTC_540a7.dir\Debug\cmTC_540a7.lastbuildstate".
-Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_540a7.vcxproj" (default targets).
+  Deleting file "cmTC_89179.dir\Debug\cmTC_89179.unsuccessfulbuild".
+  Touching "cmTC_89179.dir\Debug\cmTC_89179.lastbuildstate".
+Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_89179.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.30
+Time Elapsed 00:00:01.42
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_87b91.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_99bfc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
 Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:40:06 am.
-Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_87b91.vcxproj" on node 1 (default targets).
+Build started Sun, May 29 3:27:27 pm.
+Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_99bfc.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_87b91.dir\Debug\".
+  Creating directory "cmTC_99bfc.dir\Debug\".
   Creating directory "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTC_87b91.dir\Debug\cmTC_87b91.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_99bfc.dir\Debug\cmTC_99bfc.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_87b91.dir\Debug\\" /Fd"cmTC_87b91.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_99bfc.dir\Debug\\" /Fd"cmTC_99bfc.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_87b91.dir\Debug\\" /Fd"cmTC_87b91.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_99bfc.dir\Debug\\" /Fd"cmTC_99bfc.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_87b91.dir\Debug\cmTC_87b91.exe.embed.manifest.res" cmTC_87b91.dir\Debug\cmTC_87b91_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.embed.manifest.res" cmTC_99bfc.dir\Debug\cmTC_99bfc_manifest.rc 
 Link:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_87b91.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_87b91.dir\Debug\cmTC_87b91.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_87b91.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_87b91.lib" /MACHINE:X86 cmTC_87b91.dir\Debug\cmTC_87b91.exe.embed.manifest.res
-  cmTC_87b91.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_99bfc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_99bfc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_99bfc.lib" /MACHINE:X86 cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.embed.manifest.res
+  cmTC_99bfc.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_87b91.dir\Debug\cmTC_87b91.exe.embed.manifest" /manifest cmTC_87b91.dir\Debug\cmTC_87b91.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_87b91.dir\Debug\cmTC_87b91.exe.embed.manifest.res" cmTC_87b91.dir\Debug\cmTC_87b91_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.embed.manifest" /manifest cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.embed.manifest.res" cmTC_99bfc.dir\Debug\cmTC_99bfc_manifest.rc 
 LinkEmbedManifest:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_87b91.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_87b91.dir\Debug\cmTC_87b91.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_87b91.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_87b91.lib" /MACHINE:X86 cmTC_87b91.dir\Debug\cmTC_87b91.exe.embed.manifest.res
-  cmTC_87b91.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 
-  cmTC_87b91.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_87b91.exe
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_99bfc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_99bfc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_99bfc.lib" /MACHINE:X86 cmTC_99bfc.dir\Debug\cmTC_99bfc.exe.embed.manifest.res
+  cmTC_99bfc.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 
+  cmTC_99bfc.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_99bfc.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_87b91.dir\Debug\cmTC_87b91.unsuccessfulbuild".
-  Touching "cmTC_87b91.dir\Debug\cmTC_87b91.lastbuildstate".
-Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_87b91.vcxproj" (default targets).
+  Deleting file "cmTC_99bfc.dir\Debug\cmTC_99bfc.unsuccessfulbuild".
+  Touching "cmTC_99bfc.dir\Debug\cmTC_99bfc.lastbuildstate".
+Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_99bfc.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.19
+Time Elapsed 00:00:01.41
 
 
 
@@ -286,48 +286,48 @@ Time Elapsed 00:00:01.19
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_ea44f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_1f90d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
 Microsoft (R) Build Engine version 4.6.81.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started Sun, May 29 1:40:07 am.
-Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_ea44f.vcxproj" on node 1 (default targets).
+Build started Sun, May 29 3:27:29 pm.
+Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_1f90d.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_ea44f.dir\Debug\".
+  Creating directory "cmTC_1f90d.dir\Debug\".
   Creating directory "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTC_ea44f.dir\Debug\cmTC_ea44f.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_1f90d.dir\Debug\cmTC_1f90d.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ea44f.dir\Debug\\" /Fd"cmTC_ea44f.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue ..\feature_tests.cxx
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_1f90d.dir\Debug\\" /Fd"cmTC_1f90d.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue ..\feature_tests.cxx
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ea44f.dir\Debug\\" /Fd"cmTC_ea44f.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue ..\feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_1f90d.dir\Debug\\" /Fd"cmTC_1f90d.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue ..\feature_tests.cxx
   
   feature_tests.cxx
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.embed.manifest.res" cmTC_ea44f.dir\Debug\cmTC_ea44f_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.embed.manifest.res" cmTC_1f90d.dir\Debug\cmTC_1f90d_manifest.rc 
 Link:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_ea44f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_ea44f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_ea44f.lib" /MACHINE:X86 cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.embed.manifest.res
-  cmTC_ea44f.dir\Debug\feature_tests.obj  /machine:X86 
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_1f90d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_1f90d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_1f90d.lib" /MACHINE:X86 cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.embed.manifest.res
+  cmTC_1f90d.dir\Debug\feature_tests.obj  /machine:X86 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.embed.manifest" /manifest cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.embed.manifest.res" cmTC_ea44f.dir\Debug\cmTC_ea44f_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.embed.manifest" /manifest cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.embed.manifest.res" cmTC_1f90d.dir\Debug\cmTC_1f90d_manifest.rc 
 LinkEmbedManifest:
-  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_ea44f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_ea44f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_ea44f.lib" /MACHINE:X86 cmTC_ea44f.dir\Debug\cmTC_ea44f.exe.embed.manifest.res
-  cmTC_ea44f.dir\Debug\feature_tests.obj  /machine:X86 
-  cmTC_ea44f.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_ea44f.exe
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_1f90d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_1f90d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/CMakeTmp/Debug/cmTC_1f90d.lib" /MACHINE:X86 cmTC_1f90d.dir\Debug\cmTC_1f90d.exe.embed.manifest.res
+  cmTC_1f90d.dir\Debug\feature_tests.obj  /machine:X86 
+  cmTC_1f90d.vcxproj -> C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\Debug\cmTC_1f90d.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_ea44f.dir\Debug\cmTC_ea44f.unsuccessfulbuild".
-  Touching "cmTC_ea44f.dir\Debug\cmTC_ea44f.lastbuildstate".
-Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_ea44f.vcxproj" (default targets).
+  Deleting file "cmTC_1f90d.dir\Debug\cmTC_1f90d.unsuccessfulbuild".
+  Touching "cmTC_1f90d.dir\Debug\cmTC_1f90d.lastbuildstate".
+Done Building Project "C:\Users\Geoff\sigil\build-vc2010\CMakeFiles\CMakeTmp\cmTC_1f90d.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.47
+Time Elapsed 00:00:01.62
 
 
     Feature record: CXX_FEATURE:0cxx_alias_templates

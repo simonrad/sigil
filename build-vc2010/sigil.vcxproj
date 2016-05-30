@@ -81,7 +81,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -98,10 +98,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";sigil_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,7 +110,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\Debug\glfw3.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\glew32.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\freetype.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\Debug\glfw3.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\glew32.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\freetype.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -125,7 +125,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -141,10 +141,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";sigil_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -153,7 +153,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\Release\glfw3.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\glew32.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\freetype.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\Release\glfw3.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\glew32.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\freetype.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -168,7 +168,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -184,10 +184,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";sigil_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -196,7 +196,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\MinSizeRel\glfw3.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\glew32.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\freetype.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\MinSizeRel\glfw3.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\glew32.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\freetype.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -211,7 +211,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -227,10 +227,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";sigil_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Geoff\sigil\include;C:\Users\Geoff\sigil\src\glfw\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2;C:\Users\Geoff\sigil\build-vc2010\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -239,7 +239,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\RelWithDebInfo\glfw3.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\glew32.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\freetype.lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\glfw\src\RelWithDebInfo\glfw3.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\glew32.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\freetype.lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\OpenAL32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>

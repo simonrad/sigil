@@ -1,9 +1,11 @@
-﻿Build started Sat, May 28 11:28:50 pm.
-     1>Project "C:\Users\Geoff\sigil\examples\shapes\vc2010\shapes-vc2010.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Touching "Debug\shapes-vc2010.unsuccessfulbuild".
+﻿Build started Sun, May 29 4:48:57 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\shapes\vc2010\shapes-vc2010.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\shapes-vc2010.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\shapes-vc2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Geoff\sigil\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\shapes.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\shapes.cpp
          shapes.cpp
      1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(27): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(27): warning C4305: 'argument' : truncation from 'double' to 'float'
@@ -31,8 +33,8 @@
        FinalizeBuildStatus:
          Deleting file "Debug\shapes-vc2010.unsuccessfulbuild".
          Touching "Debug\shapes-vc2010.lastbuildstate".
-     1>Done Building Project "C:\Users\Geoff\sigil\examples\shapes\vc2010\shapes-vc2010.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\shapes\vc2010\shapes-vc2010.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:00.74

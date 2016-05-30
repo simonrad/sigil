@@ -1,0 +1,20 @@
+﻿Build started Sun, May 29 4:38:30 pm.
+     1>Project "C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\text-vc2010-win64.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\text-vc2010-win64.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I../../../include /Zi /nologo /W3 /WX- /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt ..\text.cpp
+         text.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\x64\Debug\text-vc2010-win64.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\text-vc2010-win64.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\x64\Debug\text-vc2010-win64.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\x64\Debug\text-vc2010-win64.lib" /MACHINE:X64 x64\Debug\text.obj
+         text-vc2010-win64.vcxproj -> C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\x64\Debug\text-vc2010-win64.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\x64\Debug\text-vc2010-win64.exe;#1" /manifest "x64\Debug\text-vc2010-win64.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\text-vc2010-win64.unsuccessfulbuild".
+         Touching "x64\Debug\text-vc2010-win64.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\examples\text\text-vc2010-win64\text-vc2010-win64.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.70

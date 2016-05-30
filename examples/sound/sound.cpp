@@ -38,7 +38,11 @@ int main(int args, char *argv[])
 	// load the sounds corresponding to phone number beeps
 	for(i = 0; i <= 9; i ++)
 	{
+#ifdef _MSC_VER
+		sprintf_s(soundName, "../wav/%d.wav", i);
+#else
 		sprintf(soundName, "../wav/%d.wav", i);
+#endif
 		digitSounds[i] = slLoadWAV(soundName);
 	}
 

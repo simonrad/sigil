@@ -152,19 +152,19 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 FOUND_BCM:FILEPATH=FOUND_BCM-NOTFOUND
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/freetype2
+FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/freetype2
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/freetype2
+FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/freetype2
 
 //Path to a library.
-FREETYPE_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/freetype.lib
+FREETYPE_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/freetype.lib
 
 //Path to a file.
-GLEW_INCLUDE_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include
+GLEW_INCLUDE_DIR:PATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include
 
 //Path to a library.
-GLEW_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/glew32.lib
+GLEW_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=C:/Users/Geoff/sigil/build-vc2010/src/glfw
@@ -198,10 +198,10 @@ GLFW_USE_HYBRID_HPG:BOOL=OFF
 LIB_SUFFIX:STRING=
 
 //Path to a file.
-OPENAL_INCLUDE_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include
+OPENAL_INCLUDE_DIR:PATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include
 
 //Path to a library.
-OPENAL_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/OpenAL32.lib
+OPENAL_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/OpenAL32.lib
 
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
@@ -219,7 +219,7 @@ glfw_LIB_DEPENDS:STATIC=
 sigil_BINARY_DIR:STATIC=C:/Users/Geoff/sigil/build-vc2010
 
 //Dependencies for the target
-sigil_LIB_DEPENDS:STATIC=general;glfw;general;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/glew32.lib;general;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/freetype.lib;general;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/OpenAL32.lib;general;opengl32;
+sigil_LIB_DEPENDS:STATIC=general;glfw;general;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib;general;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/freetype.lib;general;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/OpenAL32.lib;general;opengl32;
 
 //Value Computed by CMake
 sigil_SOURCE_DIR:STATIC=C:/Users/Geoff/sigil
@@ -340,11 +340,11 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Freetype
-FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/freetype.lib][C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include/freetype2][v2.3.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/freetype.lib][C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/freetype2][v2.3.5()]
 //Details about finding GLEW
-FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include][C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/glew32.lib][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include][C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib][v()]
 //Details about finding OpenAL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/OpenAL32.lib][C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/OpenAL32.lib][C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2

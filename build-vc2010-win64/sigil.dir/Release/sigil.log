@@ -1,0 +1,42 @@
+﻿Build started Sun, May 29 2:58:09 pm.
+     1>Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "sigil.dir\Release\sigil.unsuccessfulbuild".
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\build-vc2010-win64\Release\sigil.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib src\glfw\src\Release\glfw3.lib "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\glew32.lib" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\freetype.lib" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\OpenAL32.lib" opengl32.lib /MANIFEST /ManifestFile:"sigil.dir\Release\sigil.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.lib" /MACHINE:X64 /DLL sigil.dir\Release\sl.obj
+         sigil.dir\Release\circle.obj
+         sigil.dir\Release\line.obj
+         sigil.dir\Release\point.obj
+         sigil.dir\Release\rectangle.obj
+         sigil.dir\Release\sound.obj
+         sigil.dir\Release\sprite.obj
+         sigil.dir\Release\text.obj
+         sigil.dir\Release\triangle.obj
+         sigil.dir\Release\drawgl.obj
+         sigil.dir\Release\font.obj
+         sigil.dir\Release\utf8.obj
+         sigil.dir\Release\image_DXT.obj
+         sigil.dir\Release\image_helper.obj
+         sigil.dir\Release\SOIL.obj
+         sigil.dir\Release\stb_image_aug.obj
+         sigil.dir\Release\images.obj
+         sigil.dir\Release\shader.obj
+         sigil.dir\Release\transform.obj
+         sigil.dir\Release\window_glfw.obj
+         sigil.dir\Release\shaders_gl.obj  /machine:x64 
+            Creating library C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.lib and object C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.exp
+         sigil.vcxproj -> C:\Users\Geoff\sigil\build-vc2010-win64\Release\sigil.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Geoff\sigil\build-vc2010-win64\Release\sigil.dll;#2" /manifest sigil.dir\Release\sigil.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "sigil.dir\Release\sigil.unsuccessfulbuild".
+         Touching "sigil.dir\Release\sigil.lastbuildstate".
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.83

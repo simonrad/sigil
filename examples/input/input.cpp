@@ -139,7 +139,11 @@ int main(int args, char *argv[])
 		}
 
 		// show some explanatory text
+#ifdef _MSC_VER
+		sprintf_s(str, "move the mouse around\n\n%d bubbles in chain; use W to increase or S to decrease", numCircles);
+#else
 		sprintf(str, "move the mouse around\n\n%d bubbles in chain; use W to increase or S to decrease", numCircles);
+#endif
 		slSetForeColor(1.0, 1.0, 1.0, 1.0);
 		slText(10, WINDOW_HEIGHT - 20, str);
 

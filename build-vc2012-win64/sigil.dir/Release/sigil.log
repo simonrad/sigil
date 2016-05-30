@@ -1,0 +1,159 @@
+﻿Build started Sun, May 29 8:41:37 pm.
+     1>Project "C:\Users\Geoff\sigil\build-vc2012-win64\sigil.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Geoff/sigil/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Geoff\sigil\build-vc2012-win64\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\freetype2" /I"C:\Users\Geoff\sigil\build-vc2012-win64\src" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D sigil_EXPORTS /D _WINDLL /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"sigil.dir\Release\\" /Fd"sigil.dir\Release\vc110.pdb" /Gd /TC /errorReport:prompt C:\Users\Geoff\sigil\src\sl.c C:\Users\Geoff\sigil\src\internal\circle.c C:\Users\Geoff\sigil\src\internal\line.c C:\Users\Geoff\sigil\src\internal\point.c C:\Users\Geoff\sigil\src\internal\rectangle.c C:\Users\Geoff\sigil\src\internal\sound.c C:\Users\Geoff\sigil\src\internal\sprite.c C:\Users\Geoff\sigil\src\internal\text.c C:\Users\Geoff\sigil\src\internal\triangle.c C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c C:\Users\Geoff\sigil\src\libdrawtext\font.c C:\Users\Geoff\sigil\src\libdrawtext\utf8.c C:\Users\Geoff\sigil\src\soil\image_DXT.c C:\Users\Geoff\sigil\src\soil\image_helper.c C:\Users\Geoff\sigil\src\soil\SOIL.c C:\Users\Geoff\sigil\src\soil\stb_image_aug.c C:\Users\Geoff\sigil\src\util\images.c C:\Users\Geoff\sigil\src\util\shader.c C:\Users\Geoff\sigil\src\util\transform.c C:\Users\Geoff\sigil\src\internal\window_glfw.c C:\Users\Geoff\sigil\src\internal\shaders_gl.c
+         sl.c
+     1>C:\Users\Geoff\sigil\src\sl.c(54): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>C:\Users\Geoff\sigil\src\sl.c(56): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>C:\Users\Geoff\sigil\src\sl.c(190): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\sl.c(195): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\sl.c(197): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\sl.c(491): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\sl.c(496): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\sl.c(523): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+         circle.c
+     1>C:\Users\Geoff\sigil\src\internal\circle.c(82): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>C:\Users\Geoff\sigil\src\internal\circle.c(103): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\internal\circle.c(149): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>C:\Users\Geoff\sigil\src\internal\circle.c(174): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         line.c
+     1>C:\Users\Geoff\sigil\src\internal\line.c(81): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>C:\Users\Geoff\sigil\src\internal\line.c(82): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>C:\Users\Geoff\sigil\src\internal\line.c(83): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>C:\Users\Geoff\sigil\src\internal\line.c(84): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+         point.c
+         rectangle.c
+         sound.c
+     1>C:\Users\Geoff\sigil\src\internal\sound.c(303): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         sprite.c
+         text.c
+         triangle.c
+         drawgl.c
+     1>C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c(193): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c(244): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(340) : see declaration of 'vsnprintf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c(253): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(340) : see declaration of 'vsnprintf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\drawgl.c(274): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         font.c
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(83): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(113): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(284): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(285): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(297): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(336): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(358): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(367): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(380): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : see declaration of 'sscanf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(383): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : see declaration of 'sscanf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(387): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : see declaration of 'sscanf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(389): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(427): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : see declaration of 'sscanf'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(468): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(478): warning C4244: '=' : conversion from 'long' to 'unsigned char', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(487): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(515): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(516): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>C:\Users\Geoff\sigil\src\libdrawtext\font.c(633): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         utf8.c
+     1>C:\Users\Geoff\sigil\src\libdrawtext\utf8.c(121): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Geoff\sigil\src\libdrawtext\utf8.c(147): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         image_DXT.c
+     1>C:\Users\Geoff\sigil\src\soil\image_DXT.c(92): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         image_helper.c
+     1>C:\Users\Geoff\sigil\src\soil\image_helper.c(325): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\soil\image_helper.c(366): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\soil\image_helper.c(373): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Geoff\sigil\src\soil\image_helper.c(415): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Geoff\sigil\src\soil\image_helper.c(422): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         SOIL.c
+     1>C:\Users\Geoff\sigil\src\soil\SOIL.c(1719): warning C4018: '<=' : signed/unsigned mismatch
+     1>C:\Users\Geoff\sigil\src\soil\SOIL.c(1729): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Geoff\sigil\src\soil\SOIL.c(1841): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\SOIL.c(1867): warning C4267: 'function' : conversion from 'size_t' to 'int', possible loss of data
+         stb_image_aug.c
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(177): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(251): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(303): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(1557): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(2394): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(2709): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(2995): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(3209): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(3548): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>C:\Users\Geoff\sigil\src\soil\stb_image_aug.c(3644): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>c:\users\geoff\sigil\src\soil\stbi_DDS_aug_c.h(362): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\geoff\sigil\src\soil\stbi_DDS_aug_c.h(366): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\geoff\sigil\src\soil\stbi_DDS_aug_c.h(390): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\geoff\sigil\src\soil\stbi_DDS_aug_c.h(427): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\geoff\sigil\src\soil\stbi_DDS_aug_c.h(498): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         images.c
+         shader.c
+         transform.c
+         window_glfw.c
+     1>C:\Users\Geoff\sigil\src\internal\window_glfw.c(80): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Geoff\sigil\src\internal\window_glfw.c(81): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         shaders_gl.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\build-vc2012-win64\Release\sigil.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib src\glfw\src\Release\glfw3.lib "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\lib\amd64\glew32.lib" "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\lib\amd64\freetype.lib" "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\lib\amd64\OpenAL32.lib" opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/Geoff/sigil/build-vc2012-win64/Release/sigil.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2012-win64/Release/sigil.lib" /MACHINE:X64  /machine:x64 /DLL sigil.dir\Release\sl.obj
+         sigil.dir\Release\circle.obj
+         sigil.dir\Release\line.obj
+         sigil.dir\Release\point.obj
+         sigil.dir\Release\rectangle.obj
+         sigil.dir\Release\sound.obj
+         sigil.dir\Release\sprite.obj
+         sigil.dir\Release\text.obj
+         sigil.dir\Release\triangle.obj
+         sigil.dir\Release\drawgl.obj
+         sigil.dir\Release\font.obj
+         sigil.dir\Release\utf8.obj
+         sigil.dir\Release\image_DXT.obj
+         sigil.dir\Release\image_helper.obj
+         sigil.dir\Release\SOIL.obj
+         sigil.dir\Release\stb_image_aug.obj
+         sigil.dir\Release\images.obj
+         sigil.dir\Release\shader.obj
+         sigil.dir\Release\transform.obj
+         sigil.dir\Release\window_glfw.obj
+         sigil.dir\Release\shaders_gl.obj
+            Creating library C:/Users/Geoff/sigil/build-vc2012-win64/Release/sigil.lib and object C:/Users/Geoff/sigil/build-vc2012-win64/Release/sigil.exp
+         sigil.vcxproj -> C:\Users\Geoff\sigil\build-vc2012-win64\Release\sigil.dll
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2012-win64\sigil.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.85
