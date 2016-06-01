@@ -1,0 +1,9 @@
+C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/sigil.dir
+C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/INSTALL.dir
+C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/ALL_BUILD.dir
+C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Geoff/sigil/build-vc2013/src/glfw/CMakeFiles/uninstall.dir
+C:/Users/Geoff/sigil/build-vc2013/src/glfw/CMakeFiles/INSTALL.dir
+C:/Users/Geoff/sigil/build-vc2013/src/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/Geoff/sigil/build-vc2013/src/glfw/src/CMakeFiles/glfw.dir
+C:/Users/Geoff/sigil/build-vc2013/src/glfw/src/CMakeFiles/INSTALL.dir
