@@ -1,9 +1,0 @@
-C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/sigil.dir
-C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/INSTALL.dir
-C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/ALL_BUILD.dir
-C:/Users/Geoff/sigil/build-vc2010/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Geoff/sigil/build-vc2010/src/glfw/CMakeFiles/uninstall.dir
-C:/Users/Geoff/sigil/build-vc2010/src/glfw/CMakeFiles/INSTALL.dir
-C:/Users/Geoff/sigil/build-vc2010/src/glfw/CMakeFiles/ALL_BUILD.dir
-C:/Users/Geoff/sigil/build-vc2010/src/glfw/src/CMakeFiles/glfw.dir
-C:/Users/Geoff/sigil/build-vc2010/src/glfw/src/CMakeFiles/INSTALL.dir

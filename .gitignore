@@ -1,1 +1,12 @@
-# nothing to ignore
+# ignore build files
+build-linux-gcc
+build-mingw32
+build-rpi
+build-vc2010
+build-vc2010-win64
+build-vc2012
+build-vc2012-win64
+build-vc2013
+build-vc2013-win64
+build-vc2015
+build-vc2015-win64

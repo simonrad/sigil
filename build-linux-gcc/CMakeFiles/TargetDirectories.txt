@@ -1,3 +1,0 @@
-/home/geoff/sigil/build-linux-gcc/src/glfw/src/CMakeFiles/glfw.dir
-/home/geoff/sigil/build-linux-gcc/CMakeFiles/sigil.dir
-/home/geoff/sigil/build-linux-gcc/src/glfw/CMakeFiles/uninstall.dir
