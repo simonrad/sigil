@@ -70,7 +70,9 @@ static void slKillResources();
 void slWindow(int width, int height, const char *title)
 {
 	// error tracking for any window-creation issues we run into
-	GLenum error;
+	#ifndef USE_GLES
+		GLenum error;
+	#endif
 
 	if(!sliIsWindowOpen())
 	{
