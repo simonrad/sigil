@@ -15,16 +15,16 @@ int main(int args, char *argv[])
 	const int WINDOW_HEIGHT = 500;
 
 	// indicates how long the previous frame took to render, in seconds
-	float dt;
+	double dt;
 
 	// scrolling values for our main checkered background
-	float scrollX = 0.0;
-	float scrollY = 0.0;
+	double scrollX = 0.0;
+	double scrollY = 0.0;
 
 	// positions and sizes of sprites
-	float flareX[NUM_FLARES];
-	float flareY[NUM_FLARES];
-	float flareSizes[NUM_FLARES];
+	double flareX[NUM_FLARES];
+	double flareY[NUM_FLARES];
+	double flareSizes[NUM_FLARES];
 	int i;
 
 	// our texture identifiers

@@ -29,8 +29,8 @@ static GLuint sliCircleOutlineVBOs[1] = {0};
 #endif
 static GLuint sliCircleFillVBOs[1] = {0};
 
-static float sliOutlineRadius = 0;
-static float sliFillRadius = 0;
+static double sliOutlineRadius = 0;
+static double sliFillRadius = 0;
 
 static int sliNumOutlineVertices = 0;
 static int sliNumFillVertices = 0;
@@ -77,15 +77,15 @@ void sliCircleDestroy()
 	#endif
 }
 
-void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
+void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 {
-	const float EPS = 0.00001;
+	const double EPS = 0.00001;
 
 	GLfloat vertices[MAX_VERTICES * 3];
-	float theta;
-	float transform;
-	float c, s;
-	float x, y;
+	double theta;
+	double transform;
+	double c, s;
+	double x, y;
 	int i;
 
 	// make sure the number of vertices is something reasonable
@@ -100,20 +100,20 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 		sliOutlineRadius = radius;
 
 		// compute angle increment, and pre-compute sin and cos of that increment
-		theta = 2 * (PI / (float)sliNumOutlineVertices);
+		theta = 2 * (PI / (double)sliNumOutlineVertices);
 		c = cosf(theta);
 		s = sinf(theta);
 
 		// first vertex position of line loop
 		x = radius;
-		y = 0;
+		y = 0.0f;
 
 		// compute new vertex positions
 		for(i = 0; i < sliNumOutlineVertices * 3; i += 3)
 		{
-			vertices[i + 0] = x;
-			vertices[i + 1] = y;
-			vertices[i + 2] = 0.0;
+			vertices[i + 0] = (float)x;
+			vertices[i + 1] = (float)y;
+			vertices[i + 2] = 0.0f;
 
 			// apply rotation matrix to current vertex position
 			transform = x;
@@ -132,7 +132,7 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 	// prepare our shader object
 	shaderBind(sliBasicShader);
 	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)modelview);
-	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
+	shaderUniform4f(sliBasicShader, "u_Color", (float)color -> x, (float)color -> y, (float)color -> z, (float)color -> w);
 
 	// bind appropriate object state and render the object
 	#ifndef USE_GLES
@@ -144,15 +144,15 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, float radius, int numVertice
 	glDrawArrays(GL_LINE_LOOP, 0, sliNumOutlineVertices);
 }
 
-void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
+void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 {
-	const float EPS = 0.00001;
+	const double EPS = 0.00001;
 
 	GLfloat *vertices;
-	float theta;
-	float transform;
-	float c, s;
-	float x, y;
+	double theta;
+	double transform;
+	double c, s;
+	double x, y;
 	int i;
 
 	// make sure the number of vertices is something reasonable
@@ -171,7 +171,7 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 		vertices = (GLfloat*)malloc(sizeof(GLfloat) * (sliNumFillVertices + 2) * 3);
 
 		// compute angle increment, and pre-compute sin and cos of that increment
-		theta = 2 * (PI / (float)sliNumFillVertices);
+		theta = 2 * (PI / (double)sliNumFillVertices);
 		c = cosf(theta);
 		s = sinf(theta);
 
@@ -180,16 +180,16 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 		y = 0;
 
 		// insert triangle fan center vertex
-		vertices[0] = 0.0;
-		vertices[1] = 0.0;
-		vertices[2] = 0.0;
+		vertices[0] = 0.0f;
+		vertices[1] = 0.0f;
+		vertices[2] = 0.0f;
 
 		// compute new vertex positions
 		for(i = 3; i < (sliNumFillVertices + 2) * 3; i += 3)
 		{
-			vertices[i + 0] = x;
-			vertices[i + 1] = y;
-			vertices[i + 2] = 0.0;
+			vertices[i + 0] = (float)x;
+			vertices[i + 1] = (float)y;
+			vertices[i + 2] = 0.0f;
 
 			// apply rotation matrix to current vertex position
 			transform = x;
@@ -211,7 +211,7 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, float radius, int numVertices)
 	// prepare our shader object
 	shaderBind(sliBasicShader);
 	shaderUniformMatrix4fv(sliBasicShader, "u_Modelview", 1, (float*)modelview);
-	shaderUniform4f(sliBasicShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
+	shaderUniform4f(sliBasicShader, "u_Color", (float)color -> x, (float)color -> y, (float)color -> z, (float)color -> w);
 
 	// bind appropriate object state and render the object
 	#ifndef USE_GLES

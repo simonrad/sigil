@@ -5,7 +5,7 @@ set(CMAKE_BUILD_TYPE Release)
 # SIGIL versioning
 set(SIGIL_VERSION_MAJOR 0)
 set(SIGIL_VERSION_MINOR 7)
-set(SIGIL_VERSION_REVISION 1)
+set(SIGIL_VERSION_REVISION 5)
 
 # defaults for libraries we use
 set(USE_GLFW OFF)
@@ -52,6 +52,9 @@ set(CMAKE_INSTALL_PREFIX "/usr/lib")
 if(NOT MSVC)
 	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+else()
+	# we're all big kids here, so disable those annoying "considered unsafe" warnings in MSVC
+	add_definitions(-D_CRT_SECURE_NO_DEPRECATE)
 endif()
 
 #--------------------------------------------------------------------

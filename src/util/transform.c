@@ -9,13 +9,6 @@ static Mat4 matrixMultiply(Mat4 *a, Mat4 *b);
 
 Mat4 identity(void)
 {
-	/*
-    Mat4 result = {.cols[0] = {.x = 1.0, .y = 0.0, .z = 0.0, .w = 0.0},
-				   .cols[1] = {.x = 0.0, .y = 1.0, .z = 0.0, .w = 0.0},
-				   .cols[2] = {.x = 0.0, .y = 0.0, .z = 1.0, .w = 0.0},
-				   .cols[3] = {.x = 0.0, .y = 0.0, .z = 0.0, .w = 1.0}};
-	*/
-
 	Mat4 result;
 
 	result.cols[0].x = 1.0f; result.cols[0].y = 0.0f; result.cols[0].z = 0.0f; result.cols[0].w = 0.0f;
@@ -26,32 +19,32 @@ Mat4 identity(void)
 	return result;
 }
 
-Mat4 ortho(float left, float right, float bottom, float top)
+Mat4 ortho(double left, double right, double bottom, double top)
 {
-	const float NEAR = 0.0f;
-	const float FAR = 1.0f;
+	const double NEAR = 0.0;
+	const double FAR = 1.0;
 
 	Mat4 result = identity();
-	result.cols[0].x = 2.0f / (right - left);
-	result.cols[1].y = 2.0f / (top - bottom);
-	result.cols[2].z = -2.0f / (FAR - NEAR);
-	result.cols[3].x = -(right + left) / (right - left);
-	result.cols[3].y = -(top + bottom) / (top - bottom);
-	result.cols[3].z = -(FAR + NEAR) / (FAR - NEAR);
+	result.cols[0].x = (float)(2.0 / (right - left));
+	result.cols[1].y = (float)(2.0 / (top - bottom));
+	result.cols[2].z = (float)(-2.0 / (FAR - NEAR));
+	result.cols[3].x = (float)(-(right + left) / (right - left));
+	result.cols[3].y = (float)(-(top + bottom) / (top - bottom));
+	result.cols[3].z = (float)(-(FAR + NEAR) / (FAR - NEAR));
 
 	return result;
 }
 
-Mat4 translate(Mat4 *mat, float x, float y)
+Mat4 translate(Mat4 *mat, double x, double y)
 {
 	Mat4 t = identity();
-	t.cols[3].x = x;
-	t.cols[3].y = y;
+	t.cols[3].x = (float)x;
+	t.cols[3].y = (float)y;
 
 	return matrixMultiply(&t, mat);
 }
 
-Mat4 rotate(Mat4 *mat, float degrees)
+Mat4 rotate(Mat4 *mat, double degrees)
 {
 	Mat4 r = identity();
 	float radians = (float)(M_PI * degrees) / 180.0f;
@@ -65,12 +58,12 @@ Mat4 rotate(Mat4 *mat, float degrees)
 	return matrixMultiply(&r, mat);
 }
 
-Mat4 scale(Mat4 *mat, float x, float y)
+Mat4 scale(Mat4 *mat, double x, double y)
 {
 	Mat4 s = identity();
-	s.cols[0].x = x;
-	s.cols[1].y = y;
-	s.cols[2].z = 1.0;
+	s.cols[0].x = (float)x;
+	s.cols[1].y = (float)y;
+	s.cols[2].z = 1.0f;
 
 	return matrixMultiply(&s, mat);
 }

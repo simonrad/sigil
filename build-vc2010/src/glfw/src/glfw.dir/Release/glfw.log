@@ -1,4 +1,4 @@
-﻿Build started Sun, May 29 1:49:06 am.
+﻿Build started Sat, Jun 4 5:50:08 pm.
      1>Project "C:\Users\Geoff\sigil\build-vc2010\src\glfw\src\glfw.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "glfw.dir\Release\glfw.lastbuildstate".
@@ -8,7 +8,7 @@
          Building Custom Rule C:/Users/Geoff/sigil/src/glfw/src/CMakeLists.txt
          CMake does not need to re-run because C:\Users\Geoff\sigil\build-vc2010\src\glfw\src\CMakeFiles\generate.stamp is up-to-date.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /IC:\Users\Geoff\sigil\src\glfw\src /I"C:\Users\Geoff\sigil\build-vc2010\src\glfw\src" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _GLFW_USE_CONFIG_H /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Release\\" /Fd"glfw.dir\Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\src\glfw\src\context.c ..\..\..\..\src\glfw\src\init.c ..\..\..\..\src\glfw\src\input.c ..\..\..\..\src\glfw\src\monitor.c ..\..\..\..\src\glfw\src\vulkan.c ..\..\..\..\src\glfw\src\window.c ..\..\..\..\src\glfw\src\win32_init.c ..\..\..\..\src\glfw\src\win32_joystick.c ..\..\..\..\src\glfw\src\win32_monitor.c ..\..\..\..\src\glfw\src\win32_time.c ..\..\..\..\src\glfw\src\win32_tls.c ..\..\..\..\src\glfw\src\win32_window.c ..\..\..\..\src\glfw\src\wgl_context.c
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /IC:\Users\Geoff\sigil\src\glfw\src /I"C:\Users\Geoff\sigil\build-vc2010\src\glfw\src" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _GLFW_USE_CONFIG_H /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Release\\" /Fd"glfw.dir\Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\src\glfw\src\context.c ..\..\..\..\src\glfw\src\init.c ..\..\..\..\src\glfw\src\input.c ..\..\..\..\src\glfw\src\monitor.c ..\..\..\..\src\glfw\src\vulkan.c ..\..\..\..\src\glfw\src\window.c ..\..\..\..\src\glfw\src\win32_init.c ..\..\..\..\src\glfw\src\win32_joystick.c ..\..\..\..\src\glfw\src\win32_monitor.c ..\..\..\..\src\glfw\src\win32_time.c ..\..\..\..\src\glfw\src\win32_tls.c ..\..\..\..\src\glfw\src\win32_window.c ..\..\..\..\src\glfw\src\wgl_context.c
          context.c
          init.c
          input.c
@@ -45,4 +45,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.07
+Time Elapsed 00:00:03.94

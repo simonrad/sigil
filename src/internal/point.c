@@ -77,14 +77,14 @@ void sliPointDestroy()
 void sliPoint(Mat4 *modelview, Vec4 *color)
 {
 	// assign vertex position for the incoming point
-	*(sliPointVerticesPtr++) = modelview -> cols[3].x;
-	*(sliPointVerticesPtr++) = modelview -> cols[3].y;
+	*(sliPointVerticesPtr++) = (float)modelview -> cols[3].x;
+	*(sliPointVerticesPtr++) = (float)modelview -> cols[3].y;
 
 	// assign color values for the incoming point
-	*(sliPointColorsPtr++) = color -> x;
-	*(sliPointColorsPtr++) = color -> y;
-	*(sliPointColorsPtr++) = color -> z;
-	*(sliPointColorsPtr++) = color -> w;
+	*(sliPointColorsPtr++) = (float)color -> x;
+	*(sliPointColorsPtr++) = (float)color -> y;
+	*(sliPointColorsPtr++) = (float)color -> z;
+	*(sliPointColorsPtr++) = (float)color -> w;
 
 	// track the number of points we've cached; render if the buffer is full
 	sliPointCount ++;

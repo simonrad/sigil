@@ -77,8 +77,8 @@ void sliGetMousePos(int *posX, int *posY)
 {
 	double x, y;
 	glfwGetCursorPos(sliProgramWindow, &x, &y);
-	*posX = x;
-	*posY = sliWindowHeight - y;
+	*posX = (int)x;
+	*posY = sliWindowHeight - (int)y;
 }
 
 double sliGetTime()

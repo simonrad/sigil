@@ -26,15 +26,15 @@ static GLuint sliRectangleOutlineVBOs[1] = {0};
 
 void sliRectangleInit()
 {
-	GLfloat outlineVertices[] = {-0.5, 0.5,
-								-0.5, -0.5,
-								0.5, -0.5,
-								0.5, 0.5};
+	GLfloat outlineVertices[] = {-0.5f, 0.5f,
+								 -0.5f, -0.5f,
+								 0.5f, -0.5f,
+								 0.5f, 0.5f};
 
-	GLfloat fillVertices[] = {-0.5, -0.5,
-							  -0.5, 0.5,
-							  0.5, -0.5,
-							  0.5, 0.5};
+	GLfloat fillVertices[] = {-0.5f, -0.5f,
+							  -0.5f, 0.5f,
+							  0.5f, -0.5f,
+							  0.5f, 0.5f};
 
 	// intialize our outline state object
 	#ifndef USE_GLES

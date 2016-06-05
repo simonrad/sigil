@@ -1,6 +1,8 @@
-﻿Build started Sun, May 29 4:51:02 pm.
+﻿Build started Sat, Jun 4 5:53:54 pm.
      1>Project "C:\Users\Geoff\sigil\examples\text\vc2010\text.vcxproj" on node 2 (rebuild target(s)).
-     1>InitializeBuildStatus:
+     1>_PrepareForClean:
+         Deleting file "Debug\text-vc2010.lastbuildstate".
+       InitializeBuildStatus:
          Creating "Debug\text-vc2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\text.cpp
@@ -17,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.74
+Time Elapsed 00:00:00.70

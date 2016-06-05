@@ -78,22 +78,22 @@ void sliLineDestroy()
 void sliLine(Vec4 *color, double x1, double y1, double x2, double y2)
 {
 	// assign vertex positions for incoming line
-	*(sliLineVerticesPtr++) = x1;
-	*(sliLineVerticesPtr++) = y1;
-	*(sliLineVerticesPtr++) = x2;
-	*(sliLineVerticesPtr++) = y2;
+	*(sliLineVerticesPtr++) = (float)x1;
+	*(sliLineVerticesPtr++) = (float)y1;
+	*(sliLineVerticesPtr++) = (float)x2;
+	*(sliLineVerticesPtr++) = (float)y2;
 
 	// assign color values for the incoming point
-	*(sliLineColorsPtr++) = color -> x;
-	*(sliLineColorsPtr++) = color -> y;
-	*(sliLineColorsPtr++) = color -> z;
-	*(sliLineColorsPtr++) = color -> w;
+	*(sliLineColorsPtr++) = (float)color -> x;
+	*(sliLineColorsPtr++) = (float)color -> y;
+	*(sliLineColorsPtr++) = (float)color -> z;
+	*(sliLineColorsPtr++) = (float)color -> w;
 
 	// assign color values for the incoming point
-	*(sliLineColorsPtr++) = color -> x;
-	*(sliLineColorsPtr++) = color -> y;
-	*(sliLineColorsPtr++) = color -> z;
-	*(sliLineColorsPtr++) = color -> w;
+	*(sliLineColorsPtr++) = (float)color -> x;
+	*(sliLineColorsPtr++) = (float)color -> y;
+	*(sliLineColorsPtr++) = (float)color -> z;
+	*(sliLineColorsPtr++) = (float)color -> w;
 
 	// track the number of lines we've cached; render if the buffer is full
 	sliLineCount ++;

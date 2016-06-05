@@ -54,7 +54,7 @@ int main(int args, char *argv[])
 		// draw some lines that move downwards and change colour
 		for(int i = 0; i < 20; i ++)
 		{
-			slSetForeColor((float)i / 20.0, (float)i / 40.0, 0.0, 0.9);
+			slSetForeColor((double)i / 20.0, (double)i / 40.0, 0.0, 0.9);
 			slLine(100.0, 400.0 - i * 10.0, 400.0, 400.0 - i * 10.0);
 		}
 
@@ -64,8 +64,8 @@ int main(int args, char *argv[])
 			for(int y = 25; y <= 200; y += 3)
 			{
 				// shifting colours as we move across the array of points
-				slSetForeColor((float)(x - 100) / 300.0,		// red contribution is determined by x position
-							   (float)(y - 100) / 175.0,		// green contribution is determined by y position
+				slSetForeColor((double)(x - 100) / 300.0,		// red contribution is determined by x position
+							   (double)(y - 100) / 175.0,		// green contribution is determined by y position
 							   0.0,								// blue contribution is always zero
 							   1.0);							// alpha is full
 

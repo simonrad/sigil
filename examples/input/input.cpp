@@ -10,7 +10,7 @@
 #define MAX_CIRCLES 50
 
 // linear interpolation between two values, with clamping to prevent overshoot
-float moveTowards(float current, float target, float step);
+double moveTowards(double current, double target, double step);
 
 // main program
 int main(int args, char *argv[])
@@ -21,22 +21,18 @@ int main(int args, char *argv[])
 	const int WINDOW_HEIGHT = 600;
 
 	// circle properties
-	const float CIRCLE_SPEED = 20.0;		// how fast the circles move towards their target, in units per second
-	const float CIRCLE_RADIUS = 40.0;		// radius of largest circle
+	const double CIRCLE_SPEED = 20.0;		// how fast the circles move towards their target, in units per second
+	const double CIRCLE_RADIUS = 40.0;		// radius of largest circle
 
 	// the number of actual bubbles we're using
 	int numCircles = MAX_CIRCLES / 2;
 
-	// current mouse position
-	int mouseX;
-	int mouseY;
-
 	// define the properties for each bubble in the chain of bubbles following the mouse
-	float circleXCoords[MAX_CIRCLES];	// x position
-	float circleYCoords[MAX_CIRCLES];	// y position
-	float tailFactor;					// factor from 1.0 to 0.0 as we iterate through the bubble chain, for computing values below
-	float speed;						// speed of current bubble when catching up to the next one
-	float radius;						// bubbles scale down in size as we go further down the bubble chain
+	double circleXCoords[MAX_CIRCLES];	// x position
+	double circleYCoords[MAX_CIRCLES];	// y position
+	double tailFactor;					// factor from 1.0 to 0.0 as we iterate through the bubble chain, for computing values below
+	double speed;						// speed of current bubble when catching up to the next one
+	double radius;						// bubbles scale down in size as we go further down the bubble chain
 	int vertices;						// bubble vertex count scales down as we go further down the bubble chain
 	int i;
 
@@ -48,7 +44,7 @@ int main(int args, char *argv[])
 	bool keyS = false;
 
 	// indicates how long the previous frame took to render, in seconds
-	float dt;
+	double dt;
 
 	// initialize the position of our circles to the center of the world
 	for(i = 0; i < MAX_CIRCLES; i ++)
@@ -103,9 +99,8 @@ int main(int args, char *argv[])
 		}
 
 		// make the first circle follow the mouse
-		slGetMousePos(&mouseX, &mouseY);
-		circleXCoords[0] = mouseX;
-		circleYCoords[0] = mouseY;
+		circleXCoords[0] = slGetMouseX();
+		circleYCoords[0] = slGetMouseY();
 
 		// the other circles follow the one ahead of it
 		for(i = 1; i < MAX_CIRCLES; i ++)
@@ -121,7 +116,7 @@ int main(int args, char *argv[])
 			// compute a colour and size factor for the bubbles
 			tailFactor = (float)i / (float)MAX_CIRCLES;
 			radius = CIRCLE_RADIUS * (1.0 - tailFactor);
-			vertices = 15 - (10.0 * tailFactor);					// larger bubbles require more vertices
+			vertices = 15 - (int)(10.0 * tailFactor);					// larger bubbles require more vertices
 
 			// render the solid circle fill
 			slSetForeColor(0.0, 1.0 - tailFactor, tailFactor, 0.3);
@@ -159,9 +154,9 @@ int main(int args, char *argv[])
 }
 
 // linear interpolation between two values, with clamping to prevent overshoot
-float moveTowards(float current, float target, float step)
+double moveTowards(double current, double target, double step)
 {
-	float result = current + (target - current) * step;
+	double result = current + (target - current) * step;
 	if(current < target && result > target) result = target;
 	else if(current > target && result < target) result = target;
 	return result;

@@ -27,8 +27,8 @@ typedef struct MAT4
 } Mat4;
 
 Mat4 identity(void);
-Mat4 ortho(float left, float right, float bottom, float top);
+Mat4 ortho(double left, double right, double bottom, double top);
 
-Mat4 translate(Mat4 *mat, float x, float y);
-Mat4 rotate(Mat4 *mat, float degrees);
-Mat4 scale(Mat4 *mat, float x, float y);
+Mat4 translate(Mat4 *mat, double x, double y);
+Mat4 rotate(Mat4 *mat, double degrees);
+Mat4 scale(Mat4 *mat, double x, double y);

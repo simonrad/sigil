@@ -18,10 +18,10 @@ int main(int args, char *argv[])
 	const int WINDOW_HEIGHT = 500;
 
 	// indicates how long the previous frame took to render, in seconds
-	float dt;
+	double dt;
 
 	// angle of parent limb that rotates around the center of the screen
-	float angle = 0.0;
+	double angle = 0.0;
 
 	// this initializes the sigil library and creates a window of the desired size
 	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Transformations Example");

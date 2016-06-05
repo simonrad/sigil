@@ -1,4 +1,4 @@
-﻿Build started Sun, May 29 4:48:57 pm.
+﻿Build started Sat, Jun 4 5:50:43 pm.
      1>Project "C:\Users\Geoff\sigil\examples\shapes\vc2010\shapes-vc2010.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\shapes-vc2010.lastbuildstate".
@@ -7,24 +7,6 @@
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\shapes.cpp
          shapes.cpp
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(27): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(27): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(35): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(35): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(35): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(43): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(43): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(51): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(51): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(57): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(57): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(57): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(58): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(58): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(70): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(70): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(73): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\shapes\shapes.cpp(73): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\shapes\vc2010\Debug\shapes-vc2010.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\shapes-vc2010.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\shapes\vc2010\Debug\shapes-vc2010.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\shapes\vc2010\Debug\shapes-vc2010.lib" /MACHINE:X86 Debug\shapes.obj
          shapes-vc2010.vcxproj -> C:\Users\Geoff\sigil\examples\shapes\vc2010\Debug\shapes-vc2010.exe
@@ -37,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.74
+Time Elapsed 00:00:00.60

@@ -21,15 +21,15 @@ static GLuint sliSpriteVBOs[2] = {0, 0};
 
 void sliSpriteInit()
 {
-	GLfloat vertices[] = {-0.5, 0.5,
-						  0.5, 0.5,
-						  -0.5, -0.5,
-						  0.5, -0.5};
+	GLfloat vertices[] = {-0.5f, 0.5f,
+						  0.5f, 0.5f,
+						  -0.5f, -0.5f,
+						  0.5f, -0.5f};
 
-	GLfloat texCoords[] = {0.0, 1.0,
-						   1.0, 1.0,
-						   0.0, 0.0,
-						   1.0, 0.0};
+	GLfloat texCoords[] = {0.0f, 1.0f,
+						   1.0f, 1.0f,
+						   0.0f, 0.0f,
+						   1.0f, 0.0f};
 
 	// initialize our state object
 	#ifndef USE_GLES
@@ -64,9 +64,9 @@ void sliSprite(Mat4 *modelview, Vec4 *color, GLuint texture, Vec2 *tiling, Vec2 
 	// prepare our shader object
 	shaderBind(sliTextureShader);
 	shaderUniformMatrix4fv(sliTextureShader, "u_Modelview", 1, (float*)modelview);
-	shaderUniform4f(sliTextureShader, "u_Color", color -> x, color -> y, color -> z, color -> w);
-	shaderUniform2f(sliTextureShader, "u_Tiling", tiling -> x, tiling -> y);
-	shaderUniform2f(sliTextureShader, "u_Scroll", scroll -> x, scroll -> y);
+	shaderUniform4f(sliTextureShader, "u_Color", (float)color -> x, (float)color -> y, (float)color -> z, (float)color -> w);
+	shaderUniform2f(sliTextureShader, "u_Tiling", (float)tiling -> x, (float)tiling -> y);
+	shaderUniform2f(sliTextureShader, "u_Scroll", (float)scroll -> x, (float)scroll -> y);
 
 	// bind appropriate object state and render the object
 	#ifndef USE_GLES

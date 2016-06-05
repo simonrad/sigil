@@ -190,8 +190,8 @@ static const char *put_char(struct dtx_glyphmap *gmap, const char *str, float *p
 		*pos_y -= gmap->line_advance;
 		*pos_x = 0.0;
 	}
-	else if(code == '\t') *pos_x = (fmod(*pos_x, 4.0) + 4.0) * gmap->glyphs[0].advance;
-	else if(code == '\r') *pos_x = 0.0;
+	else if(code == '\t') *pos_x = (float)((fmod(*pos_x, 4.0) + 4.0) * gmap->glyphs[0].advance);
+	else if(code == '\r') *pos_x = 0.0f;
 	else
 	{
 		// advance the cursor normally
@@ -271,8 +271,8 @@ static void prepare_char(struct dtx_glyphmap *gmap, const char *str, float *pos_
 		*pos_y -= gmap->line_advance;
 		*pos_x = 0.0;
 	}
-	else if(code == '\t') *pos_x = (fmod(*pos_x, 4.0) + 4.0) * gmap->glyphs[0].advance;
-	else if(code == '\r') *pos_x = 0.0;
+	else if(code == '\t') *pos_x = (float)((fmod(*pos_x, 4.0) + 4.0) * gmap->glyphs[0].advance);
+	else if(code == '\r') *pos_x = 0.0f;
 	else
 	{
 		// advance the cursor normally

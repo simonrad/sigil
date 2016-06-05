@@ -117,11 +117,12 @@ extern "C" {
 	SIGIL_API int slGetKey(int key);
 
 	SIGIL_API int slGetMouseButton(int button);
-	SIGIL_API void slGetMousePos(int *posX, int *posY);
+	SIGIL_API int slGetMouseX();
+	SIGIL_API int slGetMouseY();
 
 	// simple frame timing
 
-	SIGIL_API float slGetDeltaTime();
+	SIGIL_API double slGetDeltaTime();
 
 	// rendering commands
 
@@ -129,8 +130,8 @@ extern "C" {
 
 	// color control
 
-	SIGIL_API void slSetBackColor(float red, float green, float blue);
-	SIGIL_API void slSetForeColor(float red, float green, float blue, float alpha);
+	SIGIL_API void slSetBackColor(double red, double green, double blue);
+	SIGIL_API void slSetForeColor(double red, double green, double blue, double alpha);
 
 	// blending control
 
@@ -141,9 +142,9 @@ extern "C" {
 	SIGIL_API void slPush();
 	SIGIL_API void slPop();
 
-	SIGIL_API void slTranslate(float x, float y);
-	SIGIL_API void slRotate(float degrees);
-	SIGIL_API void slScale(float x, float y);
+	SIGIL_API void slTranslate(double x, double y);
+	SIGIL_API void slRotate(double degrees);
+	SIGIL_API void slScale(double x, double y);
 
 	// texture loading
 
@@ -164,31 +165,31 @@ extern "C" {
 
 	// simple shape commands
 
-	SIGIL_API void slTriangleFill(float x, float y, float width, float height);
-	SIGIL_API void slTriangleOutline(float x, float y, float width, float height);
+	SIGIL_API void slTriangleFill(double x, double y, double width, double height);
+	SIGIL_API void slTriangleOutline(double x, double y, double width, double height);
 
-	SIGIL_API void slRectangleFill(float x, float y, float width, float height);
-	SIGIL_API void slRectangleOutline(float x, float y, float width, float height);
+	SIGIL_API void slRectangleFill(double x, double y, double width, double height);
+	SIGIL_API void slRectangleOutline(double x, double y, double width, double height);
 
-	SIGIL_API void slCircleFill(float x, float y, float radius, int numVertices);
-	SIGIL_API void slCircleOutline(float x, float y, float radius, int numVertices);
+	SIGIL_API void slCircleFill(double x, double y, double radius, int numVertices);
+	SIGIL_API void slCircleOutline(double x, double y, double radius, int numVertices);
 
-	SIGIL_API void slPoint(float x, float y);
+	SIGIL_API void slPoint(double x, double y);
 
-	SIGIL_API void slLine(float x1, float y1, float x2, float y2);
+	SIGIL_API void slLine(double x1, double y1, double x2, double y2);
 
-	SIGIL_API void slSetSpriteTiling(float x, float y);
-	SIGIL_API void slSetSpriteScroll(float x, float y);
-	SIGIL_API void slSprite(int texture, float x, float y, float width, float height);
+	SIGIL_API void slSetSpriteTiling(double x, double y);
+	SIGIL_API void slSetSpriteScroll(double x, double y);
+	SIGIL_API void slSprite(int texture, double x, double y, double width, double height);
 
 	// text commands
 
 	SIGIL_API void slSetTextAlign(int fontAlign);
-	SIGIL_API float slGetTextWidth(const char *text);
-	SIGIL_API float slGetTextHeight(const char *text);
+	SIGIL_API double slGetTextWidth(const char *text);
+	SIGIL_API double slGetTextHeight(const char *text);
 	SIGIL_API void slSetFont(const char *fontFilename, int fontSize);
 	SIGIL_API void slSetFontSize(int fontSize);
-	SIGIL_API void slText(float x, float y, const char *text);
+	SIGIL_API void slText(double x, double y, const char *text);
 
 #ifdef __cplusplus
 } // closing brace for extern "C"

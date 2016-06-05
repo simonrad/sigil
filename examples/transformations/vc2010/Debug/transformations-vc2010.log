@@ -1,4 +1,4 @@
-﻿Build started Sun, May 29 4:51:38 pm.
+﻿Build started Sat, Jun 4 5:54:34 pm.
      1>Project "C:\Users\Geoff\sigil\examples\transformations\vc2010\transformations-vc2010.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\transformations-vc2010.lastbuildstate".
@@ -7,14 +7,6 @@
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\transformations.cpp
          transformations.cpp
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(51): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(58): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(72): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(105): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(107): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(107): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\geoff\sigil\examples\transformations\transformations.cpp(108): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\examples\transformations\vc2010\Debug\transformations-vc2010.exe" /NOLOGO lib/sigil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\transformations-vc2010.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Geoff\sigil\examples\transformations\vc2010\Debug\transformations-vc2010.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\sigil\examples\transformations\vc2010\Debug\transformations-vc2010.lib" /MACHINE:X86 Debug\transformations.obj
          transformations-vc2010.vcxproj -> C:\Users\Geoff\sigil\examples\transformations\vc2010\Debug\transformations-vc2010.exe
@@ -27,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.63
+Time Elapsed 00:00:00.67

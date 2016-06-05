@@ -29,12 +29,17 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
 
 #define SL_MATRIX_STACK_SIZE 32
 
 #define IDEAL_FRAME_TIME 0.01666667
 
 // private vars
+
+static int slMousePosX;
+static int slMousePosY;
+static uint8_t slMousePosStale = 1;
 
 static Mat4 slMatrixStack[SL_MATRIX_STACK_SIZE];
 static Mat4 *slCurrentMatrix = &slMatrixStack[0];
@@ -44,16 +49,16 @@ static Mat4 slProjectionMatrix;
 
 static Vec4 slForeColor;// = {.x = 1.0, .y = 1.0, .z = 1.0, .w = 1.0};
 
-static float slSpriteScrollX = 0.0;
-static float slSpriteScrollY = 0.0;
-static float slSpriteTilingX = 1.0;
-static float slSpriteTilingY = 1.0;
+static double slSpriteScrollX = 0.0;
+static double slSpriteScrollY = 0.0;
+static double slSpriteTilingX = 1.0;
+static double slSpriteTilingY = 1.0;
 
 static int slTextAlign = SL_ALIGN_LEFT;
 
-static float slDeltaTime = IDEAL_FRAME_TIME;
-static float slOldFrameTime = 0.0;
-static float slNewFrameTime = IDEAL_FRAME_TIME;
+static double slDeltaTime = IDEAL_FRAME_TIME;
+static double slOldFrameTime = 0.0;
+static double slNewFrameTime = IDEAL_FRAME_TIME;
 
 // private function prototypes
 
@@ -100,7 +105,7 @@ void slWindow(int width, int height, const char *title)
 		glDisable(GL_DEPTH_TEST);
 
 		// camera view settings
-		slProjectionMatrix = ortho(0.0f, (float)width, 0.0f, (float)height);
+		slProjectionMatrix = ortho(0.0f, (double)width, 0.0f, (double)height);
 
 		// default colors
 		slSetBackColor(0.0, 0.0, 0.0);
@@ -156,14 +161,33 @@ int slGetMouseButton(int button)
 	return sliGetMouseButton(button);
 }
 
-void slGetMousePos(int *posX, int *posY)
+int slGetMouseX()
 {
-	sliGetMousePos(posX, posY);
+	// make sure a render step has not occurred since we last read the mouse position
+	if(slMousePosStale)
+	{
+		sliGetMousePos(&slMousePosX, &slMousePosY);
+		slMousePosStale = 0;
+	}
+
+	return slMousePosX;
+}
+
+int slGetMouseY()
+{
+	// make sure a render step has not occurred since we last read the mouse position
+	if(slMousePosStale)
+	{
+		sliGetMousePos(&slMousePosX, &slMousePosY);
+		slMousePosStale = 0;
+	}
+
+	return slMousePosY;
 }
 
 // simple frame timing
 
-float slGetDeltaTime()
+double slGetDeltaTime()
 {
 	return slDeltaTime;
 }
@@ -195,21 +219,24 @@ void slRender()
 		slDeltaTime = SL_MIN_DELTA_TIME;
 	if(slDeltaTime > SL_MAX_DELTA_TIME)
 		slDeltaTime = SL_MAX_DELTA_TIME;
+
+	// set our mouse position as needing refreshing
+	slMousePosStale = 1;
 }
 
 // colour control
 
-void slSetBackColor(float red, float green, float blue)
+void slSetBackColor(double red, double green, double blue)
 {
-	glClearColor(red, green, blue, 1.0);
+	glClearColor((GLclampf)red, (GLclampf)green, (GLclampf)blue, 1.0);
 }
 
-void slSetForeColor(float red, float green, float blue, float alpha)
+void slSetForeColor(double red, double green, double blue, double alpha)
 {
-	slForeColor.x = red;
-	slForeColor.y = green;
-	slForeColor.z = blue;
-	slForeColor.w = alpha;
+	slForeColor.x = (float)red;
+	slForeColor.y = (float)green;
+	slForeColor.z = (float)blue;
+	slForeColor.w = (float)alpha;
 }
 
 // blending control
@@ -253,17 +280,17 @@ void slPop()
 	}
 }
 
-void slTranslate(float x, float y)
+void slTranslate(double x, double y)
 {
 	*slCurrentMatrix = translate(slCurrentMatrix, x, y);
 }
 
-void slRotate(float degrees)
+void slRotate(double degrees)
 {
-	*slCurrentMatrix = rotate(slCurrentMatrix, (float)degrees);
+	*slCurrentMatrix = rotate(slCurrentMatrix, degrees);
 }
 
-void slScale(float x, float y)
+void slScale(double x, double y)
 {
 	*slCurrentMatrix = scale(slCurrentMatrix, x, y);
 }
@@ -353,7 +380,7 @@ int slSoundLooping(int sound)
 
 // simple shape commands
 
-void slTriangleFill(float x, float y, float width, float height)
+void slTriangleFill(double x, double y, double width, double height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);
@@ -364,7 +391,7 @@ void slTriangleFill(float x, float y, float width, float height)
 	sliTriangleFill(&modelview, &slForeColor);
 }
 
-void slTriangleOutline(float x, float y, float width, float height)
+void slTriangleOutline(double x, double y, double width, double height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);
@@ -375,7 +402,7 @@ void slTriangleOutline(float x, float y, float width, float height)
 	sliTriangleOutline(&modelview, &slForeColor);
 }
 
-void slRectangleFill(float x, float y, float width, float height)
+void slRectangleFill(double x, double y, double width, double height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);
@@ -386,7 +413,7 @@ void slRectangleFill(float x, float y, float width, float height)
 	sliRectangleFill(&modelview, &slForeColor);
 }
 
-void slRectangleOutline(float x, float y, float width, float height)
+void slRectangleOutline(double x, double y, double width, double height)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);
@@ -397,7 +424,7 @@ void slRectangleOutline(float x, float y, float width, float height)
 	sliRectangleOutline(&modelview, &slForeColor);
 }
 
-void slCircleFill(float x, float y, float radius, int numVertices)
+void slCircleFill(double x, double y, double radius, int numVertices)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
@@ -407,7 +434,7 @@ void slCircleFill(float x, float y, float radius, int numVertices)
 	sliCircleFill(&modelview, &slForeColor, radius, numVertices);
 }
 
-void slCircleOutline(float x, float y, float radius, int numVertices)
+void slCircleOutline(double x, double y, double radius, int numVertices)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
@@ -417,7 +444,7 @@ void slCircleOutline(float x, float y, float radius, int numVertices)
 	sliCircleOutline(&modelview, &slForeColor, radius, numVertices);
 }
 
-void slPoint(float x, float y)
+void slPoint(double x, double y)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
@@ -426,7 +453,7 @@ void slPoint(float x, float y)
 	sliPoint(&modelview, &slForeColor);
 }
 
-void slLine(float x1, float y1, float x2, float y2)
+void slLine(double x1, double y1, double x2, double y2)
 {
 	Mat4 modelview1 = translate(slCurrentMatrix, x1, y1);
 	Mat4 modelview2 = translate(slCurrentMatrix, x2, y2);
@@ -436,31 +463,31 @@ void slLine(float x1, float y1, float x2, float y2)
 	sliLine(&slForeColor, modelview1.cols[3].x, modelview1.cols[3].y, modelview2.cols[3].x, modelview2.cols[3].y);
 }
 
-void slSetSpriteTiling(float x, float y)
+void slSetSpriteTiling(double x, double y)
 {
 	slSpriteTilingX = x;
 	slSpriteTilingY = y;
 }
 
-void slSetSpriteScroll(float x, float y)
+void slSetSpriteScroll(double x, double y)
 {
 	slSpriteScrollX = x;
 	slSpriteScrollY = y;
 }
 
-void slSprite(int texture, float x, float y, float width, float height)
+void slSprite(int texture, double x, double y, double width, double height)
 {
 	Mat4 modelview;
-	
+
 	// this shorthand causes compiler errors on MSVC...
 	Vec2 tiling;// = {.x = slSpriteTilingX, .y = slSpriteTilingY};
 	Vec2 scroll;// = {.x = slSpriteScrollX, .y = slSpriteScrollY};
 
 	// ...so we do it the hard way instead
-	tiling.x = slSpriteTilingX;
-	tiling.y = slSpriteTilingY;
-	scroll.x = slSpriteScrollX;
-	scroll.y = slSpriteScrollY;
+	tiling.x = (float)slSpriteTilingX;
+	tiling.y = (float)slSpriteTilingY;
+	scroll.x = (float)slSpriteScrollX;
+	scroll.y = (float)slSpriteScrollY;
 
 	modelview = translate(slCurrentMatrix, x, y);
 	modelview = scale(&modelview, width, height);
@@ -486,12 +513,12 @@ void slSetTextAlign(int fontAlign)
 	}
 }
 
-float slGetTextWidth(const char *text)
+double slGetTextWidth(const char *text)
 {
 	return sliTextWidth(text);
 }
 
-float slGetTextHeight(const char *text)
+double slGetTextHeight(const char *text)
 {
 	return sliTextHeight(text);
 }
@@ -514,7 +541,7 @@ void slSetFontSize(int fontSize)
 	sliFontSize(fontSize);
 }
 
-void slText(float x, float y, const char *text)
+void slText(double x, double y, const char *text)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
 
