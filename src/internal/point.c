@@ -122,7 +122,9 @@ void sliPointsFlush()
 		shaderBind(sliPointShader);
 
 		// render the points
-		glPointSize(1.0);
+		#ifndef USE_GLES
+			glPointSize(1.0);
+		#endif
 		glDrawArrays(GL_POINTS, 0, sliPointCount);
 
 		// reset the points buffer
