@@ -72,6 +72,8 @@ CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/internal/sound.c.o: ../src/internal/sound.c
 CMakeFiles/sigil.dir/src/internal/sound.c.o: ../src/internal/sound.h
+CMakeFiles/sigil.dir/src/internal/sound.c.o: /usr/include/AL/al.h
+CMakeFiles/sigil.dir/src/internal/sound.c.o: /usr/include/AL/alc.h
 
 CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/../util/shader.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.o: ../src/internal/../util/transform.h
@@ -164,6 +166,7 @@ CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/GLES2/gl2platform.h
 CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/interface/vcos/vcos_stdint.h
 CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/interface/vctypes/vc_image_types.h
 CMakeFiles/sigil.dir/src/sl.c.o: /opt/vc/include/vcinclude/common.h
+CMakeFiles/sigil.dir/src/sl.c.o: /usr/include/AL/al.h
 CMakeFiles/sigil.dir/src/sl.c.o: src/config.h
 
 CMakeFiles/sigil.dir/src/soil/SOIL.c.o: ../src/soil/SOIL.c

@@ -73,6 +73,8 @@ CMakeFiles/sigil.dir/src/internal/shaders_gles.c.o
 CMakeFiles/sigil.dir/src/internal/sound.c.o
  /home/pi/sigil/src/internal/sound.c
  /home/pi/sigil/src/internal/sound.h
+ /usr/include/AL/al.h
+ /usr/include/AL/alc.h
 CMakeFiles/sigil.dir/src/internal/sprite.c.o
  /home/pi/sigil/src/internal/../util/shader.h
  /home/pi/sigil/src/internal/../util/transform.h
@@ -165,6 +167,7 @@ CMakeFiles/sigil.dir/src/sl.c.o
  /opt/vc/include/interface/vcos/vcos_stdint.h
  /opt/vc/include/interface/vctypes/vc_image_types.h
  /opt/vc/include/vcinclude/common.h
+ /usr/include/AL/al.h
  src/config.h
 CMakeFiles/sigil.dir/src/soil/SOIL.c.o
  /home/pi/sigil/src/soil/SOIL.c
