@@ -1,11 +1,41 @@
-﻿Build started Sun, May 29 2:58:09 pm.
-     1>Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Touching "sigil.dir\Release\sigil.unsuccessfulbuild".
+﻿Build started Sat, Jun 4 11:54:15 pm.
+     1>Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "sigil.dir\Release\sigil.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "sigil.dir\Release\sigil.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
-         All outputs are up-to-date.
+         Building Custom Rule C:/Users/Geoff/sigil/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Geoff\sigil\build-vc2010-win64\CMakeFiles\generate.stamp is up-to-date.
        ClCompile:
-         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\freetype2" /I"C:\Users\Geoff\sigil\build-vc2010-win64\src" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Release\"" /D sigil_EXPORTS /D _WINDLL /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"sigil.dir\Release\\" /Fd"sigil.dir\Release\vc100.pdb" /Gd /TC /errorReport:prompt ..\src\sl.c ..\src\internal\circle.c ..\src\internal\line.c ..\src\internal\point.c ..\src\internal\rectangle.c ..\src\internal\sound.c ..\src\internal\sprite.c ..\src\internal\text.c ..\src\internal\triangle.c ..\src\libdrawtext\drawgl.c ..\src\libdrawtext\font.c ..\src\libdrawtext\utf8.c ..\src\soil\image_DXT.c ..\src\soil\image_helper.c ..\src\soil\SOIL.c ..\src\soil\stb_image_aug.c ..\src\util\images.c ..\src\util\shader.c ..\src\util\transform.c ..\src\internal\window_glfw.c ..\src\internal\shaders_gl.c
+         sl.c
+         circle.c
+         line.c
+         point.c
+         rectangle.c
+         sound.c
+         sprite.c
+         text.c
+         triangle.c
+         drawgl.c
+         font.c
+         utf8.c
+     1>..\src\libdrawtext\utf8.c(121): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\src\libdrawtext\utf8.c(147): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         image_DXT.c
+         image_helper.c
+         SOIL.c
+     1>..\src\soil\SOIL.c(1867): warning C4267: 'function' : conversion from 'size_t' to 'int', possible loss of data
+         stb_image_aug.c
+         images.c
+         shader.c
+         transform.c
+         window_glfw.c
+         Generating Code...
+         Compiling...
+         shaders_gl.c
+         Generating Code...
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\sigil\build-vc2010-win64\Release\sigil.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib src\glfw\src\Release\glfw3.lib "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\glew32.lib" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\freetype.lib" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\OpenAL32.lib" opengl32.lib /MANIFEST /ManifestFile:"sigil.dir\Release\sigil.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Geoff/sigil/build-vc2010-win64/Release/sigil.lib" /MACHINE:X64 /DLL sigil.dir\Release\sl.obj
          sigil.dir\Release\circle.obj
@@ -35,8 +65,8 @@
        FinalizeBuildStatus:
          Deleting file "sigil.dir\Release\sigil.unsuccessfulbuild".
          Touching "sigil.dir\Release\sigil.lastbuildstate".
-     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010-win64\sigil.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.83
+Time Elapsed 00:00:03.84

@@ -751,6 +751,8 @@ stdlib.h
 -
 stdio.h
 -
+stdint.h
+-
 
 C:/Users/Geoff/sigil/src/soil/SOIL.c
 windows.h

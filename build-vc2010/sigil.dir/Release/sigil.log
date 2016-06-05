@@ -1,4 +1,4 @@
-﻿Build started Sat, Jun 4 5:50:12 pm.
+﻿Build started Sat, Jun 4 11:43:43 pm.
      1>Project "C:\Users\Geoff\sigil\build-vc2010\sigil.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "sigil.dir\Release\sigil.lastbuildstate".
@@ -66,4 +66,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.15
+Time Elapsed 00:00:03.32

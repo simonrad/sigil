@@ -1,0 +1,86 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started Sun, Jun 5 12:04:24 am.
+Project "C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+cl : Command line warning D9002: ignoring unknown option '/Zc:inline' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj]
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1117: syntax error in option 'manifest:embed' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj]
+Done Building Project "C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  cl : Command line warning D9002: ignoring unknown option '/Zc:inline' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj]
+
+
+"C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1117: syntax error in option 'manifest:embed' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:02.62
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+1
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started Sun, Jun 5 12:04:26 am.
+Project "C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+cl : Command line warning D9002: ignoring unknown option '/Zc:inline' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1117: syntax error in option 'manifest:embed' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Done Building Project "C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  cl : Command line warning D9002: ignoring unknown option '/Zc:inline' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+
+"C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1117: syntax error in option 'manifest:embed' [C:\Users\Geoff\sigil\build-vc2015\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.61
+
+

@@ -1,4 +1,4 @@
-﻿Build started Sat, Jun 4 5:50:08 pm.
+﻿Build started Sat, Jun 4 11:43:38 pm.
      1>Project "C:\Users\Geoff\sigil\build-vc2010\ZERO_CHECK.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "Win32\Release\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
@@ -16,4 +16,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.12
+Time Elapsed 00:00:00.21

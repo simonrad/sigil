@@ -101,8 +101,8 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (double)sliNumOutlineVertices);
-		c = cosf(theta);
-		s = sinf(theta);
+		c = cos(theta);
+		s = sin(theta);
 
 		// first vertex position of line loop
 		x = radius;
@@ -172,8 +172,8 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (double)sliNumFillVertices);
-		c = cosf(theta);
-		s = sinf(theta);
+		c = cos(theta);
+		s = sin(theta);
 
 		// first vertex position of line loop
 		x = radius;

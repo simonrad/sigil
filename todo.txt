@@ -1,0 +1,25 @@
+builds for:
+X mingw32
+- linux gcc
+- raspberry pi
+X vc 2010
+X vc 2010x64
+X vc 2012
+X vc 2012x64
+X vc 2013
+X vc 2013x64
+- vc 2015
+- vc 2015x64
+
+examples for:
+X mingw32
+- linux gcc
+- raspberry pi
+- vc 2010
+- vc 2010x64
+- vc 2012
+- vc 2012x64
+- vc 2013
+- vc 2013x64
+- vc 2015
+- vc 2015x64

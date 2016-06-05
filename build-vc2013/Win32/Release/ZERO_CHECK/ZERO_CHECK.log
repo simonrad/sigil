@@ -1,12 +1,23 @@
-﻿Build started Tue, May 31 5:02:49 pm.
-     1>Project "C:\Users\Geoff\sigil\build-vc2013\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+﻿Build started Sat, Jun 4 11:59:09 pm.
+     1>Project "C:\Users\Geoff\sigil\build-vc2013\ZERO_CHECK.vcxproj" on node 2 (Rebuild target(s)).
      1>CustomBuild:
          Checking Build System
-         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/generate.stamp is up-to-date.
-         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2013/src/glfw/CMakeFiles/generate.stamp is up-to-date.
-         CMake does not need to re-run because C:/Users/Geoff/sigil/build-vc2013/src/glfw/src/CMakeFiles/generate.stamp is up-to-date.
-     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2013\ZERO_CHECK.vcxproj" (Build target(s)).
+         CMake is re-running because C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/generate.stamp is out-of-date.
+           the file 'C:/Users/Geoff/sigil/CMakeLists.txt'
+           is newer than 'C:/Users/Geoff/sigil/build-vc2013/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         ------------------------------
+            This is SIGIL 0.7.5
+         ------------------------------
+         -- Did NOT detect a Raspberry Pi platform (bcm_host.h not found)
+         -- Could NOT find Vulkan (missing:  VULKAN_LIBRARY VULKAN_INCLUDE_DIR) 
+         -- Using Win32 for window creation
+         -- Using WGL for context creation
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: C:/Users/Geoff/sigil/build-vc2013
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2013\ZERO_CHECK.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.54
+Time Elapsed 00:00:05.97

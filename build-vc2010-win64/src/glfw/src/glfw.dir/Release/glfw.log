@@ -1,14 +1,14 @@
-﻿Build started Sun, May 29 2:25:55 pm.
-     1>Project "C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\glfw.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\Release\".
+﻿Build started Sat, Jun 4 11:54:11 pm.
+     1>Project "C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\glfw.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "glfw.dir\Release\glfw.lastbuildstate".
        InitializeBuildStatus:
          Creating "glfw.dir\Release\glfw.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
          Building Custom Rule C:/Users/Geoff/sigil/src/glfw/src/CMakeLists.txt
          CMake does not need to re-run because C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\CMakeFiles\generate.stamp is up-to-date.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /IC:\Users\Geoff\sigil\src\glfw\src /I"C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _GLFW_USE_CONFIG_H /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Release\\" /Fd"glfw.dir\Release\vc100.pdb" /Gd /TC /errorReport:prompt ..\..\..\..\src\glfw\src\context.c ..\..\..\..\src\glfw\src\init.c ..\..\..\..\src\glfw\src\input.c ..\..\..\..\src\glfw\src\monitor.c ..\..\..\..\src\glfw\src\vulkan.c ..\..\..\..\src\glfw\src\window.c ..\..\..\..\src\glfw\src\win32_init.c ..\..\..\..\src\glfw\src\win32_joystick.c ..\..\..\..\src\glfw\src\win32_monitor.c ..\..\..\..\src\glfw\src\win32_time.c ..\..\..\..\src\glfw\src\win32_tls.c ..\..\..\..\src\glfw\src\win32_window.c ..\..\..\..\src\glfw\src\wgl_context.c
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Geoff\sigil\include /IC:\Users\Geoff\sigil\src\glfw\include /IC:\Users\Geoff\sigil\src\glfw\src /I"C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _GLFW_USE_CONFIG_H /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Release\\" /Fd"glfw.dir\Release\vc100.pdb" /Gd /TC /errorReport:prompt ..\..\..\..\src\glfw\src\context.c ..\..\..\..\src\glfw\src\init.c ..\..\..\..\src\glfw\src\input.c ..\..\..\..\src\glfw\src\monitor.c ..\..\..\..\src\glfw\src\vulkan.c ..\..\..\..\src\glfw\src\window.c ..\..\..\..\src\glfw\src\win32_init.c ..\..\..\..\src\glfw\src\win32_joystick.c ..\..\..\..\src\glfw\src\win32_monitor.c ..\..\..\..\src\glfw\src\win32_time.c ..\..\..\..\src\glfw\src\win32_tls.c ..\..\..\..\src\glfw\src\win32_window.c ..\..\..\..\src\glfw\src\wgl_context.c
          context.c
          init.c
          input.c
@@ -41,8 +41,8 @@
        FinalizeBuildStatus:
          Deleting file "glfw.dir\Release\glfw.unsuccessfulbuild".
          Touching "glfw.dir\Release\glfw.lastbuildstate".
-     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\glfw.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Geoff\sigil\build-vc2010-win64\src\glfw\src\glfw.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:08.62
+Time Elapsed 00:00:04.54
