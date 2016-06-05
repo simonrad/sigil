@@ -40,6 +40,7 @@ int main(int args, char *argv[])
 	{
 		sprintf(soundName, "../wav/%d.wav", i);
 		digitSounds[i] = slLoadWAV(soundName);
+		digitKeysDown[i] = false;
 	}
 
 	// load the music; this is licensed under the CC0 1.0 License
