@@ -11,7 +11,11 @@ todo:
 - de-initialization of textures
 */
 
-#define SIGIL_API __declspec(dllexport)
+#ifdef _MSC_VER
+	#define SIGIL_API __declspec(dllexport)
+#else
+	#define SIGIL_API
+#endif
 
 // text alignment symbolic constants
 #define SL_ALIGN_CENTER 0
