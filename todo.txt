@@ -1,5 +1,5 @@
 builds for:
-- mingw32
+X mingw32
 - linux gcc
 - raspberry pi
 X vc 2010
@@ -12,7 +12,7 @@ X vc 2015
 X vc 2015x64
 
 precompiled libs for:
-- mingw32
+X mingw32
 X vc 2010
 X vc 2010x64
 X vc 2012
@@ -23,7 +23,7 @@ X vc 2015
 X vc 2015x64
 
 examples for:
-- mingw32
+X mingw32
 - linux gcc
 - raspberry pi
 - vc 2010
