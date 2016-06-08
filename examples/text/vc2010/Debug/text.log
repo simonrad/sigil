@@ -1,4 +1,4 @@
-﻿Build started Sat, Jun 4 5:53:54 pm.
+﻿Build started Tue, Jun 7 10:37:26 pm.
      1>Project "C:\Users\Geoff\sigil\examples\text\vc2010\text.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\text-vc2010.lastbuildstate".
@@ -19,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:01.31
