@@ -2,7 +2,7 @@ builds for:
 X mingw32
 - mingw-w64
 - linux gcc
-- raspberry pi
+X raspberry pi
 X vc 2010
 X vc 2010x64
 X vc 2012
@@ -28,7 +28,7 @@ examples for:
 X mingw32
 - mingw-w64
 - linux gcc
-- raspberry pi
+X raspberry pi
 X vc 2010
 X vc 2010x64
 X vc 2012
