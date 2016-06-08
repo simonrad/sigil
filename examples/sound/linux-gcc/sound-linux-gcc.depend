@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1463803246 source:/home/geoff/sigil/examples/text/text.cpp
+1465368986 source:/home/geoff/sigil/examples/sound/sound.cpp
 	"sl.h"
-	<cstdlib>
+	<cstdio>
 
 1465368992 /home/geoff/sigil/include/sl.h
 
