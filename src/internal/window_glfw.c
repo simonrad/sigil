@@ -8,7 +8,7 @@ static GLFWwindow *sliProgramWindow = NULL;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;
 
-void sliOpenWindow(int width, int height, const char *title)
+void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 {
 	// types enabling us to access WGL functionality for enabling vsync in Windows
 	#ifdef __MINGW32__
@@ -26,7 +26,7 @@ void sliOpenWindow(int width, int height, const char *title)
 	glfwWindowHint(GLFW_REFRESH_RATE, 60);
 
 	// create our OpenGL window
-	sliProgramWindow = glfwCreateWindow(width, height, title, NULL, NULL);
+	sliProgramWindow = glfwCreateWindow(width, height, title, fullScreen ? glfwGetPrimaryMonitor() : NULL, NULL);
 	glfwMakeContextCurrent(sliProgramWindow);
 	glfwSwapInterval(1);
 
@@ -44,6 +44,11 @@ void sliOpenWindow(int width, int height, const char *title)
 	#ifdef DEBUG
 		glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
 	#endif
+}
+
+void sliShowCursor(int showCursor)
+{
+	glfwSetInputMode(sliProgramWindow, GLFW_CURSOR, showCursor ? GLFW_CURSOR_NORMAL : GLFW_CURSOR_HIDDEN);
 }
 
 void sliCloseWindow()

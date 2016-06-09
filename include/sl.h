@@ -112,7 +112,8 @@ extern "C" {
 
 	// initialization commands
 
-	SIGIL_API void slWindow(int width, int height, const char *title);
+	SIGIL_API void slWindow(int width, int height, const char *title, int fullScreen);
+	SIGIL_API void slShowCursor(int showCursor);
 	SIGIL_API void slClose();
 	SIGIL_API int slShouldClose();
 

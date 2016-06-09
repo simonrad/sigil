@@ -67,7 +67,7 @@ static void slKillResources();
 
 // window commands
 
-void slWindow(int width, int height, const char *title)
+void slWindow(int width, int height, const char *title, int fullScreen)
 {
 	// error tracking for any window-creation issues we run into
 	#ifndef USE_GLES
@@ -77,7 +77,7 @@ void slWindow(int width, int height, const char *title)
 	if(!sliIsWindowOpen())
 	{
 		// use either GLFW or PIGU to set up our window
-		sliOpenWindow(width, height, title);
+		sliOpenWindow(width, height, title, fullScreen);
 
 		// configure our viewing area
 		glViewport(0, 0, width, height);
@@ -124,6 +124,11 @@ void slWindow(int width, int height, const char *title)
 		fprintf(stderr, "slWindow() cannot be called when a window already exists\n");
 		exit(1);
 	}
+}
+
+void slShowCursor(int showCursor)
+{
+    sliShowCursor(showCursor);
 }
 
 void slClose()

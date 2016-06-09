@@ -7,12 +7,13 @@
 
 #include <stdio.h>
 
-static struct dtx_font *sliCurrentFont = NULL;
-static int sliCurrentSize = 0;
+static struct dtx_font *sliCurrentFont;
+static int sliCurrentSize;
 
 void sliTextInit()
 {
-
+	sliCurrentFont = NULL;
+	sliCurrentSize = 0;
 }
 
 void sliTextDestroy()

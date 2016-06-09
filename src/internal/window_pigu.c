@@ -4,12 +4,12 @@ static int sliWindowOpen = 0;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;
 
-void sliOpenWindow(int width, int height, const char *title)
+void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 {
 	// start up PIGU
 	piguInit();
 
-	// create our OpenGL window
+	// create our OpenGL window; fullScreen parameter is ignored
 	piguCreateWindow(width,					// window width
 					 height,				// window height
 					 8,						// red bits
@@ -27,6 +27,8 @@ void sliOpenWindow(int width, int height, const char *title)
 	// record the window as open
 	sliWindowOpen = 1;
 }
+
+void sliShowCursor(int showCursor) { }
 
 void sliCloseWindow()
 {
