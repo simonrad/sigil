@@ -103,6 +103,11 @@ void dtx_gl_kill()
 {
 	free(qbuf);
 	qbuf = 0;
+
+	glDeleteBuffers(1,  &vbo);
+	#ifndef USE_GLES
+		glDeleteVertexArrays(1, &vao);
+	#endif
 }
 
 void dtx_update_texture_interpolation()
@@ -127,8 +132,6 @@ static void set_glyphmap_texture(struct dtx_glyphmap *gmap)
 		// generate and bind our texture
 		glGenTextures(1, &gmap->tex);
 		glBindTexture(GL_TEXTURE_2D, gmap->tex);
-
-		printf("GEN TEX");
 
 		// specify any mipmapping levels
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);

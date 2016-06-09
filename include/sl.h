@@ -192,7 +192,8 @@ extern "C" {
 	SIGIL_API void slSetTextAlign(int fontAlign);
 	SIGIL_API double slGetTextWidth(const char *text);
 	SIGIL_API double slGetTextHeight(const char *text);
-	SIGIL_API void slSetFont(const char *fontFilename, int fontSize);
+	SIGIL_API int slLoadFont(const char *fontFilename);
+	SIGIL_API void slSetFont(int font, int fontSize);
 	SIGIL_API void slSetFontSize(int fontSize);
 	SIGIL_API void slText(double x, double y, const char *text);
 

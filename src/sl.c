@@ -530,11 +530,28 @@ double slGetTextHeight(const char *text)
 	return sliTextHeight(text);
 }
 
-void slSetFont(const char *fontFilename, int fontSize)
+int slLoadFont(const char *fontFilename)
+{
+	int result = -1;
+
+	if(sliIsWindowOpen())
+	{
+		result = sliLoadFont(fontFilename);
+	}
+	else
+	{
+		fprintf(stderr, "slSetFont() cannot be called before slWindow() is called\n");
+		exit(1);
+	}
+
+	return result;
+}
+
+void slSetFont(int font, int fontSize)
 {
 	if(sliIsWindowOpen())
 	{
-		sliFont(fontFilename, fontSize);
+		sliFont(font, fontSize);
 	}
 	else
 	{
