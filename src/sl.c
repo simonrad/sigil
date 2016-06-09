@@ -62,8 +62,8 @@ static double slNewFrameTime = IDEAL_FRAME_TIME;
 
 // private function prototypes
 
-static void slInitResources();
-static void slKillResources();
+static void sliInitResources();
+static void sliKillResources();
 
 // window commands
 
@@ -114,7 +114,7 @@ void slWindow(int width, int height, const char *title, int fullScreen)
 		slSetForeColor(1.0, 1.0, 1.0, 1.0);
 
 		// initialize any rendering resources
-		slInitResources();
+		sliInitResources();
 
 		// initialize our first transformation matrix
 		*slCurrentMatrix = identity();
@@ -135,7 +135,7 @@ void slClose()
 {
 	if(sliIsWindowOpen())
 	{
-		slKillResources();
+		sliKillResources();
 		sliCloseWindow();
 	}
 	else
@@ -509,7 +509,7 @@ void slSprite(int texture, double x, double y, double width, double height)
 
 void slSetTextAlign(int fontAlign)
 {
-	if(fontAlign >= 0 &&fontAlign <= 2)
+	if(fontAlign >= 0 && fontAlign <= 2)
 	{
 		slTextAlign = fontAlign;
 	}
@@ -568,8 +568,23 @@ void slText(double x, double y, const char *text)
 
 // private functions
 
-void slInitResources()
+void sliInitResources()
 {
+	slMousePosStale = 1;
+
+	slCurrentMatrix = &slMatrixStack[0];
+	slStackSize = 0;
+
+	slSpriteScrollX = 0.0;
+	slSpriteScrollY = 0.0;
+	slSpriteTilingX = 1.0;
+
+	slTextAlign = SL_ALIGN_LEFT;
+
+	slDeltaTime = IDEAL_FRAME_TIME;
+	slOldFrameTime = 0.0;
+	slNewFrameTime = IDEAL_FRAME_TIME;
+
 	sliShadersInit(&slProjectionMatrix);
 	sliTriangleInit();
 	sliRectangleInit();
@@ -581,7 +596,7 @@ void slInitResources()
 	sliSoundInit();
 }
 
-void slKillResources()
+void sliKillResources()
 {
 	sliTextDestroy();
 	sliSpriteDestroy();

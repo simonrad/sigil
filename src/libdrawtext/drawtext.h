@@ -189,6 +189,10 @@ float dtx_char_pos(const char *str, int n);
 
 int dtx_char_at_pt(const char *str, float pt);
 
+/* initialization and cleanup functions */
+int dtx_gl_init(void);
+void dtx_gl_kill(void);
+
 #ifdef __cplusplus
 }
 #endif

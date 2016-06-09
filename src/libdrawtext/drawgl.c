@@ -52,7 +52,6 @@ struct quad {
 	struct vertex v[6];
 };
 
-static void cleanup(void);
 static void add_glyph(struct glyph *g, float x, float y);
 
 #define QBUF_SZ		2048
@@ -70,11 +69,8 @@ static GLuint vbo;
 
 int dtx_gl_init(void)
 {
-	if(qbuf) {
-		return 0;	/* already initialized */
-	}
-
-	if(!(qbuf = (struct quad*)malloc(QBUF_SZ * sizeof *qbuf))) {
+	if(!(qbuf = (struct quad*)malloc(QBUF_SZ * sizeof *qbuf)))
+	{
 		return -1;
 	}
 
@@ -100,13 +96,13 @@ int dtx_gl_init(void)
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(struct vertex), (GLvoid*)(sizeof(float) * 2));
 
-	atexit(cleanup);
 	return 0;
 }
 
-static void cleanup(void)
+void dtx_gl_kill()
 {
 	free(qbuf);
+	qbuf = 0;
 }
 
 void dtx_update_texture_interpolation()
@@ -131,6 +127,8 @@ static void set_glyphmap_texture(struct dtx_glyphmap *gmap)
 		// generate and bind our texture
 		glGenTextures(1, &gmap->tex);
 		glBindTexture(GL_TEXTURE_2D, gmap->tex);
+
+		printf("GEN TEX");
 
 		// specify any mipmapping levels
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);

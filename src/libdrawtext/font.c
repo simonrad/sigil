@@ -307,6 +307,7 @@ struct dtx_glyphmap *dtx_create_glyphmap_range(struct dtx_font *fnt, int sz, int
 void dtx_free_glyphmap(struct dtx_glyphmap *gmap)
 {
 	if(gmap) {
+		gmap->tex = 0;
 		free(gmap->pixels);
 		free(gmap->glyphs);
 		free(gmap);
@@ -561,8 +562,6 @@ void dtx_use_interpolation(int interpolation)
 
 void dtx_use_font(struct dtx_font *fnt, int sz)
 {
-	dtx_gl_init();
-
 	dtx_font = fnt;
 	dtx_font_sz = sz;
 }
