@@ -54,15 +54,17 @@ Open CMake-GUI. For "Where is the source code", browse to the root directory "si
 
 Click "Configure". When prompted, select the "MinGW Makefiles" generator from the drop-down list. Select "Use default native compilers", and click "Finish".
 
-Assuming you followed the directions above correctly, you should not get any configuration errors. However, you can fix them by assigning the appropriate values to the given CMake variables. For your reference, these are the values that I use to compile SIGIL.
+Depending on your system configuration, CMake may have trouble finding the required dependencies. For your reference, these are the values that I use to compile SIGIL.
 
 FREETYPE_INCLUDE_DIR_freetype2: C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
-FREETYPE_INCLUDE_DIR_ft2build: C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
-FREETYPE_LIBRARY: C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a
-GLEW_INCLUDE_DIR: C:/Program Files (x86)/CodeBlocks/MinGW/include
-GLEW_LIBRARY: C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
-OPENAL_INCLUDE_DIR: C:/Program Files (x86)/CodeBlocks/MinGW/include/AL
-OPENAL_LIBRARY: C:/Windows/System32/OpenAL32.dll
+FREETYPE_INCLUDE_DIR_ft2build:  C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
+FREETYPE_LIBRARY:               C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a
+GLEW_INCLUDE_DIR:               C:/Program Files (x86)/CodeBlocks/MinGW/include
+GLEW_LIBRARY:                   C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
+OPENAL_INCLUDE_DIR:             C:/Program Files (x86)/CodeBlocks/MinGW/include/AL
+OPENAL_LIBRARY:                 C:/Windows/System32/OpenAL32.dll
+
+If errors occur, not all of the above variables may be immediately present. You'll need to fix any existing errors and click "Configure" again for the remaining variables to appear. Repeat this process until the configuration completes without errors---you should only have to do this once or twice if you've set everything up correctly. (It's also possible that CMake will assign the correct values to all of these variables on the first try; it depends on your system configuration.)
 
 If no errors occurred during configuration (a message box will appear if there are errors), you can click "Generate". This will generate a Makefile that we will use to compile SIGIL.
 
@@ -88,6 +90,5 @@ It's probably now a good idea to put all of the necessary SIGIL files in a commo
 	sigil/glfw/lib/mingw32/glfw3.dll    ---> sigil/sigil-mingw32/glfw3.dll
 	sigil/build-mingw32/libsigil.dll    ---> sigil/sigil-mingw32/libsigil.dll
 	sigil/build-mingw32/libsigil.dll.a  ---> sigil/sigil-mingw32/lib/libsigil.dll.a
-	sigil/include/sl.h                  ---> sigil/sigil-mingw32/sl/sl.h
 
-Now, please consult USING-SIGIL-MINGW32.txt for instructions on how to integrate SIGIL into your applications.
+To use SIGIL, all you need to do is #include <sl.h> from the correct location, link to "libsigil.dll.a", and place "libsigil.dll" in your system folder or your project's working directory. Example projects for every supported compiler are provided in the "examples" folder.
