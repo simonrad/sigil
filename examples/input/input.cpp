@@ -37,6 +37,7 @@ int main(int args, char *argv[])
 	int i;
 
 	// for explanatory text to user
+	int font;
 	char str[128];
 
 	// key reading
@@ -54,13 +55,14 @@ int main(int args, char *argv[])
 	}
 
 	// this initializes the sigil library and creates a window of the desired size
-	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Input Example");
+	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Input Example", false);
 
 	// the colour of the background is specified using RGB values in the range [0.0, 1.0]
 	slSetBackColor(0.0, 0.0, 0.0);		// black
 
 	// set the font we want to use
-	slSetFont("../ttf/white_rabbit.ttf", 16);
+	font = slLoadFont("../ttf/white_rabbit.ttf");
+	slSetFont(font, 16);
 
 	// the window will remain open (and the program will remain in this loop) until the user presses the 'X' to close
 	while(!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))

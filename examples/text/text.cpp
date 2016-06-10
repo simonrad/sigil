@@ -12,14 +12,18 @@ int main(int args, char *argv[])
 	const int WINDOW_WIDTH = 600;
 	const int WINDOW_HEIGHT = 300;
 
+	// this stores our font ID
+	int font;
+
 	// this initializes the sigil library and creates a window of the desired size
-	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Text Example");
+	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Text Example", false);
 
 	// the colour of the background is specified using RGB values in the range [0.0, 1.0]
 	slSetBackColor(0.0, 0.0, 0.0);		// black
 
 	// set our active font
-	slSetFont("../ttf/euphorigenic.ttf", 12);
+	font = slLoadFont("../ttf/euphorigenic.ttf");
+	slSetFont(font, 28);
 
 	// the window will remain open (and the program will remain in this loop) until the user presses the 'X' to close
 	while(!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
