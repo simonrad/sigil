@@ -43,7 +43,6 @@ set(
 	src/util/images
 	src/util/shader
 	src/util/transform
-	src/util/gldebugging
 )
 
 # set the installation directory
