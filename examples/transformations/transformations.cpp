@@ -24,7 +24,7 @@ int main(int args, char *argv[])
 	double angle = 0.0;
 
 	// this initializes the sigil library and creates a window of the desired size
-	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Transformations Example");
+	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Transformations Example", false);
 
 	// the colour of the background is specified using RGB values in the range [0.0, 1.0]
 	slSetBackColor(0.0, 0.0, 0.0);		// black

@@ -20,6 +20,9 @@ int main(int args, char *argv[])
 	bool resumeKeyDown = false;
 	bool stopKeyDown = false;
 
+	// ID of the font we're going to load
+	int font;
+
 	// SL sound loading
 	char soundName[32];					// to build filenames of the phone beeps
 	int digitSounds[10];				// for phone digit beeps we load
@@ -27,13 +30,14 @@ int main(int args, char *argv[])
 	int i;
 
 	// this initializes the sigil library and creates a window of the desired size
-	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Sound Example");
+	slWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "SIGIL Sound Example", false);
 
 	// the colour of the background is specified using RGB values in the range [0.0, 1.0]
 	slSetBackColor(0.0, 0.0, 0.0);		// black
 
 	// set a pleasant-looking font
-	slSetFont("../ttf/white_rabbit.ttf", 12);
+	font = slLoadFont("../ttf/white_rabbit.ttf");
+	slSetFont(font, 12);
 
 	// load the sounds corresponding to phone number beeps
 	for(i = 0; i <= 9; i ++)

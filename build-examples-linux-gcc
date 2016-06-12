@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# intro
+printf "this script assumes that SIGIL has been built and installed already\n"
+printf "building examples...\n"
+
+# now compile our examples projects
+# note: this will generate some weird warnings, and just click "continue" when they occur
+codeblocks -ns --rebuild examples/input/linux-gcc/input-linux-gcc.cbp --target='Release'
+codeblocks -ns --rebuild examples/shapes/linux-gcc/shapes-linux-gcc.cbp --target='Release'
+codeblocks -ns --rebuild examples/sound/linux-gcc/sound-linux-gcc.cbp --target='Release'
+codeblocks -ns --rebuild examples/sprites/linux-gcc/sprites-linux-gcc.cbp --target='Release'
+codeblocks -ns --rebuild examples/text/linux-gcc/text-linux-gcc.cbp --target='Release'
+
+# and we're done
+printf "examples built\n"
+
