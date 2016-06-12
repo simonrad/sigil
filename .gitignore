@@ -11,6 +11,6 @@ build-vc2013-win64
 build-vc2015
 build-vc2015-win64
 
-# ignore .sdf and .db files because these are huge
+# ignore .sdf and .db files because these things are huge
 *.sdf
 *.db
