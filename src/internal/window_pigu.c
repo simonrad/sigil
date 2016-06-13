@@ -1,4 +1,5 @@
 #include "pigu.h"
+#include "sl.h"
 
 #include <linux/input.h>
 
@@ -6,6 +7,7 @@ static int sliWindowOpen = 0;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;
 
+// these are printable keys like 'A', 'B', etc.; this defines a map from the SIGIL keys to the linux keys
 static const int NUM_PRINTABLE_KEYS = 61;
 static const int SIGIL_RPI_PRINTABLE_KEYS[] = {' ', KEY_SPACE,
 											  '!', -1,
@@ -69,6 +71,7 @@ static const int SIGIL_RPI_PRINTABLE_KEYS[] = {' ', KEY_SPACE,
 											  '[', KEY_LEFTBRACE,
 											  ']', KEY_RIGHTBRACE};
 
+// these are non-printable keys like arrow keys, etc.; this defines a map from the SIGIL keys to the linux keys
 static const int NUM_NON_PRINTABLE_KEYS = 92;
 static const int SIGIL_RPI_NON_PRINTABLE_KEYS[] = {SL_KEY_ESCAPE, KEY_ESC,
 												 SL_KEY_ENTER, KEY_ENTER,
@@ -128,27 +131,27 @@ static const int SIGIL_RPI_NON_PRINTABLE_KEYS[] = {SL_KEY_ESCAPE, KEY_ESC,
 												 SL_KEY_F22, KEY_F22,
 												 SL_KEY_F23, KEY_F23,
 												 SL_KEY_F24, KEY_F24,
-												 SL_KEY_F25, KEY_F25,
+												 SL_KEY_F25, -1,
 												 -1, -1,
 												 -1, -1,
 												 -1, -1,
 												 -1, -1,
 												 -1, -1,
-												 SL_KEYPAD_0, KEY_KP0,
-												 SL_KEYPAD_1, KEY_KP1,
-												 SL_KEYPAD_2, KEY_KP2,
-												 SL_KEYPAD_3, KEY_KP3,
-												 SL_KEYPAD_4, KEY_KP4,
-												 SL_KEYPAD_5, KEY_KP5,
-												 SL_KEYPAD_6, KEY_KP6,
-												 SL_KEYPAD_7, KEY_KP7,
-												 SL_KEYPAD_8, KEY_KP8,
-												 SL_KEYPAD_9, KEY_KP9,
+												 SL_KEY_KEYPAD_0, KEY_KP0,
+												 SL_KEY_KEYPAD_1, KEY_KP1,
+												 SL_KEY_KEYPAD_2, KEY_KP2,
+												 SL_KEY_KEYPAD_3, KEY_KP3,
+												 SL_KEY_KEYPAD_4, KEY_KP4,
+												 SL_KEY_KEYPAD_5, KEY_KP5,
+												 SL_KEY_KEYPAD_6, KEY_KP6,
+												 SL_KEY_KEYPAD_7, KEY_KP7,
+												 SL_KEY_KEYPAD_8, KEY_KP8,
+												 SL_KEY_KEYPAD_9, KEY_KP9,
 												 SL_KEY_KEYPAD_DECIMAL, KEY_KPDOT,
 												 SL_KEY_KEYPAD_DIVIDE, KEY_KPSLASH,
 												 SL_KEY_KEYPAD_MULTIPLY, KEY_KPASTERISK,
 												 SL_KEY_KEYPAD_SUBTRACT, KEY_KPMINUS,
-												 SL_KEY_KEYPAD_ADD, KEY_KPADD,
+												 SL_KEY_KEYPAD_ADD, KEY_KPPLUS,
 												 SL_KEY_KEYPAD_ENTER, KEY_KPENTER,
 												 SL_KEY_KEYPAD_EQUAL, KEY_KPEQUAL,
 												 -1, -1,
@@ -209,25 +212,38 @@ int sliGetKey(int key)
 {
 	int index;
 	int code;
+	int linuxKey;
 	int result = 0;
 
 	// if this is a non-printable char
 	if(key >= SIGIL_RPI_NON_PRINTABLE_KEYS[0] && key <= SIGIL_RPI_NON_PRINTABLE_KEYS[(NUM_NON_PRINTABLE_KEYS - 1) * 2])
 	{
 		// determine if we actually have an entry for this key code
-		code = SIGIL_RPI_NON_PRINTABLE_KEYS[key * 2];
+		index = key - SIGIL_RPI_NON_PRINTABLE_KEYS[0];
+		code = SIGIL_RPI_NON_PRINTABLE_KEYS[index * 2];
 		if(code != -1)
 		{
-			result = piguIsKeyDown(SIGIL_RPI_NON_PRINTABLE_KEYS[code * 2 + 1]);
+			// look up the linux key associated with the input key we received
+			linuxKey = SIGIL_RPI_NON_PRINTABLE_KEYS[index * 2 + 1];
+			if(linuxKey != -1)
+			{
+				result = piguIsKeyDown(linuxKey);
+			}
 		}
 	}
 	else if(key >= SIGIL_RPI_PRINTABLE_KEYS[0] && key <= SIGIL_RPI_PRINTABLE_KEYS[(NUM_PRINTABLE_KEYS - 1) * 2])
 	{
 		// determine if this printable character has a key associated with it
-		code = SIGIL_RPI_PRINTABLE_KEYS[key * 2 + 1];
+		index = key - SIGIL_RPI_PRINTABLE_KEYS[0];
+		code = SIGIL_RPI_PRINTABLE_KEYS[index * 2];
 		if(code != -1)
 		{
-			result = piguIsKeyDown(code);
+			// look up the linux key associated with the input key we received
+			linuxKey = SIGIL_RPI_PRINTABLE_KEYS[index * 2 + 1];
+			if(linuxKey != -1)
+			{
+				result = piguIsKeyDown(linuxKey);
+			}
 		}
 	}
 
