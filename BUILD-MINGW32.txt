@@ -26,20 +26,6 @@ SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-c
 	sigil/glew/lib/mingw32/libglew32.dll.a    ---> C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 	sigil/glew/include/GL/*.h                 ---> C:/Program Files (x86)/CodeBlocks/MinGW/include/GL/*.h
 
-We also need to get a copy of the FreeType 2 (FT2) library. Download and run the "Complete package, except sources" installer from 
-
-	http://gnuwin32.sourceforge.net/packages/freetype.htm
-
-to install FT2. If you plan to use CodeBlocks for your SIGIL projects, make sure that you install into
-
-	C:\Program Files (x86)\CodeBlocks\MinGW
-
-and NOT
-
-	C:\Program Files (x86)\CodeBlocks\MinGW\GnuWin32
-
-or anywhere else, otherwise you may encounter difficulties when building SIGIL. You may have to manually edit out the "GnuWin32" portion.
-
 We need OpenAL for audio. Download the "OpenAL 1.1 Core SDK (zip)" file from
 
 	https://www.openal.org/downloads/

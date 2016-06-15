@@ -116,14 +116,14 @@ if(FOUND_BCM)
 
 else()
 
-	# when using MinGW, we link to pre-compiled libs because compiling GLFW from scratch with MinGW is a pain in the ass
-	if(MINGW)
+		# when using MinGW, we link to pre-compiled libs because compiling GLFW from scratch with MinGW is a pain in the ass
+		if(MINGW)
 
-		# ...which we keep in our lib/mingw32 folder
-		include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
-		target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
+			# ...which we keep in our lib/mingw32 folder
+			include_directories(${CMAKE_SOURCE_DIR}/src/glfw/include)
+			target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/glfw/lib/mingw32/glfw3dll.a)
 
-	else()
+		else()
 
 		# turn off unnecessary GLFW components
 		set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
@@ -164,17 +164,30 @@ endif()
 # find our font library, freetype
 #--------------------------------------------------------------------
 
-# give the RPi a little hint regarding the whereabouts of freetype
-if(FOUND_BCM)
-	set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
-	set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
-	set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
-endif()
+# how we deal with freetype depends on our platform
+#if(WIN32)
 
-# Freetype is available on apt and a cmake find module is available for it
-find_package(Freetype REQUIRED)
-include_directories(${FREETYPE_INCLUDE_DIRS})
-target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
+	# windows systems can build Freetype from source more easily
+	add_subdirectory(${CMAKE_SOURCE_DIR}/src/freetype-2.5.5)
+	include_directories(${CMAKE_SOURCE_DIR}/src/freetype-2.5.5)
+	include_directories(${CMAKE_SOURCE_DIR}/src/freetype-2.5.5/include)
+	target_link_libraries(${PROJECT_NAME} freetype ${FREETYPE_LIBRARIES})
+
+#else()
+
+	# give the RPi a little hint regarding the whereabouts of freetype
+#	if(FOUND_BCM)
+#		set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
+#		set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
+#		set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
+#	endif()
+
+	# Freetype is available on apt and a cmake find module is available for it
+#	find_package(Freetype REQUIRED)
+#	include_directories(${FREETYPE_INCLUDE_DIRS})
+#	target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
+
+#endif()
 
 #--------------------------------------------------------------------
 # everything uses OpenAL for audio handling
