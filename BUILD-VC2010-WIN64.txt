@@ -20,9 +20,26 @@ SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-c
 	sigil/glew/lib/msvc64/glew32.lib    ---> C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/amd64/glew32.lib
 	sigil/glew/include/GL/*.h           ---> C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include/gl/*.h
 
-We also need to get a copy of the FreeType 2 (FT2) library and build a 64-bit version of it from source. Download the source code from:
+We also need to get a copy of the FreeType 2 (FT2) library and build a 64-bit version of it from source. Download the latest version of the source code from:
 
-	[address goes here]
+	http://download.savannah.gnu.org/releases/freetype/
+
+and unzip it to a convenient location. Navigate to
+
+	ftXXX/freetype-X.X.X/builds/windows/visualc
+
+and open the Visual Studio solution "freetype.sln". Visual Studio may perform a version upgrade to bring the project up-to-date. Afterwards, click Build -> Configuration Manager, and activate the "Release" configuration. Then, create an "x64" platform (Active solution platform -> New) and set this to be the active platform. Close the Configuration Manager when you're done.
+
+Click Project -> Properties from the main menu. Make sure that the Configuration is "Release" and the Platform is "x64". Select the "General" section of "Configuration Properties". Change the value of "Configuration Type" to "Dynamic Library (.dll)". Click OK.
+
+Next, open the header file "ftoption.h", and look for two commented lines similar to this, under the "DLL export compilation" section:
+
+	/* #define FT_EXPORT(x)      extern x */
+	/* #define FT_EXPORT_DEF(x)  x */
+
+Uncomment these lines; this will result in both a DLL and an import library when you compile. Save the file. Compile the project by clicking Build -> Build Solution.
+
+
 
 [remainder of FT instructions here]
 
