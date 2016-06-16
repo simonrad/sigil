@@ -42,9 +42,6 @@ Click "Configure". When prompted, select the "MinGW Makefiles" generator from th
 
 Depending on your system configuration, CMake may have trouble finding the required dependencies. For your reference, these are the values that I use to compile SIGIL.
 
-FREETYPE_INCLUDE_DIR_freetype2: C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
-FREETYPE_INCLUDE_DIR_ft2build:  C:/Program Files (x86)/CodeBlocks/MinGW/include/freetype2
-FREETYPE_LIBRARY:               C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfreetype.dll.a
 GLEW_INCLUDE_DIR:               C:/Program Files (x86)/CodeBlocks/MinGW/include
 GLEW_LIBRARY:                   C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 OPENAL_INCLUDE_DIR:             C:/Program Files (x86)/CodeBlocks/MinGW/include/AL

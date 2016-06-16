@@ -35,9 +35,6 @@ Click "Configure". When prompted, select the "Visual Studio 11 2012" generator (
 
 Depending on your system configuration, CMake may have trouble finding the required dependencies. For your reference, these are the values that I use to compile SIGIL.
 
-FREETYPE_INCLUDE_DIR_freetype2: C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include/freetype2
-FREETYPE_INCLUDE_DIR_ft2build:  C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include/freetype2
-FREETYPE_LIBRARY:               C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/freetype.lib
 GLEW_INCLUDE_DIR:               C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include
 GLEW_LIBRARY:                   C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/glew32.lib
 OPENAL_INCLUDE_DIR:             C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include
@@ -54,7 +51,6 @@ In Visual Studio, select the build type "Release", and then click "Build -> Buil
 
 It's probably now a good idea to put all of the necessary SIGIL files in a common location for you to copy into your SIGIL projects later on. This is the same process that I use when building and distributing SIGIL.
 
-	C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/bin/freetype6.dll ---> sigil/sigil-vc2012/freetype6.dll
 	C:/Windows/System32/OpenAL32.dll     ---> sigil/sigil-vc2012/OpenAL32.dll
 	sigil/glew/lib/msvc32/glew32.dll     ---> sigil/sigil-vc2012/glew32.dll
 	sigil/build-vc2012/Release/sigil.dll ---> sigil/sigil-vc2012/sigil.dll
