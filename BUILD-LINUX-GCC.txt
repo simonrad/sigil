@@ -13,10 +13,6 @@ We depend on the OpenGL Extension Wrangler (GLEW) library:
 
 	sudo apt-get install libglew-dev
 
-Also install the FreeType 2 (FT2) Library:
-
-	sudo apt-get install libfreetype6-dev
-
 We need OpenAL for audio:
 
 	sudo apt-get install libopenal-dev
@@ -25,17 +21,30 @@ If you want to develop SIGIL applications using CodeBlocks, and want to use the 
 
 	sudo apt-get install xterm
 
-Next, we can download the SIGIL source code from GitLab and build it.
+Next, we can download the SIGIL source code from GitLab.
 
-		cd ~/
-		sudo apt-get install git
-		git clone git@gitlab.com:geoff-nagy/sigil.git
-		cd sigil
-		mkdir build-linux-gcc
-		cd build-linux-gcc
-		cmake ../
-		make
-		sudo make install
+	cd ~/
+	sudo apt-get install git
+	git clone git@gitlab.com:geoff-nagy/sigil.git
+
+Navigate to SIGIL's root directory and type:
+
+    cd deps
+
+This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire GLFW and Freetype2. (You can ignore the "pigu" folder---it is used for Raspberry Pi builds.)
+
+Type the following:
+
+    git clone https://github.com/glfw/glfw.git
+    git clone http://git.savannah.gnu.org/cgit/freetype/freetype2.git
+
+Now back up into SIGIL's root directory and build everything:
+
+	cd ../
+	mkdir build-linux-gcc
+	cd build-linux-gcc
+	cmake ../
+	make
+	sudo make install
 
 And you're done! Example projects for every supported compiler are provided in the "examples" folder.
-

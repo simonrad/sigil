@@ -13,6 +13,13 @@ Otherwise, you can download the source code as a .zip file from:
 
 	https://gitlab.com/geoff-nagy/sigil
 
+Navigate to SIGIL's root directory, and enter the "deps" folder. This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire GLFW and Freetype2. (You can ignore the "pigu" folder---it is used for Raspberry Pi builds.)
+
+Type the following:
+
+    git clone https://github.com/glfw/glfw.git
+    git clone http://git.savannah.gnu.org/cgit/freetype/freetype2.git
+
 SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-compiled libs are included with SIGIL in the /glew folder. Copy and paste the following files into the appropriate locations as below:
 
 	sigil/glew/lib/msvc32/glew32.lib    ---> C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/lib/glew32.lib
@@ -57,4 +64,3 @@ It's probably now a good idea to put all of the necessary SIGIL files in a commo
 	sigil/build-vc2010/Release/sigil.lib ---> sigil/sigil-vc2010/lib/sigil.lib
 
 And you're done! Example projects for every supported compiler are provided in the "examples" folder.
-
