@@ -42,7 +42,7 @@ Click "Configure". When prompted, select the "MinGW Makefiles" generator from th
 
 Depending on your system configuration, CMake may have trouble finding the required dependencies. For your reference, these are the values that I use to compile SIGIL.
 
-CMAKE_BUILD_TYPE:				Release
+CMAKE_BUILD_TYPE:               Release
 GLEW_INCLUDE_DIR:               C:/Program Files (x86)/CodeBlocks/MinGW/include
 GLEW_LIBRARY:                   C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglew32.dll.a
 OPENAL_INCLUDE_DIR:             C:/Program Files (x86)/CodeBlocks/MinGW/include/AL
@@ -71,8 +71,7 @@ It's probably now a good idea to put all of the necessary SIGIL files in a commo
 
 	C:/Windows/System32/OpenAL32.dll    ---> sigil/sigil-mingw32/OpenAL32.dll
 	sigil/glew/lib/mingw32/glew32.dll   ---> sigil/sigil-mingw32/glew32.dll
-	sigil/glfw/lib/mingw32/glfw3.dll    ---> sigil/sigil-mingw32/glfw3.dll
 	sigil/build-mingw32/libsigil.dll    ---> sigil/sigil-mingw32/libsigil.dll
 	sigil/build-mingw32/libsigil.dll.a  ---> sigil/sigil-mingw32/lib/libsigil.dll.a
 
-To use SIGIL, all you need to do is #include <sl.h> from the correct location, link to "libsigil.dll.a", and place "libsigil.dll" in your system folder or your project's working directory. Example projects for every supported compiler are provided in the "examples" folder.
+And you're done! Example projects for every supported compiler are provided in the "examples" folder.

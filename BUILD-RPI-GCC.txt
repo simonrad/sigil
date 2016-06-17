@@ -43,4 +43,5 @@ Otherwise, just proceed with the build and installation:
 		make
 		sudo make install
 
-And you're done! Please consult USING-SIGIL-RPI.txt for instructions on how to integrate SIGIL into your application.
+And you're done! Example projects for every supported compiler are provided in the "examples" folder.
+

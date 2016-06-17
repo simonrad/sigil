@@ -1,4 +1,4 @@
-BUILDING SIGIL FROM SOURCE USING VISUAL STUDIO 11 2012 WIN64 IN WINDOWS
+BUILDING SIGIL FROM SOURCE USING VISUAL STUDIO 12 2013 WIN64 IN WINDOWS
 -----------------------------------------------------------------------
 
 SIGIL uses CMake, which is a cross-platform build tool. You will need to download and run the CMake "Windows Installer" (.msi). When the installer asks, make sure you add CMake to your PATH variable. You can download the installer from:
@@ -15,8 +15,8 @@ Otherwise, you can download the source code as a .zip file from:
 
 SIGIL depends on the OpenGL Extension Wrangler (GLEW) library. Headers and pre-compiled libs are included with SIGIL in the /glew folder. Copy and paste the following files into the appropriate locations as below:
 
-	sigil/glew/lib/msvc64/glew32.lib    ---> C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/amd64/glew32.lib
-	sigil/glew/include/GL/*.h           ---> C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include/gl/*.h
+	sigil/glew/lib/msvc64/glew32.lib    ---> C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/lib/amd64/glew32.lib
+	sigil/glew/include/GL/*.h           ---> C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/include/gl/*.h
 
 We need OpenAL for audio. Download the "OpenAL 1.1 Core SDK (zip)" file from
 
@@ -24,36 +24,36 @@ We need OpenAL for audio. Download the "OpenAL 1.1 Core SDK (zip)" file from
 
 and extract and run the installer. When prompted, you should also run the OpenAL redistributable, which will place the OpenAL DLLs into your system folder. After all of this, copy the OpenAL header and library files into the proper locations:
 
-	C:\Program Files (x86)\OpenAL 1.1 SDK\include\*.h             ---> C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include/*.h
-	C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win64\OpenAL32.lib ---> C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/amd64/OpenAL32.lib
+	C:\Program Files (x86)\OpenAL 1.1 SDK\include\*.h             ---> C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/include/*.h
+	C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win64\OpenAL32.lib ---> C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/lib/amd64/OpenAL32.lib
 
-Next, we can start building SIGIL. Enter the directory "sigil" and create a folder called "build-vc2012-win64".
+Next, we can start building SIGIL. Enter the directory "sigil" and create a folder called "build-vc2013-win64".
 
-Open CMake-GUI. For "Where is the source code", browse to the root directory "sigil". For "Where to build the binaries", browse to the directory "build-vc2012-win64" that you created in the previous step.
+Open CMake-GUI. For "Where is the source code", browse to the root directory "sigil". For "Where to build the binaries", browse to the directory "build-vc2013-win64" that you created in the previous step.
 
-Click "Configure". When prompted, select the "Visual Studio 11 2012 Win64" generator from the drop-down list. Select "Use default native compilers", and click "Finish".
+Click "Configure". When prompted, select the "Visual Studio 12 2013 Win64" generator from the drop-down list. Select "Use default native compilers", and click "Finish".
 
 Assuming you followed the directions above correctly, you should not get any configuration errors. However, you can fix them by assigning the appropriate values to the given CMake variables. For your reference, these are the values that I use to compile SIGIL.
 
-GLEW_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include
-GLEW_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/amd64/glew32.lib
-OPENAL_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/include
-OPENAL_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 11.0/VC/lib/amd64/OpenAL32.lib
+GLEW_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/include
+GLEW_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/lib/amd64/glew32.lib
+OPENAL_INCLUDE_DIR: C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/include
+OPENAL_LIBRARY: C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/lib/amd64/OpenAL32.lib
 
 If errors occur, not all of the above variables may be immediately present. You'll need to fix any existing errors and click "Configure" again for the remaining variables to appear. Repeat this process until the configuration completes without errors---you should only have to do this once or twice if you've set everything up correctly. (It's also possible that CMake will assign the correct values to all of these variables on the first try; it depends on your system configuration.)
 
-If no errors occurred during configuration (a message box will appear if there are errors), you can click "Generate". This will create the Visual Studio 2012 project file that can be used to build SIGIL. Navigate to "build-vc2012-win64" and open the solution "sigil.sln".
+If no errors occurred during configuration (a message box will appear if there are errors), you can click "Generate". This will create the Visual Studio 2013 project file that can be used to build SIGIL. Navigate to "build-vc2013-win64" and open the solution "sigil.sln".
 
 In Visual Studio, select the build type "Release", and then click "Build -> Build Solution" from the top menu. This will create the files
 
-	sigil/build-vc2012-win64/Release/sigil.dll
-	sigil/build-vc2012-win64/Release/sigil.lib
+	sigil/build-vc2013-win64/Release/sigil.dll
+	sigil/build-vc2013-win64/Release/sigil.lib
 
 It's probably now a good idea to put all of the necessary SIGIL files in a common location for you to copy into your SIGIL projects later on. This is the same process that I use when building and distributing SIGIL.
 
-	C:/Windows/SysWOW64/OpenAL32.dll           ---> sigil/sigil-vc2012-win64/OpenAL32.dll
-	sigil/glew/lib/msvc64/glew32.dll           ---> sigil/sigil-vc2012-win64/glew32.dll
-	sigil/build-vc2012-win64/Release/sigil.dll ---> sigil/sigil-vc2012-win64/sigil.dll
-	sigil/build-vc2012-win64/Release/sigil.lib ---> sigil/sigil-vc2012-win64/lib/sigil.lib
+	C:/Windows/SysWOW64/OpenAL32.dll           ---> sigil/sigil-vc2013-win64/OpenAL32.dll
+	sigil/glew/lib/msvc64/glew32.dll           ---> sigil/sigil-vc2013-win64/glew32.dll
+	sigil/build-vc2013-win64/Release/sigil.dll ---> sigil/sigil-vc2013-win64/sigil.dll
+	sigil/build-vc2013-win64/Release/sigil.lib ---> sigil/sigil-vc2013-win64/lib/sigil.lib
 
 And you're done! Example projects for every supported compiler are provided in the "examples" folder.

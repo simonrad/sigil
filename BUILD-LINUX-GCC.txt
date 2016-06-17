@@ -37,4 +37,5 @@ Next, we can download the SIGIL source code from GitLab and build it.
 		make
 		sudo make install
 
-And you're done! Please consult USING-SIGIL-LINUX-GCC.txt for instructions on how to integrate SIGIL into your application.
+And you're done! Example projects for every supported compiler are provided in the "examples" folder.
+

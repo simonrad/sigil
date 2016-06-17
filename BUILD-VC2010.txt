@@ -56,4 +56,5 @@ It's probably now a good idea to put all of the necessary SIGIL files in a commo
 	sigil/build-vc2010/Release/sigil.dll ---> sigil/sigil-vc2010/sigil.dll
 	sigil/build-vc2010/Release/sigil.lib ---> sigil/sigil-vc2010/lib/sigil.lib
 
-To use SIGIL, all you need to do is #include <sl.h> from the correct location, link to "sigil.lib", and place "sigil.dll" in your system folder or your project's working directory. Example projects for every supported compiler are provided in the "examples" folder.
+And you're done! Example projects for every supported compiler are provided in the "examples" folder.
+

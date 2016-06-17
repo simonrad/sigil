@@ -1,3 +1,9 @@
+# CMakeLists.txt file for building SIGIL
+# Currently supported compilers/platforms:
+# MinGW32; MSVC (32- and 64-bit) 10, 11, 12, 14; Linux GCC, Raspberry Pi
+# Geoff Nagy
+
+# not the most current version, but we want older CMake systems to be able to build this, too
 cmake_minimum_required(VERSION 2.8.9)
 project(sigil)
 set(CMAKE_BUILD_TYPE Release)
@@ -33,10 +39,10 @@ set(
 	src/internal/sprite
 	src/internal/text
 	src/internal/triangle
-	src/libdrawtext/drawgl
+	src/libdrawtext/drawgl			# from the handy libdrawtext library: http://nuclear.mutantstargoat.com/sw/libdrawtext/
 	src/libdrawtext/font
 	src/libdrawtext/utf8
-	src/soil/image_DXT
+	src/soil/image_DXT				# from the handy SOIL library: http://www.lonesock.net/soil.html
 	src/soil/image_helper
 	src/soil/SOIL
 	src/soil/stb_image_aug
@@ -45,7 +51,7 @@ set(
 	src/util/transform
 )
 
-# set the installation directory
+# set the installation directory; this only used in linux-based systems
 set(CMAKE_INSTALL_PREFIX "/usr/lib")
 
 # enable all compiler warnings, except in MSVC, since it own headers annoyingly generate around 4000 warnings
@@ -61,7 +67,7 @@ endif()
 # detect Raspberry Pi platform
 #--------------------------------------------------------------------
 
-# the presence of bcm_host.h means we're probably running on an RPi; this is a sketchy-enough test as of right now that we should print it out for debugging purposes
+# the presence of bcm_host.h means we're probably running on an RPi; this might be a sketchy-enough test as of right now that we should print it out for debugging purposes
 find_file(FOUND_BCM bcm_host.h /opt/vc/include)
 if(FOUND_BCM)
 	message(STATUS "Detected a Raspberry Pi platform (bcm_host.h was found)")
@@ -106,15 +112,8 @@ add_library(${PROJECT_NAME} SHARED ${SIGIL_SOURCE})
 # locate underlying context/window/input library
 #--------------------------------------------------------------------
 
-# RPi's use PIGU, everything else uses GLFW
-if(FOUND_BCM)
-
-	# use the cmake file we added to PIGU
-	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/pigu)
-	include_directories(${CMAKE_SOURCE_DIR}/deps/pigu/include)
-	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
-
-else()
+# everything uses GLFW right now (except for the Raspberry Pi)
+if(USE_GLFW)
 
 	# turn off unnecessary GLFW components
 	set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
@@ -126,7 +125,14 @@ else()
 	include_directories(${CMAKE_SOURCE_DIR}/deps/glfw/include)
 	target_link_libraries(${PROJECT_NAME} glfw)
 
-endif()
+else()
+
+	# use the cmake file we added to PIGU
+	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/pigu)
+	include_directories(${CMAKE_SOURCE_DIR}/deps/pigu/include)
+	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
+
+else()
 
 #--------------------------------------------------------------------
 # OpenGL extension handling for non-RPi systems
@@ -146,14 +152,6 @@ else()
 	find_package(GLEW REQUIRED)
 	include_directories(${GLEW_INCLUDE_DIRS})
 	target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
-
-	#add_definitions(-DGLEW_STATIC)
-	#include_directories(${CMAKE_SOURCE_DIR}/glew/include)
-
-	#add_definitions(-DGLEW_STATIC)
-	#add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glew/build/cmake)
-	#include_directories(${CMAKE_SOURCE_DIR}/deps/glew/include)
-	#target_link_libraries(${PROJECT_NAME} glew)
 
 endif()
 
@@ -189,11 +187,6 @@ endif()
 #--------------------------------------------------------------------
 # everything uses OpenAL for audio handling
 #--------------------------------------------------------------------
-
-#add_subdirectory(${CMAKE_SOURCE_DIR}/deps/openal-soft)
-#include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include)
-#include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include/AL)
-#target_link_libraries(${PROJECT_NAME} OpenAL32 ${OPENAL_LIBRARIES})
 
 # use the OpenAL find_package module to locate OpenAL for us
 find_package(OpenAL REQUIRED)
