@@ -43,7 +43,6 @@ set(
 	src/util/images
 	src/util/shader
 	src/util/transform
-	src/glew/glew.c
 )
 
 # set the installation directory
@@ -122,10 +121,10 @@ else()
 	set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
 	set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
 
-	# linux systems can build GLFW from source more easily
+	# build GLFW from source
 	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glfw)
 	include_directories(${CMAKE_SOURCE_DIR}/deps/glfw/include)
-	target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+	target_link_libraries(${PROJECT_NAME} glfw)
 
 endif()
 
@@ -144,12 +143,12 @@ if(USE_GLES)
 else()
 
 	# add in the GLEW libraries
-	#find_package(GLEW REQUIRED)
-	#include_directories(${GLEW_INCLUDE_DIRS})
-	#target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
+	find_package(GLEW REQUIRED)
+	include_directories(${GLEW_INCLUDE_DIRS})
+	target_link_libraries(${PROJECT_NAME} ${GLEW_LIBRARIES})
 
-	add_definitions(-DGLEW_STATIC)
-	include_directories(${CMAKE_SOURCE_DIR}/glew/include)
+	#add_definitions(-DGLEW_STATIC)
+	#include_directories(${CMAKE_SOURCE_DIR}/glew/include)
 
 	#add_definitions(-DGLEW_STATIC)
 	#add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glew/build/cmake)
@@ -191,15 +190,15 @@ endif()
 # everything uses OpenAL for audio handling
 #--------------------------------------------------------------------
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/deps/openal-soft)
-include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include)
-include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include/AL)
-target_link_libraries(${PROJECT_NAME} OpenAL32 ${OPENAL_LIBRARIES})
+#add_subdirectory(${CMAKE_SOURCE_DIR}/deps/openal-soft)
+#include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include)
+#include_directories(${CMAKE_SOURCE_DIR}/deps/openal-soft/include/AL)
+#target_link_libraries(${PROJECT_NAME} OpenAL32 ${OPENAL_LIBRARIES})
 
 # use the OpenAL find_package module to locate OpenAL for us
-#find_package(OpenAL REQUIRED)
-#include_directories(${OPENAL_INCLUDE_DIR})
-#target_link_libraries(${PROJECT_NAME} OpenAL32 ${OPENAL_LIBRARY})
+find_package(OpenAL REQUIRED)
+include_directories(${OPENAL_INCLUDE_DIR})
+target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
 
 #--------------------------------------------------------------------
 # link to the appropriate GL library

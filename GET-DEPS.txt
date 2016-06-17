@@ -1,0 +1,15 @@
+ACQUIRING SIGIL DEPENDENCIES PRIOR TO BUILDING IN WINDOWS
+---------------------------------------------------------
+
+After downloading SIGIL, navigate to SIGIL's root directory and type:
+
+    cd deps
+
+This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire GLFW and Freetype2. (You can ignore the "pigu" folder---it is used for Raspberry Pi builds.)
+
+Type the following:
+
+    git clone https://github.com/glfw/glfw.git
+    git clone http://git.savannah.gnu.org/cgit/freetype/freetype2.git
+
+And you're done. Continue with your build instructions as normal.

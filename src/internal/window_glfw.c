@@ -11,10 +11,10 @@ static int sliWindowHeight = 0;
 void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 {
 	// types enabling us to access WGL functionality for enabling vsync in Windows
-	#ifdef __MINGW32__
-		typedef BOOL (WINAPI *PFNWGLSWAPINTERVALEXTPROC)(int interval);
-		PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = NULL;
-    #endif
+	//#ifdef __MINGW32__
+		//typedef BOOL (WINAPI *PFNWGLSWAPINTERVALEXTPROC)(int interval);
+		//PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = NULL;
+    //#endif
 
 	// start up GLFW
 	glfwInit();
@@ -35,10 +35,10 @@ void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 	sliWindowHeight = height;
 
 	// GLFW doesn't handle vsync well in all cases, so we have to go straight to WGL to do this
-	#ifdef __MINGW32__
-		wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress("wglSwapIntervalEXT");
-		wglSwapIntervalEXT(1);
-	#endif
+	//#ifdef __MINGW32__
+		//wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress("wglSwapIntervalEXT");
+		//wglSwapIntervalEXT(1);
+	//#endif
 
 	// enable OpenGL debugging context if we're in a debug build
 	#ifdef DEBUG

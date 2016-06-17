@@ -1,5 +1,5 @@
-BUILDING SIGIL FROM SOURCE
---------------------------
+BUILDING SIGIL FROM SOURCE ON THE RASPBERRY PI
+----------------------------------------------
 
 SIGIL uses CMake to compile, so you will need to install it:
 
