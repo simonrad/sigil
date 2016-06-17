@@ -132,7 +132,7 @@ else()
 	include_directories(${CMAKE_SOURCE_DIR}/deps/pigu/include)
 	target_link_libraries(${PROJECT_NAME} pigu ${PIGU_LIBRARIES})
 
-else()
+endif()
 
 #--------------------------------------------------------------------
 # OpenGL extension handling for non-RPi systems
