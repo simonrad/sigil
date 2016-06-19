@@ -13,6 +13,10 @@ We depend on OpenAL for audio:
 
 	sudo apt-get install libopenal-dev
 
+We also need to acquire freetype:
+
+	suod apt-get install libfreetype6-dev
+
 If you want to develop SIGIL applications using CodeBlocks, and want to use the CodeBlocks output console (such as in debug mode), you should install xterm, too:
 
 	sudo apt-get install xterm
@@ -23,19 +27,9 @@ Next, we can download the SIGIL source code from GitLab.
 	sudo apt-get install git
 	git clone git@gitlab.com:geoff-nagy/sigil.git
 
-Navigate to SIGIL's root directory and type:
+Now enter SIGIL's root directory and build everything:
 
-    cd deps
-
-This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire Freetype2. (You can ignore the "pigu" folder---it already has source code in it.)
-
-Type the following:
-
-    git clone http://git.savannah.gnu.org/cgit/freetype/freetype2.git
-
-Now back up into SIGIL's root directory and build everything:
-
-	cd ../
+	cd sigil
 	mkdir build-rpi
 	cd build-rpi
 	cmake ../

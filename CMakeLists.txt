@@ -159,30 +159,32 @@ endif()
 # find our font library, freetype
 #--------------------------------------------------------------------
 
-# how we deal with freetype depends on our platform
-#if(WIN32)
+# Raspbian Wheezy (and possibly Jessie, unknown at this point) does not have a sufficiently high
+# version of harfbuzz to build the latest version of freetype from source
+if(FOUND_BCM)
 
-	# windows systems can build Freetype from source more easily
+	# give the RPi a little hint regarding the whereabouts of freetype
+	if(FOUND_BCM)
+		set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
+		set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
+		set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
+	endif()
+
+	# freetype is available on apt and a cmake find module is available for it
+	find_package(Freetype REQUIRED)
+	include_directories(${FREETYPE_INCLUDE_DIRS})
+	target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
+
+# everyone else can build freetype from source
+else()
+
+	# add in the freetype CMakeLists.txt file to our CMake project
 	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/freetype2)
 	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include)
 	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include/freetype)
 	target_link_libraries(${PROJECT_NAME} freetype ${FREETYPE_LIBRARIES})
 
-#else()
-
-	# give the RPi a little hint regarding the whereabouts of freetype
-#	if(FOUND_BCM)
-#		set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/local/include")
-#		set(FREETYPE_INCLUDE_DIR_ft2build "/usr/local/include/freetype2")
-#		set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
-#	endif()
-
-	# Freetype is available on apt and a cmake find module is available for it
-#	find_package(Freetype REQUIRED)
-#	include_directories(${FREETYPE_INCLUDE_DIRS})
-#	target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
-
-#endif()
+endif()
 
 #--------------------------------------------------------------------
 # everything uses OpenAL for audio handling
