@@ -14,3 +14,7 @@ build-vc2015-win64
 # ignore .sdf and .db files because these things are huge
 *.sdf
 *.db
+
+# ignore freetype and glfw source folders
+deps/freetype2
+deps/glfw
