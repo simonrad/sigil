@@ -159,9 +159,17 @@ endif()
 # find our font library, freetype
 #--------------------------------------------------------------------
 
-# Raspbian Wheezy (and possibly Jessie, unknown at this point) does not have a sufficiently high
-# version of harfbuzz to build the latest version of freetype from source
-if(FOUND_BCM)
+# compile freetype alongside our windows builds
+if(WIN32)
+
+	# add in the freetype CMakeLists.txt file to our CMake project
+	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/freetype2)
+	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include)
+	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include/freetype)
+	target_link_libraries(${PROJECT_NAME} freetype ${FREETYPE_LIBRARIES})
+
+# Raspberry Pi and Linux can just use an already-installed version
+else()
 
 	# give the RPi a little hint regarding the whereabouts of freetype
 	if(FOUND_BCM)
@@ -174,15 +182,6 @@ if(FOUND_BCM)
 	find_package(Freetype REQUIRED)
 	include_directories(${FREETYPE_INCLUDE_DIRS})
 	target_link_libraries(${PROJECT_NAME} ${FREETYPE_LIBRARIES})
-
-# everyone else can build freetype from source
-else()
-
-	# add in the freetype CMakeLists.txt file to our CMake project
-	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/freetype2)
-	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include)
-	include_directories(${CMAKE_SOURCE_DIR}/deps/freetype2/include/freetype)
-	target_link_libraries(${PROJECT_NAME} freetype ${FREETYPE_LIBRARIES})
 
 endif()
 

@@ -31,12 +31,11 @@ Navigate to SIGIL's root directory and type:
 
     cd deps
 
-This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire GLFW and Freetype2. (You can ignore the "pigu" folder---it is used for Raspberry Pi builds.)
+This is where CMake-based dependencies of SIGIL are located. We will use Git to acquire GLFW. (You can ignore the "pigu" and "freetype" folders.)
 
 Type the following:
 
     git clone https://github.com/glfw/glfw.git
-    git clone http://git.savannah.gnu.org/cgit/freetype/freetype2.git
 
 Now back up into SIGIL's root directory and build everything:
 
