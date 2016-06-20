@@ -15,6 +15,6 @@ build-vc2015-win64
 *.sdf
 *.db
 
-# ignore freetype and glfw source folders
+# explicitly ignore the freetype and glfw source folders
 deps/freetype2
 deps/glfw
