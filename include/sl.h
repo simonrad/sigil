@@ -1,14 +1,8 @@
 #pragma once
 
 /*
-Sound, Input, and Graphics Integration Library (SIGIL)
+Sound, Input, and Graphics Integration Library (SIGIL) 0.8.9
 Geoff Nagy
-*/
-
-/*
-todo:
-- de-initialization of text/fonts
-- de-initialization of textures
 */
 
 #ifdef _MSC_VER
