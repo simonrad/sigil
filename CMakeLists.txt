@@ -91,6 +91,9 @@ if(FOUND_BCM)
 	# tell config.h that we need GLES
 	set(USE_GLES ON)
 
+	# make sure we get the include directories we need
+	include_directories(/usr/include /usr/local/include)
+
 else()
 
 	# use the GLFW- and GL-based version of SIGIL

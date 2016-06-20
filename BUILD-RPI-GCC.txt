@@ -15,7 +15,11 @@ We depend on OpenAL for audio:
 
 We also need to acquire freetype:
 
-	suod apt-get install libfreetype6-dev
+	sudo apt-get install libfreetype6-dev
+
+We need OpenGL:
+
+	sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev
 
 If you want to develop SIGIL applications using CodeBlocks, and want to use the CodeBlocks output console (such as in debug mode), you should install xterm, too:
 
@@ -25,7 +29,7 @@ Next, we can download the SIGIL source code from GitLab.
 
 	cd ~/
 	sudo apt-get install git
-	git clone git@gitlab.com:geoff-nagy/sigil.git
+	git clone https://gitlab.com/geoff-nagy/sigil.git
 
 Now enter SIGIL's root directory and build everything:
 

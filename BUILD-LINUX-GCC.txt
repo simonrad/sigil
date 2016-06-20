@@ -25,7 +25,7 @@ Next, we can download the SIGIL source code from GitLab.
 
 	cd ~/
 	sudo apt-get install git
-	git clone git@gitlab.com:geoff-nagy/sigil.git
+	git clone https://gitlab.com/geoff-nagy/sigil.git
 
 Navigate to SIGIL's root directory and type:
 

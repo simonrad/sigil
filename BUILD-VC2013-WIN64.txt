@@ -7,7 +7,7 @@ SIGIL uses CMake, which is a cross-platform build tool. You will need to downloa
 
 Next, download SIGIL. If you have git, you can use a command prompt:
 
-	git clone git@gitlab.com:geoff-nagy/sigil.git
+	git clone https://gitlab.com/geoff-nagy/sigil.git
 
 Otherwise, you can download the source code as a .zip file from:
 
