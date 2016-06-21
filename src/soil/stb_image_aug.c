@@ -80,7 +80,7 @@
 
 #ifndef _MSC_VER
   #ifdef __cplusplus
-  #define __forceinline inline
+  #define __forceinline/* inline*/
   #else
   #define __forceinline
   #endif
