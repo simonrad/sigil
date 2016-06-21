@@ -174,6 +174,13 @@ if(WIN32)
 # Raspberry Pi and Linux can just use an already-installed version
 else()
 
+	# annoyingly, the RPi seems to need a hint regarding freetype
+	if(FOUND_BCM)
+		set(FREETYPE_INCLUDE_DIR_freetype2 "/usr/include")
+		set(FREETYPE_INCLUDE_DIR_ft2build "/usr/include/freetype2")
+		set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIR_freetype2} ${FREETYPE_INCLUDE_DIR_ft2build})
+	endif()
+
 	# freetype is available on apt and a cmake find module is available for it
 	find_package(Freetype REQUIRED)
 	include_directories(${FREETYPE_INCLUDE_DIRS})
