@@ -6,7 +6,7 @@ A very simple, cross-platform library for playing audio, handling basic input, a
 Folder Structure:
 -----------------
 
-deps: contains the CMake-based dependencies of SIGIL; two of these (GLFW and Freetype2) must be downloaded with Git, but PIGU has been modified to use a CMake-based build system by myself and does not require this
+deps: contains the CMake-based dependencies of SIGIL; some of these (GLFW and Freetype2) must be downloaded with Git depending on your build, but PIGU (for the Raspberry Pi) has been modified to use a CMake-based build system by myself and does not require this
 
 examples: contains stand-alone example projects, with project files/makefiles for every single platform/compiler that SIGIL supports
 
