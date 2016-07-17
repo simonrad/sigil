@@ -28,4 +28,4 @@ View *LICENSE.txt* for license information.
 
 ## Contact
 
-Questions, comments, and bug reports should be directed towards geoff@libsigil.com.
+Questions, comments, and bug reports should be directed towards *geoff@libsigil.com*.
