@@ -51,8 +51,8 @@ set(
 	src/util/transform
 )
 
-# set the installation directory; this only used in linux-based systems
-set(CMAKE_INSTALL_PREFIX "/usr/lib")
+# set the installation directory; this only used in linux-based systems (for now)
+set(CMAKE_INSTALL_PREFIX "/usr/local/")
 
 # enable all compiler warnings, except in MSVC, since it own headers annoyingly generate around 4000 warnings
 if(NOT MSVC)
@@ -224,7 +224,8 @@ include_directories(${CMAKE_BINARY_DIR}/src)
 if(WIN32)
 	# nothing to install; at this time, the users copies things manually
 else()
-	install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX})
+	install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+	install(FILES include/sl.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 endif()
 
 # end of root CMakeLists.txt

@@ -1,0 +1,2 @@
+/home/pi/sigil/build-rpi-2/deps/pigu/CMakeFiles/pigu.dir
+/home/pi/sigil/build-rpi-2/CMakeFiles/sigil.dir
