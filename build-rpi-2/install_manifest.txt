@@ -1,2 +1,0 @@
-/usr/local/lib/libsigil.so
-/usr/local/include/sl.h
