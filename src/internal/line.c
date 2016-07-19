@@ -15,19 +15,17 @@
 
 #include <stdlib.h>
 
-#define MAX_LINE_GROUP_SIZE 1000
+#define MAX_LINE_GROUP_SIZE 1024
 
 #ifndef USE_GLES
 	static GLuint sliLineVAO = 0;
 #endif
-static GLuint sliLineVBOs[2] = {0, 0};
+static GLuint sliLineVBOs[1] = {0};
 
-static GLfloat *sliLineVertices;
-static GLfloat *sliLineColors;
+static GLfloat *sliLineAttributes;
 
 static int sliLineCount;
-static GLfloat *sliLineVerticesPtr;
-static GLfloat *sliLineColorsPtr;
+static GLfloat *sliLineAttributesPtr;
 
 void sliLineInit()
 {
@@ -36,27 +34,23 @@ void sliLineInit()
 		glGenVertexArrays(1, &sliLineVAO);
 		glBindVertexArray(sliLineVAO);
 	#endif
-	glGenBuffers(2, sliLineVBOs);
+	glGenBuffers(1, sliLineVBOs);
 
-	// configure vertex data
+	// configure vertex attribute data
 	glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 4, NULL, GL_DYNAMIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 12, NULL, GL_DYNAMIC_DRAW);
+
+	// configure vertex position attribute
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, NULL);
 	glEnableVertexAttribArray(0);
 
-	// configure color data
-	glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[1]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 8, NULL, GL_DYNAMIC_DRAW);
-	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, NULL);
+	// configure vertex color attribute
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, (GLvoid*)(sizeof(GLfloat) * 2));
 	glEnableVertexAttribArray(1);
 
-	// initialize our vertex data buffers
-	sliLineVertices = (GLfloat*)malloc(sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 4);
-	sliLineVerticesPtr = sliLineVertices;
-
-	// initialize our color data buffers
-	sliLineColors = (GLfloat*)malloc(sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 8);
-	sliLineColorsPtr = sliLineColors;
+	// initialize our vertex data buffer
+	sliLineAttributes = (GLfloat*)malloc(sizeof(GLfloat) * MAX_LINE_GROUP_SIZE * 12);
+	sliLineAttributesPtr = sliLineAttributes;
 
 	// no lines buffered yet
 	sliLineCount = 0;
@@ -65,11 +59,10 @@ void sliLineInit()
 void sliLineDestroy()
 {
 	// free up dynamically-allocated vertex and color data
-	free(sliLineVertices);
-	free(sliLineColors);
+	free(sliLineAttributes);
 
 	// free OpenGL objects
-	glDeleteBuffers(2, sliLineVBOs);
+	glDeleteBuffers(1, sliLineVBOs);
 	#ifndef USE_GLES
 		glDeleteVertexArrays(1, &sliLineVAO);
 	#endif
@@ -77,23 +70,25 @@ void sliLineDestroy()
 
 void sliLine(Vec4 *color, double x1, double y1, double x2, double y2)
 {
-	// assign vertex positions for incoming line
-	*(sliLineVerticesPtr++) = (float)x1;
-	*(sliLineVerticesPtr++) = (float)y1;
-	*(sliLineVerticesPtr++) = (float)x2;
-	*(sliLineVerticesPtr++) = (float)y2;
+	// assign vertex positions for first point of incoming line
+	*(sliLineAttributesPtr++) = (float)x1;
+	*(sliLineAttributesPtr++) = (float)y1;
 
-	// assign color values for the incoming point
-	*(sliLineColorsPtr++) = (float)color -> x;
-	*(sliLineColorsPtr++) = (float)color -> y;
-	*(sliLineColorsPtr++) = (float)color -> z;
-	*(sliLineColorsPtr++) = (float)color -> w;
+	// assign color values for first point of incoming line
+	*(sliLineAttributesPtr++) = (float)color -> x;
+	*(sliLineAttributesPtr++) = (float)color -> y;
+	*(sliLineAttributesPtr++) = (float)color -> z;
+	*(sliLineAttributesPtr++) = (float)color -> w;
 
-	// assign color values for the incoming point
-	*(sliLineColorsPtr++) = (float)color -> x;
-	*(sliLineColorsPtr++) = (float)color -> y;
-	*(sliLineColorsPtr++) = (float)color -> z;
-	*(sliLineColorsPtr++) = (float)color -> w;
+	// assign vertex positions for second point of incoming line
+	*(sliLineAttributesPtr++) = (float)x2;
+	*(sliLineAttributesPtr++) = (float)y2;
+
+	// assign color values for second point of incoming line
+	*(sliLineAttributesPtr++) = (float)color -> x;
+	*(sliLineAttributesPtr++) = (float)color -> y;
+	*(sliLineAttributesPtr++) = (float)color -> z;
+	*(sliLineAttributesPtr++) = (float)color -> w;
 
 	// track the number of lines we've cached; render if the buffer is full
 	sliLineCount ++;
@@ -113,18 +108,12 @@ void sliLinesFlush()
 			glBindVertexArray(sliLineVAO);
 		#endif
 
-		// send vertex positions to graphics card
+		// send vertex attributes to graphics card
 		glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[0]);
-		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliLineCount * 4, sliLineVertices);
+		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliLineCount * 12, sliLineAttributes);
 		#ifdef USE_GLES
-			glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
-		#endif
-
-		// send vertex colors to graphics card
-		glBindBuffer(GL_ARRAY_BUFFER, sliLineVBOs[1]);
-		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliLineCount * 8, sliLineColors);
-		#ifdef USE_GLES
-			glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, NULL);
+			glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, NULL);
+			glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, (GLvoid*)(sizeof(GLfloat) * 2));
 		#endif
 
 		// prepare our shader object
@@ -134,8 +123,7 @@ void sliLinesFlush()
 		glDrawArrays(GL_LINES, 0, sliLineCount * 2);
 
 		// reset the lines buffer
-		sliLineVerticesPtr = sliLineVertices;
-		sliLineColorsPtr = sliLineColors;
+		sliLineAttributesPtr = sliLineAttributes;
 		sliLineCount = 0;
 	}
 }

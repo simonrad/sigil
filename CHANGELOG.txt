@@ -1,0 +1,7 @@
+0.8.10 July 18 2016
+-- improved performance of point rendering
+-- improved performance of line rendering
+-- proper deletion of GL shaders
+
+0.8.9 June 12 2016
+-- initial release

@@ -8,14 +8,14 @@
 @echo off
 
 :: build SIGIL with every MSVC compiler that we support
-::call :build_msvc_sigil vc2010 "%VS100COMNTOOLS%vsvars32.bat"
-call :build_msvc_sigil vc2010-win64 "%VS100COMNTOOLS%vsvars32.bat"
-::call :build_msvc_sigil vc2012 "%VS110COMNTOOLS%vsvars32.bat"
-call :build_msvc_sigil vc2012-win64 "%VS110COMNTOOLS%vsvars32.bat"
-::call :build_msvc_sigil vc2013 "%VS120COMNTOOLS%vsvars32.bat"
-call :build_msvc_sigil vc2013-win64 "%VS120COMNTOOLS%vsvars32.bat"
-::call :build_msvc_sigil vc2015 "%VS140COMNTOOLS%vsvars32.bat"
-call :build_msvc_sigil vc2015-win64 "%VS140COMNTOOLS%vsvars32.bat"
+call :build_msvc_sigil vc2010 "%VS100COMNTOOLS%vsvars32.bat"
+::call :build_msvc_sigil vc2010-win64 "%VS100COMNTOOLS%vsvars32.bat"
+call :build_msvc_sigil vc2012 "%VS110COMNTOOLS%vsvars32.bat"
+::call :build_msvc_sigil vc2012-win64 "%VS110COMNTOOLS%vsvars32.bat"
+call :build_msvc_sigil vc2013 "%VS120COMNTOOLS%vsvars32.bat"
+::call :build_msvc_sigil vc2013-win64 "%VS120COMNTOOLS%vsvars32.bat"
+call :build_msvc_sigil vc2015 "%VS140COMNTOOLS%vsvars32.bat"
+::call :build_msvc_sigil vc2015-win64 "%VS140COMNTOOLS%vsvars32.bat"
 
 :: and we're done!
 echo ----------------------------

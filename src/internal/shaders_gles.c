@@ -129,8 +129,8 @@ void sliShadersInit(Mat4 *projection)
 
 void sliShadersDestroy()
 {
-	free(sliBasicShader);
-	free(sliPointShader);
-	free(sliTextureShader);
-	free(sliTextShader);
+	shaderDelete(sliBasicShader);
+	shaderDelete(sliPointShader);
+	shaderDelete(sliTextureShader);
+	shaderDelete(sliTextShader);
 }

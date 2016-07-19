@@ -1,7 +1,7 @@
 #pragma once
 
 /*
-Sound, Input, and Graphics Integration Library (SIGIL) 0.8.9
+Sound, Input, and Graphics Integration Library (SIGIL) 0.8.10
 Geoff Nagy
 */
 

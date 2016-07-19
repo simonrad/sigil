@@ -98,6 +98,12 @@ void shaderFinalize(Shader *shader)
     glDeleteShader(shader -> fragmentShader);
 }
 
+void shaderDelete(Shader *shader)
+{
+	glDeleteProgram(shader -> program);
+	free(shader);
+}
+
 void shaderUniform1f(Shader *shader, const char *var, float val)
 {
     glUniform1f(shaderGetUniLoc(shader, var), val);

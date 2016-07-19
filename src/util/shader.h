@@ -22,6 +22,7 @@ void shaderBind(Shader *shader);
 void shaderUnbind();
 void shaderBindAttrib(Shader *shader, const char*, unsigned int);
 void shaderFinalize(Shader *shader);
+void shaderDelete(Shader *shader);
 
 void shaderUniform1i(Shader *shader, const char*, int);
 void shaderUniform1f(Shader *shader, const char*, float);
