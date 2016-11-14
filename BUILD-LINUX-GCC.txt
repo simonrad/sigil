@@ -46,4 +46,20 @@ Now back up into SIGIL's root directory and build everything:
 	make
 	sudo make install
 
+Importantly, libsigil.so is installed by default into /usr/local/lib. If this directory is not part of your LD_LIBRARY_PATH variable, your SIGIL applications will not run since libsigil.so will not be found during runtime when it is normally loaded.
+
+One solution is to run the following command:
+
+	sudo nano ld.so.conf
+
+and add the line
+
+	/usr/local/lib
+
+to the file ld.so.conf. Then, close the file and run
+
+	sudo ldconfig
+
+and you should be good to go.
+
 And you're done! Example projects for every supported compiler are provided in the "examples" folder.
