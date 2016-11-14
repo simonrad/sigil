@@ -29,27 +29,35 @@ int main(int args, char *argv[])
 
 		// draw the inner fill for a rectangle
 		slSetForeColor(0.5, 0.5, 0.0, 0.5);
-		slRectangleFill(200.0, 450.0, 50.0, 50.0);
+		slRectangleFill(175.0, 450.0, 50.0, 50.0);
 
 		// draw the outline for a rectangle
 		slSetForeColor(0.8, 0.8, 0.0, 0.8);
-		slRectangleOutline(200.0, 450.0, 50.0, 50.0);
+		slRectangleOutline(175.0, 450.0, 50.0, 50.0);
 
 		// draw the inner fill for a hexagon
 		slSetForeColor(0.0, 0.5, 0.0, 0.5);
-		slCircleFill(300.0, 450.0, 25.0, 6);
+		slCircleFill(250.0, 450.0, 25.0, 6);
 
 		// draw the outline for a hexagon
 		slSetForeColor(0.0, 0.8, 0.0, 0.8);
-		slCircleOutline(300.0, 450.0, 25.0, 6);
+		slCircleOutline(250.0, 450.0, 25.0, 6);
 
 		// draw the inner fill for a circle
 		slSetForeColor(0.0, 0.0, 0.5, 0.5);
-		slCircleFill(400.0, 450.0, 25.0, 16);
+		slCircleFill(325.0, 450.0, 25.0, 16);
 
 		// draw the outline for a circle
 		slSetForeColor(0.0, 0.0, 0.8, 0.8);
-		slCircleOutline(400.0, 450.0, 25.0, 16);
+		slCircleOutline(325.0, 450.0, 25.0, 16);
+
+		// draw the inner fill for a semicircle
+		slSetForeColor(0.5, 0.0, 0.5, 0.5);
+		slSemiCircleFill(400.0, 450.0, 25.0, 16, 120.0);
+
+		// draw the outline for a semicircle
+		slSetForeColor(0.8, 0.0, 0.8, 0.8);
+		slSemiCircleOutline(400.0, 450.0, 25.0, 16, 120.0);
 
 		// draw some lines that move downwards and change colour
 		for(int i = 0; i < 20; i ++)
@@ -59,7 +67,7 @@ int main(int args, char *argv[])
 		}
 
 		// now draw some pretty points whose (x, y) position determines their colour
-		for(int x = 100; x <= 400; x += 3)
+		for(int x = 100; x <= 400; x += 6)
 		{
 			for(int y = 25; y <= 200; y += 3)
 			{

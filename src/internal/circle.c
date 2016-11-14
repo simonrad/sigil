@@ -46,8 +46,8 @@ void sliCircleInit()
 
 	// configure outline vertex data
 	glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_VERTICES * 3, NULL, GL_DYNAMIC_DRAW);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_VERTICES * 2, NULL, GL_DYNAMIC_DRAW);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	glEnableVertexAttribArray(0);
 
 	// initialize our fill state object
@@ -59,8 +59,8 @@ void sliCircleInit()
 
 	// configure fill vertex data
 	glBindBuffer(GL_ARRAY_BUFFER, sliCircleFillVBOs[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * (MAX_VERTICES + 2) * 3, NULL, GL_DYNAMIC_DRAW);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * (MAX_VERTICES + 2) * 2, NULL, GL_DYNAMIC_DRAW);			// + 2 for middle and end of triangle fan
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	glEnableVertexAttribArray(0);
 }
 
@@ -81,7 +81,8 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 {
 	const double EPS = 0.00001;
 
-	GLfloat vertices[MAX_VERTICES * 3];
+	GLfloat vertices[MAX_VERTICES * 2];
+	GLfloat *vertexPtr;
 	double theta;
 	double transform;
 	double c, s;
@@ -98,6 +99,7 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 		// assign new vertex count and radius
 		sliNumOutlineVertices = numVertices;
 		sliOutlineRadius = radius;
+		vertexPtr = vertices;
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (double)sliNumOutlineVertices);
@@ -109,11 +111,10 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 		y = 0.0f;
 
 		// compute new vertex positions
-		for(i = 0; i < sliNumOutlineVertices * 3; i += 3)
+		for(i = 0; i < sliNumOutlineVertices; i ++)
 		{
-			vertices[i + 0] = (float)x;
-			vertices[i + 1] = (float)y;
-			vertices[i + 2] = 0.0f;
+			*vertexPtr++ = (float)x;
+			*vertexPtr++ = (float)y;
 
 			// apply rotation matrix to current vertex position
 			transform = x;
@@ -126,7 +127,7 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 			glBindVertexArray(sliCircleOutlineVAO);
 		#endif
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
-		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliNumOutlineVertices * 3, vertices);
+		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * sliNumOutlineVertices * 2, vertices);
 	}
 
 	// prepare our shader object
@@ -139,7 +140,7 @@ void sliCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVertic
 		glBindVertexArray(sliCircleOutlineVAO);
 	#else
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleOutlineVBOs[0]);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	#endif
 	glDrawArrays(GL_LINE_LOOP, 0, sliNumOutlineVertices);
 }
@@ -148,7 +149,8 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 {
 	const double EPS = 0.00001;
 
-	GLfloat *vertices;
+	GLfloat vertices[(MAX_VERTICES + 2) * 3];			// + 2 for middle and end of triangle fan
+	GLfloat *vertexPtr;
 	double theta;
 	double transform;
 	double c, s;
@@ -165,10 +167,7 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 		// assign new vertex count
 		sliNumFillVertices = numVertices;
 		sliFillRadius = radius;
-
-		// allocate space for new circle vertices (we use +2 for the center vertex and for the last vertex of
-		// the triangle fan, since it doesn't loop back and close itself on its own)
-		vertices = (GLfloat*)malloc(sizeof(GLfloat) * (sliNumFillVertices + 2) * 3);
+		vertexPtr = vertices;
 
 		// compute angle increment, and pre-compute sin and cos of that increment
 		theta = 2 * (PI / (double)sliNumFillVertices);
@@ -179,17 +178,16 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 		x = radius;
 		y = 0;
 
-		// insert triangle fan center vertex
-		vertices[0] = 0.0f;
-		vertices[1] = 0.0f;
-		vertices[2] = 0.0f;
+		// insert triangle fan center vertex, which contributes to the 2
+		// extra vertices we define in total
+		*vertexPtr++ = 0.0f;
+		*vertexPtr++ = 0.0f;
 
 		// compute new vertex positions
-		for(i = 3; i < (sliNumFillVertices + 2) * 3; i += 3)
+		for(i = 0; i < sliNumFillVertices + 1; i ++)				// + 1 here for end of triangle fan
 		{
-			vertices[i + 0] = (float)x;
-			vertices[i + 1] = (float)y;
-			vertices[i + 2] = 0.0f;
+			*vertexPtr++ = (float)x;
+			*vertexPtr++ = (float)y;
 
 			// apply rotation matrix to current vertex position
 			transform = x;
@@ -202,10 +200,7 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 			glBindVertexArray(sliCircleFillVAO);
 		#endif
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleFillVBOs[0]);
-		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * (sliNumFillVertices + 2) * 3, vertices);
-
-		// done with vertex data
-		free(vertices);
+		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(GLfloat) * (sliNumFillVertices + 2) * 2, vertices);			// + 2 for middle and end of triangle fan
 	}
 
 	// prepare our shader object
@@ -218,7 +213,7 @@ void sliCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVertices)
 		glBindVertexArray(sliCircleFillVAO);
 	#else
 		glBindBuffer(GL_ARRAY_BUFFER, sliCircleFillVBOs[0]);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	#endif
-	glDrawArrays(GL_TRIANGLE_FAN, 0, sliNumFillVertices + 2);
+	glDrawArrays(GL_TRIANGLE_FAN, 0, sliNumFillVertices + 2);			// + 2 for middle and end of triangle fan
 }

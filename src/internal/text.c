@@ -52,12 +52,18 @@ void sliTextDestroy()
 
 double sliTextWidth(const char *text)
 {
-	return dtx_string_width(text);
+	double result = 0.0;
+	if(text[0] != 0)
+		result = dtx_string_width(text);
+	return result;
 }
 
 double sliTextHeight(const char *text)
 {
-	return dtx_string_height(text);
+	double result = 0.0;
+	if(text[0] != 0)
+		result = dtx_string_height(text);
+	return result;
 }
 
 void sliText(Mat4 *modelview, Vec4 *color, const char *text)

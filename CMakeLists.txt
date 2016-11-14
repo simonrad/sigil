@@ -10,8 +10,8 @@ set(CMAKE_BUILD_TYPE Release)
 
 # SIGIL versioning
 set(SIGIL_VERSION_MAJOR 0)
-set(SIGIL_VERSION_MINOR 8)
-set(SIGIL_VERSION_REVISION 10)
+set(SIGIL_VERSION_MINOR 9)
+set(SIGIL_VERSION_REVISION 0)
 
 # defaults for libraries we use
 set(USE_GLFW OFF)
@@ -32,6 +32,7 @@ set(
 	SIGIL_SOURCE
 	src/sl
 	src/internal/circle
+	src/internal/semicircle
 	src/internal/line
 	src/internal/point
 	src/internal/rectangle

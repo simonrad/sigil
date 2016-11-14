@@ -1,7 +1,7 @@
 #pragma once
 
 /*
-Sound, Input, and Graphics Integration Library (SIGIL) 0.8.10
+Sound, Input, and Graphics Integration Library (SIGIL) 0.9.0
 Geoff Nagy
 */
 
@@ -122,6 +122,7 @@ extern "C" {
 	// simple frame timing
 
 	SIGIL_API double slGetDeltaTime();
+	SIGIL_API double slGetTime();
 
 	// rendering commands
 
@@ -172,6 +173,9 @@ extern "C" {
 
 	SIGIL_API void slCircleFill(double x, double y, double radius, int numVertices);
 	SIGIL_API void slCircleOutline(double x, double y, double radius, int numVertices);
+
+	SIGIL_API void slSemiCircleFill(double x, double y, double radius, int numVertices, double degrees);
+	SIGIL_API void slSemiCircleOutline(double x, double y, double radius, int numVertices, double degrees);
 
 	SIGIL_API void slPoint(double x, double y);
 

@@ -4,6 +4,7 @@
 #include "internal/triangle.h"
 #include "internal/rectangle.h"
 #include "internal/circle.h"
+#include "internal/semicircle.h"
 #include "internal/point.h"
 #include "internal/line.h"
 #include "internal/sprite.h"
@@ -197,6 +198,11 @@ int slGetMouseY()
 double slGetDeltaTime()
 {
 	return slDeltaTime;
+}
+
+double slGetTime()
+{
+	return sliGetTime();
 }
 
 // rendering/clearing commands
@@ -451,6 +457,26 @@ void slCircleOutline(double x, double y, double radius, int numVertices)
 	sliCircleOutline(&modelview, &slForeColor, radius, numVertices);
 }
 
+void slSemiCircleFill(double x, double y, double radius, int numVertices, double degrees)
+{
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+
+	sliPointsFlush();
+	sliLinesFlush();
+	sliTextFlush(slCurrentMatrix, &slForeColor);
+	sliSemiCircleFill(&modelview, &slForeColor, radius, numVertices, degrees);
+}
+
+void slSemiCircleOutline(double x, double y, double radius, int numVertices, double degrees)
+{
+	Mat4 modelview = translate(slCurrentMatrix, x, y);
+
+	sliPointsFlush();
+	sliLinesFlush();
+	sliTextFlush(slCurrentMatrix, &slForeColor);
+	sliSemiCircleOutline(&modelview, &slForeColor, radius, numVertices, degrees);
+}
+
 void slPoint(double x, double y)
 {
 	Mat4 modelview = translate(slCurrentMatrix, x, y);
@@ -606,6 +632,7 @@ void sliInitResources()
 	sliTriangleInit();
 	sliRectangleInit();
 	sliCircleInit();
+	sliSemiCircleInit();
 	sliPointInit();
 	sliLineInit();
 	sliSpriteInit();
@@ -620,6 +647,7 @@ void sliKillResources()
 	sliLineDestroy();
 	sliPointDestroy();
 	sliCircleDestroy();
+	sliSemiCircleDestroy();
 	sliRectangleDestroy();
 	sliTriangleDestroy();
 	sliShadersDestroy();
