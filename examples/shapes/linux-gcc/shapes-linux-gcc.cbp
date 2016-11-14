@@ -25,6 +25,7 @@
 		</Compiler>
 		<Linker>
 			<Add option="-lsigil" />
+			<Add directory="/usr/local/lib" />
 		</Linker>
 		<Unit filename="../shapes.cpp" />
 		<Extensions>

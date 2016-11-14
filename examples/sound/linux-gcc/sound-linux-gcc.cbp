@@ -23,7 +23,11 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../../../include" />
 		</Compiler>
+		<Linker>
+			<Add directory="/usr/local/lib" />
+		</Linker>
 		<Unit filename="../sound.cpp" />
 		<Extensions>
 			<code_completion />
