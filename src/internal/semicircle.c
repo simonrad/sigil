@@ -148,7 +148,7 @@ void sliSemiCircleOutline(Mat4 *modelview, Vec4 *color, double radius, int numVe
 		glBindVertexArray(sliSemiCircleOutlineVAO);
 	#else
 		glBindBuffer(GL_ARRAY_BUFFER, sliSemiCircleOutlineVBOs[0]);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	#endif
 	glDrawArrays(GL_LINE_LOOP, 0, sliNumOutlineVertices + 1);	// + 1 for middle of line loop
 }
@@ -224,7 +224,7 @@ void sliSemiCircleFill(Mat4 *modelview, Vec4 *color, double radius, int numVerti
 		glBindVertexArray(sliSemiCircleFillVAO);
 	#else
 		glBindBuffer(GL_ARRAY_BUFFER, sliSemiCircleFillVBOs[0]);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
 	#endif
 	glDrawArrays(GL_TRIANGLE_FAN, 0, sliNumFillVertices + 1);				// + 1 for middle of triangle fan
 }
