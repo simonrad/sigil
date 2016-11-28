@@ -99,7 +99,7 @@ int sliLoadFont(const char *fontFilename)
 	}
 	else
 	{
-		fprintf(stderr, "sliLoadFont() could not open font file %s", fontFilename);
+		fprintf(stderr, "sliLoadFont() could not open font file %s\n", fontFilename);
 		exit(1);
 	}
 
@@ -119,7 +119,7 @@ void sliFont(int font, int fontSize)
 	}
 	else
 	{
-		fprintf(stderr, "sliFont(): font index %d is out of range", font);
+		fprintf(stderr, "sliFont(): font index %d is out of range\n", font);
 		exit(1);
 	}
 }
