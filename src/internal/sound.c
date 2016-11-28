@@ -70,9 +70,6 @@ struct WAVE_Data
 // special thanks to http://kcat.strangesoft.net/openal-tutorial.html for this
 void sliSoundInit(void)
 {
-    ALCdevice *sliDevice;
-    ALCcontext *sliContext;
-
 	// open our audio device
     sliDevice = alcOpenDevice(NULL);
     if(!sliDevice)
