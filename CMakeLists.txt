@@ -125,9 +125,9 @@ if(USE_GLFW)
 	set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
 
 	# build GLFW from source
-	add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glfw)
-	include_directories(${CMAKE_SOURCE_DIR}/deps/glfw/include)
-	target_link_libraries(${PROJECT_NAME} glfw)
+	# add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glfw)
+	# include_directories(${CMAKE_SOURCE_DIR}/deps/glfw/include)
+	target_link_libraries(${PROJECT_NAME} glfw3)
 
 else()
 
@@ -206,7 +206,14 @@ target_link_libraries(${PROJECT_NAME} ${OPENAL_LIBRARY})
 if(WIN32)
 	target_link_libraries(${PROJECT_NAME} opengl32)
 else()
-	target_link_libraries(${PROJECT_NAME} GL)
+	# target_link_libraries(${PROJECT_NAME} GL)
+
+	find_package(OpenGL REQUIRED)
+	target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES})
+
+	find_library(COREFOUNDATION_LIBRARY CoreFoundation)
+	target_link_libraries(${PROJECT_NAME} ${COREFOUNDATION_LIBRARY})
+
 endif()
 
 #--------------------------------------------------------------------
@@ -230,3 +237,5 @@ else()
 endif()
 
 # end of root CMakeLists.txt
+
+include_directories(/usr/include/malloc)
