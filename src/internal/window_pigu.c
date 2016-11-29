@@ -166,7 +166,14 @@ static const int SIGIL_RPI_NON_PRINTABLE_KEYS[] = {SL_KEY_ESCAPE, KEY_ESC,
 												 SL_KEY_RIGHT_ALT, KEY_RIGHTALT,
 												 SL_KEY_RIGHT_SUPER, KEY_RIGHTMETA};
 
-void sliOpenWindow(int width, int height, const char *title, int fullScreen)
+void sliOpenWindow(
+	int width,
+	int height,
+	const char *title,
+	int fullScreen,
+	int *frameWidth,
+	int *frameHeight
+)
 {
 	// start up PIGU
 	piguInit();
@@ -181,6 +188,10 @@ void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 					 24,					// depth bits
 					 8,						// stencil bits
 					 0);					// no multi-sampling
+
+	// TODO: This is probably incorrect. Get the size of the Framebuffer, not the window.
+	*frameWidth = width;
+	*frameHeight = height;
 
 	// record window size
 	sliWindowWidth = width;

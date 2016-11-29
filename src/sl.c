@@ -77,11 +77,14 @@ void slWindow(int width, int height, const char *title, int fullScreen)
 
 	if(!sliIsWindowOpen())
 	{
+		int frameWidth = 0;
+		int frameHeight = 0;
+
 		// use either GLFW or PIGU to set up our window
-		sliOpenWindow(width, height, title, fullScreen);
+		sliOpenWindow(width, height, title, fullScreen, &frameWidth, &frameHeight);
 
 		// configure our viewing area
-		glViewport(0, 0, width, height);
+		glViewport(0, 0, frameWidth, frameHeight);
 
 		// enable our extensions handler
 		#ifndef USE_GLES

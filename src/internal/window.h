@@ -1,6 +1,14 @@
 #pragma once
 
-void sliOpenWindow(int width, int height, const char *title, int fullScreen);
+void sliOpenWindow(
+    int width,
+    int height,
+    const char *title,
+    int fullScreen,
+    int *frameWidth,
+    int *frameHeight
+);
+
 void sliShowCursor(int showCursor);
 void sliCloseWindow();
 int sliIsWindowOpen();

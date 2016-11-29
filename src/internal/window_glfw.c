@@ -10,7 +10,14 @@ static GLFWwindow *sliProgramWindow = NULL;
 static int sliWindowWidth = 0;
 static int sliWindowHeight = 0;
 
-void sliOpenWindow(int width, int height, const char *title, int fullScreen)
+void sliOpenWindow(
+	int width,
+	int height,
+	const char *title,
+	int fullScreen,
+	int *frameWidth,
+	int *frameHeight
+)
 {
 	// types enabling us to access WGL functionality for enabling vsync in Windows
 	//#ifdef __MINGW32__
@@ -36,6 +43,8 @@ void sliOpenWindow(int width, int height, const char *title, int fullScreen)
 	}
 	glfwMakeContextCurrent(sliProgramWindow);
 	glfwSwapInterval(1);
+
+	glfwGetFramebufferSize(sliProgramWindow, frameWidth, frameHeight);
 
 	// record window size
 	sliWindowWidth = width;
