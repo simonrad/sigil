@@ -127,7 +127,7 @@ if(USE_GLFW)
 	# build GLFW from source
 	# add_subdirectory(${CMAKE_SOURCE_DIR}/deps/glfw)
 	# include_directories(${CMAKE_SOURCE_DIR}/deps/glfw/include)
-	target_link_libraries(${PROJECT_NAME} glfw3)
+	target_link_libraries(${PROJECT_NAME} glfw)
 
 else()
 
